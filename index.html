@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Leonard Pitts">
+  <title>Rentvine University Interactive LMS Program · Beginner Enhanced Edition</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <!-- Rentvine University: created by Leonard Pitts. -->
+</head>
+<body id="top">
+  <a class="skip-link" href="#app">Skip to main content</a>
+  <noscript>
+    <div class="noscript">This interactive learner program requires JavaScript. Enable JavaScript or use the DOCX/PDF version.</div>
+  </noscript>
+  <header class="topbar">
+    <div class="brand" role="banner">
+      <button class="icon-button" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <div>
+        <div class="brand-title">Rentvine University</div>
+        <div class="brand-subtitle">Interactive LMS Program · Beginner Enhanced Edition</div>
+      </div>
+    </div>
+    <div class="top-actions" aria-label="Program actions">
+      <button id="export-json" class="button secondary">Export JSON</button>
+      <button id="export-csv" class="button secondary">Export CSV</button>
+      <label class="button secondary file-button" for="import-progress">Import Progress</label>
+      <input id="import-progress" class="sr-only" type="file" accept="application/json,.json">
+      <button id="print-page" class="button secondary">Print</button>
+      <button class="button secondary" data-action="toggle-contrast">High Contrast</button>
+      <button id="clear-progress" class="button danger">Reset</button>
+    </div>
+  </header>
+
+  <div class="overall-progress" aria-label="Overall progress">
+    <div class="overall-text"><span id="overall-label">0%</span> program progress</div>
+    <div class="progress-rail"><div id="overall-bar" class="progress-fill" style="width:0%"></div></div>
+  </div>
+
+  <div class="shell">
+    <aside id="sidebar" class="sidebar" aria-label="Course navigation"></aside>
+    <main id="app" class="content" tabindex="-1"></main>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <footer class="site-footer">Rentvine University &middot; Created by Leonard Pitts</footer>
+  <script src="data/course-data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

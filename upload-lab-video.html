@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rentvine University Lab Video Upload Center</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <main class="content" style="max-width: 900px; margin: 0 auto;">
+    <section class="hero">
+      <div class="kicker">Rentvine University</div>
+      <h1>Lab Video Upload Center</h1>
+      <p>This page provides the required lab-video submission workflow and receipt builder for the offline package.</p>
+    </section>
+    <section class="callout warning">
+      <strong>Important</strong>
+      This static ZIP package cannot send video files to a server by itself. Use your LMS, Google Drive, OneDrive, or form upload destination to submit the actual video, then paste the submitted video URL or confirmation number back into the module. Administrators can replace the default upload link in <code>data/course.json</code> and <code>data/course-data.js</code> with the real upload URL.
+    </section>
+    <section class="panel">
+      <h2>Video evidence details</h2>
+      <div class="form-grid">
+        <div class="field"><label>Learner name<input id="learner" type="text"></label></div>
+        <div class="field"><label>Week / capstone<input id="week" type="text"></label></div>
+        <div class="field"><label>Selected video file<input id="file" type="file" accept="video/*"></label></div>
+      </div>
+      <div class="form-grid">
+        <div class="field"><label>Submitted video URL or confirmation number<input id="confirmation" type="text" placeholder="Paste LMS/Drive/Form confirmation here"></label></div>
+        <div class="field"><label>External upload destination<input id="destination" type="url" placeholder="Paste your LMS/Drive upload page URL"></label></div>
+      </div>
+      <p><button class="button primary" id="open-destination">Open external upload destination</button> <button class="button secondary" id="copy-receipt">Copy receipt details</button> <button class="button secondary" id="download-receipt">Download receipt JSON</button> <a class="button secondary" href="index.html">Back to program</a></p>
+      <pre id="receipt" style="white-space: pre-wrap; background: #fff; border: 1px solid var(--line); border-radius: 0.75rem; padding: 1rem;"></pre>
+    </section>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const week = params.get('week') || (params.get('capstone') ? 'Capstone' : '');
+    document.getElementById('week').value = week;
+    const toast = document.getElementById('toast');
+    function toastMsg(msg){ toast.textContent = msg; toast.classList.add('show'); clearTimeout(toast._timer); toast._timer=setTimeout(()=>toast.classList.remove('show'),2200); }
+    function receiptData(){
+      const file = document.getElementById('file').files[0];
+      return {
+        learner: document.getElementById('learner').value,
+        week: document.getElementById('week').value,
+        selectedVideoFile: file ? file.name : '',
+        selectedVideoSizeBytes: file ? file.size : '',
+        submittedVideoUrlOrConfirmation: document.getElementById('confirmation').value,
+        externalUploadDestination: document.getElementById('destination').value,
+        createdAt: new Date().toISOString()
+      };
+    }
+    function updateReceipt(){ document.getElementById('receipt').textContent = JSON.stringify(receiptData(), null, 2); }
+    document.addEventListener('input', updateReceipt); document.addEventListener('change', updateReceipt); updateReceipt();
+    document.getElementById('open-destination').addEventListener('click', () => {
+      const url = document.getElementById('destination').value;
+      if (!url) { toastMsg('Paste the external upload destination first.'); return; }
+      window.open(url, '_blank', 'noopener');
+    });
+    document.getElementById('copy-receipt').addEventListener('click', async () => {
+      updateReceipt();
+      try { await navigator.clipboard.writeText(document.getElementById('receipt').textContent); toastMsg('Receipt copied.'); } catch(e) { toastMsg('Copy failed; select and copy the receipt manually.'); }
+    });
+    document.getElementById('download-receipt').addEventListener('click', () => {
+      updateReceipt();
+      const blob = new Blob([document.getElementById('receipt').textContent], {type:'application/json'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'rentvine-lab-video-receipt.json'; document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(()=>URL.revokeObjectURL(url),1000);
+    });
+  </script>
+</body>
+</html>
