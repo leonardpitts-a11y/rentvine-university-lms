@@ -1393,7 +1393,16 @@
   document.getElementById('print-page').addEventListener('click', () => window.print());
   const fullscreenBtn = document.getElementById('toggle-fullscreen');
   if (fullscreenBtn) {
-    if (!document.fullscreenEnabled && !document.webkitFullscreenEnabled) {
+    let isEmbedded = false;
+    try { isEmbedded = window.self !== window.top; } catch (e) { isEmbedded = true; }
+    if (isEmbedded) {
+      // Inside an iframe (e.g. an LMS or Rise embed): the Fullscreen API is frequently
+      // blocked by the host page's permissions policy, so open RU in its own full tab instead.
+      fullscreenBtn.textContent = '⛶ Open Full Page ↗';
+      fullscreenBtn.addEventListener('click', () => {
+        window.open(window.location.href, '_blank', 'noopener');
+      });
+    } else if (!document.fullscreenEnabled && !document.webkitFullscreenEnabled) {
       fullscreenBtn.style.display = 'none';
     } else {
       fullscreenBtn.addEventListener('click', () => {
@@ -1403,7 +1412,7 @@
         } else {
           const el = document.documentElement;
           const request = el.requestFullscreen || el.webkitRequestFullscreen;
-          if (request) request.call(el).catch(() => toastMsg('Full screen isn\'t available in this viewer.'));
+          if (request) request.call(el).catch(() => window.open(window.location.href, '_blank', 'noopener'));
         }
       });
       document.addEventListener('fullscreenchange', () => {
