@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Leonard Pitts">
+<title>Facilitator Script: The Portfolio Tab</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;max-width:900px;margin:2rem auto;padding:0 1rem;color:#1f2933}
+  h1{color:#006b47}
+  h2{color:#006b47;border-top:1px solid #d9e3dd;padding-top:1.25rem;margin-top:2rem}
+  h3{color:#0a5c3f;margin-top:1.5rem}
+  .kicker{color:#5a6b63;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+  .box{border:1px solid #d9e3dd;border-radius:12px;padding:1rem 1.25rem;background:#f7faf8;margin-bottom:1rem}
+  blockquote.script-line{border-left:4px solid #00875a;background:#f0f7f3;margin:.75rem 0;padding:.6rem 1rem;font-style:italic}
+  blockquote.script-line::before{content:"Suggested trainer language: ";font-style:normal;font-weight:700;color:#006b47}
+  ul, ol{padding-left:1.4rem}
+  li{margin:.3rem 0}
+  a.toc-link{display:block;padding:.15rem 0}
+  .toc{columns:2;column-gap:2rem}
+  @media (max-width:700px){.toc{columns:1}}
+  button.print-btn{padding:.6rem .85rem;border-radius:8px;border:1px solid #d9e3dd;background:#00875a;color:white;font-weight:700;margin-bottom:1rem}
+  button.top-btn{padding:.4rem .7rem;border-radius:8px;border:1px solid #d9e3dd;background:#fff;color:#006b47;font-weight:700;font-size:.8rem}
+  @media print{button{display:none}}
+  table.qref{width:100%;border-collapse:collapse;margin-top:.5rem}
+  table.qref td,table.qref th{border:1px solid #d9e3dd;padding:.5rem;text-align:left;vertical-align:top}
+  table.qref th{background:#f0f5f2}
+</style>
+</head>
+<body id="top">
+
+<button class="print-btn" onclick="window.print()">Print this facilitator script</button>
+
+<div class="kicker">Rentvine University · Facilitator Script</div>
+<h1>The Portfolio Tab</h1>
+<p class="box"><strong>Purpose:</strong> This is a full trainer/facilitator script for explaining the Rentvine Portfolio tab end to end. Use it to prepare for explaining these processes to a new team member, an owner, or yourself while practicing. Lines marked <em>"Suggested trainer language"</em> are ready-to-use scripting you can say almost word for word.</p>
+
+<div class="box">
+<strong>Table of contents</strong>
+<div class="toc">
+<a class="toc-link" href="#intro">Introduction</a>
+<a class="toc-link" href="#nav">System Navigation and the Left-Hand Menu</a>
+<a class="toc-link" href="#pyramid">The Portfolio Pyramid: Portfolio, Properties, and Leases</a>
+<a class="toc-link" href="#details-overview">Portfolio Details Page Overview</a>
+<a class="toc-link" href="#posting">Posting Settings</a>
+<a class="toc-link" href="#statement-settings">Statement Settings</a>
+<a class="toc-link" href="#reserves">Reserve Amounts and Additional Reserves</a>
+<a class="toc-link" href="#minmax">Minimum and Maximum Distribution Amounts</a>
+<a class="toc-link" href="#hold-notices">Hold Distributions and Balance Notices</a>
+<a class="toc-link" href="#overdraft">Overdraft Override Amount</a>
+<a class="toc-link" href="#live-ledger-assignee">Live Ledger Status Override and Assignee</a>
+<a class="toc-link" href="#owner-contacts">Owner Contacts, LLCs, Taxable Percentages, and Distribution Percentages</a>
+<a class="toc-link" href="#override-payout">Override Contact Payout Settings</a>
+<a class="toc-link" href="#tags">Tags</a>
+<a class="toc-link" href="#reminders">Reminders</a>
+<a class="toc-link" href="#timeline">Timeline</a>
+<a class="toc-link" href="#statements-tab">Statements Tab</a>
+<a class="toc-link" href="#bills-tab">Bills Tab</a>
+<a class="toc-link" href="#ledger">Ledger Section: The Financial Heart of the Portfolio</a>
+<a class="toc-link" href="#ledger-report">Ledger Report and Transaction Review</a>
+<a class="toc-link" href="#properties-tab">Properties Tab</a>
+<a class="toc-link" href="#leases-tab">Leases Tab</a>
+<a class="toc-link" href="#messages">Messages: Texts and Emails</a>
+<a class="toc-link" href="#chat">Chat</a>
+<a class="toc-link" href="#files">Files, Folders, Sharing, and Documents</a>
+<a class="toc-link" href="#work-orders">Work Orders Tab</a>
+<a class="toc-link" href="#pay-owners-nav">Paying Owners: Navigation Options</a>
+<a class="toc-link" href="#pay-owners-alerts">Pay Owners Screen: Attention Alerts and Filters</a>
+<a class="toc-link" href="#amount-to-pay">Understanding Amount to Pay</a>
+<a class="toc-link" href="#distribution-splits">Owner Distribution Splits and Payment Types</a>
+<a class="toc-link" href="#exceeds">Exceeds Distributable Amount and Overrides</a>
+<a class="toc-link" href="#posting-payments">Posting Owner Payments</a>
+<a class="toc-link" href="#statements-nav">Creating Owner Statements: Navigation</a>
+<a class="toc-link" href="#statement-setup">Owner Statement Setup Options</a>
+<a class="toc-link" href="#selecting-portfolios">Selecting Portfolios and Reviewing Attention Warnings</a>
+<a class="toc-link" href="#publishing">Reviewing and Publishing Statement Batches</a>
+<a class="toc-link" href="#scenario-payout">Practical Scenario: Reviewing a Portfolio Before Paying Owners</a>
+<a class="toc-link" href="#scenario-lease">Practical Scenario: Historical Lease Document</a>
+<a class="toc-link" href="#scenario-chat">Practical Scenario: Chat Versus Messages</a>
+<a class="toc-link" href="#mistakes">Common Mistakes to Avoid</a>
+<a class="toc-link" href="#quickref">Quick Reference Summary by Tab</a>
+<a class="toc-link" href="#closing">Closing</a>
+</div>
+</div>
+
+<section id="intro">
+<h2>Introduction</h2>
+<p>Welcome to today's Rentvine training. In this session, we are going to focus on the Portfolio tab.</p>
+<p>The Portfolio tab is one of the most important areas in Rentvine because it acts as the central hub for the owner relationship. This is where you can review the owner setup, properties, leases, bills, ledger balances, communications, files, signed documents, work orders, owner payout settings, and owner statements.</p>
+<p>As we go through this training, remember one key idea:</p>
+<div class="box"><strong>The portfolio is the owner-level accounting container.</strong><br>That means it is not just a profile page. It is where owner-related accounting activity, ownership structure, payment settings, reporting, and statements all come together.</div>
+</section>
+
+<section id="nav">
+<h2>System Navigation and the Left-Hand Menu</h2>
+<p>Let's start with basic navigation.</p>
+<p>On the left-hand side of the screen, you will see the main navigation menu. This is where you can access different sections of the Rentvine software.</p>
+<p>For this tutorial, we are going to click Portfolios.</p>
+<p>Once we open the Portfolios section, we will see a list of portfolios that have been created in the system. Each portfolio represents an ownership structure. In many cases, people think of the portfolio as the owner, but more accurately, the portfolio is the central hub that connects one or more owners to one or more properties.</p>
+<p>A portfolio may represent:</p>
+<ul>
+<li>An individual owner.</li>
+<li>A married couple.</li>
+<li>An LLC.</li>
+<li>A trust.</li>
+<li>A partnership.</li>
+<li>A group of investors.</li>
+<li>A management company-owned portfolio.</li>
+</ul>
+<p>When selecting a portfolio, we can either scroll through the list, use the search tools, or use the global search bar at the top of the screen.</p>
+<p>For this example, we will open one portfolio and walk through each section.</p>
+</section>
+
+<section id="pyramid">
+<h2>The Portfolio Pyramid: Portfolio, Properties, and Leases</h2>
+<p>Before we get into the details page, let's talk about how Rentvine organizes information.</p>
+<p>You can think of the system like a pyramid.</p>
+<p>At the top of the pyramid is the Portfolio.<br>Under the portfolio are the Properties.<br>Under the properties are the Leases.</p>
+<p>So the flow looks like this: <strong>Portfolio → Properties → Leases.</strong></p>
+<p>The portfolio is the central hub for the owner. If an owner has five different properties, all five properties can live under the same portfolio. Then, each property can have leases attached to it.</p>
+<p>This structure is important because the financial activity from those leases and properties rolls up into the portfolio.</p>
+<p>A tenant charge starts on the lease. The lease belongs to a property. The property belongs to a portfolio. The portfolio belongs to the owner or ownership group.</p>
+<p>So when we are reviewing owner balances, owner payouts, owner statements, reserves, or owner communication, we are usually working from the portfolio level.</p>
+<p>A simple way to explain this is: the lease tells us what the tenant owes. The property tells us where that lease belongs. The portfolio tells us which owner or ownership group receives the financial activity.</p>
+</section>
+
+<section id="details-overview">
+<h2>Portfolio Details Page Overview</h2>
+<p>Now that we are inside the portfolio, we will start on the Details section.</p>
+<p>This is where we can review the name of the portfolio and several important settings.</p>
+<p>You may see the portfolio named after the owner. For example, the portfolio could be named "Paul Newman."</p>
+<p>You may also see the portfolio named after an LLC. For example, if the owner operates through an LLC called "Cool Hand Luke LLC," then the portfolio may be named "Cool Hand Luke LLC."</p>
+<p>Inside the Details section, we will review:</p>
+<ul>
+<li>Posting Settings.</li>
+<li>Statement Settings.</li>
+<li>Fiscal Year End Month.</li>
+<li>Additional Reserve.</li>
+<li>Additional Reserve Description.</li>
+<li>Minimum Distribution Amount.</li>
+<li>Maximum Distribution Amount.</li>
+<li>Hold Distributions.</li>
+<li>Disable Balance Notices.</li>
+<li>Reserve Amount.</li>
+<li>Overdraft Override Amount.</li>
+<li>Live Ledger Status Override.</li>
+<li>Assignee.</li>
+<li>Owner Contacts.</li>
+<li>Tags.</li>
+<li>Reminders.</li>
+<li>Timeline.</li>
+</ul>
+<p>Each of these settings can affect accounting, communication, owner payouts, or reporting.</p>
+</section>
+
+<section id="posting">
+<h2>Posting Settings</h2>
+<p>The first major setting is Posting Settings.</p>
+<p>Posting settings determine which bank accounts are tied to this portfolio. For example, your company may have a rental trust account, a security deposit account, or other bank accounts used for owner and tenant funds.</p>
+<p>If your company uses one rental trust account and one security deposit account for all portfolios, many portfolios may use the same posting setting.</p>
+<p>This section allows you to verify which bank accounts are tied to the portfolio.</p>
+<p>You may see a pencil icon that allows editing. But here is an important warning: if you edit a shared posting setting, you may be changing that setting for every portfolio using it.</p>
+<p>So if the portfolio is using a corporate accounting posting setting, and you edit that shared setting, every portfolio using the corporate accounting posting setting may also be affected.</p>
+<p>That means users should be careful. If the change is specific only to one portfolio, the better process may be to create a new posting setting rather than editing a shared one.</p>
+<blockquote class="script-line">Before changing posting settings, always ask: Is this setting shared by other portfolios? If yes, editing it may affect more than just this owner.</blockquote>
+<p>This is a critical accounting control because posting settings affect where financial activity is recorded.</p>
+</section>
+
+<section id="statement-settings">
+<h2>Statement Settings</h2>
+<p>Next, we have Statement Settings.</p>
+<p>Statement settings control how owner statements are generated and what information appears on the statement.</p>
+<p>Depending on your company setup, statement settings may include different modules or sections such as:</p>
+<ul>
+<li>Transaction summaries.</li>
+<li>Income.</li>
+<li>Expenses.</li>
+<li>Owner distributions.</li>
+<li>Unpaid bills.</li>
+<li>Work orders.</li>
+<li>Property-level details.</li>
+<li>Portfolio-level details.</li>
+<li>Year-end reporting options.</li>
+</ul>
+<p>Like posting settings, statement settings may also be shared. That means if you edit a statement setting from the portfolio, you may not only be changing it for this one portfolio. You may be changing the statement setting for every portfolio that uses the same template.</p>
+<blockquote class="script-line">Statement settings are customizable, but be careful when editing them. If the setting is shared, the change may affect other portfolios too.</blockquote>
+<p>This is why many companies create standard templates, such as:</p>
+<ul>
+<li>Standard Owner Statement.</li>
+<li>Detailed Owner Statement.</li>
+<li>Year-End Owner Statement.</li>
+</ul>
+</section>
+
+<section id="reserves">
+<h2>Reserve Amounts and Additional Reserves</h2>
+<p>Now let's talk about reserves.</p>
+<p>There are two reserve concepts you may see: Reserve Amount and Additional Reserve Amount.</p>
+<p>The reserve amount is typically tied to the property level. If multiple properties belong to the portfolio, the portfolio reserve may represent the combined reserves from those properties.</p>
+<p>The additional reserve amount is set at the portfolio level.</p>
+<p>Even though they live in different places, both reserves serve a similar purpose: they hold money back from owner distributions.</p>
+<p>For example, let's say the portfolio has an operating balance of $1,500 and the additional reserve amount is $1,000. When you go to pay the owner, Rentvine will hold back the $1,000 reserve and only consider the remaining amount for owner distribution.</p>
+<p>This prevents users from oversending funds to the owner.</p>
+<p><strong>Important point:</strong> Reserves generally hold back funds from owner payouts, but the system may still allow bills to be paid using those funds. So if a portfolio has $1,000 in operating cash and a $1,000 reserve, the system may still allow a bill payment to be processed. However, when paying the owner, the system will try to hold that reserve back.</p>
+<blockquote class="script-line">Reserves protect the portfolio by keeping money available for expenses. The reserve amount reduces what is available to pay out to the owner, but it does not always block bill payments.</blockquote>
+<p>The additional reserve description is also important because it can help explain why additional funds are being held. For example:</p>
+<ul>
+<li>Maintenance reserve.</li>
+<li>Insurance reserve.</li>
+<li>Capital expense reserve.</li>
+<li>Owner-requested holdback.</li>
+<li>Large repair reserve.</li>
+</ul>
+<p>This description may help users and owners understand why the additional reserve exists.</p>
+</section>
+
+<section id="minmax">
+<h2>Minimum and Maximum Distribution Amounts</h2>
+<p>Next, we have the Minimum Distribution Amount and Maximum Distribution Amount.</p>
+<p>The minimum distribution amount can prevent small owner payments from being created. For example, if your company does not want to send owner payments below $50 or $100, you may set a minimum distribution amount.</p>
+<p>The maximum distribution amount allows you to cap how much can be sent to the owner.</p>
+<p>If there is no maximum, then there may be no limit to how much can be distributed, assuming the portfolio has enough available funds.</p>
+<blockquote class="script-line">The minimum and maximum distribution amounts help control owner payout behavior. They are useful when your company wants to avoid small payments or limit payouts for a specific portfolio.</blockquote>
+</section>
+
+<section id="hold-notices">
+<h2>Hold Distributions and Balance Notices</h2>
+<p>Another important setting is Hold Distributions.</p>
+<p>If Hold Distributions is turned on, the portfolio will be flagged during the owner payout process. When users go to pay owners, they may see a red symbol or warning next to that portfolio.</p>
+<p>This tells the user that distributions are being held.</p>
+<p>If the user clicks "select all" during the owner payout process, portfolios with Hold Distributions turned on should not be automatically selected.</p>
+<p>This is useful when you need to pause owner payments. Examples include:</p>
+<ul>
+<li>Missing tax information.</li>
+<li>Owner dispute.</li>
+<li>Pending property sale.</li>
+<li>Accounting issue.</li>
+<li>Maintenance hold.</li>
+<li>Negative balance concern.</li>
+<li>Management approval required.</li>
+</ul>
+<blockquote class="script-line">Hold Distributions is a portfolio-level payment control. It prevents the portfolio from being included in normal owner payout selection.</blockquote>
+<p>Next is Disable Balance Notices.</p>
+<p>Some companies use balance notices to alert owners when their portfolio balance drops below a certain limit. For example, if the balance notice threshold is $100 and the portfolio reaches that amount, the owner may receive a notice that they should contribute funds.</p>
+<p>If Disable Balance Notices is turned on for this portfolio, those notices are disabled for that owner.</p>
+<blockquote class="script-line">Balance notices can help owners know when they need to contribute funds. Disable balance notices only when the owner should not receive those alerts.</blockquote>
+</section>
+
+<section id="overdraft">
+<h2>Overdraft Override Amount</h2>
+<p>Now let's discuss the Overdraft Override Amount.</p>
+<p>The overdraft override amount allows the portfolio operating balance to go negative up to the amount entered.</p>
+<p>This is not something that should be used casually.</p>
+<p>If you allow a portfolio to go negative, you may be using funds that belong to another portfolio or another owner, which can create accounting and trust-account concerns.</p>
+<p>However, there may be emergency cases where your company allows this temporarily. For example:</p>
+<ul>
+<li>A vendor bill must be paid today.</li>
+<li>The owner has confirmed they are sending funds tomorrow.</li>
+<li>A critical repair must be completed.</li>
+<li>Management approves a temporary negative balance.</li>
+</ul>
+<blockquote class="script-line">Overdraft override is an exception tool. It lets the portfolio go negative, but it should be used carefully and usually reset back to zero after the issue is resolved.</blockquote>
+<p>This is a good place to emphasize company policy. Users should not use overdraft override just to force payments through without understanding the financial impact.</p>
+</section>
+
+<section id="live-ledger-assignee">
+<h2>Live Ledger Status Override and Assignee</h2>
+<p>You may also see a Live Ledger Status Override field.</p>
+<p>Depending on your company setup, this may affect how the portfolio's live ledger status is treated or displayed.</p>
+<p>Next is the Assignee.</p>
+<p>The assignee is usually the internal user assigned to this portfolio. This person may receive notifications when activity occurs on the portfolio, such as updates, payments, or changes to fields.</p>
+<blockquote class="script-line">The assignee helps establish internal ownership of the portfolio. If something changes or needs review, the assigned user is the person most likely to be notified or responsible.</blockquote>
+<p>This is useful for companies that divide portfolios among different property managers or accounting team members.</p>
+</section>
+
+<section id="owner-contacts">
+<h2>Owner Contacts, LLCs, Taxable Percentages, and Distribution Percentages</h2>
+<p>Now let's scroll down to Owner Contacts.</p>
+<p>This section shows which owner contacts are tied to the portfolio.</p>
+<p>A portfolio can have one owner contact or multiple owner contacts. Examples include:</p>
+<ul>
+<li>One individual owner.</li>
+<li>Two spouses.</li>
+<li>Multiple investors.</li>
+<li>An LLC.</li>
+<li>A trust.</li>
+<li>An LLC plus individual contacts for reference.</li>
+<li>A management company owner contact.</li>
+</ul>
+<p>If the owner operates through an LLC and that LLC has its own tax ID and bank account, it is usually important that the LLC is created as its own owner contact.</p>
+<p>The LLC owner contact should contain the LLC's tax information and payment information.</p>
+<p>The most important fields here are: Taxable Percentage and Distribution Percentage.</p>
+<p>The taxable percentage affects tax reporting, such as 1099 reporting.</p>
+<p>The distribution percentage affects how monthly owner payouts are split.</p>
+<p>These two percentages may be the same, but they do not have to be.</p>
+<p>For example, if an LLC should receive 100% of the taxable income and 100% of the distributions, then the LLC owner contact should be set to 100% taxable and 100% distribution. Other related contacts may remain at 0%.</p>
+<p>If two owners split everything evenly, each may be set to 50% taxable and 50% distribution.</p>
+<p>If one owner receives all payouts but tax reporting is split differently, the taxable and distribution percentages may be different.</p>
+<p><strong>Important rule:</strong> the taxable percentages must total 100%, and the distribution percentages must total 100%.</p>
+<p>If users try to save owner contacts without the totals equaling 100%, they may receive an error and need to adjust the numbers.</p>
+<blockquote class="script-line">Taxable percentage controls tax reporting. Distribution percentage controls payout splitting. Always verify both before processing owner payments or year-end tax reporting.</blockquote>
+<p>Users can also edit this section to add an existing owner contact, create a new owner contact, or remove an owner contact.</p>
+<p>Before removing an owner, make sure the taxable and distribution percentages are adjusted correctly.</p>
+</section>
+
+<section id="override-payout">
+<h2>Override Contact Payout Settings</h2>
+<p>Another important feature is Change Payout Settings.</p>
+<p>This is usually available from the three-dot menu near the owner contact.</p>
+<p>This allows you to override the payout settings for this specific portfolio.</p>
+<p>This is useful when the same owner contact is connected to multiple portfolios, but the owner wants distributions from one portfolio to go to a different bank account.</p>
+<p>When using this option, Rentvine may send a verification code before allowing the change.</p>
+<blockquote class="script-line">Owner contact payment information lives on the owner contact, but payout settings can be overridden at the portfolio level when this portfolio needs different payment instructions.</blockquote>
+<p>Always verify:</p>
+<ul>
+<li>Payment type.</li>
+<li>Bank account information.</li>
+<li>Check address, if applicable.</li>
+<li>Whether the payment should be check, eCheck, ACH, or another configured method.</li>
+<li>Whether the override applies only to this portfolio.</li>
+</ul>
+<p>This is especially important before paying owners.</p>
+</section>
+
+<section id="tags">
+<h2>Tags</h2>
+<p>Next, let's review Tags.</p>
+<p>Tags are labels used for reporting and searching.</p>
+<p>They do not change accounting. They help organize portfolios.</p>
+<p>For example, if you tag a portfolio with "A110," you can later search for that tag and pull up portfolios using it.</p>
+<p>Common tag examples include:</p>
+<ul>
+<li>ACH Owner.</li>
+<li>Check Owner.</li>
+<li>Do Not Pay.</li>
+<li>VIP Owner.</li>
+<li>Owner Hold.</li>
+<li>Needs Review.</li>
+<li>Missing W-9.</li>
+<li>Maintenance Reserve.</li>
+<li>High Priority.</li>
+<li>Statement Review Required.</li>
+</ul>
+<blockquote class="script-line">Tags are searchable labels. They help you find portfolios and run reports, but they do not change the ledger or accounting setup.</blockquote>
+<p>Tags become especially useful when paying owners because the Pay Owners screen may allow filtering by tags.</p>
+</section>
+
+<section id="reminders">
+<h2>Reminders</h2>
+<p>Now let's look at Reminders.</p>
+<p>Reminders allow you to create follow-up tasks tied to the portfolio.</p>
+<p>When creating a reminder, you may set: start date, time, frequency, end date, description, assignee.</p>
+<p>For example, you might create a reminder that starts on the first of next month at 9:00 a.m., repeats once every week, and ends after two months.</p>
+<p>Examples of portfolio reminders include:</p>
+<ul>
+<li>Follow up with owner about missing tax information.</li>
+<li>Review reserve amount.</li>
+<li>Check owner contribution status.</li>
+<li>Confirm ACH setup.</li>
+<li>Review unpaid bills.</li>
+<li>Send updated agreement.</li>
+<li>Verify insurance renewal.</li>
+</ul>
+<blockquote class="script-line">Use reminders when something needs to happen later. Use tags when something needs to be categorized.</blockquote>
+</section>
+
+<section id="timeline">
+<h2>Timeline</h2>
+<p>At the bottom of the portfolio, you may see the Timeline.</p>
+<p>The timeline shows a record of activity on the portfolio. For example, it may show:</p>
+<ul>
+<li>An owner was added.</li>
+<li>A field was changed.</li>
+<li>A setting was updated.</li>
+<li>A user made an edit.</li>
+<li>A system-generated update occurred.</li>
+</ul>
+<p>The timeline usually includes: what happened, when it happened, which user made the change.</p>
+<p>If the timeline shows "System," that usually means the change was created through an automated process.</p>
+<blockquote class="script-line">The timeline is your audit trail. If you ever need to know who changed something, when it changed, or what happened on the portfolio, check the timeline.</blockquote>
+</section>
+
+<section id="statements-tab">
+<h2>Statements Tab</h2>
+<p>Next, let's briefly review the Statements tab inside the portfolio.</p>
+<p>This is where previously created owner statements for this portfolio will live. You may see:</p>
+<ul>
+<li>Statement period.</li>
+<li>Status.</li>
+<li>Statement type.</li>
+<li>Additional statement information.</li>
+<li>Published or unpublished status.</li>
+</ul>
+<p>This section is useful when an owner asks for a prior statement or when your team needs to verify whether a statement was created and published.</p>
+<blockquote class="script-line">The Statements tab is the portfolio's statement history. It helps you see what has already been generated for this owner.</blockquote>
+<p>We will go deeper into creating owner statements later in the tutorial.</p>
+</section>
+
+<section id="bills-tab">
+<h2>Bills Tab</h2>
+<p>Now let's open the Bills section.</p>
+<p>This is where bills tied to the portfolio will appear.</p>
+<p>By default, the Bills tab may show bills from the last 30 days. If you want to see more, you can clear or change the date filter.</p>
+<p>You can filter bills by: date posted, bill amount, voided status, paid or unpaid status, due date, and other available filters.</p>
+<p>The Bills tab may show: bill date, payee, property, unit, description, reference, payment status, amount.</p>
+<p>If you click into a bill, you can review the bill details.</p>
+<p>Inside the bill, you may see itemized charges. For example, a bill may total $115 but only $15 has been paid. In that case, the bill may show as partially paid.</p>
+<p>You may also see payment details at the bottom of the bill. If the payment was a check, you may see the check payment. If the payment was an eCheck or ACH-type payment, the payment may go through a payment processor and show statuses such as pending settlement or settled.</p>
+<blockquote class="script-line">The Bills tab helps explain owner expenses. If an owner asks why their payout was lower than expected, this is one of the first places to review.</blockquote>
+<p>If users cannot find a bill inside the portfolio, they can also go to <strong>Accounting → Money Out</strong>. That is where bills live at the accounting level.</p>
+</section>
+
+<section id="ledger">
+<h2>Ledger Section: The Financial Heart of the Portfolio</h2>
+<p>Now let's move to the Ledger section.</p>
+<p>This is where users will spend a lot of time when reviewing portfolios.</p>
+<p>The ledger shows the financial position and activity of the portfolio.</p>
+<p>A good way to explain this is: the ledger is the financial story of the portfolio.</p>
+<p>At the top of the ledger, you may see balances such as: Operating Balance, Cash Balance, Escrow Balance, Security Deposits, Owner Held Deposits, Payables, Receivables, Prepayments, Undeposited.</p>
+<p>Let's go through these.</p>
+
+<h3>Operating Balance and Cash Balance</h3>
+<p>The operating balance is the amount available to pay bills and distribute to owners.</p>
+<p>The cash balance is the balance of all non-escrow bank accounts tied to the portfolio.</p>
+<p>Ideally, the operating balance and cash balance should match.</p>
+<p>However, there are situations where they may not match. For example, if a tenant submits a payment through the portal but the funds have not been applied to a charge yet, that may increase the cash balance but not the operating balance. The money is in the bank account or in process, but it is not yet available to distribute because it has not been allocated correctly.</p>
+<p>Another example is an unapplied credit.</p>
+<blockquote class="script-line">Cash tells us where money exists. Operating tells us what is available to use for bills and owner distributions.</blockquote>
+
+<h3>Escrow and Security Deposits</h3>
+<p>Next, we have escrow and security deposit balances.</p>
+<p>The escrow balance is usually connected to escrow bank accounts.</p>
+<p>The security deposit balance represents liability amounts tracked as security deposits.</p>
+<p>Ideally, escrow and security deposit balances should match.</p>
+<p>If your company uses separate bank accounts for rent and security deposits, this matching is especially important.</p>
+<p>However, some companies may use one bank account for both rents and deposits. In that situation, the operating cash balance and escrow/security deposit balances may look different. If there are $2,000 in security deposits and one combined bank account, the difference may relate to that security deposit amount.</p>
+<blockquote class="script-line">Escrow and security deposit balances should usually be reviewed together. If they do not match, understand whether that is expected based on your bank account setup.</blockquote>
+
+<h3>Owner Held Deposits</h3>
+<p>Owner held deposits refer to funds applied to owner-held deposit charges.</p>
+<p>These are liability amounts that are not held in escrow and do not affect the operating balance in the same way.</p>
+<blockquote class="script-line">Owner held deposits are deposit liabilities tracked as held by the owner rather than covered by the escrow balance.</blockquote>
+
+<h3>Payables</h3>
+<p>Payables are unpaid bills tied to the portfolio.</p>
+<p>For example, if the Bills tab shows an unpaid bill for $300, the ledger payables balance should reflect that $300.</p>
+<blockquote class="script-line">Payables are what the portfolio owes.</blockquote>
+<p>This matters because payables may reduce what should be paid out to the owner.</p>
+
+<h3>Credits</h3>
+<p>Credits are unallocated credits tied to the portfolio.</p>
+<p>If a $100 credit is created and $50 is applied, the credit balance may only show the remaining $50.</p>
+<blockquote class="script-line">Credits show remaining unapplied credit amounts, not necessarily the original credit amount.</blockquote>
+
+<h3>Receivables</h3>
+<p>Receivables are unpaid charges on a lease.</p>
+<p>For example, if rent posts on the first for $2,000 and the tenant does not pay until the second, the portfolio may show a $2,000 receivable on the first.</p>
+<blockquote class="script-line">Receivables are what tenants owe. They are expected income, not collected cash.</blockquote>
+<p>This is a key distinction for owners. An owner may see rent charged, but if the tenant has not paid, the owner does not yet have cash available for payout.</p>
+
+<h3>Work Order Estimates</h3>
+<p>Work order estimates are the total estimated costs tied to pending, open, or on-hold work orders, minus paid bills on those work orders.</p>
+<p>This gives users visibility into possible future expenses.</p>
+<blockquote class="script-line">Work order estimates are not the same as posted bills. They help show potential upcoming costs.</blockquote>
+
+<h3>Liabilities and Non-Held Liabilities</h3>
+<p>Liabilities are balances in liability accounts that are held back from operating balance.</p>
+<p>These can include funds not tracked as prepayments or security deposits, depending on chart of account setup.</p>
+<p>Non-held liabilities are liability balances that are not held in the same way.</p>
+<blockquote class="script-line">Liabilities can affect the operating balance because they represent money that should not simply be treated as distributable owner cash.</blockquote>
+
+<h3>Prepayments</h3>
+<p>Prepayments are funds that have not yet been allocated to a charge.</p>
+<p>For example, if a tenant pays early before the rent charge exists, those funds may be tracked as a prepayment.</p>
+<blockquote class="script-line">Prepayments are money received before it has been applied to a charge.</blockquote>
+<p>Prepayments are held back from operating balance until properly applied.</p>
+
+<h3>Undeposited Funds and Undeposited Escrow</h3>
+<p>Undeposited funds are funds recorded in Rentvine but not yet deposited into the bank account.</p>
+<p>Undeposited escrow is the same concept, but for escrow funds.</p>
+<p>These balances can increase in two common situations.</p>
+<p>First, when tenants submit eCheck payments through their portal. Those payments may take two to three business days to settle.</p>
+<p>Second, when users manually record payments or receipts but do not manually record the bank deposit.</p>
+<p>For example, if you record an owner receipt today but do not actually deposit the money into the bank until next week, the receipt date and deposit date may be different.</p>
+<p>When recording the deposit, the date deposited should match the date the funds actually hit the bank account.</p>
+<blockquote class="script-line">Undeposited funds are one of the most important balances to review. A payment recorded in Rentvine is not always the same as money deposited in the bank.</blockquote>
+<p>If undeposited funds appear, users should verify whether those funds have actually been deposited. If they have, the deposit should be recorded to clear the undeposited amount.</p>
+</section>
+
+<section id="ledger-report">
+<h2>Ledger Report and Transaction Review</h2>
+<p>Below the balance cards, the ledger includes a report-style transaction view.</p>
+<p>By default, this may show the last 90 days and may exclude held liabilities such as security deposits.</p>
+<p>Users can select Edit Report to customize the view. Options may include:</p>
+<ul>
+<li>Changing the date range.</li>
+<li>Viewing all time.</li>
+<li>Filtering by account.</li>
+<li>Filtering by transaction type, such as owner distributions.</li>
+<li>Including or excluding held liabilities.</li>
+<li>Including or suppressing zero records.</li>
+<li>Combining discounts.</li>
+<li>Combining markups.</li>
+</ul>
+<p>The ledger report may show: increase, decrease, balance, description, reference, payee or payer, date posted, property, account.</p>
+<p>Users can often click on an amount to drill into the source transaction. For example:</p>
+<ul>
+<li>A $50,000 increase may open a journal entry.</li>
+<li>A $41.85 decrease may open an owner distribution.</li>
+<li>A vendor payment may open the related bill or payment.</li>
+</ul>
+<blockquote class="script-line">When you do not understand a ledger amount, click into it. Rentvine usually lets you drill down from the ledger to the source transaction.</blockquote>
+<p>This is one of the best troubleshooting tools in the portfolio.</p>
+</section>
+
+<section id="properties-tab">
+<h2>Properties Tab</h2>
+<p>Next, let's review the Properties tab.</p>
+<p>This shows all properties connected to the portfolio. You may see: property address, property type, tenant information (if occupied), vacancy status, other property details.</p>
+<p>There may be filters, but in many cases users do not need to adjust them unless the portfolio has many properties.</p>
+<p>A common useful filter is vacancy status. For example, if vacant properties are cluttering the screen, users may filter to show only non-vacant properties.</p>
+<p>Users can click a property to navigate directly to the property record.</p>
+<blockquote class="script-line">The Properties tab shows the assets connected to the portfolio. If the portfolio is the owner hub, the Properties tab shows what the owner owns or manages through that portfolio.</blockquote>
+</section>
+
+<section id="leases-tab">
+<h2>Leases Tab</h2>
+<p>Next is the Leases tab.</p>
+<p>This shows leases tied to the portfolio.</p>
+<p>The list may include leases with different statuses, such as: active, pending, closed, moved out.</p>
+<p>Users can click a lease to navigate directly to the lease record.</p>
+<blockquote class="script-line">The Leases tab connects the owner-level portfolio to the tenant-level activity. This is where you can see which leases are generating charges, payments, receivables, and occupancy activity for this portfolio.</blockquote>
+</section>
+
+<section id="messages">
+<h2>Messages: Texts and Emails</h2>
+<p>Next, let's review Messages.</p>
+<p>Messages allow users to communicate with owners by text or email.</p>
+<p>Text messages are sent like regular text messages to the recipient's phone number. Owners or other recipients may have the ability to opt out by replying with an opt-out message. If they later want to receive messages again, they may need to opt back in.</p>
+<p>The Messages tab may also include emails.</p>
+<p>When composing an email, users may choose: sender, recipient, additional recipients, CCs, email template, subject, message body, attachments.</p>
+<p>Email templates can save time. For example, a portfolio email template may automatically fill in a subject and message. Users should still review the template and fill in any missing fields before sending.</p>
+<blockquote class="script-line">Messages are for direct communication by text or email. Use this when you need to reach the owner outside the portal experience.</blockquote>
+<p>Examples include: sending a payout update, requesting owner contribution, explaining a bill, sending a reminder about documents, communicating about work order approval.</p>
+</section>
+
+<section id="chat">
+<h2>Chat</h2>
+<p>The Chat section is different from Messages.</p>
+<p>Chat is a portal-based conversation. The owner generally needs to log into the owner portal to view and respond to chats.</p>
+<p>Messages are more like text and email. Chat is more like a portal messenger.</p>
+<blockquote class="script-line">Messages go to the owner through text or email. Chat lives inside the owner portal.</blockquote>
+<p>If an owner asks whether there is a mobile app, explain based on your current company knowledge and Rentvine's current functionality. In the call this script is based on, the trainer explained that owners could use a mobile browser, commonly Chrome, to access the owner portal, while a dedicated owner app was not available at that time. Confirm current functionality before giving owners final answers, since this can change.</p>
+</section>
+
+<section id="files">
+<h2>Files, Folders, Sharing, and Documents</h2>
+<p>Next, let's review Files.</p>
+<p>Files are used for general storage. This may include: historical lease agreements, old management agreements, property photos, insurance documents, owner documents, W-9s, PDFs, reference materials.</p>
+<p>Users can upload files, download files, rename files, move files, delete files, and share or stop sharing files with the owner.</p>
+<p>The key thing to review is the Shared With column.</p>
+<p>If the Shared With column is blank, the file is only visible internally.</p>
+<p>If the file is shared with the owner, the column should show that.</p>
+<blockquote class="script-line">Uploading a file does not automatically mean the owner can see it. Always check the Shared With column.</blockquote>
+<p>Users can also create folders.</p>
+<p><strong>Important folder rule:</strong> if you want to share files inside a folder, the folder itself must be shared first. Then you can control which files inside the folder are shared.</p>
+<p>If you share a folder after placing files inside it, all files in the folder may become shared depending on the workflow. So users should review the individual files and stop sharing anything that should remain internal.</p>
+<blockquote class="script-line">Be careful with folders. Before sharing a folder, verify which files are inside it.</blockquote>
+<p>Now let's compare Files with RentSign Documents.</p>
+<p>RentSign Documents are formal documents generated through the system, often using templates and electronic signature workflows.</p>
+<p>If you are bringing over historical documents from old software, such as an already completed lease agreement, those usually should be uploaded to Files, not Documents.</p>
+<blockquote class="script-line">Files are for general storage and historical uploads. RentSign Documents are for documents created or managed through the RentSign workflow.</blockquote>
+<p>This is a common question, so make sure users understand the difference.</p>
+</section>
+
+<section id="work-orders">
+<h2>Work Orders Tab</h2>
+<p>The final portfolio section we will review is Work Orders.</p>
+<p>The Work Orders tab shows work orders tied to the portfolio. You may see: description, vendor instructions, created date, status, property or unit, vendor information, other work order details.</p>
+<p>Users can click into a work order to review more information.</p>
+<blockquote class="script-line">The Work Orders tab gives owner-level visibility into maintenance activity connected to the portfolio.</blockquote>
+<p>This section can be helpful when reviewing owner questions about repairs, expenses, estimates, or statement details.</p>
+</section>
+
+<section id="pay-owners-nav">
+<h2>Paying Owners: Navigation Options</h2>
+<p>Now let's move into paying owners.</p>
+<p>There are multiple ways to access the Pay Owners screen.</p>
+<p>One way is through the global search bar at the top of the screen. The global search bar is useful because it includes quick actions, recently viewed items, and search functionality. From quick actions, users may select Pay Owners.</p>
+<p>Another way is: <strong>Accounting → Money Out → Green Actions → Pay Owners.</strong></p>
+<p>Another way is from a specific portfolio: <strong>Open the portfolio → Green Actions → Pay Owner.</strong></p>
+<p>The difference is important.</p>
+<p>If you access Pay Owners from the global or accounting area, the screen may show all owners or portfolios.</p>
+<p>If you access Pay Owner from a specific portfolio, it may only pull up that one portfolio.</p>
+<blockquote class="script-line">Use the global Pay Owners action when you are processing owner payments in bulk. Use the portfolio-level Pay Owner action when you only want to pay one specific owner.</blockquote>
+</section>
+
+<section id="pay-owners-alerts">
+<h2>Pay Owners Screen: Attention Alerts and Filters</h2>
+<p>On the Pay Owners screen, users may see attention alerts or warning boxes.</p>
+<p>For example, there may be a yellow attention box at the top of the screen. This could indicate: unbilled management fees, undeposited funds, issues across one or more portfolios, items that should be reviewed before owner payouts.</p>
+<p>If you expand the attention box, Rentvine may provide links that take you directly to where the issue can be resolved, such as posting management fees or depositing funds.</p>
+<blockquote class="script-line">Attention alerts are there to protect the payout process. Review them before paying owners.</blockquote>
+<p>At the portfolio row level, there may also be a Needs Attention indicator. Expanding the row can show what issue applies to that specific portfolio.</p>
+<p>For example, a portfolio may have undeposited receipts of $20,000. That means the system is holding those funds back from the payout calculation.</p>
+<p>The Pay Owners screen also includes filters such as: search by portfolio, hide all zero amounts, filter by status (such as on hold), filter by tags, filter by property groups, refresh, select all nonzero amounts, unselect all.</p>
+<blockquote class="script-line">Filters help turn a long owner payout list into a focused review list.</blockquote>
+<p>For example, if you turn on Hide All Zero Amounts, portfolios with nothing to pay disappear from the list.</p>
+<p>If a portfolio is on hold, it may show a red on-hold indicator and may not show an amount to pay even if there is operating cash.</p>
+</section>
+
+<section id="amount-to-pay">
+<h2>Understanding Amount to Pay</h2>
+<p>One of the most important parts of the Pay Owners screen is understanding why the amount to pay is what it is.</p>
+<p>Users can expand a portfolio row to view financial details. For example, the portfolio might show:</p>
+<ul>
+<li>Operating balance: $71,000.</li>
+<li>Additional reserve: $1,000.</li>
+<li>Payables: $300.</li>
+<li>Undeposited receipts: $20,550.</li>
+<li>Amount to pay: approximately $50,000.</li>
+</ul>
+<p>This breakdown explains why the full operating balance is not being paid out.</p>
+<blockquote class="script-line">When an owner asks, "Why am I only getting this amount?" the expanded financial details help you answer that question.</blockquote>
+<p>The amount to pay may be reduced by: reserves, additional reserves, payables, undeposited receipts, holds, minimum or maximum distribution rules, other accounting conditions.</p>
+<p>There may also be a link from the Pay Owners screen directly to the portfolio, which helps users investigate quickly.</p>
+</section>
+
+<section id="distribution-splits">
+<h2>Owner Distribution Splits and Payment Types</h2>
+<p>When you expand the portfolio row, you may also see the owner distribution breakdown.</p>
+<p>For example, a portfolio may have two owners set to 50/50 distribution. If the total amount to pay is $25,000, each owner may be assigned $12,500.</p>
+<p>This area may also show the payment type, such as check or eCheck.</p>
+<p>If payment information is missing from the owner contact, the payment type may default to check.</p>
+<blockquote class="script-line">Before posting payments, always verify both the distribution split and the payment type.</blockquote>
+<p>This is especially important for portfolios with multiple owners.</p>
+<p>If one owner expected ACH and the system shows check, pause and verify the owner contact payment settings or portfolio payout override settings before posting payments.</p>
+<p><strong>Important limitation:</strong> Hold Distributions is controlled at the portfolio level, not at the individual owner-contact level.</p>
+<p>So if one owner in a multi-owner portfolio wants to hold back their distribution individually, the system may not allow an individual hold in the same way. A workaround may be to adjust the total amount to pay manually, depending on company policy.</p>
+<blockquote class="script-line">Distribution holds are portfolio-level controls. If one owner needs a special payment arrangement, review the amount manually and follow company policy.</blockquote>
+</section>
+
+<section id="exceeds">
+<h2>Exceeds Distributable Amount and Overrides</h2>
+<p>If a user attempts to pay more than the distributable amount, Rentvine may show an Exceeds Distributable Amount warning.</p>
+<p>This means the payment would exceed what the portfolio can distribute, possibly bringing the account negative.</p>
+<p>If the company truly needs to process the payment anyway, users may need to review the portfolio details and adjust the overdraft override amount.</p>
+<p>But this should be handled carefully.</p>
+<blockquote class="script-line">If you see Exceeds Distributable Amount, stop and review. The system is warning you that the payment may bring the portfolio negative.</blockquote>
+<p>Again, overdraft override should not be used casually. It should be approved and documented based on company policy.</p>
+</section>
+
+<section id="posting-payments">
+<h2>Posting Owner Payments</h2>
+<p>Once the amounts have been reviewed and selected, the user can click Post Payments.</p>
+<p>Rentvine will show a summary before submission. This summary may include: number of portfolios selected, total number of payments, total amount, breakdown by payment type (such as checks and eChecks), date posted, approve on submission option, submit payment button.</p>
+<p>This summary is a final checkpoint.</p>
+<p>For example, if you expected five checks and five eChecks, but the screen shows seven checks and three eChecks, that is a sign to stop and verify owner payment settings.</p>
+<blockquote class="script-line">The post payment summary is your last chance to catch incorrect payment methods before creating the payment batch.</blockquote>
+<p>After submitting payments, the system may create a payment batch. Depending on your settings, you may also be able to generate owner statements after paying owners.</p>
+</section>
+
+<section id="statements-nav">
+<h2>Creating Owner Statements: Navigation</h2>
+<p>Now let's move into owner statements.</p>
+<p>There are a few ways to create or access owner statements.</p>
+<p>From the Portfolios area, you may use: <strong>Green Actions → Create Owner Statements.</strong></p>
+<p>You may also see Statement Batches, which shows previously created statement batches.</p>
+<p>Statement Batches may show: batch name, period, status, date created, number of statements, published status, publish action.</p>
+<blockquote class="script-line">Statement Batches are where bulk owner statements are created, reviewed, and published.</blockquote>
+</section>
+
+<section id="statement-setup">
+<h2>Owner Statement Setup Options</h2>
+<p>When creating owner statements, users may see several options.</p>
+<p>One option is Start from Last Statement.</p>
+<p>If selected, the system may use the last statement date to determine the starting point, so users only need to enter the end date.</p>
+<p>Users may also choose statement periods such as: current period, previous period, current year, previous year, custom start and end dates.</p>
+<p>Statement type may include: monthly, off cycle.</p>
+<p>Monthly statements are standard monthly owner statements used for regular history and diagnostics.</p>
+<p>Off-cycle statements may be used for non-monthly periods, such as quarterly, annual, special, or year-end reporting. Diagnostics may not be available in the same way for non-monthly periods.</p>
+<blockquote class="script-line">Monthly statements are part of the normal monthly cycle. Off-cycle statements are useful for special periods like quarterly, annual, or year-end statements.</blockquote>
+<p>Users can also configure: auto-publish, notifications, override owner statement settings, batch name, message to include on the statement.</p>
+<p>Auto-publish means the statements will automatically publish to the owner portal once created.</p>
+<p>Notifications mean owners may be notified when statements are published.</p>
+<p>Override statement settings allows users to use a specific statement template rather than the default statement setting on each portfolio.</p>
+<p>For example, when sending year-end statements, a company may override the default and choose a year-end statement setting.</p>
+<blockquote class="script-line">Override statement settings are useful when the batch needs a specific format, such as a year-end owner statement.</blockquote>
+</section>
+
+<section id="selecting-portfolios">
+<h2>Selecting Portfolios and Reviewing Attention Warnings</h2>
+<p>After setting the statement options, users move to the portfolio selection step.</p>
+<p>Here, they can select which portfolios should receive statements.</p>
+<p>The screen may show: portfolio name, last statement date, status, needs attention warnings.</p>
+<p>Common warnings include: reserve mismatch, date gap detected, balance mismatch.</p>
+<p>A reserve mismatch means the ending balance does not match the expected reserve.</p>
+<p>A date gap means the new statement period does not line up with the prior statement date. For example, the system may expect the next statement to start on July 1, but the selected range starts on June 1.</p>
+<p>A balance mismatch may mean the new statement's starting balance does not match the previous statement's ending balance.</p>
+<blockquote class="script-line">Needs Attention does not always mean you cannot create the statement. It means you should read the warning and understand it before publishing.</blockquote>
+<p>If the mismatch is intentional, the user may continue based on company policy. But if the warning reveals an actual accounting issue, it should be fixed before statements are sent.</p>
+</section>
+
+<section id="publishing">
+<h2>Reviewing and Publishing Statement Batches</h2>
+<p>After statements are created, the user can open the statement batch.</p>
+<p>The statement batch page may show: batch status, batch details, selected portfolios, statement list, publish option.</p>
+<p>Before publishing, users should review statements.</p>
+<p>Click into a statement to open the PDF or statement preview.</p>
+<p>The statement may include: portfolio name, statement period, statement date, message, transaction summary, beginning balance, income, expenses, owner distributions, ending balance, account details, property details (depending on settings).</p>
+<blockquote class="script-line">Review the statement as if you are the owner seeing it for the first time.</blockquote>
+<p>Check:</p>
+<ul>
+<li>Is the date range correct?</li>
+<li>Is the owner name correct?</li>
+<li>Is the beginning balance reasonable?</li>
+<li>Are income and expenses accurate?</li>
+<li>Are owner distributions shown correctly?</li>
+<li>Are reserves represented correctly?</li>
+<li>Are work orders or unpaid bills included if expected?</li>
+<li>Does the ending balance make sense?</li>
+</ul>
+<p>Once reviewed, the batch can be published to the owner portal.</p>
+<p>If auto-publish was turned on earlier, the statements may already be published after creation.</p>
+</section>
+
+<section id="scenario-payout">
+<h2>Practical Scenario: Reviewing a Portfolio Before Paying Owners</h2>
+<p>Let's walk through a practical example.</p>
+<p>An owner calls and says, "I see $71,000 in the portfolio. Why am I only getting about $50,000?"</p>
+<p>First, open the portfolio. Review the ledger. Confirm the operating balance.</p>
+<p>Then open the Pay Owners screen and expand the portfolio row. You may see:</p>
+<ul>
+<li>Operating balance: $71,000.</li>
+<li>Additional reserve: $1,000.</li>
+<li>Payables: $300.</li>
+<li>Undeposited receipts: $20,550.</li>
+</ul>
+<p>Now the payout amount makes sense.</p>
+<p>Rentvine is holding back the additional reserve, unpaid bills, and undeposited receipts.</p>
+<blockquote class="script-line">The system is not ignoring the money. It is protecting funds that are reserved, owed, or not yet deposited.</blockquote>
+<p>This is a strong example of why users should not rely only on the operating balance. They should review the payout calculation details.</p>
+</section>
+
+<section id="scenario-lease">
+<h2>Practical Scenario: Historical Lease Document</h2>
+<p>Now let's cover a common document question.</p>
+<p>A user asks, "Can I bring over an old historical lease and put it in Documents?"</p>
+<p>The answer is usually no, not in the RentSign Documents section.</p>
+<p>If the lease was completed in old software or signed outside the current system, upload it to Files.</p>
+<p>Then, if needed, share it with the owner through the file sharing options.</p>
+<blockquote class="script-line">Historical documents go in Files. RentSign Documents are for documents created or managed through the RentSign workflow.</blockquote>
+<p>Also remember to check whether the file is shared with the owner. Uploading a file does not automatically mean the owner can see it.</p>
+</section>
+
+<section id="scenario-chat">
+<h2>Practical Scenario: Chat Versus Messages</h2>
+<p>Another common question is, "What is the difference between Chat and Messages?"</p>
+<p>Messages include texts and emails. Text messages are sent to the owner's phone. Emails are sent to the owner's email address.</p>
+<p>Chat is portal-based. The owner needs to log into the owner portal to view and respond.</p>
+<blockquote class="script-line">If you need to reach the owner directly, use Messages. If you want a portal-based conversation, use Chat.</blockquote>
+<p>If owners ask about mobile access, explain your company's current understanding of Rentvine mobile access. This script's source call explained that owners could access the portal through a mobile browser, while a dedicated owner app was not available at that time.</p>
+<p>Because software features can change, confirm current app functionality before giving owners final instructions.</p>
+</section>
+
+<section id="mistakes">
+<h2>Common Mistakes to Avoid</h2>
+<p>Before we wrap up, let's review common mistakes.</p>
+<ol>
+<li>Do not edit shared posting settings unless you understand who else uses them.</li>
+<li>Do not edit shared statement settings unless you understand which other portfolios will be affected.</li>
+<li>Do not confuse the portfolio reserve and additional reserve. Property reserves roll up from properties. Additional reserves are set at the portfolio level.</li>
+<li>Do not assume operating balance equals owner payout amount. Payables, reserves, holds, and undeposited funds may reduce the amount to pay.</li>
+<li>Do not ignore undeposited funds. A recorded payment is not always deposited money.</li>
+<li>Do not use overdraft override casually. It can allow the portfolio to go negative and should be controlled.</li>
+<li>Do not forget that owner contact payment settings can be overridden at the portfolio level.</li>
+<li>Do not assume uploaded files are shared with the owner. Always check the Shared With column.</li>
+<li>Do not put historical documents into RentSign Documents. Use Files for historical uploads.</li>
+<li>Do not publish statements without reviewing attention warnings.</li>
+</ol>
+</section>
+
+<section id="quickref">
+<h2>Quick Reference Summary by Tab</h2>
+<table class="qref">
+<tr><th>Tab</th><th>What it does</th></tr>
+<tr><td>Details</td><td>This is where portfolio setup lives, including posting settings, statement settings, reserves, overdraft override, assignee, owner contacts, tags, reminders, and timeline.</td></tr>
+<tr><td>Statements</td><td>This is where previously created owner statements for the portfolio can be viewed.</td></tr>
+<tr><td>Bills</td><td>This is where bills tied to the portfolio are listed and filtered.</td></tr>
+<tr><td>Ledger</td><td>This is the financial center of the portfolio. It shows balances, transactions, operating cash, payables, receivables, liabilities, prepayments, undeposited funds, reserves, and ledger activity.</td></tr>
+<tr><td>Properties</td><td>This shows properties connected to the portfolio.</td></tr>
+<tr><td>Leases</td><td>This shows leases connected to the portfolio.</td></tr>
+<tr><td>Messages</td><td>This is where users can send texts and emails to owners.</td></tr>
+<tr><td>Chat</td><td>This is portal-based communication with the owner.</td></tr>
+<tr><td>Files</td><td>This is general file storage and sharing.</td></tr>
+<tr><td>RentSign Documents</td><td>This is for system-generated or electronically signed documents.</td></tr>
+<tr><td>Work Orders</td><td>This shows maintenance work orders tied to the portfolio.</td></tr>
+<tr><td>Pay Owners</td><td>This is where owner distributions are reviewed and processed.</td></tr>
+<tr><td>Statement Batches</td><td>This is where owner statements are created, reviewed, published, and tracked.</td></tr>
+</table>
+</section>
+
+<section id="closing">
+<h2>Closing</h2>
+<p>That concludes our overview of the Portfolio tab in Rentvine.</p>
+<p>The most important takeaway is that the portfolio is the owner-level hub. It connects owners, properties, leases, accounting, payouts, statements, communication, files, and work orders.</p>
+<p>When reviewing a portfolio, always remember the key workflow:</p>
+<ol>
+<li>Confirm the setup.</li>
+<li>Review owner contacts and percentages.</li>
+<li>Check reserves and payout settings.</li>
+<li>Review bills.</li>
+<li>Review the ledger.</li>
+<li>Investigate undeposited funds and payables.</li>
+<li>Confirm files and documents are stored correctly.</li>
+<li>Use messages or chat appropriately.</li>
+<li>Review owner payout calculations before posting payments.</li>
+<li>Review statement warnings before publishing owner statements.</li>
+</ol>
+<p>If the portfolio is clean and accurate, owner payouts and owner statements become much easier to manage.</p>
+</section>
+
+<p><a href="#top"><button class="top-btn">Back to top</button></a> &nbsp; <a href="../index.html"><button class="top-btn">Back to Rentvine University</button></a></p>
+
+<p style="text-align:center;color:#5a6b63;font-size:.85rem;margin-top:2rem;padding-top:1rem;border-top:1px solid #d9e3dd">Rentvine University &middot; Created by Leonard Pitts</p></body>
+</html>

@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Leonard Pitts">
+<title>Facilitator Script: Maintenance &amp; Work Order Lifecycle</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;max-width:900px;margin:2rem auto;padding:0 1rem;color:#1f2933}
+  h1{color:#006b47}
+  h2{color:#006b47;border-top:1px solid #d9e3dd;padding-top:1.25rem;margin-top:2rem}
+  h3{color:#0a5c3f;margin-top:1.5rem}
+  .kicker{color:#5a6b63;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+  .box{border:1px solid #d9e3dd;border-radius:12px;padding:1rem 1.25rem;background:#f7faf8;margin-bottom:1rem}
+  blockquote.script-line{border-left:4px solid #00875a;background:#f0f7f3;margin:.75rem 0;padding:.6rem 1rem;font-style:italic}
+  blockquote.script-line::before{content:"Suggested trainer language: ";font-style:normal;font-weight:700;color:#006b47}
+  ul, ol{padding-left:1.4rem}
+  li{margin:.3rem 0}
+  a.toc-link{display:block;padding:.15rem 0}
+  .toc{columns:2;column-gap:2rem}
+  @media (max-width:700px){.toc{columns:1}}
+  button.print-btn{padding:.6rem .85rem;border-radius:8px;border:1px solid #d9e3dd;background:#00875a;color:white;font-weight:700;margin-bottom:1rem}
+  button.top-btn{padding:.4rem .7rem;border-radius:8px;border:1px solid #d9e3dd;background:#fff;color:#006b47;font-weight:700;font-size:.8rem}
+  @media print{button{display:none}}
+  table.qref{width:100%;border-collapse:collapse;margin-top:.5rem}
+  table.qref td,table.qref th{border:1px solid #d9e3dd;padding:.5rem;text-align:left;vertical-align:top}
+  table.qref th{background:#f0f5f2}
+</style>
+</head>
+<body id="top">
+
+<button class="print-btn" onclick="window.print()">Print this facilitator script</button>
+
+<div class="kicker">Rentvine University &middot; Facilitator Script</div>
+<h1>Maintenance &amp; Work Order Lifecycle</h1>
+<p class="box"><strong>Purpose:</strong> This is a full trainer/facilitator script covering the Maintenance tab end to end: the work order list, recurring work orders, work order templates, creating a work order (property, description, photos, vendor/technician assignment, dates, priority, assignee, estimated cost), the work order details page (estimates, bills, invoices, chat, emails, files, activity log), the vendor portal experience, closing out a work order, work order settings (general, visibility/sharing, statuses, appointment settings), and Fixie, the AI-powered maintenance assistant. Use it to prepare for explaining these processes to a new team member, an owner, or yourself while practicing. Lines marked <em>"Suggested trainer language"</em> are ready-to-use scripting you can say almost word for word.</p>
+
+<div class="box">
+<strong>Table of contents</strong>
+<div class="toc">
+<a class="toc-link" href="#intro">Introduction</a>
+<a class="toc-link" href="#wo-list">Work Order List and Recurring Work Orders</a>
+<a class="toc-link" href="#wo-templates">Work Order Templates</a>
+<a class="toc-link" href="#wo-create-property">Creating a Work Order: Property, Location, and Lease</a>
+<a class="toc-link" href="#wo-create-description">Creating a Work Order: Description, Photos, and Files</a>
+<a class="toc-link" href="#wo-create-assign">Creating a Work Order: Assigning to a Vendor or Technician</a>
+<a class="toc-link" href="#wo-create-dates">Creating a Work Order: Dates, Status, Priority, and Assignee</a>
+<a class="toc-link" href="#wo-create-cost">Creating a Work Order: Estimated Cost and Approval Toggles</a>
+<a class="toc-link" href="#wo-details">Work Order Details Page Overview</a>
+<a class="toc-link" href="#estimates-request">Estimates: Requesting and Entering Vendor Estimates</a>
+<a class="toc-link" href="#estimates-approve">Estimates: Approving and Sending for Owner Approval</a>
+<a class="toc-link" href="#wo-bills-invoices">Bills and Invoices from the Work Order</a>
+<a class="toc-link" href="#wo-chat-files">Chat, Emails, Files, and Activity Log</a>
+<a class="toc-link" href="#vendor-portal-accept">Vendor Portal: Accepting and Scheduling a Work Order</a>
+<a class="toc-link" href="#vendor-portal-complete">Vendor Portal: Completing the Work Order and Submitting an Invoice</a>
+<a class="toc-link" href="#closing-workorder">Closing Out the Work Order and Converting the Invoice to a Bill</a>
+<a class="toc-link" href="#wo-settings-general">Work Order Settings: General Settings</a>
+<a class="toc-link" href="#wo-settings-visibility">Work Order Settings: Visibility, Sharing, and Vendor Management</a>
+<a class="toc-link" href="#wo-statuses">Work Order Statuses</a>
+<a class="toc-link" href="#appointment-settings">Appointment Settings</a>
+<a class="toc-link" href="#fixie">Fixie: AI-Powered Maintenance Assistant</a>
+<a class="toc-link" href="#closing">Closing</a>
+</div>
+</div>
+
+<section id="intro">
+<h2>Introduction</h2>
+<p>Good morning. Today's session is going to be based on maintenance &mdash; the work order life cycle, and how work orders function in the system.</p>
+<p>Anything that has to do with maintenance is going to be in the Maintenance tab on the left-hand side. Once you click that drop-down, you'll see several items, and where we're going to spend most of the day today is the Work Order section.</p>
+</section>
+
+<section id="wo-list">
+<h2>Work Order List and Recurring Work Orders</h2>
+<p>Once you click on Work Orders, you'll see a work order list &mdash; a complete list of every single work order you have in the system. The default statuses shown are anything that's Pending or Open. If you need to remove that filter, you can, or you can click the little funnel icon on the right side and find work orders with a specific status, such as ones that have already been closed out.</p>
+<p>Outside of the work order list, you also have the ability to set up Recurring Work Orders. If you have something fairly frequent (every month, every two weeks, every week, whatever the case may be), you can create a recurring work order by clicking the green Actions button in the top right.</p>
+</section>
+
+<section id="wo-templates">
+<h2>Work Order Templates</h2>
+<p>The next section is Work Order Templates. With work order templates, you have the ability to set up templates so you can use them whenever your property management company is creating work orders. The reason behind it is you don't have to fill out any of the descriptions or generic information every time &mdash; you can create the template and already have it pre-populated.</p>
+<p>You'll even have the ability to auto-select the vendor. So if you work with the same pool cleaning company every time you have a pool cleaning work order, you can create that as an actual template.</p>
+</section>
+
+<section id="wo-create-property">
+<h2>Creating a Work Order: Property, Location, and Lease</h2>
+<p>If you click Add Work Order in the top-right section, you'll see the work order template drop-down &mdash; select one if applicable, or just continue with the actual creation.</p>
+<p>First, enter the property. Once the property shows up, you'll see the property details come up: the property, the portfolio it belongs to, the operating balance, the maintenance limit amount, and any other notes entered on the property.</p>
+<p>You can also enter the incident location, so the vendor knows exactly where the problem is at the property, and you can select a lease for this property. In this example, the lease did not populate automatically because all the leases at that property are currently closed &mdash; if there was someone currently living at the property, it would automatically populate as soon as you click the property.</p>
+<p>If you attach the work order to a closed lease, you have the ability to either mark that the tenant is financially responsible, or that the unit is vacant. If the unit is vacant, you're just attaching it to that old lease and the tenant is no longer financially responsible.</p>
+</section>
+
+<section id="wo-create-description">
+<h2>Creating a Work Order: Description, Photos, and Files</h2>
+<p>Outside of the lease section, you also have the ability to enter your description &mdash; exactly what the work order is for (for example, "broken door").</p>
+<p>You'll have the ability to upload documents: either an issue photo or a file upload, depending on what you prefer. The issue photo is just an actual image of the initial problem, and the file upload is for anything outside of that &mdash; a receipt, an extended file for a material list, or the actual invoice/estimated cost that a vendor provided to you.</p>
+</section>
+
+<section id="wo-create-assign">
+<h2>Creating a Work Order: Assigning to a Vendor or Technician</h2>
+<p>Besides that, you have the ability to assign the work order to either a vendor or an internal technician. An internal technician is somebody who works within your company &mdash; a handyman or internal maintenance staff. That's what the other sections of the Maintenance tab are about: price book, technicians, and calendar, which are all part of internal maintenance.</p>
+<p>If you stick to a regular vendor, you have the ability to auto-select which vendor you want to work with &mdash; search for the vendor and attach it to the work order. Or, if you don't want to attach a vendor yet, you have the ability to request estimates afterward instead.</p>
+</section>
+
+<section id="wo-create-dates">
+<h2>Creating a Work Order: Dates, Status, Priority, and Assignee</h2>
+<p>Next, you have the ability to enter the date due for the work order &mdash; when you want it to be completed by. You also have the ability to enter a scheduled start date; this does not mean it's the actual date the work order will be done, it's just what you're expecting.</p>
+<p>You also have the ability to set a status. The system defaults to Open. And you have the ability to select a priority: Low, Medium, or High &mdash; depending on what the work order is required for.</p>
+<p>Next, you have the ability to add an assignee &mdash; anyone in your actual system, whether that's your maintenance coordinator or even yourself if you want to make sure you're assigned to the work order. All the assignee field does is let you figure out who's supposed to receive notifications for specific items happening on the work order.</p>
+</section>
+
+<section id="wo-create-cost">
+<h2>Creating a Work Order: Estimated Cost and Approval Toggles</h2>
+<p>The next part is your estimated cost. What the estimated cost does is hold back funds from being paid out to the owner &mdash; think of it like a reserve. Whenever you're processing and paying out bills directly, it holds it back from the owner's portfolio, so when you go to the owner distribution, it knows to hold back for that work order. Until the work order has a bill created, entering the estimated cost does the same thing, so you're able to hold back funds for those big jobs without worrying about having enough funds available.</p>
+<p>The next toggles are: Owner Approved, which just lets you know internally whether the work order has been approved, yes or no; and whether the work order has been published to your tenant or your owner contact &mdash; that lets them see it directly on their portfolio or portal.</p>
+<p>Other than that, if you click Save, you're creating the work order.</p>
+</section>
+
+<section id="wo-details">
+<h2>Work Order Details Page Overview</h2>
+<p>Once you create your work order, you're sent back to the details page. This is basically the same information you just entered: your details, residents, owners, issue photos, custom fields, or reminders if applicable. But the next section to talk about is Estimates.</p>
+</section>
+
+<section id="estimates-request">
+<h2>Estimates: Requesting and Entering Vendor Estimates</h2>
+<p>You have the ability to submit an estimate from the vendor side &mdash; you can either enter a new estimate or request one, completely up to you.</p>
+<p>If you request one, you select who the vendor is, set a deadline, and it sends a vendor notification requesting an estimate from them.</p>
+<p>If you enter a new estimate directly (for example, if a vendor gives you the estimate over the phone), you enter the vendor, the amount they quoted, and the completion date, and hit Create. Now you'll see the two estimates: one labeled as requested (the vendor will provide the actual estimate through their portal), and one already entered with comments recorded.</p>
+</section>
+
+<section id="estimates-approve">
+<h2>Estimates: Approving and Sending for Owner Approval</h2>
+<p>Once both estimates are in, you can either approve it, send it for owner approval, or delete the estimate. If you send both for owner approval, it may ask you to enter any markups or comments before sending.</p>
+<p>You have the ability to decline an estimate on behalf of the owner, or approve it. If you approve one because it's a better amount, you can also notify the vendor that their estimate has been approved. The status changes to Approved, and the other estimate shows as not winning the bid.</p>
+<p>If you go back to the details page and refresh, you'll see that the vendor has been auto-selected on the work order, and the estimated cost automatically updates to match the approved amount &mdash; you don't have to manually enter it yourself.</p>
+</section>
+
+<section id="wo-bills-invoices">
+<h2>Bills and Invoices from the Work Order</h2>
+<p>Outside of the estimate sections, you have the ability to add bills. If you want to create bills directly from the work order, click the green Actions button, Create the Bill, or Add an Existing Bill.</p>
+<p>You also have the ability to process invoices. If the vendor sends you an invoice, you can process it from the work order &mdash; this is only achievable if the vendor closes out the work order on their end and uploads the invoice. If they don't upload the invoice, you'll have to do it manually by clicking Actions and creating a bill through that invoice directly.</p>
+</section>
+
+<section id="wo-chat-files">
+<h2>Chat, Emails, Files, and Activity Log</h2>
+<p>Outside of the bill section, you have the ability to chat. You can communicate with the resident, the cosigner, or the vendor at the same time &mdash; you choose exactly who you're contacting, and you have the ability to remove specific participants. The same functions work on their side of the chat, except they cannot remove you from the actual chat, so you're always aware of what's coming in from that work order.</p>
+<p>Outside of chat, you also have the ability to send emails. When composing an email, you can see exactly who you're emailing &mdash; the tenant and the owner (as long as it's published and attached to their lease/portfolio) can be toggled, and you can add your actual vendor. You can also add additional recipients, or use an email template if you just want to let them know the old-fashioned way (for example, that a work order has been assigned to them).</p>
+<p>Next is the Files section &mdash; anything added outside of the actual issue image gets entered into Files, and you'll be able to see the files you've added. Lastly, you have the Activity tab, which gives you a direct activity/time log so you can see exactly what's been happening within the work order overall.</p>
+</section>
+
+<section id="vendor-portal-accept">
+<h2>Vendor Portal: Accepting and Scheduling a Work Order</h2>
+<p>You can track exactly what's happening in the work order &mdash; for example, once a vendor accepts a work order, you can switch into the vendor portal view to see what the vendor sees.</p>
+<p>In the vendor portal, the vendor has the ability to look into what's overdue, pending, open, closed, and their vendor ratings. Once they click on the work order, they have the ability to either accept or reject it. If they accept, it populates a time/schedule log, and they can select a different time, or accept without scheduling. If a time works, they set the work order for that time.</p>
+</section>
+
+<section id="vendor-portal-complete">
+<h2>Vendor Portal: Completing the Work Order and Submitting an Invoice</h2>
+<p>From there, the vendor has the ability to communicate with the tenant to confirm scheduling. Once they've done the work, they click Complete, which takes them to a two-step process: enter complete comments, resolution photos, or any additional files, then proceed to the next section.</p>
+<p>They can submit the invoice now (yes or no). If they select no, they can still save it. If they select yes, it asks whether they'd like to upload or create it &mdash; if they create it, they enter the invoice number, the due date, the line item description, and the amount, then submit it. Once submitted, the status changes to Closed, which closes out the work order from the vendor side.</p>
+<p>If the vendor was not able to get the invoice processed at the same time, that's okay &mdash; if they go into the invoice section, they have the ability to submit an invoice, but it will not be attached to that work order once the work order has already been closed. There's nothing they can do to reattach it at that point, so they just have to submit the invoice on their side directly.</p>
+</section>
+
+<section id="closing-workorder">
+<h2>Closing Out the Work Order and Converting the Invoice to a Bill</h2>
+<p>Once the work order has been closed and everything's done, switch portals back to the admin/manager side and go into the work order. You'll see the vendor, the closed dates, the scheduled maintenance window, and the completed comments. The system will tell you there's a pending processing invoice.</p>
+<p>You'll also see the estimated cost is still there and the work order still shows open. Clicking through takes you to the invoice that was just created &mdash; enter the actual account (for example, Repairs), and everything else looks good, then convert this into a bill.</p>
+<p>Now the work order is done &mdash; it goes back into a closed status, and you can send a review request on the vendor's behalf.</p>
+</section>
+
+<section id="wo-settings-general">
+<h2>Work Order Settings: General Settings</h2>
+<p>Outside of the work order life cycle, let's talk about the settings for work orders. Click your initials in the bottom-left corner and go to Settings, then the Maintenance section, where you'll find your work order settings.</p>
+<p>The first section covers your generic settings: what statuses are default when work orders are created (Open; recurring work orders are also created as Open). When a tenant submits a request, it defaults to Requested. When a tenant resolves their own maintenance issue, the status goes to Resolved and Closed.</p>
+<p>You can also change the work order status when creating a bill if that's enabled (typically Closed/Completed). You can also auto-assign work orders submitted by tenants based on who's assigned to the lease &mdash; this only works if the lease has an assignee; if it doesn't, nothing will populate. This is for internal maintenance, which can be covered separately if needed.</p>
+</section>
+
+<section id="wo-settings-visibility">
+<h2>Work Order Settings: Visibility, Sharing, and Vendor Management</h2>
+<p>The next portion is Visibility and Sharing. You can configure the maintenance limit, whether to default-publish the work order with the owner when created by the manager, with the tenant when created by the manager, and whether to automatically share the work order with an owner when submitted by a tenant. You can also show the tenant's name on the work order PDF, as well as the owner's name on the work order PDF, so your vendor is aware of who's who.</p>
+<p>Lastly, you have Vendor Management settings: default vendor reviews enabled (you can toggle this off if you don't want to send vendor reviews), and whether vendors are allowed to upload invoices (you generally want this toggled on, since you'll want your vendors to be able to submit invoices).</p>
+<p>There's also a work order automation setting for what status gets set whenever the vendor closes it &mdash; typically set to open, job completed, with an invoice.</p>
+</section>
+
+<section id="wo-statuses">
+<h2>Work Order Statuses</h2>
+<p>Outside of your normal settings, you also have the ability to look at your specific work order statuses. Anything without an ellipsis on the right side is a default status &mdash; you can change or update it, but not delete it. You have the ability to create your own custom statuses (for example: Assigned to Vendor, Job Completed - Need to Create a Bill, Resident & Close, Job Completed with or without Invoice). If you click Add Status, you have the ability to select exactly what the status is for.</p>
+</section>
+
+<section id="appointment-settings">
+<h2>Appointment Settings</h2>
+<p>You also have the ability to select your appointment settings &mdash; the scheduling time-window framework. You can see which days of the week vendors are available to work, and the time zone (based either on the manager's location or the location of the property requesting maintenance &mdash; you can select which).</p>
+<p>You have the ability to select the start and end time of your actual work window (for example, 9 a.m. to 6 p.m.), and how long each appointment window is: an hour and a half, an hour and 45 minutes, an hour and 15 minutes, one hour flat, or two hours. With a 2-hour window, the schedule would run 9 to 11, 11 to 1, and so on until 6 p.m.</p>
+<p>You also have the ability to select the number of time windows shown, and the number of days available for scheduling &mdash; how far out into the year vendors can schedule (you can set this all the way up to 255 days).</p>
+<p>Lastly, you have the ability to set a buffer. This means you won't be able to schedule anything within that buffer window &mdash; for example, a buffer of one day means the earliest available scheduling is tomorrow, not today. And you have the ability to set up reminders &mdash; SMS text messages sent to tenants to confirm the actual maintenance appointment.</p>
+</section>
+
+<section id="fixie">
+<h2>Fixie: AI-Powered Maintenance Assistant</h2>
+<p>The last setting to talk about is AI agents. We have an AI agent called Fixie. Fixie comes in whenever a tenant is submitting a work order &mdash; the AI tries to help the tenant fix and resolve the issue on their own instead of just sending it straight to you.</p>
+<p>From the resident portal, a tenant can create a maintenance request. With Fixie, they can take a photo, record a video, or just talk through the issue &mdash; recording a video is recommended, since it helps the AI figure things out faster.</p>
+<p>Fixie starts a diagnosis based on the request, asking follow-up questions (for example, what kind of issue it is, whether it's physical damage). It thinks through the issue and tries to solve it &mdash; for example, asking if a quick video can be taken to figure out what's going on, or asking the tenant to describe further so it can offer next steps.</p>
+<p>If the AI can't resolve it, the tenant can proceed with creating the actual work order. Once that work order is created, it appears in your maintenance section as pending/requested, and you'll be able to see Fixie's comments under the details of the work order so you can see exactly what the AI already tried.</p>
+</section>
+
+<section id="closing">
+<h2>Closing</h2>
+<p>That's pretty much what we covered today: the full work order life cycle, work order templates and settings, the vendor portal experience, and Fixie, the AI-powered maintenance assistant.</p>
+</section>
+
+
+<p><a class="top-btn" href="#top">Back to top</a> &nbsp; <a href="../index.html">Back to Rentvine University</a></p>
+<p style="text-align:center;color:#5a6b63;font-size:.85rem;margin-top:2rem;padding-top:1rem;border-top:1px solid #d9e3dd">Rentvine University &middot; Created by Leonard Pitts</p></body>
+</html>

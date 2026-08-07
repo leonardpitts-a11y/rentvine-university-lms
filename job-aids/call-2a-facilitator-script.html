@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Leonard Pitts">
+<title>Facilitator Script: Accounting &mdash; Money In, Money Out &amp; Diagnostics</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;max-width:900px;margin:2rem auto;padding:0 1rem;color:#1f2933}
+  h1{color:#006b47}
+  h2{color:#006b47;border-top:1px solid #d9e3dd;padding-top:1.25rem;margin-top:2rem}
+  h3{color:#0a5c3f;margin-top:1.5rem}
+  .kicker{color:#5a6b63;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+  .box{border:1px solid #d9e3dd;border-radius:12px;padding:1rem 1.25rem;background:#f7faf8;margin-bottom:1rem}
+  blockquote.script-line{border-left:4px solid #00875a;background:#f0f7f3;margin:.75rem 0;padding:.6rem 1rem;font-style:italic}
+  blockquote.script-line::before{content:"Suggested trainer language: ";font-style:normal;font-weight:700;color:#006b47}
+  ul, ol{padding-left:1.4rem}
+  li{margin:.3rem 0}
+  a.toc-link{display:block;padding:.15rem 0}
+  .toc{columns:2;column-gap:2rem}
+  @media (max-width:700px){.toc{columns:1}}
+  button.print-btn{padding:.6rem .85rem;border-radius:8px;border:1px solid #d9e3dd;background:#00875a;color:white;font-weight:700;margin-bottom:1rem}
+  button.top-btn{padding:.4rem .7rem;border-radius:8px;border:1px solid #d9e3dd;background:#fff;color:#006b47;font-weight:700;font-size:.8rem}
+  @media print{button{display:none}}
+  table.qref{width:100%;border-collapse:collapse;margin-top:.5rem}
+  table.qref td,table.qref th{border:1px solid #d9e3dd;padding:.5rem;text-align:left;vertical-align:top}
+  table.qref th{background:#f0f5f2}
+</style>
+</head>
+<body id="top">
+
+<button class="print-btn" onclick="window.print()">Print this facilitator script</button>
+
+<div class="kicker">Rentvine University &middot; Facilitator Script</div>
+<h1>Accounting: Money In, Money Out &amp; Diagnostics</h1>
+<p class="box"><strong>Purpose:</strong> This is a full trainer/facilitator script covering the accounting features of Rentvine: Money In (receipts, deposits, settlements, bulk tenant receipts), Money Out (bills, Rapid Invoice, recurring bills, payments and payment batches), the Manager Dashboard (posting management fees, paying bills, payment reports, bulk management fees), and the Diagnostics tab (the account-health checks every manager should review). Use it to prepare for explaining these processes to a new team member, an owner, or yourself while practicing. Lines marked <em>"Suggested trainer language"</em> are ready-to-use scripting you can say almost word for word, and the Q&amp;A callouts capture real trainer/trainee exchanges worth reusing.</p>
+
+<div class="box">
+<strong>Table of contents</strong>
+<div class="toc">
+<a class="toc-link" href="#intro">Introduction</a>
+<a class="toc-link" href="#money-in-receipts">Money In: Receipts Overview</a>
+<a class="toc-link" href="#money-in-deposits">Money In: Deposits, Manual vs. Electronic Settlements</a>
+<a class="toc-link" href="#money-in-bulk">Money In: Bulk Tenant Receipts (Section 8/HUD)</a>
+<a class="toc-link" href="#bills-overview">Money Out: Bills Tab Overview</a>
+<a class="toc-link" href="#rapid-invoice">Rapid Invoice: Scanning and Emailing Invoices</a>
+<a class="toc-link" href="#bill-manual">Creating a Bill Manually</a>
+<a class="toc-link" href="#invoice-to-bill">Processing an Invoice into a Bill</a>
+<a class="toc-link" href="#invoice-reject">Rejecting an Invoice</a>
+<a class="toc-link" href="#recurring-bills">Recurring Bills</a>
+<a class="toc-link" href="#payments-batches">Payments and Payment Batches</a>
+<a class="toc-link" href="#batch-approval">Approving, Declining, and Funding Payment Batches</a>
+<a class="toc-link" href="#manager-dashboard">Manager Dashboard: Posting Management Fees</a>
+<a class="toc-link" href="#fee-types-qa">Base vs. Additional Management Fees (Trainer Q&amp;A)</a>
+<a class="toc-link" href="#post-date-caution">Posting Management Fees: Date Posted Caution</a>
+<a class="toc-link" href="#pay-bills">Paying Bills: Check Payable, Available Funds, and Overdraft Override</a>
+<a class="toc-link" href="#post-payment">Posting a Payment and Confirming the Batch</a>
+<a class="toc-link" href="#payment-reports">Payment Reports</a>
+<a class="toc-link" href="#bulk-management-fees">Bulk Management Fees (One-Time Charges)</a>
+<a class="toc-link" href="#diagnostics-negative-recon">Diagnostics: Negative Bank Accounts and Reconciliation Mismatches</a>
+<a class="toc-link" href="#diagnostics-reserves-escrow">Diagnostics: Reserves Not Met and Escrow Mismatches</a>
+<a class="toc-link" href="#diagnostics-prepayment">Diagnostics: Prepayment Mismatches and Unused Prepayments</a>
+<a class="toc-link" href="#diagnostics-recon-lapse-insurance">Diagnostics: Bank Reconciliation Lapse and Vendor Insurance</a>
+<a class="toc-link" href="#diagnostics-suppressed-fee">Diagnostics: Suppressed Fee Balance Mismatches</a>
+<a class="toc-link" href="#diagnostics-vendor-credit">Diagnostics: Unused Vendor Credits and Credit/Debit Mismatches</a>
+<a class="toc-link" href="#closing">Closing</a>
+</div>
+</div>
+
+<section id="intro">
+<h2>Introduction</h2>
+<p>Good morning. Today we're going over the accounting features in the system.</p>
+<p>From the Rentvine home screen, click the Accounting tab on the left side, and then click Money In. Once you select Money In, it gives you a list of all the actual receipts that have entered the system.</p>
+</section>
+
+<section id="money-in-receipts">
+<h2>Money In: Receipts Overview</h2>
+<p>This is going to be a list of basically every single payment that has been added into your trust account: tenant receipts, owner receipts, or other receipts.</p>
+<p>If you click on any of these payments, it takes you to the actual details, so you can see exactly what tenant receipt this is for.</p>
+</section>
+
+<section id="money-in-deposits">
+<h2>Money In: Deposits, Manual vs. Electronic Settlements</h2>
+<p>If you go back to the Money In screen, you also have the ability to see your Deposits. Deposits are attached to the manual receipts you enter into the system.</p>
+<p>Every single payment that gets added will have either an electronic settlement or an actual manual deposit. You're always responsible for figuring out which one is which, and if it's a manual payment, you need to make sure you're recording the deposit at the same time.</p>
+</section>
+
+<section id="money-in-bulk">
+<h2>Money In: Bulk Tenant Receipts (Section 8/HUD)</h2>
+<p>Outside of the Deposit section, you also have the ability to enter Bulk Receipts. This is more for Section 8 or HUD payments &mdash; if it's from a housing authority, you can select and create one big payment with the green Actions button as a bulk tenant receipt.</p>
+<p>You can add that payment to multiple leases, so you can record the actual Section 8 payment as a bulk payment and then go find which leases it should actually be applied to.</p>
+</section>
+
+<section id="bills-overview">
+<h2>Money Out: Bills Tab Overview</h2>
+<p>Outside of Money In, we're going to talk about Money Out. The first thing to talk about is the Bills section. From the Bills tab, you'll see a list of all the bills you have available: the bill ID, the payee, which ledger it belongs to, the property, the chart of account, the assignee, and the amount.</p>
+<p>If it's paid in its totality, you'll see it in green. If you click on the bill, it takes you to the bill details page, where you can see more of the specific itemized charges you created.</p>
+</section>
+
+<section id="rapid-invoice">
+<h2>Rapid Invoice: Scanning and Emailing Invoices</h2>
+<p>Outside of the actual bill sections, you can use the Rapid Invoice feature. This gives you the ability to drop in an invoice, use a mobile scanner (your cell phone), or send invoices to a dedicated email address. You can find your dedicated email under your account settings.</p>
+<p>Once you drop in the invoice, you can open it up, and it will generate the bill. So you have the ability to either create a bill manually or use the Rapid Invoice feature.</p>
+</section>
+
+<section id="bill-manual">
+<h2>Creating a Bill Manually</h2>
+<p>If you need to create a bill manually, click the green Actions button, Add a Bill, and it takes you to the normal selection: who the bill is for, who's paying it, whether there's a work order attached, what the charges are, and whether you want to add tenant charges to it.</p>
+</section>
+
+<section id="invoice-to-bill">
+<h2>Processing an Invoice into a Bill</h2>
+<p>Once you click on the invoice, you can see the actual repairs invoice: who it's coming from, what the cost is, and who it's billed to. At that point, you're really just filling out the rest of the information &mdash; everything highlighted in yellow is what the system pulled over from the invoice. The rest has to be manually filled out: who is the payer, the chart of account, the charge account number, and the total amount.</p>
+<p>Besides the actual invoice, if you want to add tenant charges, you can &mdash; the tenant would be responsible for that portion. Once everything is entered, click Convert to Bill, and you'll create the bill.</p>
+</section>
+
+<section id="invoice-reject">
+<h2>Rejecting an Invoice</h2>
+<p>If you want to reject the invoice because it's incorrect, you can do this at the top-left of the screen. You can enter a reason (for example, wrong price), and you can also send a notification to your vendor.</p>
+<p>Once you reject it, it's gone from your screen &mdash; you will not be able to see it anymore. It is a hard delete, not a soft delete, so there's nowhere in the system where you'll be able to track that afterward.</p>
+</section>
+
+<section id="recurring-bills">
+<h2>Recurring Bills</h2>
+<p>Outside of the invoice features, you also have the ability to set up Recurring Bills. If you want a specific bill to populate every single month so you can pay it every time, this is the place to set it up.</p>
+</section>
+
+<section id="payments-batches">
+<h2>Payments and Payment Batches</h2>
+<p>You also have Payments and Payment Batches. Individual payments are basically just your actual payments made out of the system &mdash; you can click on a payment and it takes you to the details: the itemized charges it paid, whether it's been reconciled, whether it's approved with the payment batch, the amount, and which bank account it's coming from.</p>
+<p>Payments and payment batches are always tied together &mdash; you'll never have a payment that's outside of a batch. Every single batch you create is going to be either approved, declined, or pending.</p>
+</section>
+
+<section id="batch-approval">
+<h2>Approving, Declining, and Funding Payment Batches</h2>
+<p>If you approve by default whenever you're making the payment, the funds actually leave the account directly, and that only happens if it's done through ACH. If you have a NACHA or check payment, you need to approve the batch, and then you have the ability to either print the checks or download the NACHA file and upload it to your bank directly.</p>
+<p>If something is sitting in pending, you have the ability to either click the green Actions to approve it or decline it. If you decline it and confirm, the status changes and the money goes back into the actual owner's portfolio, and the batch shows as declined.</p>
+</section>
+
+<section id="manager-dashboard">
+<h2>Manager Dashboard: Posting Management Fees</h2>
+<p>The next section is the Manager Dashboard, where you have the ability to proceed with posting your management fees. You'll be able to see what's currently unbilled for the month period, what's unpaid in management fees as far as bills, and a summary of the last 30 days &mdash; what you have billed so far in your chart of accounts for your specific vendor contact (your management company).</p>
+<p>If you click Post Management Fees, you get to the search section. You have the ability to look into the previous period, and to select which specific management fee structures you want to post &mdash; whether base or additional. At the bottom, you can filter by portfolio, pod, property, or property group. Once you hit Search, the system tracks which properties need to be posted for management fees.</p>
+<p>You'll see unbilled management fees available for the month, and at the bottom, units without management fees to collect &mdash; basically who has already collected, or who just doesn't have a property currently occupied.</p>
+</section>
+
+<section id="fee-types-qa">
+<h2>Base vs. Additional Management Fees (Trainer Q&amp;A)</h2>
+<div class="box"><p><strong>Trainee:</strong> If I change the fee type to Additional, does that only show the late fees and the NSF fees, so I can post those without also posting the base fee?</p><p><strong>Trainer:</strong> That's correct. If you see the actual breakdown, for example base management fee at $150 and the additional fee is $10, and you switch to Additional and search again, now you only see the actual fee that's owed on top of the base &mdash; the base itself goes to zero at that point and you're just looking at the additional charges.</p><p><strong>Trainer:</strong> A lot of PMs do this whenever they're looking for anything that's not a regular rent payment &mdash; they just want to see what's available to post as a fee, so they can clear up a suppressed fee mismatch.</p><p><strong>Trainee:</strong> I had someone the other day who was trying to resolve a suppressed mismatch, but there was a base management fee tied to it, so I told them to post it and then just remove that line item.</p><p><strong>Trainer:</strong> Actually, that's not going to work directly. The reason why: whenever you have your base management fee and you create the overall bill, it's attached to it. The system is also going to credit the owner back and drop it off if you didn't actually collect those funds directly, because once you create the bill, it's attached to the bill. If you're not trying to collect your suppressed fees and only your base, and you post everything together and then remove the suppressed fees, it will still show that you created a bill for it and collected it, even though you never did.</p><p><strong>Trainee:</strong> Ah, okay. Noted.</p></div>
+</section>
+
+<section id="post-date-caution">
+<h2>Posting Management Fees: Date Posted Caution</h2>
+<p>Besides the actual management fee sections, all you have to do is select them and click Post Management Fees at the bottom. Once you do, you have the ability to change the actual date posted, so you can select exactly what date the bills are going to be created.</p>
+<p>One thing to make sure you're doing: never future-date any bills, because the system is not going to hold back funds to be paid out from the owner &mdash; it will grab those funds, hold them back in the actual operating balance of the portfolio, and you have the ability to go ahead and pay out the bill. Otherwise, you'll have to wait until the next cycle of rent payments comes in so you have the ability to pay yourself out.</p>
+</section>
+
+<section id="pay-bills">
+<h2>Paying Bills: Check Payable, Available Funds, and Overdraft Override</h2>
+<p>Once you collect and close your management fees, they move from the left side (unbilled management fees) all the way to the right side. In this section, you have the ability to pay bills and run a payments report.</p>
+<p>If you click Pay Bills, it takes you to the Pay Bill screen. You'll see who the payee is (already you), and it looks for bills that are due today or prior. Once you hit search, you'll see all the separate bills attached to you, the management company, with a couple of hotkeys at the top.</p>
+<p>Check Payable looks for anything that has funds available in the operating balance but maybe hasn't settled &mdash; for example, an unsettled payment through the tenant portal that hasn't cleared the bank yet, but is still in your operating balance. You still have the ability to click that button and pay for them.</p>
+<p>Outside of Check Payable, you have the ability to select Check Available Funds Only &mdash; this is what's highly recommended, because it gives you the ability to pay out everything you have available in your available funds. You also have the ability to check off, which takes you over to the overdraft override section: if you don't have anything set at the override level and it's at zero, you will not be able to put the account into the negative. The last button is Uncheck All.</p>
+</section>
+
+<section id="post-payment">
+<h2>Posting a Payment and Confirming the Batch</h2>
+<p>If you look for a portfolio that has funds to pay out &mdash; for example, a specific portfolio &mdash; and you click on it to pay out the management fee expense, you'll see the actual available funds compared to the amount to pay. Once you click Post, it takes you to the confirmation screen with your actual check payment and the next check number.</p>
+<p>You have the ability to click the blue drop-down arrow for a more in-depth explanation of what charges you're actually paying: the due date of the charge, the accounts, the amount owed, any discounts/markups, the amount to pay, and the actual check amount. You can also change the default payment type to Other if needed.</p>
+<p>Once you click Post Payments, it takes you back to the confirmation page before you actually proceed with the payment. You'll see how many checks, e-checks, NACHA, and other payments there are, and you need to make sure you approve it &mdash; if you don't, it will create the pending payment batch. Once you hit Submit Payments, it takes you to that same payment batch showing a pending status, and nothing is done until you actually approve or decline it directly.</p>
+</section>
+
+<section id="payment-reports">
+<h2>Payment Reports</h2>
+<p>Outside of the Pay Bill screen, back on the Manager Dashboard, you also have the ability to run Payment Reports. This shows what you've collected so far for the month period &mdash; for example, everything collected for the month as your management company, which could be management fees, suppressed fees, late fees, and so on. It's just a report of all the income you've received so far.</p>
+</section>
+
+<section id="bulk-management-fees">
+<h2>Bulk Management Fees (One-Time Charges)</h2>
+<p>Lastly on the Manager Dashboard, there's a button called Bulk Management Fees. This is not what you might think &mdash; it doesn't post everything at once. What it does is let you create a one-time fee charge that you can apply however you choose: by portfolio, unit, property, or property group.</p>
+<p>This is basically something you'd set up for every one of your owners. For example, if you want to charge every owner a $10 portal activation fee, you'll have all your portfolios already highlighted, choose the actual expense account (say, management fee expense), and enter the amount &mdash; then every owner gets charged that $10 fee to their portfolio.</p>
+<p>It's not that you're posting a bulk batch on top of unbilled fees &mdash; it's a separate, one-time run-off scenario. You can charge everybody 100, 400, or just $5 at once. What's commonly seen is a portal activation fee charged annually, or a management fee charged based on the property rather than the unit.</p>
+<p>The only caveat: you cannot vary the amount within that one run. If you're charging everybody the same price, this works great; but this action doesn't change or remove anything from the left side of unbilled management fees &mdash; if you're not careful, you could double-charge, or you'll just have to wait until it drops off in the next month.</p>
+</section>
+
+<section id="diagnostics-negative-recon">
+<h2>Diagnostics: Negative Bank Accounts and Reconciliation Mismatches</h2>
+<p>We talked about money in (payments, deposits, and settlements), money out (bills, invoices, payments, and batches), the bills workflow, and the manager dashboard (posting management fees, quick actions, and vendor payment reports). Now let's talk about the Diagnostics section.</p>
+<p>If you click on Diagnostics, you'll see the health of your actual account &mdash; a series of flags letting you know what's going on with each of your accounts.</p>
+<p>The first is Negative Bank Accounts &mdash; this simply tells you which portfolios are negative in those specific accounts.</p>
+<p>The next is Reconciliation Balance Mismatch. This tells you if you took something out of a reconciliation, like a payment or money in/money out, and you'll have an actual balance mismatch until you put it back into the reconciliation (whether on a different month or otherwise). Until you grab those funds and put them back into the reconciliation, it will be listed as a mismatch.</p>
+</section>
+
+<section id="diagnostics-reserves-escrow">
+<h2>Diagnostics: Reserves Not Met and Escrow Mismatches</h2>
+<p>Outside of that, you'll also see Reserves Not Met &mdash; if you have specific reserves set at the portfolio level and the balance is below that reserve, you'll see them here.</p>
+<p>The next section is Escrow Mismatches. This tells you there's a mismatch in your security deposit escrow account. Two things could cause this: either money is in the incorrect account because it was never transferred to the security deposit bank account once applied to the actual security deposit charge, or you released a security deposit refund, or the security deposit was forfeited and belongs to the owner and the funds were never transferred out of the security deposit balance to your rental trust.</p>
+<p>Depending on the case, you'll have to do a little navigation to figure out what happened &mdash; for example, if there's a $500 escrow balance and $0 security deposit balance, that likely means funds were forfeited to the owner or there was a lease refund and the money was never transferred out of the escrow account. You have to do a little detective work, running general ledger reports to figure that out.</p>
+</section>
+
+<section id="diagnostics-prepayment">
+<h2>Diagnostics: Prepayment Mismatches and Unused Prepayments</h2>
+<p>Outside of the escrow mismatch, you have Prepayment Mismatches. This happens if funds are sitting in the incorrect prepayment account &mdash; for example, a security deposit charge exists but there's a mismatch because it's sitting as a prepayment in the security deposit bank account instead of the rental trust. This is kind of like the escrow situation, but it typically only happens when a prepayment is sitting in the incorrect bank account. You'll see the operating balance, prepayment balance, and actual ledger. This is really rare, but once you start applying the funds, you might also see an escrow mismatch that resolves once you fix the prepayment mismatch.</p>
+<p>The next section is Unused Prepayments &mdash; a list of all the prepayments you have available that are not yet applied to any leases. Once they get applied, they leave your diagnostics list.</p>
+</section>
+
+<section id="diagnostics-recon-lapse-insurance">
+<h2>Diagnostics: Bank Reconciliation Lapse and Vendor Insurance</h2>
+<p>The next section is Bank Account Reconciliation Lapse. If you don't reconcile a bank account within the last 60 days, it will show up here. You'll only see bank accounts in this section if it's been longer than 60 days since the last reconciliation.</p>
+<p>The next section covers vendor insurance &mdash; either workers' comp or liability insurance on your vendor side. If the expiration date has already passed, those vendors will show up here so you can reach out and confirm they have updated insurance on file.</p>
+</section>
+
+<section id="diagnostics-suppressed-fee">
+<h2>Diagnostics: Suppressed Fee Balance Mismatches</h2>
+<p>The next section is Suppressed Fee Balance Mismatch. These balance mismatches are always either positive or negative &mdash; one is good, one is a bit concerning. A positive mismatch means money is going to be going to you, the management company. A negative mismatch means there's money you need to put back that doesn't belong to you.</p>
+<p>You'll always see positive balance mismatches every month &mdash; as long as you create the bill and pay yourself out, that's the only time they leave the list. A good rule of thumb: make sure you post all your suppressed fees and pay them out, then come back into diagnostics after paying everything out to see which ones are still pending. If one is left over from a few months back and it's no longer on your Manager Dashboard, that's the positive balance you still need to fix.</p>
+<p>The negative version basically means you either over-collected on an additional suppressed fee, or the payment bounced. If the tenant's payment bounces and you've already collected those funds, you have two options: issue a vendor credit, or manually refund the owner for the funds. Once the tenant actually makes the payment again, you don't have to reapply it &mdash; it depends on the situation, but a good rule of thumb is to put the money back into their account and wait until the tenant actually pays, since you never know if they'll be evicted or make another payment.</p>
+</section>
+
+<section id="diagnostics-vendor-credit">
+<h2>Diagnostics: Unused Vendor Credits and Credit/Debit Mismatches</h2>
+<p>The next section is Unused Vendor Credits &mdash; similar to the negative suppressed fee mismatches. If you issue a vendor credit to fix one of those, you'll see a list of all the vendor credits you've issued that are just sitting unused. Until you actually use the vendor credit, it stays here until further notice.</p>
+<p>The last one is Credit/Debit Mismatch. Typically, you'll never have anything in there. The only way to fix this is to reach out to the support team so they can send it to the development team &mdash; this typically happens whenever you switch from a specific manager ledger mode to bill mode. Since manager ledger is no longer supported, you'll probably never run into that scenario, but if you ever see anything here, reach out to support.</p>
+</section>
+
+<section id="closing">
+<h2>Closing</h2>
+<p>That's pretty much what we covered in training today: the 2A session, which is the accounting overview &mdash; accounting features, bill workflows, the manager dashboard, and diagnostics.</p>
+<p>One last note: if you're struggling with your first month's reconciliation, you can reach out to your financial specialist. They can help you with your first month's reconciliation and train you on how to do reconciliations in Rentvine directly.</p>
+</section>
+
+
+<p><a class="top-btn" href="#top">Back to top</a> &nbsp; <a href="../index.html">Back to Rentvine University</a></p>
+<p style="text-align:center;color:#5a6b63;font-size:.85rem;margin-top:2rem;padding-top:1rem;border-top:1px solid #d9e3dd">Rentvine University &middot; Created by Leonard Pitts</p></body>
+</html>
