@@ -1391,6 +1391,29 @@
   document.getElementById('export-json').addEventListener('click', exportJson);
   document.getElementById('export-csv').addEventListener('click', exportCsv);
   document.getElementById('print-page').addEventListener('click', () => window.print());
+  const fullscreenBtn = document.getElementById('toggle-fullscreen');
+  if (fullscreenBtn) {
+    if (!document.fullscreenEnabled && !document.webkitFullscreenEnabled) {
+      fullscreenBtn.style.display = 'none';
+    } else {
+      fullscreenBtn.addEventListener('click', () => {
+        const isFull = document.fullscreenElement || document.webkitFullscreenElement;
+        if (isFull) {
+          (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+        } else {
+          const el = document.documentElement;
+          const request = el.requestFullscreen || el.webkitRequestFullscreen;
+          if (request) request.call(el).catch(() => toastMsg('Full screen isn\'t available in this viewer.'));
+        }
+      });
+      document.addEventListener('fullscreenchange', () => {
+        fullscreenBtn.textContent = document.fullscreenElement ? '⛶ Exit Full Screen' : '⛶ Full Screen';
+      });
+      document.addEventListener('webkitfullscreenchange', () => {
+        fullscreenBtn.textContent = document.webkitFullscreenElement ? '⛶ Exit Full Screen' : '⛶ Full Screen';
+      });
+    }
+  }
   document.getElementById('clear-progress').addEventListener('click', () => {
     if (confirm('Reset all saved progress in this browser? Export a backup first if needed.')) { state = defaultState(); saveState(); render(); toastMsg('Progress reset.'); }
   });
