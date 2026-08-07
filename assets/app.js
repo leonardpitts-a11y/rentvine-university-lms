@@ -1121,16 +1121,18 @@
   // entire block no-ops immediately and never loads any external script.
   // See MONDAY-APP-SETUP.md for the full walkthrough (registering the app,
   // hosting RU, and wiring up the column IDs below).
+  // Board: "Rentvine University - Learner Progress" (id 18425625099)
+  // https://rentvine.monday.com/boards/18425625099
   const MONDAY_COLUMNS = {
-    status: '',          // Status column -- Not Started / In Progress / At Risk / Completed
-    rolePath: '',        // Dropdown column -- learner's selected role path title
-    currentWeek: '',     // Numbers column -- next incomplete week in their path
-    weeksCompleted: '',  // Numbers column -- count of fully completed weeks
-    overallProgress: '', // Numbers column -- 0-100
-    quizAvg: '',         // Numbers column -- 0-100, average score across attempted quizzes
-    matchAvg: '',        // Numbers column -- 0-100, average score across attempted match practice
-    capstoneStatus: '',  // Status column -- Not Started / In Progress / Submitted / Passed
-    lastSync: ''         // Date column -- date of the most recent sync
+    status: 'color_mm60dn4d',          // Status column -- Not Started / In Progress / At Risk / Completed
+    rolePath: 'dropdown_mm60r460',      // Dropdown column -- learner's selected role path title
+    currentWeek: 'numeric_mm605dsa',    // Numbers column -- next incomplete week in their path
+    weeksCompleted: 'numeric_mm60jyg7', // Numbers column -- count of fully completed weeks
+    overallProgress: 'numeric_mm60d0d', // Numbers column -- 0-100
+    quizAvg: 'numeric_mm60n74n',        // Numbers column -- 0-100, average score across attempted quizzes
+    matchAvg: 'numeric_mm60m2pw',       // Numbers column -- 0-100, average score across attempted match practice
+    capstoneStatus: 'color_mm60my49',   // Status column -- Not Started / In Progress / Submitted / Passed
+    lastSync: 'date_mm60dhx0'           // Date column -- date of the most recent sync
   };
   let mondayClient = null;
   let mondayContext = null;
