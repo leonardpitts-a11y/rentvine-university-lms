@@ -411,6 +411,7 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Explain the full property management process before learning individual Rentvine screens.",
       "realWorldConnection": "A new team member needs to understand who owns the property, who lives there, who performs work, how money moves, and why records must tie together before they can use Rentvine confidently.",
       "watchFor": "Avoid learning Rentvine as disconnected tabs. Every tab supports a business process: acquire/keep owners, market vacancies, lease to residents, collect rent, manage maintenance, pay bills, report to owners, and close or renew tenancies.",
+      "realWorldNotes": ["Real customers arrive from PropertyWare, AppFolio, Buildium, or Rent Manager &mdash; not from a blank slate. Expect early questions phrased as &ldquo;how do I do X the way my old system did it,&rdquo; not &ldquo;how does this feature work.&rdquo;","One customer's own founder said outright on a real onboarding call: &ldquo;Even if we were to train eight hours a day until we go live, we feel we may still struggle to fully grasp the system.&rdquo; Pacing and reassurance matter as much as content."],
       "topics": "Property management roles, record relationships, lifecycle flow, monthly workflow, sandbox safety",
       "objectives": [
         "Identify the main property management roles: owner, property manager, resident/tenant, applicant, vendor, and internal user.",
@@ -751,6 +752,7 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Create owner portfolio structures and explain how reserves, balances, statement settings, and payout rules affect owner payments.",
       "realWorldConnection": "Onboard a new owner entity and set reserve rules before the first owner payment cycle.",
       "watchFor": "Confusing reserves with owner contributions. A reserve holds existing portfolio funds; a contribution adds new money.",
+      "realWorldNotes": ["Five settings a trainer will always confirm on a new portfolio: posting settings, statement settings, additional (portfolio-level) reserve, regular (property-level) reserve, and overdraft override.","Reserve vs. Additional Reserve is really just a level distinction (property vs. portfolio) &mdash; both hold back owner distributions only, never bill payments.","Real discrepancy walked through live on a customer call: a <strong>$2,805</strong> externally-paid tree-removal reimbursement recorded as a matching owner receipt plus vendor bill, alongside a separate <strong>$115</strong> gap traced to rent collected in a parallel third-party tool that never got disbursed through Rentvine.","Trainers consistently warn against using Overdraft Override to push a portfolio negative &mdash; it can effectively borrow from another owner's trust funds. A real example set it to <strong>$1,000</strong> temporarily, then explicitly reset it to $0 once the balance recovered."],
       "topics": "Portfolios, owners, reserves, overdraft, owner splits & statements",
       "objectives": [
         "Create single-owner, LLC, and multi-owner portfolios",
@@ -1121,6 +1123,7 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Create property and unit records that connect the physical rental asset to the correct owner portfolio and internal responsibility.",
       "realWorldConnection": "Set up different inventory types without creating duplicate or disconnected records.",
       "watchFor": "Using tags as a replacement for structural groups. Tags filter records; groups define organizational structure.",
+      "realWorldNotes": ["The multi-unit toggle being <strong>permanent</strong> once a property is created was independently flagged as a gotcha in at least six real customer calls across three different companies. Decide it correctly at creation &mdash; changing property type later does not retroactively enable it.","The Maintenance Limit Amount at the property level only triggers a notification &mdash; it does not block a bill or work order above that limit, a point of confusion repeated across several accounts.","Custom fields must be created at the correct level (property vs. unit) to actually display &mdash; a parking or storage-locker field created at the property level, for instance, silently fails to show where it's needed."],
       "topics": "Property details, associations, groups, tags, manager assignment",
       "objectives": [
         "Configure single-family, HOA, and multifamily properties",
@@ -1479,6 +1482,7 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Turn an available property/unit into a marketable listing and understand how syndication supports lead generation.",
       "realWorldConnection": "Turn a vacancy into a market-ready listing that generates qualified leads.",
       "watchFor": "Publishing AI-generated copy without human review for accuracy, fair housing, and property-specific details.",
+      "realWorldNotes": ["Never combine a third-party showing-provider integration (Tenant Turner, ShowMojo) with individually-checked syndication boxes for the same platform &mdash; flagged independently across at least five customer calls as a cause of duplicate listings.","Syndication timing to outside sites genuinely varies (24 to 72 hours depending on the network) &mdash; set that expectation with owners rather than promising an instant listing.","Every trainer who demoed the AI listing-description generator also told the customer to proofread it before publishing &mdash; treat that as standard guidance, not an aside."],
       "topics": "Listings, syndication, showing providers, AI descriptions",
       "objectives": [
         "Publish a property listing",
@@ -1878,6 +1882,7 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Process an applicant from application submission through screening review and a documented decision.",
       "realWorldConnection": "Apply objective screening criteria for applicants, co-applicants, and guarantors.",
       "watchFor": "Applying screening standards inconsistently or failing to document the decision rationale.",
+      "realWorldNotes": ["The most consequential real gotcha found in this research: an applicant can bypass Plaid income verification entirely by skipping to document upload, and the system does not validate that the uploaded file is actually a bank statement. Rentvine's product team is actively redesigning this flow to make skipping harder.","Native pet screening now triple-confirms a &ldquo;no pet&rdquo; response inside the application itself, and flags any applicant who claims a pet but never completes a pet-screening profile.","HUD/FCRA rules cap criminal-record look-back at 7 years and eviction look-back at 10 years &mdash; the accredited data bureau already excludes pending/unadjudicated cases automatically."],
       "topics": "Applicant workflow, screening, guarantors, application templates",
       "objectives": [
         "Configure application templates",
@@ -2117,6 +2122,7 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Create the financial lease, configure move-in charges, generate the signing packet, and confirm the tenant is ready to occupy.",
       "realWorldConnection": "After an applicant is approved, the team must convert the application into a lease, collect move-in amounts, and send accurate documents for signature.",
       "watchFor": "Do not confuse the financial lease with the signed legal document. The financial lease controls accounting; RentSign sends the document packet for signatures.",
+      "realWorldNotes": ["Create leases from the approved application, not manually from the property &mdash; this is the single most repeated recommendation across the entire research set, since it auto-populates tenant, co-signer, occupant, and pet data.","Hard system constraint: a property cannot carry two active leases at once. Create the new one as Pending until the old lease actually closes.","A RentSign document only inherits hot-field data (and stays linked to its record) when it's generated from inside the specific property, portfolio, or lease &mdash; never from the general RentSign section.","If a lease has more than three signers, someone has to manually confirm enough signing &ldquo;parties&rdquo; are configured, or the document will not send correctly."],
       "topics": "Financial leases, one-time charges, recurring charges, proration, RentSign templates, hot fields, signing order, move-in readiness",
       "objectives": [
         "Create a financial lease from an approved application or directly from a property/unit.",
@@ -2444,6 +2450,7 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Invite owners, residents, and vendors to the correct portals and understand which self-service tasks each portal supports.",
       "realWorldConnection": "Increase portal adoption to reduce support volume and manual payment/request handling.",
       "watchFor": "Assuming portal issues are workflow issues before checking access/invitation status.",
+      "realWorldNotes": ["The single most common portal support scenario in this research: an applicant who already has a registered email from a rental application needs to use &ldquo;sign in,&rdquo; not &ldquo;register,&rdquo; once they become an owner or tenant.","&ldquo;View Portal&rdquo; impersonation is the standard first troubleshooting step for any reported login issue &mdash; before assuming anything else is broken.","Portal invitations are tracked under Global Settings &rarr; Portal Invitations, where a toggle filters out already-registered contacts so staff can isolate exactly who still needs an invite."],
       "topics": "Portal invitations, payments, insurance, maintenance requests",
       "objectives": [
         "Invite owners and tenants to portals",
@@ -2814,6 +2821,7 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Use contact records, templates, mass messages, and communication history to support consistent service.",
       "realWorldConnection": "Send a portfolio-wide announcement or rent reminder to the right audience.",
       "watchFor": "Sending blasts without validating recipient segment and opt-out/compliance requirements.",
+      "realWorldNotes": ["The two-tier notification system trips up nearly every real customer: Account (global) Notifications require someone to manually enter every recipient for every event type and then alert that person every time, everywhere, with no per-user filtering. Personal Notifications default to on for whoever is the record's assignee and can be filtered per user across four channels (system, email, text, Slack).","An administrator must send the first text message before an owner or tenant can text back &mdash; two-way SMS only activates after the manager initiates contact."],
       "topics": "Mass messaging, texting, email templates, communication history",
       "objectives": [
         "Manage contact records",
@@ -3077,6 +3085,7 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Record incoming money correctly and understand the difference between posted receipts, deposits, and electronic settlements.",
       "realWorldConnection": "Match tenant receipts and owner contributions to a bank deposit batch.",
       "watchFor": "Assuming posted electronic payments have already settled at the bank.",
+      "realWorldNotes": ["The single most repeated rule across nearly every accounting call in this research: the &ldquo;date deposited&rdquo; entered for a receipt must exactly match the date funds actually hit the bank, or reconciliation breaks.","E-check settlements take two to three business days (occasionally longer) to clear. Trainers consistently advise against including unsettled e-check funds in an owner payout in case a payment bounces afterward.","Bulk Receipts is built specifically for lump-sum payments like Section 8/HUD disbursements &mdash; one incoming payment applied across many unpaid charges in a single step."],
       "topics": "Tenant receipts, owner contributions, manual deposits, electronic settlements, bulk tenant receipts, bank deposit matching",
       "objectives": [
         "Record tenant receipts, owner contributions, and other incoming funds.",
@@ -3388,6 +3397,7 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Create bills, verify invoice data, apply credits/markups/discounts, approve bills, and process vendor payments.",
       "realWorldConnection": "Manage the full payables lifecycle from invoice intake to ACH/NACHA batch.",
       "watchFor": "Approving OCR-captured invoice details without verifying amount, property, vendor, and GL code.",
+      "realWorldNotes": ["Never future-date a bill &mdash; independently warned against in at least four separate real customer calls.","Rejecting a vendor invoice is a hard delete: it removes the invoice entirely and notifies the vendor, with no way to recover it afterward.","Use Other Receipt or Other Payment instead of a manual &ldquo;adjustment&rdquo; &mdash; repeated as a strong directive in nearly every accounting-heavy call reviewed."],
       "topics": "Bills, invoice OCR, Rapid Invoice, NACHA, vendor credits, bill approvals, payment batches, remote checks",
       "objectives": [
         "Create and approve vendor bills",
@@ -3830,6 +3840,7 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Create, assign, schedule, track, close, and bill work orders using owner/resident/vendor workflows.",
       "realWorldConnection": "Coordinate owner-approved maintenance without losing accounting visibility.",
       "watchFor": "Skipping owner approval thresholds before sending work to the vendor.",
+      "realWorldNotes": ["Rentvine's AI maintenance agent troubleshoots a tenant's request before a work order is created, but does not auto-assign a vendor &mdash; a limitation more than one customer specifically asked about, expecting more automation than the product currently offers.","Several customers use a third-party inspection tool (Z Inspector was named by at least four separate accounts) specifically because Rentvine's native inspection tool requires manual photo upload rather than in-app capture.","Open work orders and invoices consistently fail to migrate cleanly from PropertyWare and require manual re-entry &mdash; worth setting that expectation early with any customer coming from that platform."],
       "topics": "Estimates, approvals, projects, templates, vendor portals, scheduling, tenant portal requests, vendor invoices, settings automation",
       "objectives": [
         "Create work orders and estimates",
@@ -4255,6 +4266,7 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Post management fees, prepare owner statements, review available funds, and understand owner distributions.",
       "realWorldConnection": "At month-end, owners expect clear statements showing income, expenses, reserves, fees, and available distributions.",
       "watchFor": "Do not publish owner statements until receipts, bills, fees, reserves, and diagnostics have been reviewed. Owner statements should explain what happened financially.",
+      "realWorldNotes": ["If a base fee and an additional (suppressed) fee get posted together as one bill by mistake, don't fix it by deleting the suppressed line item afterward &mdash; the owner's already been credited, so that just creates a second problem. Filter to &ldquo;Additional&rdquo; before posting so the base fee is never included in the first place.","It's highly recommended to post management fees before running Pay Owners, so the correct amount is automatically held back rather than paid out and chased down after the fact."],
       "topics": "Management fees, owner statements, distributions, statement settings, owner reporting packages, Manager Dashboard",
       "objectives": [
         "Post management fees individually or in bulk.",
@@ -4808,6 +4820,7 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Build, filter, save, schedule, and interpret reports that support operations, accounting, and owner communication.",
       "realWorldConnection": "Create recurring reporting packages and collections triage reports.",
       "watchFor": "Saving reports without confirming filters, date ranges, and grouping logic.",
+      "realWorldNotes": ["The framing point that resolves most reporting confusion: a report can only pull data from the level where it actually lives. A management-contract date stored on the Property record will never show up on a Portfolio- or Lease-level report.","There's no native side-by-side dashboard for an owner with multiple portfolios &mdash; the standard workaround is generating a Property Comparison report and attaching it to the owner statement.","One customer was specifically advised against emailing sensitive reports directly to owners from the report function."],
       "topics": "Grouping, filters, scheduled reports, Aged Receivables",
       "objectives": [
         "Build and save custom reports",
@@ -5079,6 +5092,7 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Use diagnostics as a health check to identify and correct negative balances, reserve shortages, escrow mismatches, stale reconciliations, and other accounting issues.",
       "realWorldConnection": "A property manager should not wait until the owner asks a question to discover accounting problems. Diagnostics creates an operational cleanup list.",
       "watchFor": "Do not treat diagnostics as informational only. Each diagnostic is a prompt to research, explain, and resolve the root cause or document why it is expected.",
+      "realWorldNotes": ["If a management company uses a single combined bank account for both rent and deposits, the Escrow Mismatch diagnostic will always show a mismatch &mdash; the correct move is toggling that diagnostic off rather than chasing a false positive every week.","Reading the sign on a Suppressed Fee Balance Mismatch: positive means money is owed to the management company (bill and collect it); negative means money needs to be returned (a refund or credit). Pick exactly one remediation method &mdash; combining both re-breaks the balance."],
       "topics": "Accounting diagnostics, negative bank accounts, reserve not met, escrow mismatch, prepayment mismatch, stale reconciliations, vendor credits, cleanup workflow",
       "objectives": [
         "Use the Diagnostics tab as a system health check.",
@@ -5409,6 +5423,7 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Complete a move-out, calculate deposit deductions/refunds, and confirm the final tenant ledger is accurate.",
       "realWorldConnection": "Close out a tenancy and prepare the property/tenant for the next lifecycle event.",
       "watchFor": "Mixing deposit transfers and refunds or forgetting to document deductions.",
+      "realWorldNotes": ["The four-part Move-Out workflow (Move-Out Details, Tenant Information, Accounting/deposit calculation, Finalize) ends with printing the Move-Out Statement and processing the refund check &mdash; but the actual bank transfer still has to happen manually, or the escrow account falls out of sync with the security deposit ledger.","Move-Out and Lease Renewal training is consistently the <em>last</em> module covered in a real customer's onboarding sequence &mdash; worth not shortchanging here just because live training often does."],
       "topics": "Move-out flow, forwarding information, final accounting, security deposit refund, deductions, tenant ledger closeout",
       "objectives": [
         "Execute the four-step move-out workflow in order.",
@@ -5658,6 +5673,7 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Renew an existing lease when the resident is staying, or apply one lump-sum tenant payment across multiple lease obligations.",
       "realWorldConnection": "A lease does not always end with a move-out. Many residents renew, and some rent payments arrive as one combined payment from a housing authority or other payer.",
       "watchFor": "Do not confuse renewing a lease with moving a tenant out. Also, use bulk receipts only when one payment genuinely applies across multiple lease-level obligations.",
+      "realWorldNotes": ["The renewal fee pulls directly from the property's management-fee settings and is charged to the owner the moment the renewal is entered &mdash; one customer specifically praised this for eliminating a manual, paperwork-heavy process that used to create real accounting backlogs.","A real, repeatable failure mode: if a renewal-fee bill gets created before the renewal itself is finalized, the renewal can show as &ldquo;signed&rdquo; while never actually completing. Fix: void the conflicting bill (or set it to $0), then finalize the renewal through the lease record.","The system's automatic lease end-date fill defaults to the first day of a month rather than the last day of the previous month, which affects the &ldquo;next eligible increase date&rdquo; calculation downstream."],
       "topics": "Renewal eligibility, renewal offers, tenant portal acceptance, RentSign renewal documents, recurring charge updates, bulk tenant receipts",
       "objectives": [
         "Explain how renewal eligibility days place leases on the renewal dashboard.",
@@ -5912,6 +5928,7 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Explain how trust accounting principles, GL coding, payment allocation, prepaid rent, and reconciliation keep client funds accurate.",
       "realWorldConnection": "Trust accounting is the control layer under the operational workflows. It explains why money must be classified, separated, reconciled, and reviewed before statements or payouts are trusted.",
       "watchFor": "Do not treat accounting settings casually. Changes to accounts, allocation order, or fee definitions can affect ledgers, reports, owner statements, and trust compliance.",
+      "realWorldNotes": ["Chart of Accounts account types are permanent once created and cannot be changed later &mdash; a real first-time-setup gotcha worth getting right before any transactions post.","Two Buildium-migration customers in this research both ran into undocumented credits or adjustments carried over from the old system that caused real owner-statement discrepancies (one as large as <strong>$5,000</strong>) &mdash; worth checking for specifically after any migration."],
       "topics": "Trust accounting, Chart of Accounts, GL codes, payment allocation, prepaid rent, manager ledger, triple-tie reconciliation, security deposits, liabilities",
       "objectives": [
         "Explain separation of client funds, no co-mingling, accurate records, and timely disbursements.",
@@ -6219,6 +6236,7 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Configure the administrative foundation for secure users, integrations, API access, migration support, global settings, and go-live readiness.",
       "realWorldConnection": "Before or during go-live, teams need clean settings, safe user permissions, working payment applications, and clear integration boundaries.",
       "watchFor": "Do not give broad admin access when a narrow role will work. Do not assume integrations sync every field; verify direction, scope, exceptions, and ownership.",
+      "realWorldNotes": ["&ldquo;Pods&rdquo; (portfolio groups that restrict staff access) are explicitly a large-company feature (1,000+ units) &mdash; smaller customers shouldn't feel they're missing something by not using them.","Role-based access, including a view-only role, applies equally to human users and API keys.","Customers migrating in this research came from AppFolio (including one after 24 years on the platform), Buildium, PropertyWare, and Rent Manager &mdash; expect comparisons to a prior system's terminology and workflow, not a blank-slate learner."],
       "topics": "QuickBooks export, Property Meld, open API, API keys, user roles, least privilege, global/account settings, bank/Forte readiness, migration, go-live checklist",
       "objectives": [
         "Explain what QuickBooks export is used for and what financial information it supports.",
@@ -6546,6 +6564,7 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Demonstrate an end-to-end property management workflow from orientation concepts through owner/property setup, leasing, operations, accounting, reporting, and transition steps.",
       "realWorldConnection": "Prove readiness to support or perform a complete Rentvine operating lifecycle.",
       "watchFor": "Completing steps with program reviewer assistance or in production data instead of a training sandbox.",
+      "realWorldNotes": ["Before certifying, double-check the habits that trip up real customers most often: never future-date a bill, never change a management fee percentage mid-cycle, always match &ldquo;date deposited&rdquo; to the actual bank date, never combine a showing-provider integration with individually-checked syndication boxes, and remember the multi-unit toggle can't be changed after a property is created."],
       "topics": "End-to-end practical exam across all modules",
       "objectives": [
         "Demonstrate end-to-end competency across the full system",
