@@ -148,6 +148,9 @@ a:hover { color: var(--rv-green); }
 .callout { border-left: 5px solid var(--rv-green); background: var(--rv-green-soft); padding: 0.85rem 1rem; border-radius: 0.75rem; margin: 1rem 0; }
 .callout.warning { border-left-color: var(--warning); background: var(--warning-bg); }
 .callout strong { display: block; margin-bottom: 0.25rem; }
+.callout.real-world-notes { border-left-color: #167FE1; background: #eaf3fd; }
+.callout.real-world-notes ul { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+.callout.real-world-notes li { margin-bottom: 0.4rem; }
 /* Standout horizontal banner for "This week's lab focus" inside the practice company case file
    panel -- pulled out of .meta-grid so its long instruction text no longer stretches the row of
    short one-line cards (Owner/Property/Applicant/Vendor) next to it into mismatched heights. */
@@ -401,6 +404,20 @@ legend { font-weight: 800; margin-bottom: 0.55rem; }
   align-items: end;
 }
 .glossary-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+/* Compact per-week list used by the collapsible Progress Dashboard dropdown on the Overview page
+   (dashboardPanelHtml() in app.js) -- same visual language as the sidebar's .nav-list/.badge, just
+   reused inside a <details> panel instead of the sidebar. */
+.dashboard-week-list { list-style: none; margin: 0.75rem 0 0; padding: 0; display: grid; gap: 0.3rem; }
+.dashboard-week-list li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.6rem;
+  background: #fbfdfc;
+  border: 1px solid var(--line);
+}
 .guide-panel { border-left: 7px solid var(--rv-green); }
 .guide-scenario { color: var(--muted); }
 tr[hidden] { display: none; }
@@ -437,6 +454,42 @@ tr[hidden] { display: none; }
   font-weight: 800;
   color: var(--rv-green-dark);
 }
+/* Week-page decluttering: visual dividers group the ~20 stacked sections of a week page into
+   labeled phases (Setup, Learn, See it in Rentvine, Real-world context, Practice & submit,
+   Score & wrap up) so scrolling reads as passing through distinct stages instead of one
+   undifferentiated wall of panels. Purely a heading -- no collapsing behavior. */
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 2rem 0 0.5rem;
+  color: var(--rv-green-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+.section-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+/* In-page jump chips under the week header. Wired to data-action="jump-to" (scrollIntoView),
+   deliberately NOT `href="#id"` anchors -- the app's hash-based router treats any hash change
+   as a route change, so a plain anchor link would hijack navigation instead of just scrolling. */
+.week-jump-nav { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.85rem; }
+.week-jump-nav button {
+  border: 1px solid #9bd7bf;
+  background: #fff;
+  color: var(--rv-green-dark);
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.week-jump-nav button:hover { background: var(--rv-green-soft); }
 .flow-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
 .flow-step {
   display: inline-flex;

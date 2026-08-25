@@ -107,10 +107,8 @@
       <ul class="nav-list">
         ${navItem('#overview', 'Overview', route)}
         ${navItem('#before-begin', 'Before You Begin', route, onboardingProgress())}
-        ${navItem('#dashboard', 'Progress Dashboard', route)}
         ${navItem('#role-paths', 'Role Path Filters', route)}
         ${navItem('#videos', 'Video Alignment Map', route)}
-        ${navItem('#glossary', 'Defined Terms & Glossary', route, glossaryOverallProgress())}
         ${navItem('#glossary-match', 'Match Terms Practice', route)}
         ${navItem('#job-aids', 'Downloadable Job Aids', route)}
       </ul>
@@ -485,10 +483,8 @@
     initSidebar();
     if (route === '#overview') renderOverview();
     else if (route === '#before-begin') renderBeforeBegin();
-    else if (route === '#dashboard') renderDashboard();
     else if (route === '#role-paths') renderRolePaths();
     else if (route === '#videos') renderVideos();
-    else if (route === '#glossary') renderGlossary();
     else if (route === '#glossary-match') renderGlossaryMatch();
     else if (route === '#job-aids') renderJobAids();
     else if (route === '#capstone') renderCapstone();
@@ -527,6 +523,10 @@
         </div>
       </section>
       <section class="panel">
+        ${dashboardPanelHtml()}
+        ${glossaryPanelHtml()}
+      </section>
+      <section class="panel">
         <h2>Learner profile</h2>
         <div class="form-grid">
           ${field('Learner name', 'profile.learnerName')}
@@ -548,13 +548,11 @@
         </div>
         <div>
           <h2>Quick actions</h2>
-          <p><a class="button primary" href="#dashboard">Open Progress Dashboard</a></p>
           <p><a class="button secondary" href="${attr(state.resumeRoute || '#before-begin')}">Resume where I left off</a></p>
           <p><a class="button secondary" href="#before-begin">Start Before You Begin</a></p>
           <p><a class="button secondary" href="#role-paths">Choose a Role Path</a></p>
           <p><a class="button secondary" href="#week-01">Start Week 1</a></p>
           <p><a class="button secondary" href="#videos">Review Video Alignment Map</a></p>
-          <p><a class="button secondary" href="#glossary">Open Defined Terms & Glossary</a></p>
           <p><a class="button secondary" href="#glossary-match">Practice Match Terms</a></p>
           <p><a class="button secondary" href="#job-aids">Download Job Aids</a></p>
           <p><a class="button secondary" href="${attr(course.submission?.labVideoUploadUrl || 'upload-lab-video.html')}" target="_blank" rel="noopener">Open Video Upload Center</a></p>
@@ -565,6 +563,7 @@
         <h2>Lab video submission requirement</h2>
         <p>${escapeHtml(course.submission?.instructions || '')}</p>
       </section>`;
+    filterGlossary();
   }
 
   function renderBeforeBegin() {
@@ -600,7 +599,10 @@
     const details = Object.keys(hp.details || {}).map(k => `<div class="meta-card"><strong>${escapeHtml(k.replace(/([A-Z])/g, ' $1').replace(/^./, c => c.toUpperCase()))}</strong>${escapeHtml(hp.details[k])}</div>`).join('');
     const assoc = hp.associationDetails || {};
     const assocDetails = Object.keys(assoc).map(k => `<div class="meta-card"><strong>${escapeHtml(k.replace(/([A-Z])/g, ' $1').replace(/^./, c => c.toUpperCase()))}</strong>${escapeHtml(assoc[k])}</div>`).join('');
-    return `<section class="panel"><h2>${escapeHtml(hp.title || 'HOA property for this week’s lab')}</h2>
+    // Reference-lookup content (the full property/HOA record) -- collapsed by default, same
+    // dropdown treatment as the glossary, so it doesn't stack another full panel on first glance.
+    return `<section class="panel"><details class="process-detail">
+      <summary>${escapeHtml(hp.title || 'HOA property for this week’s lab')}</summary>
       <p><strong>${escapeHtml(hp.propertyName)}</strong> — ${escapeHtml(hp.address)}</p>
       <p class="resource-meta"><strong>Portfolio:</strong> ${escapeHtml(hp.portfolio)}</p>
       <h3>Property details</h3>
@@ -609,7 +611,7 @@
       <p><strong>HOA name:</strong> ${escapeHtml(hp.hoaName)} &nbsp;·&nbsp; <strong>Association record:</strong> ${escapeHtml(hp.associationName)}</p>
       <div class="meta-grid">${assocDetails}</div>
       <p class="resource-meta">${escapeHtml(hp.note || '')}</p>
-    </section>`;
+    </details></section>`;
   }
   // Multifamily property counterpart to renderHoaProperty() above -- a fixed, reused example
   // (789 Oakview Commons) so the same units/tags/groups/manager names show up consistently
@@ -619,7 +621,8 @@
     if (!mp) return '';
     const details = Object.keys(mp.details || {}).map(k => `<div class="meta-card"><strong>${escapeHtml(k.replace(/([A-Z])/g, ' $1').replace(/^./, c => c.toUpperCase()))}</strong>${escapeHtml(mp.details[k])}</div>`).join('');
     const unitRows = (mp.units || []).map(u => `<tr><td>${escapeHtml(u.unit)}</td><td>${escapeHtml(u.bedsBaths)}</td><td>${escapeHtml(u.rent)}</td><td>${escapeHtml((u.tags || []).join(', '))}</td><td>${escapeHtml(u.manager)}</td></tr>`).join('');
-    return `<section class="panel"><h2>${escapeHtml(mp.title || "Multifamily property for this week's lab")}</h2>
+    return `<section class="panel"><details class="process-detail">
+      <summary>${escapeHtml(mp.title || "Multifamily property for this week's lab")}</summary>
       <p><strong>${escapeHtml(mp.propertyName)}</strong> — ${escapeHtml(mp.address)}</p>
       <p class="resource-meta"><strong>Portfolio:</strong> ${escapeHtml(mp.portfolio)}</p>
       <h3>Property details</h3>
@@ -628,12 +631,12 @@
       <div class="table-wrap"><table><thead><tr><th>Unit</th><th>Beds/Baths</th><th>Rent</th><th>Tags</th><th>Assigned manager</th></tr></thead><tbody>${unitRows}</tbody></table></div>
       <p class="resource-meta"><strong>Property group:</strong> ${escapeHtml(mp.propertyGroup || '')}</p>
       <p class="resource-meta">${escapeHtml(mp.note || '')}</p>
-    </section>`;
+    </details></section>`;
   }
   function renderPhaseMapSnippet(week) {
     const m = phaseMapForWeek(week.week);
     if (!m) return '';
-    return `<section class="panel process-mini"><h2>Where this module fits</h2><p><strong>${escapeHtml(m.phase)}</strong>: ${escapeHtml(m.question || '')}</p><div class="flow-row">${(m.flow || []).map((f, i) => `<span class="flow-step">${i+1}. ${escapeHtml(f)}</span>`).join('')}</div></section>`;
+    return `<section class="panel process-mini"><details class="process-detail"><summary>Where this module fits</summary><p><strong>${escapeHtml(m.phase)}</strong>: ${escapeHtml(m.question || '')}</p><div class="flow-row">${(m.flow || []).map((f, i) => `<span class="flow-step">${i+1}. ${escapeHtml(f)}</span>`).join('')}</div></details></section>`;
   }
 
   // Which of the 12 detailed fixed-case-file facts are actually relevant "new sandbox information"
@@ -666,7 +669,26 @@
     // short cards to match its height. Reuses the same green .callout treatment as the
     // "Real-world connection" / "Tip" callouts elsewhere on the week page.
     const thisWeekBanner = `<div class="callout case-file-focus"><span class="kicker">This week's lab focus</span>${escapeHtml(ps.instruction || '')}</div>`;
-    return `<section class="panel"><h2>Practice company case file</h2><p><strong>${escapeHtml(pc.company || '')}</strong>: ${escapeHtml(pc.scenario || '')}</p><p class="resource-meta">${escapeHtml(pc.fixedFactsNote || '')}</p>${thisWeekBanner}<div class="meta-grid"><div class="meta-card"><strong>Owner</strong>${escapeHtml(pc.owner || '')}</div><div class="meta-card"><strong>Property</strong>${escapeHtml(pc.property || '')}</div><div class="meta-card"><strong>Applicant / tenant</strong>${escapeHtml(pc.applicantTenant || '')}</div><div class="meta-card"><strong>Vendor</strong>${escapeHtml(pc.vendor || '')}</div>${factCards}</div>${noNewFactsNote}${setupBlock}</section>`;
+    // Only "this week's lab focus" banner is always visible -- the case-file identity cards and
+    // setup instructions repeat nearly verbatim on every week, so they're tucked into a collapsed
+    // dropdown a learner can open if they need to look up the fixed owner/property/vendor facts.
+    return `<section class="panel"><h2>Practice company case file</h2>${thisWeekBanner}<details class="process-detail">
+      <summary>Case file reference: ${escapeHtml(pc.company || '')}</summary>
+      <p>${escapeHtml(pc.scenario || '')}</p><p class="resource-meta">${escapeHtml(pc.fixedFactsNote || '')}</p>
+      <div class="meta-grid"><div class="meta-card"><strong>Owner</strong>${escapeHtml(pc.owner || '')}</div><div class="meta-card"><strong>Property</strong>${escapeHtml(pc.property || '')}</div><div class="meta-card"><strong>Applicant / tenant</strong>${escapeHtml(pc.applicantTenant || '')}</div><div class="meta-card"><strong>Vendor</strong>${escapeHtml(pc.vendor || '')}</div>${factCards}</div>${noNewFactsNote}${setupBlock}
+    </details></section>`;
+  }
+
+  // "From real Rentvine training calls" -- new depth added from Gong, Gemini call notes, and
+  // Gmail research across real customer onboarding accounts (August 2026 knowledge-base
+  // enrichment pass). week.realWorldNotes is an array of short HTML strings (like
+  // productWalkthrough's body/tip fields, these intentionally contain authored HTML -- e.g. a
+  // <strong> around a dollar figure or gotcha -- and are inserted as-is rather than escaped).
+  // Optional per week; weeks without any real-world notes simply render nothing here.
+  function renderRealWorldNotes(week) {
+    const notes = week.realWorldNotes || [];
+    if (!notes.length) return '';
+    return `<section class="callout real-world-notes"><strong>From real Rentvine training calls</strong><p class="resource-meta">Specifics pulled from actual customer onboarding calls, not hypotheticals.</p><ul>${notes.map(n => `<li>${n}</li>`).join('')}</ul></section>`;
   }
 
   function renderScenarioPractice(week) {
@@ -713,36 +735,28 @@
     return `<label class="checkline"><input type="checkbox" data-path="${attr(path)}" ${checked(path)}><span>${escapeHtml(label)}</span></label>`;
   }
 
-  function renderDashboard() {
+  // Progress Dashboard used to be its own full sidebar page/route ("#dashboard") with a dense
+  // 12-column table per week plus a checkpoints table. Per request, it's now a much smaller
+  // collapsible dropdown embedded in the Overview page (see renderOverview()) -- just the overall
+  // percentage and a compact per-week list. Detailed per-week status (materials/guide/terms/lab/
+  // video/quiz/match) is still available on each week's own page, so nothing is lost, just no
+  // longer duplicated in a giant table here. Export JSON/CSV also already live in the persistent
+  // top toolbar (index.html), so they're not repeated in this panel either.
+  function dashboardPanelHtml() {
     const rows = course.weeks.map(w => {
       const s = weekStats(w);
-      const qs = s.quizStatus;
-      const quizText = qs.submitted ? `${qs.correct}/${qs.total} · ${pct(qs.score)} ${qs.passed ? 'pass' : 'review'}` : `${qs.answered}/${qs.total} answered`;
-      const ms = s.matchStatus;
-      const matchText = !ms.total ? 'n/a' : (ms.submitted ? `${ms.correct}/${ms.total} · ${pct(ms.score)} ${ms.passed ? 'pass' : 'review'}` : `${ms.answered}/${ms.total} answered`);
-      return `<tr>
-        <td>Week ${w.week}</td><td><a href="#week-${String(w.week).padStart(2,'0')}">${escapeHtml(w.title)}</a></td><td>${escapeHtml(w.phase)}</td>
-        <td>${checkedIcon(s.resources >= 1)} ${pct(s.resources)}</td>
-        <td>${checkedIcon(s.guide >= 1)} ${s.guide ? 'reviewed' : 'required'}</td>
-        <td>${checkedIcon(s.terms >= 1)} ${pct(s.terms)}</td>
-        <td>${checkedIcon(s.lab >= 1)} ${pct(s.lab)}</td>
-        <td>${checkedIcon(s.video >= 1)} ${s.video ? 'submitted' : 'required'}${weekVideoRequired(w) ? '' : ' (docs only)'}</td>
-        <td>${checkedIcon(qs.passed)} ${escapeHtml(quizText)}</td>
-        <td>${checkedIcon(!ms.total || ms.passed)} ${escapeHtml(matchText)}</td>
-        <td>${checkedIcon(s.module >= 1)}</td><td><strong>${pct(s.progress)}</strong></td>
-      </tr>`;
+      return `<li><a href="#week-${String(w.week).padStart(2,'0')}">Week ${w.week}: ${escapeHtml(w.title)}</a><span class="badge ${s.progress >= 1 ? 'complete' : ''}">${pct(s.progress)}</span></li>`;
     }).join('');
-    app.innerHTML = `
-      <section class="module-header"><div class="kicker">Program tracking</div><h1>Progress Dashboard</h1><p>Track all 19 process-ordered weeks, learning materials, guided examples, defined terms, labs, required lab-video uploads, scored knowledge checks, match-term practice, and module completion.</p></section>
-      <section class="panel"><div class="table-wrap"><table><thead><tr><th>Week</th><th>Module</th><th>Phase</th><th>Materials</th><th>Guide</th><th>Defined terms</th><th>Lab</th><th>Lab video</th><th>Knowledge check</th><th>Match practice</th><th>Complete</th><th>Progress</th></tr></thead><tbody>${rows}</tbody></table></div></section>
-      <section class="panel"><h2>Phase Checkpoints</h2><div class="table-wrap"><table><thead><tr><th>Checkpoint</th><th>Phase</th><th>Retention check</th><th>Manager sign-off</th><th>Progress</th></tr></thead><tbody>${(course.checkpoints || []).map(cp => {
-        const p = checkpointProgress(cp);
-        return `<tr><td><a href="#${cp.id}">${escapeHtml(cp.title)}</a></td><td>${escapeHtml(cp.phase)}</td><td>${checkedIcon(p.quizStatus.passed)} ${p.quizStatus.submitted ? `${p.quizStatus.correct}/${p.quizStatus.total}` : `${p.quizStatus.answered}/${p.quizStatus.total} answered`}</td><td>${checkedIcon(p.signOff >= 1)} ${pct(p.signOff)}</td><td><strong>${pct(p.progress)}</strong></td></tr>`;
-      }).join('')}</tbody></table></div></section>
-      <section class="panel grid two">
-        <div><h2>Backup your work</h2><p>Export your progress at the end of each module. JSON preserves answers, scores, upload confirmations, and notes; CSV provides a simple module status summary.</p><p><button id="export-json-inline" class="button primary">Export JSON</button> <button id="export-csv-inline" class="button secondary">Export CSV</button></p></div>
-        <div><h2>Completion rule</h2><p>For each week, complete the materials, guided walkthrough example, defined terms review, lab checklist, required lab video submission, scored knowledge check, and match-term practice (${Math.round(PASS_MARK * 100)}%+ correct). Weekly pass mark: ${Math.round(PASS_MARK * 100)}%.</p></div>
-      </section>`;
+    const cpRows = (course.checkpoints || []).map(cp => {
+      const p = checkpointProgress(cp);
+      return `<li><a href="#${cp.id}">${escapeHtml(cp.title)}</a><span class="badge ${p.progress >= 1 ? 'complete' : ''}">${pct(p.progress)}</span></li>`;
+    }).join('');
+    return `<details class="process-detail" id="dashboard-details"><summary>Progress Dashboard &mdash; ${pct(overallProgress())} complete</summary>
+      <p>Overall progress across all ${course.weeks.length} weeks, weighted with phase checkpoints and the capstone. Open a week for its full status (materials, guide, defined terms, lab, lab video, knowledge check, match practice).</p>
+      <div class="module-progress"><div class="progress-rail"><div class="progress-fill" style="width:${pct(overallProgress())}"></div></div><strong>${pct(overallProgress())}</strong></div>
+      <ul class="dashboard-week-list">${rows}</ul>
+      ${cpRows ? `<h3>Phase checkpoints</h3><ul class="dashboard-week-list">${cpRows}</ul>` : ''}
+    </details>`;
   }
 
   function renderVideos() {
@@ -834,6 +848,13 @@
           <span class="stat-pill ${s.matchStatus.passed ? 'done' : ''}">Match practice ${s.matchStatus.total ? (s.matchStatus.submitted ? `${s.matchStatus.correct}/${s.matchStatus.total} · ${pct(s.matchStatus.score)}` : `${s.matchStatus.answered}/${s.matchStatus.total} answered`) : 'n/a'}</span>
           <span class="stat-pill ${s.module >= 1 ? 'done' : ''}">Module ${s.module ? 'done' : 'open'}</span>
         </div>
+        <div class="week-jump-nav">
+          <button type="button" data-action="jump-to" data-target="wk-learn">Learn it</button>
+          <button type="button" data-action="jump-to" data-target="wk-see-it">See it in Rentvine</button>
+          <button type="button" data-action="jump-to" data-target="wk-real-world">Real-world context</button>
+          <button type="button" data-action="jump-to" data-target="wk-practice">Practice &amp; submit</button>
+          <button type="button" data-action="jump-to" data-target="wk-check">Knowledge check</button>
+        </div>
       </section>
       <section class="panel meta-grid">
         ${metaCard('Process step', week.processStage)}${metaCard('Checkpoint', week.checkpoint)}${metaCard('Estimated time', week.estimatedTime)}${metaCard('Prerequisite', week.prerequisite)}${metaCard('Topics', week.topics)}
@@ -843,18 +864,24 @@
       ${renderPracticeCompany(week)}
       ${renderHoaProperty(week)}
       ${renderMultifamilyProperty(week)}
+      <div class="section-divider" id="wk-learn">Learn it</div>
       <section class="panel"><h2>Learning outcomes</h2><ul>${week.objectives.map(o => `<li>${escapeHtml(o)}</li>`).join('')}</ul></section>
       ${renderGuidedExample(week)}
       ${renderWeekGlossary(week)}
       ${renderWeekMatchPractice(week)}
+      <div class="section-divider" id="wk-see-it">See it in Rentvine</div>
       <section class="panel"><h2>Learning materials</h2><p>Click Open to launch the material. Opening a resource also marks it reviewed.</p><button class="button secondary small" data-action="mark-materials" data-week="${week.week}">Mark all materials reviewed</button>${week.resources.map((r, i) => resourceCard(week.week, r, i)).join('')}</section>
       ${renderProductWalkthrough(week)}
+      <div class="section-divider" id="wk-real-world">Real-world context</div>
       <section class="callout"><strong>Real-world connection</strong>${escapeHtml(week.realWorldConnection)}</section>
       <section class="callout warning"><strong>Watch for</strong>${escapeHtml(week.watchFor)}</section>
+      ${renderRealWorldNotes(week)}
       ${renderScenarioPractice(week)}
       ${renderRealCaseNote(week)}
+      <div class="section-divider" id="wk-practice">Practice &amp; submit</div>
       <section class="panel"><h2>Practice lab</h2><ol>${week.labSteps.map(x => `<li>${escapeHtml(x)}</li>`).join('')}</ol><h3>Lab success checklist</h3>${week.successCriteria.map((c, i) => checkline(`weeks.${week.week}.success.${i}`, c)).join('')}</section>
       ${renderLabSubmissionPanel(week, uploadUrl)}
+      <div class="section-divider" id="wk-check">Knowledge check &amp; wrap-up</div>
       <section class="panel"><h2>Knowledge check</h2><p>Select one answer for each question, then score the knowledge check. Correct answers and explanations appear after you submit. Pass mark: ${Math.round(PASS_MARK * 100)}%.</p>${quizSummary(week)}${renderQuizQuestions(`weeks.${week.week}`, week.questions, qs.submitted || TRAINER_MODE)}<p><button class="button primary" data-action="score-quiz" data-week="${week.week}">Score knowledge check</button> <button class="button secondary" data-action="clear-quiz" data-week="${week.week}">Clear knowledge check</button></p></section>
       ${renderWeekNotes(week)}
       <section class="panel"><h2>Module completion</h2>${completionReminder(s, week)}${checkline(`weeks.${week.week}.moduleComplete`, `I completed this module, submitted the required lab ${weekVideoRequired(week) ? 'video' : 'documents'}, passed the knowledge check, and updated my LMS record.`)}<p><button class="button danger small" data-action="clear-week" data-week="${week.week}">Clear this week only</button> <button class="button secondary small" data-action="back-top">Back to top</button></p></section>`;
@@ -880,11 +907,21 @@
     const hook = g.memoryHook ? `<div class="callout"><strong>Beginner-friendly summary</strong>${escapeHtml(g.memoryHook)}</div>` : '';
     return `<section class="panel guide-panel"><h2>${escapeHtml(g.title || 'Guided walkthrough example')}</h2>${scenario}<div class="guide-script">${paragraphs}</div>${hook}<h3>Use this guide to answer</h3><ul>${questions}</ul>${checkline(`weeks.${week.week}.guideReviewed`, 'I reviewed this guided example and can explain the workflow in beginner-friendly language.')}</section>`;
   }
+  // Defined Terms for a lesson used to render as an always-open table taking up a full section
+  // of the week page. It's now a collapsible dropdown (closed by default) so a week page doesn't
+  // show a full term table before the learner has asked to see it -- same treatment as the
+  // Overview page's glossary/dashboard dropdowns, just scoped to this week's terms.
   function renderWeekGlossary(week) {
     const terms = glossaryTermsForWeek(week.week);
     if (!terms.length) return '';
+    const reviewed = terms.filter(g => state.glossary?.[g.id]?.reviewed).length;
     const rows = terms.map(g => `<tr><td>${checkline(`glossary.${g.id}.reviewed`, '')}</td><td><strong>${escapeHtml(g.term)}</strong><br><span class="resource-meta">${escapeHtml(g.category)}</span></td><td>${escapeHtml(g.definition)}<br><span class="resource-meta"><strong>Why it matters:</strong> ${escapeHtml(g.whyItMatters || '')}</span></td><td>${linkButton(g.guideUrl, 'Open lesson guide')}</td></tr>`).join('');
-    return `<section class="panel"><h2>Defined terms for this lesson</h2><p>Review these beginner-friendly terms before the lab. Each term includes a one-click Rentvine Help Center lesson guide.</p><p><button class="button secondary small" data-action="mark-terms" data-week="${week.week}">Mark lesson terms reviewed</button> <a class="button secondary small" href="#glossary">Open full glossary</a></p><div class="table-wrap"><table><thead><tr><th>Reviewed</th><th>Term</th><th>Definition</th><th>Lesson guide</th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
+    return `<section class="panel"><details class="process-detail">
+      <summary>Defined terms for this lesson &mdash; ${reviewed}/${terms.length} reviewed</summary>
+      <p>Review these beginner-friendly terms before the lab. Each term includes a one-click Rentvine Help Center lesson guide.</p>
+      <p><button class="button secondary small" data-action="mark-terms" data-week="${week.week}">Mark lesson terms reviewed</button> <a class="button secondary small" href="#overview">Open full glossary (Overview)</a></p>
+      <div class="table-wrap"><table><thead><tr><th>Reviewed</th><th>Term</th><th>Definition</th><th>Lesson guide</th></tr></thead><tbody>${rows}</tbody></table></div>
+    </details></section>`;
   }
 
   // Required completion status for the Match Term to Definition practice ("#glossary-match"),
@@ -991,18 +1028,25 @@
         <div class="field"><label>Outcome<select data-path="${namespace}.outcome"><option value="">Choose outcome...</option><option value="ready" ${getPath(`${namespace}.outcome`) === 'ready' ? 'selected' : ''}>Ready to proceed</option><option value="practice" ${getPath(`${namespace}.outcome`) === 'practice' ? 'selected' : ''}>Needs additional practice</option></select></label></div>
         ${textArea('Manager notes', `${namespace}.managerNotes`)}
       </section>
-      <section class="panel"><p><a class="button secondary small" href="#dashboard">Back to dashboard</a> <button class="button secondary small" data-action="back-top">Back to top</button></p></section>`;
+      <section class="panel"><p><a class="button secondary small" href="#overview">Back to overview</a> <button class="button secondary small" data-action="back-top">Back to top</button></p></section>`;
   }
 
+  // Personal/optional -- not tracked by completionReminder() -- so both collapse by default to
+  // keep them out of the way of the required, always-visible sections.
   function renderWeekNotes(week) {
-    return `<section class="panel"><h2>My notes</h2><p>Jot down anything worth remembering from this module -- questions for your manager, things that clicked, or steps you want to double-check later. These notes are just for you.</p>${textArea('Notes for Week ' + week.week, `weeks.${week.week}.myNotes`, 'Type your own notes for this week here...')}</section>`;
+    return `<section class="panel"><details class="process-detail"><summary>My notes (optional)</summary><p>Jot down anything worth remembering from this module -- questions for your manager, things that clicked, or steps you want to double-check later. These notes are just for you.</p>${textArea('Notes for Week ' + week.week, `weeks.${week.week}.myNotes`, 'Type your own notes for this week here...')}</details></section>`;
   }
   function renderRealCaseNote(week) {
     const rce = course.realCaseExposure || {};
-    return `<section class="panel"><h2>${escapeHtml(rce.title || 'Real Case Review')}</h2><p>${escapeHtml(rce.guidance || '')}</p>${textArea(rce.weeklyPromptLabel || "This week's real case note", `weeks.${week.week}.realCaseNote`, rce.weeklyPromptPlaceholder || '')}</section>`;
+    return `<section class="panel"><details class="process-detail"><summary>${escapeHtml(rce.title || 'Real Case Review')} (optional)</summary><p>${escapeHtml(rce.guidance || '')}</p>${textArea(rce.weeklyPromptLabel || "This week's real case note", `weeks.${week.week}.realCaseNote`, rce.weeklyPromptPlaceholder || '')}</details></section>`;
   }
 
-  function renderGlossary() {
+  // Defined Terms & Glossary used to be its own full sidebar page/route ("#glossary"). It's now
+  // a collapsible dropdown embedded directly in the Overview page instead (see renderOverview()),
+  // so this builds the panel's inner HTML as a plain string rather than replacing app.innerHTML.
+  // The search/filter wiring (filterGlossary()) still runs the same way -- it's invoked once by
+  // renderOverview() after the whole Overview page (including this markup) is in the DOM.
+  function glossaryPanelHtml() {
     const terms = course.glossary || [];
     const categories = [...new Set(terms.map(g => g.category).filter(Boolean))].sort();
     const reviewed = terms.filter(g => state.glossary?.[g.id]?.reviewed).length;
@@ -1017,10 +1061,11 @@
         <td><a class="button primary small" href="${attr(g.guideUrl)}" target="_blank" rel="noopener" data-action="open-glossary-guide" data-term="${attr(g.id)}">Open guide</a><br><span class="resource-meta">${escapeHtml(g.guideTitle)}</span></td>
       </tr>`;
     }).join('');
-    app.innerHTML = `<section class="module-header"><div class="kicker">Learner reference</div><h1>Defined Terms & Glossary</h1><p>Use this tab like a Monday-board style glossary: review the term, read the plain-English definition, see which week teaches it, and open the official Rentvine Help Center lesson guide in one click.</p><div class="module-progress"><div class="progress-rail"><div class="progress-fill" style="width:${pct(glossaryOverallProgress())}"></div></div><strong>${reviewed}/${terms.length} reviewed</strong></div></section>
-      <section class="panel glossary-tools"><div class="field"><label>Search terms, definitions, or weeks<input id="glossary-search" type="search" placeholder="Example: reserve, move-out, ACH, RentSign"></label></div><div class="field"><label>Filter by category<select id="glossary-category"><option value="">All categories</option>${categories.map(c => `<option value="${attr(c)}">${escapeHtml(c)}</option>`).join('')}</select></label></div><div class="field"><label>Filter by week<select id="glossary-week"><option value="">All weeks</option>${course.weeks.map(w => `<option value="${w.week}">Week ${w.week}</option>`).join('')}</select></label></div><div class="glossary-actions"><button class="button secondary" data-action="mark-glossary-all">Mark all glossary terms reviewed</button><button class="button secondary" data-action="clear-glossary-filter">Clear filters</button></div></section>
-      <section class="panel"><div class="table-wrap"><table><thead><tr><th>Reviewed</th><th>Term</th><th>Plain-English definition</th><th>Week</th><th>Lesson guide</th></tr></thead><tbody id="glossary-body">${rows}</tbody></table></div><p id="glossary-count" class="resource-meta"></p></section>`;
-    filterGlossary();
+    return `<details class="process-detail" id="glossary-details"><summary>Defined Terms &amp; Glossary &mdash; ${reviewed}/${terms.length} reviewed (${pct(glossaryOverallProgress())})</summary>
+      <p>Use this like a Monday-board style glossary: review the term, read the plain-English definition, see which week teaches it, and open the official Rentvine Help Center lesson guide in one click.</p>
+      <div class="glossary-tools"><div class="field"><label>Search terms, definitions, or weeks<input id="glossary-search" type="search" placeholder="Example: reserve, move-out, ACH, RentSign"></label></div><div class="field"><label>Filter by category<select id="glossary-category"><option value="">All categories</option>${categories.map(c => `<option value="${attr(c)}">${escapeHtml(c)}</option>`).join('')}</select></label></div><div class="field"><label>Filter by week<select id="glossary-week"><option value="">All weeks</option>${course.weeks.map(w => `<option value="${w.week}">Week ${w.week}</option>`).join('')}</select></label></div><div class="glossary-actions"><button class="button secondary" data-action="mark-glossary-all">Mark all glossary terms reviewed</button><button class="button secondary" data-action="clear-glossary-filter">Clear filters</button></div></div>
+      <div class="table-wrap"><table><thead><tr><th>Reviewed</th><th>Term</th><th>Plain-English definition</th><th>Week</th><th>Lesson guide</th></tr></thead><tbody id="glossary-body">${rows}</tbody></table></div><p id="glossary-count" class="resource-meta"></p>
+    </details>`;
   }
 
   function filterGlossary() {
@@ -1253,6 +1298,12 @@
     }
     if (t.dataset.action === 'back-top') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    if (t.dataset.action === 'jump-to' && t.dataset.target) {
+      // Native scroll (not a `#hash` link) so this never touches window.location.hash and
+      // therefore never fights the app's hash-based router / triggers a re-render.
+      const el = document.getElementById(t.dataset.target);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     if (t.dataset.action === 'toggle-contrast') {
       state.accessibility.highContrast = !state.accessibility.highContrast;
