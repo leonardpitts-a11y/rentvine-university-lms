@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Leonard Pitts">
+<title>Facilitator Script: RentSign &amp; Reporting</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;max-width:900px;margin:2rem auto;padding:0 1rem;color:#1f2933}
+  h1{color:#006b47}
+  h2{color:#006b47;border-top:1px solid #d9e3dd;padding-top:1.25rem;margin-top:2rem}
+  h3{color:#0a5c3f;margin-top:1.5rem}
+  .kicker{color:#5a6b63;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+  .box{border:1px solid #d9e3dd;border-radius:12px;padding:1rem 1.25rem;background:#f7faf8;margin-bottom:1rem}
+  blockquote.script-line{border-left:4px solid #00875a;background:#f0f7f3;margin:.75rem 0;padding:.6rem 1rem;font-style:italic}
+  blockquote.script-line::before{content:"Suggested trainer language: ";font-style:normal;font-weight:700;color:#006b47}
+  ul, ol{padding-left:1.4rem}
+  li{margin:.3rem 0}
+  a.toc-link{display:block;padding:.15rem 0}
+  .toc{columns:2;column-gap:2rem}
+  @media (max-width:700px){.toc{columns:1}}
+  button.print-btn{padding:.6rem .85rem;border-radius:8px;border:1px solid #d9e3dd;background:#00875a;color:white;font-weight:700;margin-bottom:1rem}
+  button.top-btn{padding:.4rem .7rem;border-radius:8px;border:1px solid #d9e3dd;background:#fff;color:#006b47;font-weight:700;font-size:.8rem}
+  @media print{button{display:none}}
+  table.qref{width:100%;border-collapse:collapse;margin-top:.5rem}
+  table.qref td,table.qref th{border:1px solid #d9e3dd;padding:.5rem;text-align:left;vertical-align:top}
+  table.qref th{background:#f0f5f2}
+</style>
+</head>
+<body id="top">
+
+<button class="print-btn" onclick="window.print()">Print this facilitator script</button>
+
+<div class="kicker">Rentvine University &middot; Facilitator Script &middot; Post-Go-Live QA1 (Call 3A)</div>
+<h1>RentSign &amp; Reporting</h1>
+<p class="box"><strong>Purpose:</strong> This is a full trainer/facilitator script for the first post-go-live QA session: RentSign (template setup, hot fields vs. fillable fields, sending a document, signing order, default settings, and handling documents signed outside Rentvine) and Reporting (where data actually lives, the Lease Charges report as a teaching example, filters and saved reports, exporting and scheduling, and a handful of the most useful individual reports). Use it to prepare for explaining these processes to a new team member, an owner, or yourself while practicing. Lines marked <em>"Suggested trainer language"</em> are ready-to-use scripting you can say almost word for word, and the Q&amp;A callouts capture real trainer/trainee exchanges worth reusing.</p>
+
+<div class="box">
+<strong>Table of contents</strong>
+<div class="toc">
+<a class="toc-link" href="#intro">Introduction</a>
+<a class="toc-link" href="#rentsign-overview">RentSign Overview: What It Is and Why We Use It</a>
+<a class="toc-link" href="#rentsign-template">Setting Up a RentSign Template</a>
+<a class="toc-link" href="#hot-fillable">Hot Fields vs. Fillable Fields</a>
+<a class="toc-link" href="#bundling">Bundling Sub-Forms and Addendums Into One Template</a>
+<a class="toc-link" href="#sending">Sending a Document for Signature: Two Ways</a>
+<a class="toc-link" href="#signing-order">Signing Order and the Three-Signer Rule</a>
+<a class="toc-link" href="#rentsign-defaults">RentSign Default Settings: Expiration and Reminders</a>
+<a class="toc-link" href="#outside-signed">Handling Documents Signed Outside Rentvine</a>
+<a class="toc-link" href="#reporting-overview">Reporting Overview: Where Data Actually Lives</a>
+<a class="toc-link" href="#lease-charges">The Lease Charges Report: Filters, Columns, and Saved Reports</a>
+<a class="toc-link" href="#export-schedule">Exporting, Scheduling, and Sharing Reports</a>
+<a class="toc-link" href="#key-reports">Key Reports Worth Knowing</a>
+<a class="toc-link" href="#owner-self-serve">Owner Self-Service Reporting</a>
+<a class="toc-link" href="#limitations">Known Reporting Limitations</a>
+<a class="toc-link" href="#closing">Closing</a>
+</div>
+</div>
+
+<section id="intro">
+<h2>Introduction</h2>
+<p>Good morning. Today's session is a little different from the last few &mdash; you're already live, so this is really a QA session built around two things you'll use constantly from here on out: RentSign, our built-in e-signature tool, and Reporting, which is how you and your owners are going to actually see what's happening across the portfolio.</p>
+<p>We'll start with RentSign since it ties directly into leasing and renewals, and then we'll move into reporting, where I want to spend a good amount of time on one report specifically &mdash; Lease Charges &mdash; because once you understand how that one works, every other report in the system follows the same logic.</p>
+</section>
+
+<section id="rentsign-overview">
+<h2>RentSign Overview: What It Is and Why We Use It</h2>
+<p>RentSign is our built-in e-signature platform. It lets you create, send, and track legally binding digital documents &mdash; leases, management agreements, addendums, move-out agreements, whatever you need signed &mdash; without printing, scanning, or manually chasing anyone down for a signature. Everything lives inside Rentvine and everything is tracked automatically.</p>
+<p>Anything that requires a signature can go through RentSign: property management agreements, lease agreements, lease renewals, addendums, and move-out agreements are the most common documents we see companies send this way.</p>
+</section>
+
+<section id="rentsign-template">
+<h2>Setting Up a RentSign Template</h2>
+<p>Before you can send anything, you need a template. This is a one-time setup per document type. Click your initials in the bottom-left corner, go to Settings, then RentSign, then Templates. From there, click the green New Template button.</p>
+<p>You'll upload a PDF of the document &mdash; your lease, your PMA, whatever it is &mdash; and then you mark up the document by placing signable and fillable fields directly on top of it. Once that's done and saved, that template is ready to be used over and over again.</p>
+</section>
+
+<section id="hot-fillable">
+<h2>Hot Fields vs. Fillable Fields</h2>
+<p>There are two kinds of fields you'll place on a template, and it's worth being precise about the difference because it comes up constantly.</p>
+<p>Hot fields automatically pull data straight from the record the moment the document is generated &mdash; tenant name, property address, lease dates, rent amount. You don't type any of that in; it's already there because Rentvine already knows it from the lease or the property record.</p>
+<p>Fillable fields are the opposite: they're blank until someone actually fills them in at send time, whether that's a signature, an initial, a date, or a note that's specific to this one document and can't be auto-populated.</p>
+<blockquote class="script-line">Anything Rentvine already knows about this lease should be a hot field. Anything that's unique to this specific signing &mdash; a signature, an initial, a one-off note &mdash; that's a fillable field.</blockquote>
+</section>
+
+<section id="bundling">
+<h2>Bundling Sub-Forms and Addendums Into One Template</h2>
+<p>You don't need to build a brand-new template for every possible combination of addendums. Instead, one master template can bundle multiple sub-forms &mdash; a pet agreement, a pool addendum, a parking addendum &mdash; and whoever is sending the document simply checks or unchecks which sub-forms actually apply to this lease.</p>
+<p>So if this particular tenant doesn't have a pet, you just uncheck the pet agreement before sending, and it won't be included in that signer's packet. That's a much easier system to maintain than a separate template for every single permutation of addendums your company might use.</p>
+</section>
+
+<section id="sending">
+<h2>Sending a Document for Signature: Two Ways</h2>
+<p>There are two ways to actually send a document out for signature, and which one you use matters.</p>
+<p>Option one is from the RentSign tab directly: click New Document, give it a name, select the type and the template, add your signers, and send.</p>
+<p>Option two &mdash; and this is the one I want you to get in the habit of using &mdash; is sending directly from the specific record: the Documents tab of a Portfolio, Property, Lease, Owner Contact, or Vendor Contact.</p>
+<blockquote class="script-line">Always generate a RentSign document from inside the specific property, portfolio, or lease record it belongs to &mdash; not from the general RentSign section. That's the only way the document gets linked back to that record automatically.</blockquote>
+<p>If you send from the general section instead of from the record, the document goes out fine and gets signed fine, but it won't be attached anywhere you'd expect to find it later. That's the single most common RentSign mistake we see, so it's worth repeating more than once.</p>
+</section>
+
+<section id="signing-order">
+<h2>Signing Order and the Three-Signer Rule</h2>
+<p>Signing order is configurable, not fixed. Some companies route it property manager first, then tenant, then owner. Others route tenant first as the primary signing group, then manager as the secondary group. There's no single correct order &mdash; it depends on how your company likes to handle it, and you set that order when you build the template.</p>
+<p>One thing to watch for: if a lease has more than three signers on it, someone needs to manually double-check that enough signing "parties" are actually configured on the template. If they're not, the document won't send correctly, and it's not always obvious why until you go back and look at how many parties the template allows for.</p>
+</section>
+
+<section id="rentsign-defaults">
+<h2>RentSign Default Settings: Expiration and Reminders</h2>
+<p>There are a handful of default values worth knowing, because they control how RentSign behaves without you having to think about it every time:</p>
+<table class="qref">
+<tr><th>Setting</th><th>Default</th></tr>
+<tr><td>Default Days Until Document Expires</td><td>120 days (configurable 1&ndash;255)</td></tr>
+<tr><td>Default Days Until Starting Reminders</td><td>1 day</td></tr>
+<tr><td>Default Reminder Frequency</td><td>Every 1 day</td></tr>
+<tr><td>Default Days Before Expiration to Start Expiration Notice</td><td>3 days</td></tr>
+</table>
+<p>All of these are adjustable in RentSign settings if your company wants a longer or shorter window, but the defaults above are what you'll see out of the box.</p>
+</section>
+
+<section id="outside-signed">
+<h2>Handling Documents Signed Outside Rentvine</h2>
+<p>Not every document is going to go through RentSign's own e-signature flow &mdash; sometimes a renewal or a lease gets signed through DocuSign, or on paper, especially during a transition period or with a legacy document. For those cases, there's a "mark as document signed" option.</p>
+<p>What that does is bypass the native e-signature flow entirely while still updating the lease's dates and status as if it had gone through RentSign. That's the standard workaround, and it's confirmed as normal practice across many customer accounts &mdash; it's not a workaround you need to feel uneasy about using.</p>
+</section>
+
+<section id="reporting-overview">
+<h2>Reporting Overview: Where Data Actually Lives</h2>
+<p>Now let's shift into Reporting. Before we look at any specific report, there's one framing point I want to make sure sticks, because it explains almost every reporting question you'll ever get.</p>
+<blockquote class="script-line">A report can only pull data from the level where that data actually lives. If a piece of information is stored on the Property record, it will never show up on a Portfolio-level or Lease-level report &mdash; it's not missing, it's just living somewhere else.</blockquote>
+<p>A good example: a management-contract date stored on the Property record. That date will never show up on a Portfolio-level or Lease-level report, no matter how you filter it, because it doesn't live at that level. This trips people up constantly, so it's worth saying more than once and coming back to it whenever a report "isn't showing something."</p>
+</section>
+
+<section id="lease-charges">
+<h2>The Lease Charges Report: Filters, Columns, and Saved Reports</h2>
+<p>The report we use to teach this concept is Lease Charges, and once you're comfortable with it, every other report in the system works the same way.</p>
+<p>Filters support boolean-style operators: In, Not In, Equals, Not Equals, Is Empty, Is Not Empty. You can filter by property, portfolio, date range, charge type &mdash; whatever slice of the data you're trying to isolate.</p>
+<p>Once you have the report filtered the way you want, you can add or remove columns so you're only looking at the fields that actually matter for this particular question, and then you can save the report so you don't have to rebuild those filters and columns from scratch next time.</p>
+<p>One distinction worth calling out: a report saved "system-wide" is visible to every user in your company, while a report an individual pins for themselves is only visible to that one person. Decide which one makes sense before you save it.</p>
+</section>
+
+<section id="export-schedule">
+<h2>Exporting, Scheduling, and Sharing Reports</h2>
+<p>Any report can be exported to JSON, PDF, CSV, or Excel, depending on what you need it for. But you don't have to export manually every time &mdash; reports can also be scheduled for automatic delivery under Reports, Scheduled Reports, to selected users, with the option to BCC additional recipients.</p>
+<p>One privacy note worth passing along directly: it's not recommended to email sensitive reports straight to owners from the report function itself. If an owner needs a report, the better path is usually their own portal, which brings us to owner self-service in a moment.</p>
+</section>
+
+<section id="key-reports">
+<h2>Key Reports Worth Knowing</h2>
+<p>A few reports come up often enough that they're worth knowing by name and by what they actually show:</p>
+<ul>
+<li><strong>Payment Report</strong> &mdash; everything the management company collected in a given period, grouped by Chart of Accounts.</li>
+<li><strong>Aged Receivables Report</strong> &mdash; tracks 30/60/90-day past-due balances, filterable by charge type.</li>
+<li><strong>Ledger Report</strong> &mdash; drills all the way through to the underlying transaction, and can be grouped by portfolio, unit, property, or property group.</li>
+</ul>
+</section>
+
+<section id="owner-self-serve">
+<h2>Owner Self-Service Reporting</h2>
+<p>Owners aren't limited to whatever you send them &mdash; they can generate reports like income statements directly from their own portal, whenever they want, without needing to email you first. That's a real time-saver on your end, and it's worth mentioning to a new owner during onboarding so they know the option exists instead of defaulting to email every time they have a question.</p>
+</section>
+
+<section id="limitations">
+<h2>Known Reporting Limitations</h2>
+<p>Two honest limitations are worth setting expectations on up front, rather than letting a customer discover them on their own:</p>
+<p>First, there's no native side-by-side comparison dashboard for an owner who has multiple portfolios. The workaround is generating a Property Comparison report instead.</p>
+<p>Second, PDF statements are static documents. If a customer is coming from a platform where PDF statements were hyperlinked and clickable, they may expect the same thing here &mdash; the honest answer is to point them to the live ledger for that click-through level of detail, since the PDF itself won't behave that way.</p>
+</section>
+
+<section id="closing">
+<h2>Closing</h2>
+<p>That covers today's session: RentSign template setup, hot fields versus fillable fields, signing order, and the handful of default settings worth knowing, followed by reporting &mdash; where data actually lives, the Lease Charges report as our teaching example, and how to export, schedule, and share what you build.</p>
+</section>
+
+
+<p><a class="top-btn" href="#top">Back to top</a> &nbsp; <a href="../index.html">Back to Rentvine University</a></p>
+<p style="text-align:center;color:#5a6b63;font-size:.85rem;margin-top:2rem;padding-top:1rem;border-top:1px solid #d9e3dd">Rentvine University &middot; Created by Leonard Pitts</p></body>
+</html>

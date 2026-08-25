@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Leonard Pitts">
+<title>Facilitator Script: Contacts, Portals &amp; Dashboards</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;max-width:900px;margin:2rem auto;padding:0 1rem;color:#1f2933}
+  h1{color:#006b47}
+  h2{color:#006b47;border-top:1px solid #d9e3dd;padding-top:1.25rem;margin-top:2rem}
+  h3{color:#0a5c3f;margin-top:1.5rem}
+  .kicker{color:#5a6b63;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+  .box{border:1px solid #d9e3dd;border-radius:12px;padding:1rem 1.25rem;background:#f7faf8;margin-bottom:1rem}
+  blockquote.script-line{border-left:4px solid #00875a;background:#f0f7f3;margin:.75rem 0;padding:.6rem 1rem;font-style:italic}
+  blockquote.script-line::before{content:"Suggested trainer language: ";font-style:normal;font-weight:700;color:#006b47}
+  ul, ol{padding-left:1.4rem}
+  li{margin:.3rem 0}
+  a.toc-link{display:block;padding:.15rem 0}
+  .toc{columns:2;column-gap:2rem}
+  @media (max-width:700px){.toc{columns:1}}
+  button.print-btn{padding:.6rem .85rem;border-radius:8px;border:1px solid #d9e3dd;background:#00875a;color:white;font-weight:700;margin-bottom:1rem}
+  button.top-btn{padding:.4rem .7rem;border-radius:8px;border:1px solid #d9e3dd;background:#fff;color:#006b47;font-weight:700;font-size:.8rem}
+  @media print{button{display:none}}
+  table.qref{width:100%;border-collapse:collapse;margin-top:.5rem}
+  table.qref td,table.qref th{border:1px solid #d9e3dd;padding:.5rem;text-align:left;vertical-align:top}
+  table.qref th{background:#f0f5f2}
+</style>
+</head>
+<body id="top">
+
+<button class="print-btn" onclick="window.print()">Print this facilitator script</button>
+
+<div class="kicker">Rentvine University &middot; Facilitator Script &middot; Post-Go-Live QA3 (Call 4A)</div>
+<h1>Contacts, Portals &amp; Dashboards</h1>
+<p class="box"><strong>Purpose:</strong> This is a full trainer/facilitator script covering notification settings (the account-versus-personal confusion that comes up on nearly every account), mass messaging, the owner and tenant portals, viewing a portal through impersonation, portal invitations and registration, and dashboard widgets. Use it to prepare for explaining these processes to a new team member, an owner, or yourself while practicing. Lines marked <em>"Suggested trainer language"</em> are ready-to-use scripting you can say almost word for word, and the Q&amp;A callout captures a real trainer/trainee exchange worth reusing.</p>
+
+<div class="box">
+<strong>Table of contents</strong>
+<div class="toc">
+<a class="toc-link" href="#intro">Introduction</a>
+<a class="toc-link" href="#notifications-two-tier">Notifications: Account vs. Personal (Trainer Q&amp;A)</a>
+<a class="toc-link" href="#mass-messaging">Mass Messaging: Text, Email, and Letter Campaigns</a>
+<a class="toc-link" href="#two-way-texting">The Two-Way Texting Rule</a>
+<a class="toc-link" href="#owner-portal-tour">The Owner Portal Tour</a>
+<a class="toc-link" href="#tenant-portal-tour">The Tenant Portal Tour</a>
+<a class="toc-link" href="#view-portal">Viewing the Portal as an Owner or Tenant</a>
+<a class="toc-link" href="#portal-invitations">Portal Invitations and Registration</a>
+<a class="toc-link" href="#signin-vs-register">A Common Support Scenario: Sign In vs. Register</a>
+<a class="toc-link" href="#dashboards-overview">Dashboards Overview</a>
+<a class="toc-link" href="#dashboard-widget">Configuring a Dashboard Widget</a>
+<a class="toc-link" href="#dashboards-personal">Dashboards Are Personal, Not Shared</a>
+<a class="toc-link" href="#closing">Closing</a>
+</div>
+</div>
+
+<section id="intro">
+<h2>Introduction</h2>
+<p>Good morning. Today's session is about everything that touches communication and visibility: how notifications work, how you message your contacts in bulk, what your owners and tenants actually see in their portals, and how your own dashboard is configured.</p>
+<p>A lot of support tickets trace back to a misunderstanding in one of these four areas, so I want to be extra clear about how each one actually works, not just how to click through it.</p>
+</section>
+
+<section id="notifications-two-tier">
+<h2>Notifications: Account vs. Personal (Trainer Q&amp;A)</h2>
+<p>This is, without exaggeration, the single most common point of confusion we see across new accounts, so let's slow down here.</p>
+<div class="box"><p><strong>Trainee:</strong> I set up notifications at the account level, but I'm not getting alerted for the properties I actually manage &mdash; what did I do wrong?</p><p><strong>Trainer:</strong> Nothing wrong, they're just two completely different systems. Account, or global, notifications apply system-wide, and there are no default recipients pre-populated &mdash; someone has to manually enter every single email for every event type. Once you do enter yourself, you'll get alerted every time that event happens anywhere in the system, for every property, with no per-user filtering.</p><p><strong>Trainee:</strong> So how do I get alerted only for my own properties?</p><p><strong>Trainer:</strong> That's Personal Notifications, and it works the opposite way. They default to on automatically for whoever is the assignee on a property, lease, or portfolio. You configure them per user, across four channels &mdash; system bell, email, text, and Slack &mdash; and they're filtered down to only the records you're actually assigned to. If you want alerts scoped to just your own book of business, Personal Notifications is what you want, not Account Notifications.</p></div>
+</section>
+
+<section id="mass-messaging">
+<h2>Mass Messaging: Text, Email, and Letter Campaigns</h2>
+<p>Mass messaging is configured under Contacts, Messages. From there you can send a text, email, or letter campaign to a specific building, a tenant group, or however you want to segment your contacts, and you can use templates with hot fields so you're not writing the same message from scratch every time.</p>
+</section>
+
+<section id="two-way-texting">
+<h2>The Two-Way Texting Rule</h2>
+<p>One mechanic worth flagging directly, because it surprises people the first time: an administrator has to send the first text message before an owner or tenant is able to text back. Two-way SMS only activates after the manager initiates contact &mdash; a tenant can't just text your company number out of nowhere and expect a reply to come through the system.</p>
+</section>
+
+<section id="owner-portal-tour">
+<h2>The Owner Portal Tour</h2>
+<p>The owner portal gives owners real-time access to their portfolio without having to email you for every question. It includes ledgers, rent roll, statements, file upload &mdash; though owners cannot delete files once uploaded &mdash; bills, work orders, estimates, and ACH settings for how they receive their distributions.</p>
+</section>
+
+<section id="tenant-portal-tour">
+<h2>The Tenant Portal Tour</h2>
+<p>The tenant, or resident, portal covers balance, upcoming charges, autopay, deposit payment, a digital wallet for saved payment methods, and insurance submission for uploading proof of renters insurance.</p>
+</section>
+
+<section id="view-portal">
+<h2>Viewing the Portal as an Owner or Tenant</h2>
+<p>When someone reports a login problem or says something "isn't showing up," the standard first troubleshooting step is the View Portal, or impersonation, feature. It lets you see exactly what that owner or tenant sees, logged in as them, without needing their actual credentials.</p>
+<blockquote class="script-line">Before troubleshooting a portal issue any other way, use View Portal to see exactly what the owner or tenant is seeing. Most of the time, that's where the answer is.</blockquote>
+</section>
+
+<section id="portal-invitations">
+<h2>Portal Invitations and Registration</h2>
+<p>Portal invitations are tracked under Global Settings, Portal Invitations. There's a toggle there that filters out contacts who are already registered, so you can quickly isolate exactly who still needs an invite sent, instead of guessing or re-sending invitations to people who've already signed up.</p>
+</section>
+
+<section id="signin-vs-register">
+<h2>A Common Support Scenario: Sign In vs. Register</h2>
+<p>Here's a specific, very common scenario worth knowing verbatim, because it comes up often enough to be its own callout: an applicant who already registered an email address when they submitted a rental application later becomes an owner or a tenant. When that happens, they need to use "Sign In," not "Register" &mdash; because Rentvine already has an account tied to that email from the application process.</p>
+<p>If they try to register again with the same email, it won't work the way they expect, and that mismatch causes real confusion. Knowing to ask "did you already apply through us before?" is often the fastest way to resolve this kind of ticket.</p>
+</section>
+
+<section id="dashboards-overview">
+<h2>Dashboards Overview</h2>
+<p>Dashboard widgets sit above the Portfolios section on your Global Dashboard, and there are widgets for Screening, Leases, Accounting, and Maintenance.</p>
+</section>
+
+<section id="dashboard-widget">
+<h2>Configuring a Dashboard Widget</h2>
+<p>Each widget is configured individually using the gear icon on that widget. That lets you control what that specific widget shows you, without affecting any of the other widgets on your dashboard.</p>
+</section>
+
+<section id="dashboards-personal">
+<h2>Dashboards Are Personal, Not Shared</h2>
+<p>One thing worth stating explicitly, since it comes up as a genuine question: dashboards are fully user-specific. If you rearrange or reconfigure your own dashboard, it has zero effect on anyone else's view. Everyone on your team can set their dashboard up exactly how they want it, independent of everyone else.</p>
+</section>
+
+<section id="closing">
+<h2>Closing</h2>
+<p>That covers today's session: the difference between account and personal notifications, mass messaging and the two-way texting rule, a tour of both portals, how to troubleshoot with View Portal, the sign-in-versus-register scenario, and how dashboards and their widgets work.</p>
+</section>
+
+
+<p><a class="top-btn" href="#top">Back to top</a> &nbsp; <a href="../index.html">Back to Rentvine University</a></p>
+<p style="text-align:center;color:#5a6b63;font-size:.85rem;margin-top:2rem;padding-top:1rem;border-top:1px solid #d9e3dd">Rentvine University &middot; Created by Leonard Pitts</p></body>
+</html>

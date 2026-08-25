@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Leonard Pitts">
+<title>Facilitator Script: Lease Renewal &amp; Move-Out Workflow</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;max-width:900px;margin:2rem auto;padding:0 1rem;color:#1f2933}
+  h1{color:#006b47}
+  h2{color:#006b47;border-top:1px solid #d9e3dd;padding-top:1.25rem;margin-top:2rem}
+  h3{color:#0a5c3f;margin-top:1.5rem}
+  .kicker{color:#5a6b63;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+  .box{border:1px solid #d9e3dd;border-radius:12px;padding:1rem 1.25rem;background:#f7faf8;margin-bottom:1rem}
+  blockquote.script-line{border-left:4px solid #00875a;background:#f0f7f3;margin:.75rem 0;padding:.6rem 1rem;font-style:italic}
+  blockquote.script-line::before{content:"Suggested trainer language: ";font-style:normal;font-weight:700;color:#006b47}
+  ul, ol{padding-left:1.4rem}
+  li{margin:.3rem 0}
+  a.toc-link{display:block;padding:.15rem 0}
+  .toc{columns:2;column-gap:2rem}
+  @media (max-width:700px){.toc{columns:1}}
+  button.print-btn{padding:.6rem .85rem;border-radius:8px;border:1px solid #d9e3dd;background:#00875a;color:white;font-weight:700;margin-bottom:1rem}
+  button.top-btn{padding:.4rem .7rem;border-radius:8px;border:1px solid #d9e3dd;background:#fff;color:#006b47;font-weight:700;font-size:.8rem}
+  @media print{button{display:none}}
+  table.qref{width:100%;border-collapse:collapse;margin-top:.5rem}
+  table.qref td,table.qref th{border:1px solid #d9e3dd;padding:.5rem;text-align:left;vertical-align:top}
+  table.qref th{background:#f0f5f2}
+</style>
+</head>
+<body id="top">
+
+<button class="print-btn" onclick="window.print()">Print this facilitator script</button>
+
+<div class="kicker">Rentvine University &middot; Facilitator Script &middot; Post-Go-Live QA2 (Call 3B)</div>
+<h1>Lease Renewal &amp; Move-Out Workflow</h1>
+<p class="box"><strong>Purpose:</strong> This is a full trainer/facilitator script covering Lease Renewal (settings, the four-stage renewal workflow, competing offers, tenant self-service, renewal fees, and two important gotchas) and the Move-Out workflow (the four-part flow, security deposit calculation and refund, the move-out statement, tying the refund back to escrow, moving out a single tenant on a shared lease, and Bulk Receipts). Use it to prepare for explaining these processes to a new team member, an owner, or yourself while practicing. Lines marked <em>"Suggested trainer language"</em> are ready-to-use scripting you can say almost word for word, and the Q&amp;A callout captures a real trainer/trainee exchange worth reusing.</p>
+
+<div class="box">
+<strong>Table of contents</strong>
+<div class="toc">
+<a class="toc-link" href="#intro">Introduction</a>
+<a class="toc-link" href="#renewal-settings">Renewal Settings: One-Time Setup</a>
+<a class="toc-link" href="#renewals-tab">The Renewals Tab and the 180-Day Window</a>
+<a class="toc-link" href="#renewal-stages">The Four Stages of a Renewal</a>
+<a class="toc-link" href="#competing-offers">Sending Competing Offers</a>
+<a class="toc-link" href="#tenant-self-service">Tenant Self-Service: Accepting From the Portal</a>
+<a class="toc-link" href="#renewal-fees">Renewal Fees and When They're Charged</a>
+<a class="toc-link" href="#renewal-gotchas">Two Renewal Gotchas (Trainer Q&amp;A)</a>
+<a class="toc-link" href="#outside-renewals">Renewals Signed Outside Rentvine</a>
+<a class="toc-link" href="#moveout-overview">Move-Out Overview: Why the Flow Matters</a>
+<a class="toc-link" href="#moveout-start">Starting a Move-Out: Details and Tenant Information</a>
+<a class="toc-link" href="#deposit-calc">Security Deposit Calculation and Refund</a>
+<a class="toc-link" href="#moveout-finalize">Finalizing the Move-Out and the Move-Out Statement</a>
+<a class="toc-link" href="#refund-escrow">Processing the Refund and Closing the Loop With Escrow</a>
+<a class="toc-link" href="#single-tenant-moveout">Moving Out One Tenant While Keeping Others on the Lease</a>
+<a class="toc-link" href="#bulk-receipts">Bulk Receipts for Lump-Sum Payments</a>
+<a class="toc-link" href="#closing">Closing</a>
+</div>
+</div>
+
+<section id="intro">
+<h2>Introduction</h2>
+<p>Good morning. Today we're covering two workflows that tend to get scheduled last in onboarding, but honestly deserve just as much attention as everything that came before: Lease Renewal and Move-Out.</p>
+<p>Both of these are the kind of thing you don't touch every day, but when you do need them, you need to get them right &mdash; there's real money and real accounting accuracy riding on both. Let's start with renewals.</p>
+</section>
+
+<section id="renewal-settings">
+<h2>Renewal Settings: One-Time Setup</h2>
+<p>Before you ever run a renewal, there's a one-time setup step under Global Settings, Lease Settings. That's where you'll find Renewal Eligibility Days &mdash; how far out a lease becomes eligible to renew &mdash; and your Renewal Offer Templates, which control what the actual offer looks like when it goes out to the tenant.</p>
+<p>Get this configured once, and every renewal after that follows the same rules automatically.</p>
+</section>
+
+<section id="renewals-tab">
+<h2>The Renewals Tab and the 180-Day Window</h2>
+<p>Once that's set up, the day-to-day workflow runs through Leases, Renewals. By default, the Renewals tab shows you leases ending within the next 180 days, so you've always got visibility into what's coming up without having to go hunting lease by lease.</p>
+</section>
+
+<section id="renewal-stages">
+<h2>The Four Stages of a Renewal</h2>
+<p>Every renewal moves through four stages: Review, Price &amp; Send, Sign, and Finalize.</p>
+<ol>
+<li><strong>Review</strong> &mdash; confirm the lease details and that this tenant is actually eligible to renew.</li>
+<li><strong>Price &amp; Send</strong> &mdash; set the new rent and terms, and send the offer.</li>
+<li><strong>Sign</strong> &mdash; the offer gets signed, either through RentSign or an external method.</li>
+<li><strong>Finalize</strong> &mdash; this is the step that actually updates the lease's term, fees, and charges going forward.</li>
+</ol>
+<p>Bulk actions are also available here, so if you've got a batch of renewals to push through at once, you're not stuck doing them one at a time.</p>
+</section>
+
+<section id="competing-offers">
+<h2>Sending Competing Offers</h2>
+<p>You're not limited to a single offer per renewal &mdash; you can send up to three competing offers on the same renewal. That's useful if you want to give a tenant options, for example a one-year term at one rate versus a month-to-month option at a slightly higher rate, and let them choose which one works for them.</p>
+</section>
+
+<section id="tenant-self-service">
+<h2>Tenant Self-Service: Accepting From the Portal</h2>
+<p>Tenants don't have to wait for a phone call or an email exchange &mdash; they can accept a renewal offer directly from their own Resident Portal. That's less back-and-forth for you and a faster path to a signed renewal.</p>
+</section>
+
+<section id="renewal-fees">
+<h2>Renewal Fees and When They're Charged</h2>
+<p>Here's a mechanic worth being precise about: the renewal fee pulls directly from the property's management-fee settings, and it's charged to the owner the moment the renewal is entered &mdash; regardless of a separate renewal fee toggle you might expect to control it.</p>
+<blockquote class="script-line">The renewal fee is tied to your management-fee settings on the property, and it posts the moment the renewal is entered &mdash; not when it's finalized, and not controlled by a separate toggle.</blockquote>
+<p>Companies that came from a more manual, paperwork-heavy renewal process tend to really appreciate this once they understand it, because it removes an entire category of manual billing they used to have to remember to do themselves.</p>
+</section>
+
+<section id="renewal-gotchas">
+<h2>Two Renewal Gotchas (Trainer Q&amp;A)</h2>
+<p>There are two things about renewals that are easy to miss the first time, and worth walking through directly rather than letting someone discover them the hard way.</p>
+<div class="box"><p><strong>Trainee:</strong> I finalized a renewal, but it looked like the lease end date defaulted to the first of next month instead of the last day of this month. Is that a bug?</p><p><strong>Trainer:</strong> Not a bug &mdash; that's just how the automatic end-date fill works. It defaults to the first day of a month rather than the last day of the previous month, and that affects the next eligible increase date downstream. You can manually correct it before finalizing, but it's easy to miss if you're moving quickly, so always double-check that date before you finalize.</p><p><strong>Trainee:</strong> Okay, that explains it. What about the renewal that looked "signed" but never actually completed?</p><p><strong>Trainer:</strong> That one's a little more serious. If a renewal-fee bill gets created before the renewal itself is finalized, the renewal can show as signed while never actually finishing the process. The fix is to void the conflicting bill &mdash; or set it to zero &mdash; and then finalize the renewal directly through the lease record. I've seen this trip up someone who was following the instructional videos exactly right, so it's not about doing something wrong. It's just a sequencing issue worth knowing about ahead of time.</p></div>
+</section>
+
+<section id="outside-renewals">
+<h2>Renewals Signed Outside Rentvine</h2>
+<p>Just like with any other document, not every renewal is going to be negotiated and signed inside Rentvine. If a renewal was handled entirely outside the system, you can still create and approve an in-system offer for internal record-keeping, and then use "mark as document signed" to close it out without triggering a live e-signature request.</p>
+</section>
+
+<section id="moveout-overview">
+<h2>Move-Out Overview: Why the Flow Matters</h2>
+<p>Now let's move into Move-Out. It might feel tempting to just mark a tenant as gone and move on, but that's not enough &mdash; the Move-Out flow exists to make sure the security deposit accounting, final rent and charges, ledger accuracy, property readiness, and owner reporting all stay correct.</p>
+<p>If you skip the actual flow, the security deposit may not release properly, charges may go unsettled, the refund amount may be wrong, the unit's occupancy status may not update, and your financial records can end up inaccurate. None of that is worth the shortcut.</p>
+</section>
+
+<section id="moveout-start">
+<h2>Starting a Move-Out: Details and Tenant Information</h2>
+<p>To start, go to the lease, click the green Actions button, and select Move Out. That takes you into the first part of a four-part flow: Move-Out Details, Tenant Information, the Accounting and deposit calculation, and Finalize.</p>
+<p>Move-Out Details covers the notice date (which auto-fills to today but can be overridden), the expected move-out date, the move-out reason &mdash; which is a required field &mdash; and the unit availability date, so you know when it'll actually be ready to re-rent.</p>
+<p>Tenant Information is where you collect a forwarding address and contact information for the tenant, which matters for anything that needs to reach them after they've left, including the deposit refund itself.</p>
+</section>
+
+<section id="deposit-calc">
+<h2>Security Deposit Calculation and Refund</h2>
+<p>Next is the accounting and deposit calculation step. This is where the system settles outstanding charges and calculates what's left of the security deposit to refund. If there's more than one tenant on the lease, you also have the ability to split the deposit refund between them here.</p>
+</section>
+
+<section id="moveout-finalize">
+<h2>Finalizing the Move-Out and the Move-Out Statement</h2>
+<p>The last part of the flow is Finalize, where you choose the refund method. Once you finalize, print the Move-Out Statement PDF &mdash; that's the document that shows the tenant exactly how their deposit was handled, what was deducted, and what's being refunded.</p>
+</section>
+
+<section id="refund-escrow">
+<h2>Processing the Refund and Closing the Loop With Escrow</h2>
+<p>Finalizing the move-out calculates the refund, but you still need to actually process it. Go to Accounting, Money Out, Payments, and process the refund check from there. Then make sure you complete the actual bank transfer.</p>
+<blockquote class="script-line">Don't stop at finalizing the move-out. Process the refund payment and complete the bank transfer, or your escrow account will fall out of sync with your security deposit ledger.</blockquote>
+<p>This ties directly back to the Escrow Mismatch diagnostic from the Maintenance &amp; Diagnostics session &mdash; an unprocessed transfer here is one of the most common reasons that diagnostic flags a problem later.</p>
+</section>
+
+<section id="single-tenant-moveout">
+<h2>Moving Out One Tenant While Keeping Others on the Lease</h2>
+<p>Sometimes you only need to move out one tenant on a lease that has multiple people on it &mdash; student housing and co-tenant situations are the most common example. For that, you don't need to run the full move-out flow.</p>
+<p>Instead, go to the lease details page, find the Tenants section, click the ellipsis next to that tenant's name, and select Move Out. Enter the move-out date, optionally revoke their portal access, and save.</p>
+<p>One important distinction: this does not touch the accounting. If there are financial adjustments needed because of that one tenant leaving, you'll need to handle those separately &mdash; this action is purely about removing them from the lease record.</p>
+</section>
+
+<section id="bulk-receipts">
+<h2>Bulk Receipts for Lump-Sum Payments</h2>
+<p>While we're in the accounting side of things, it's worth introducing Bulk Receipts, since it often comes up around the same time as move-outs and renewals. Bulk Receipts is built for lump-sum payments &mdash; the most common example is a Section 8 or HUD disbursement &mdash; where one incoming payment needs to be applied across multiple unpaid charges or properties at once.</p>
+<p>Instead of manually entering a separate receipt for every single tenant covered by that one deposit, Bulk Receipts lets you apply it in a single step.</p>
+</section>
+
+<section id="closing">
+<h2>Closing</h2>
+<p>That's everything for today: the four-stage renewal workflow from Review through Finalize, the two gotchas worth watching for, and the full Move-Out flow from starting the process through processing the refund and closing the loop with escrow.</p>
+</section>
+
+
+<p><a class="top-btn" href="#top">Back to top</a> &nbsp; <a href="../index.html">Back to Rentvine University</a></p>
+<p style="text-align:center;color:#5a6b63;font-size:.85rem;margin-top:2rem;padding-top:1rem;border-top:1px solid #d9e3dd">Rentvine University &middot; Created by Leonard Pitts</p></body>
+</html>
