@@ -1882,7 +1882,7 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Process an applicant from application submission through screening review and a documented decision.",
       "realWorldConnection": "Apply objective screening criteria for applicants, co-applicants, and guarantors.",
       "watchFor": "Applying screening standards inconsistently or failing to document the decision rationale.",
-      "realWorldNotes": ["The most consequential real gotcha found in this research: an applicant can bypass Plaid income verification entirely by skipping to document upload, and the system does not validate that the uploaded file is actually a bank statement. Rentvine's product team is actively redesigning this flow to make skipping harder.","Native pet screening now triple-confirms a &ldquo;no pet&rdquo; response inside the application itself, and flags any applicant who claims a pet but never completes a pet-screening profile.","HUD/FCRA rules cap criminal-record look-back at 7 years and eviction look-back at 10 years &mdash; the accredited data bureau already excludes pending/unadjudicated cases automatically."],
+      "realWorldNotes": ["The most consequential real gotcha found in this research: an applicant can bypass Plaid income verification entirely by skipping to document upload, and the system does not validate that the uploaded file is actually a bank statement. Rentvine's product team is actively redesigning this flow to make skipping harder.","Native pet screening now triple-confirms a &ldquo;no pet&rdquo; response inside the application itself, and flags any applicant who claims a pet but never completes a pet-screening profile.","HUD/FCRA rules cap criminal-record look-back at 7 years and eviction look-back at 10 years &mdash; the accredited data bureau already excludes pending/unadjudicated cases automatically.","<strong>Custom Scoring</strong> is configured per application template, so different templates (student housing, Section 8, standard) can carry different scoring criteria &mdash; every submitted application is automatically tagged with the template it came from.","The template builder is also where Plaid identity/income verification and pet screening get turned on for that specific template, not as a single account-wide switch.","Credit scoring look-back periods are configurable from the past 2 years up to all available data, but that window only controls what shows on the Decision View summary tiles &mdash; the full screening report always shows the applicant's complete credit history regardless of the configured look-back.","<strong>Set late-payment thresholds higher, not lower.</strong> A single late payment can get counted across the 30-, 60-, and 90-day buckets at once, which inflates the apparent number of late payments if the threshold is set too aggressively.","Criminal records on the full report only ever show guilty verdicts from the last 10 years &mdash; non-guilty and pending charges are excluded automatically, on top of the 7-year eviction cap already noted above.","Rental history and identity verification results are configurable to fail, review, or pass &mdash; a verification request shows as a neutral grayed-out &ldquo;sent&rdquo; status (not a red fail) until the applicant actually responds.","Decision View flags issues in color but never auto-passes or auto-fails an applicant on its own &mdash; a late payment or a low score doesn't trigger an automatic decision. The PM always makes the final call.","Decision View calculates an applicant's income-to-rent ratio automatically and lets a PM run a screening report directly from a single applicant's record, without first merging co-applicants together.","Once an application is marked Declined or Withdrawn, its details lock for editing. To correct a field like SSN or address history, the status has to be reverted to Pending or Screening first.","No criminal-background data bureau has complete U.S. coverage &mdash; real coverage runs roughly 83&ndash;85%, since state and county laws vary and many court records still aren't digitized."],
       "topics": "Applicant workflow, screening, guarantors, application templates",
       "objectives": [
         "Configure application templates",
@@ -2194,6 +2194,14 @@ window.RVU_COURSE = {
           "type": "Facilitator Script",
           "url": "job-aids/call-1b-facilitator-script.html",
           "summary": "The same script referenced in Weeks 3 and 4 — jump to the Move-In Flow sections (lease terms, tenants, monthly and moving charges, review and submission) for this week's topics.",
+          "videoCode": ""
+        },
+        {
+          "id": "w06-res-9",
+          "title": "Facilitator Script: RentSign & Reporting (RentSign sections)",
+          "type": "Facilitator Script",
+          "url": "job-aids/call-3a-facilitator-script.html",
+          "summary": "Post-go-live QA1 script — jump to the RentSign sections for template setup, hot fields vs. fillable fields, signing order, and handling documents signed outside Rentvine.",
           "videoCode": ""
         }
       ],
@@ -2515,6 +2523,14 @@ window.RVU_COURSE = {
           "url": "https://help.rentvine.com/owner-portal-introduction",
           "summary": "Official article covering every tab an owner sees: Properties, Rent Roll, Files, Statements, Bills, Work Orders, Estimates, Payments, Chat, Reports, and Settings.",
           "videoCode": null
+        },
+        {
+          "id": "w07-res-7",
+          "title": "Facilitator Script: Contacts, Portals & Dashboards (Portal sections)",
+          "type": "Facilitator Script",
+          "url": "job-aids/call-4a-facilitator-script.html",
+          "summary": "Post-go-live QA3 script — jump to the portal sections: the owner and tenant portal tours, viewing a portal through impersonation, portal invitations, and the sign-in vs. register scenario.",
+          "videoCode": ""
         }
       ],
       "labSteps": [
@@ -2877,6 +2893,14 @@ window.RVU_COURSE = {
           "type": "Official KB",
           "url": "https://help.rentvine.com/settings-general",
           "summary": "Official settings articles for templates, notifications, custom fields, and account configuration.",
+          "videoCode": ""
+        },
+        {
+          "id": "w08-res-7",
+          "title": "Facilitator Script: Contacts, Portals & Dashboards (Notifications & Messaging sections)",
+          "type": "Facilitator Script",
+          "url": "job-aids/call-4a-facilitator-script.html",
+          "summary": "Post-go-live QA3 script — jump to the account-vs-personal notifications Q&A, mass messaging, the two-way texting rule, and dashboard widgets.",
           "videoCode": ""
         }
       ],
@@ -4885,6 +4909,14 @@ window.RVU_COURSE = {
           "url": "https://help.rentvine.com/how-to-create-scheduled-reports",
           "summary": "Official guide for recurring emailed reports.",
           "videoCode": ""
+        },
+        {
+          "id": "w13-res-8",
+          "title": "Facilitator Script: RentSign & Reporting (Reporting sections)",
+          "type": "Facilitator Script",
+          "url": "job-aids/call-3a-facilitator-script.html",
+          "summary": "Post-go-live QA1 script — jump to the Reporting sections: where data actually lives, the Lease Charges report as a teaching example, exporting/scheduling, and known limitations.",
+          "videoCode": ""
         }
       ],
       "labSteps": [
@@ -5464,6 +5496,14 @@ window.RVU_COURSE = {
           "url": "https://help.rentvine.com/diagnostics-tab",
           "summary": "Reference for accounting issues that can surface after move-out activity.",
           "videoCode": ""
+        },
+        {
+          "id": "w15-res-5",
+          "title": "Facilitator Script: Lease Renewal & Move-Out Workflow (Move-Out sections)",
+          "type": "Facilitator Script",
+          "url": "job-aids/call-3b-facilitator-script.html",
+          "summary": "Post-go-live QA2 script — jump to the Move-Out sections: starting the flow, security deposit calculation and refund, the move-out statement, and closing the loop with escrow.",
+          "videoCode": ""
         }
       ],
       "labSteps": [
@@ -5721,6 +5761,14 @@ window.RVU_COURSE = {
           "type": "Official KB",
           "url": "https://help.rentvine.com/how-to-use-the-rentsign-feature-of-rentvine",
           "summary": "Reference for renewal documents and signing workflow.",
+          "videoCode": ""
+        },
+        {
+          "id": "w16-res-6",
+          "title": "Facilitator Script: Lease Renewal & Move-Out Workflow (Renewal sections)",
+          "type": "Facilitator Script",
+          "url": "job-aids/call-3b-facilitator-script.html",
+          "summary": "Post-go-live QA2 script — jump to the Renewal sections: settings, the four-stage workflow, competing offers, renewal fees, and two important gotchas.",
           "videoCode": ""
         }
       ],
@@ -6324,6 +6372,14 @@ window.RVU_COURSE = {
           "type": "Facilitator Script",
           "url": "job-aids/call-1b-facilitator-script.html",
           "summary": "The same script referenced in Weeks 3, 4, and 6 — jump to the Personal Notification Settings and Account Notification Settings sections (use the table of contents) for this week's topics.",
+          "videoCode": ""
+        },
+        {
+          "id": "w18-res-11",
+          "title": "Facilitator Script: Global Settings & Final Review",
+          "type": "Facilitator Script",
+          "url": "job-aids/call-4b-facilitator-script.html",
+          "summary": "Post-go-live QA4 script — the final onboarding session: Account/Accounting/Lease Settings, Chart of Accounts, role-based access, Pods, Payout Approved by Default, and the final review/offboarding checklist.",
           "videoCode": ""
         }
       ],
@@ -7520,8 +7576,21 @@ window.RVU_COURSE = {
       "weeks": [
         5
       ],
-      "definition": "The application review area used to move from application data to a documented decision.",
-      "whyItMatters": "Decision tracking supports consistent, fair, and auditable applicant review.",
+      "definition": "The application review area that aggregates an applicant's scores, screening records, and household summary onto one screen, with color-coded flags for anything that needs a closer look. It calculates income-to-rent ratio automatically and lets a PM run a report for a single applicant without merging co-applicants first.",
+      "whyItMatters": "Decision View never auto-passes or auto-fails an applicant by itself -- it surfaces the information consistently so the PM can make and document a fair, auditable final decision.",
+      "guideTitle": "From Application to Decision, Screening Done Right",
+      "guideUrl": "https://help.rentvine.com/from-application-to-decision-screening-done-right",
+      "seeAlso": []
+    },
+    {
+      "id": "custom-scoring",
+      "term": "Custom Scoring",
+      "category": "Applications & Screening",
+      "weeks": [
+        5
+      ],
+      "definition": "A configurable scoring tool, set up per application template, that lets a PM define credit, late-payment, eviction, criminal, and rental-history criteria to fit different leasing scenarios (student housing, Section 8, standard, etc.). Every submitted application is automatically tagged with the template it came from.",
+      "whyItMatters": "Because the criteria are template-specific, a company can hold different applicant pools to different standards without changing anything account-wide -- and because it feeds Decision View, changing a criterion updates every affected applicant's review status immediately.",
       "guideTitle": "From Application to Decision, Screening Done Right",
       "guideUrl": "https://help.rentvine.com/from-application-to-decision-screening-done-right",
       "seeAlso": []
@@ -9938,6 +10007,30 @@ window.RVU_COURSE = {
       "title": "Facilitator Script: Maintenance & Work Order Lifecycle",
       "url": "job-aids/call-2b-facilitator-script.html",
       "summary": "Full trainer script for the work order life cycle — templates, creation, estimates, vendor portal, settings, appointment scheduling, and Fixie (the AI maintenance assistant) — with ready-to-use suggested language."
+    },
+    {
+      "id": "call-3a-facilitator-script",
+      "title": "Facilitator Script: RentSign & Reporting",
+      "url": "job-aids/call-3a-facilitator-script.html",
+      "summary": "Full trainer script for the first post-go-live QA session — RentSign template setup, hot fields vs. fillable fields, signing order, and Reporting (where data lives, the Lease Charges report, exporting and scheduling) — with ready-to-use suggested language."
+    },
+    {
+      "id": "call-3b-facilitator-script",
+      "title": "Facilitator Script: Lease Renewal & Move-Out Workflow",
+      "url": "job-aids/call-3b-facilitator-script.html",
+      "summary": "Full trainer script for the second post-go-live QA session — the four-stage renewal workflow, renewal fees and gotchas, and the full Move-Out flow through refund and escrow — with ready-to-use suggested language and trainer Q&A."
+    },
+    {
+      "id": "call-4a-facilitator-script",
+      "title": "Facilitator Script: Contacts, Portals & Dashboards",
+      "url": "job-aids/call-4a-facilitator-script.html",
+      "summary": "Full trainer script for the third post-go-live QA session — account vs. personal notifications, mass messaging, the owner and tenant portal tours, and dashboard widgets — with ready-to-use suggested language and trainer Q&A."
+    },
+    {
+      "id": "call-4b-facilitator-script",
+      "title": "Facilitator Script: Global Settings & Final Review",
+      "url": "job-aids/call-4b-facilitator-script.html",
+      "summary": "Full trainer script for the final onboarding session — Account, Accounting, and Lease Settings, key settings mechanics, the final review checklist, and closing out onboarding — with ready-to-use suggested language."
     }
   ],
   "realCaseExposure": {
