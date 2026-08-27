@@ -711,27 +711,27 @@ window.RVU_COURSE = {
           "sourceNote": "Adapted from the Rentvine Client Training walkthrough program, cross-referenced with the official Rentvine Help Center.",
           "demo": [
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-01%20at%2010-30-33%E2%80%AFAM-png.png?width=688&height=523",
+              "src": "assets/demo-screenshots/pay-bills-01-quick-actions.jpg",
               "caption": "Quick Actions — the fastest way to start any task",
               "href": "https://help.rentvine.com/en/articles/16574818-how-to-pay-bills"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.31.14%20PM.png?width=688&height=376",
+              "src": "assets/demo-screenshots/portfolio-01-quick-actions.jpg",
               "caption": "Creating a new Portfolio",
               "href": "https://help.rentvine.com/en/articles/16603990-create-a-new-portfolio"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-21%20at%2011-27-41%20AM-png.png?width=688&height=417",
+              "src": "assets/demo-screenshots/workorder-01-new.jpg",
               "caption": "Opening a new Work Order",
               "href": "https://help.rentvine.com/en/articles/16602009-how-to-add-edit-a-work-order"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-25%20at%2011-45-13%E2%80%AFAM-png.png?width=2206&height=1878",
+              "src": "assets/demo-screenshots/payowners-01-quick-actions.jpg",
               "caption": "Paying Owners",
               "href": "https://help.rentvine.com/en/articles/16574180-how-to-pay-owners"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.45.51%20PM.png?width=688&height=376",
+              "src": "assets/demo-screenshots/statement-01-settings-gear.jpg",
               "caption": "Account-wide Settings via the ••• menu",
               "href": "https://help.rentvine.com/en/articles/16574837-how-to-create-a-custom-owner-statement"
             }
@@ -1082,27 +1082,27 @@ window.RVU_COURSE = {
           "sourceNote": "Adapted from the Rentvine Client Training walkthrough program, cross-referenced with the official Rentvine Help Center.",
           "demo": [
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.31.14%20PM.png?width=688&height=376",
+              "src": "assets/demo-screenshots/portfolio-01-quick-actions.jpg",
               "caption": "Quick Actions → New Portfolio",
               "href": "https://help.rentvine.com/en/articles/16603990-create-a-new-portfolio"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.31.59%20PM.png?width=648&height=354",
+              "src": "assets/demo-screenshots/portfolio-02-add-owner.jpg",
               "caption": "Add an existing or brand-new owner",
               "href": "https://help.rentvine.com/en/articles/16603990-create-a-new-portfolio"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.32.18%20PM.png?width=655&height=358",
+              "src": "assets/demo-screenshots/portfolio-03-fiscal-year-limits.jpg",
               "caption": "Fiscal year end & optional limits",
               "href": "https://help.rentvine.com/en/articles/16603990-create-a-new-portfolio"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.32.35%20PM.png?width=655&height=358",
+              "src": "assets/demo-screenshots/portfolio-04-posting-statement.jpg",
               "caption": "Posting setting & statement template",
               "href": "https://help.rentvine.com/en/articles/16603990-create-a-new-portfolio"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.32.51%20PM.png?width=688&height=376",
+              "src": "assets/demo-screenshots/portfolio-05-saving.jpg",
               "caption": "Saving the finished portfolio",
               "href": "https://help.rentvine.com/en/articles/16603990-create-a-new-portfolio"
             }
@@ -1841,27 +1841,27 @@ window.RVU_COURSE = {
           "sourceNote": "Adapted from the Rentvine Client Training walkthrough program, cross-referenced with the official Rentvine Help Center.",
           "demo": [
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-08%20at%209-41-29%E2%80%AFAM-png.png?width=3498&height=2032",
+              "src": "assets/demo-screenshots/marketing-01-active-listings.jpg",
               "caption": "Active listings under the Marketing tab",
               "href": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-08%20at%209-42-11%E2%80%AFAM-png.png?width=3534&height=2044",
+              "src": "assets/demo-screenshots/marketing-02-activate-toggle.jpg",
               "caption": "The Activate Listing toggle",
               "href": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-08%20at%209-42-42%E2%80%AFAM-png.png?width=3518&height=2046",
+              "src": "assets/demo-screenshots/marketing-03-syndication.jpg",
               "caption": "Syndication network settings",
               "href": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-08%20at%209-43-26%E2%80%AFAM-png.png?width=3524&height=2052",
+              "src": "assets/demo-screenshots/marketing-04-ai-description.jpg",
               "caption": "AI-generated listing description",
               "href": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-08%20at%209-46-30%E2%80%AFAM-png.png?width=3504&height=2050",
+              "src": "assets/demo-screenshots/marketing-05-features-checklist.jpg",
               "caption": "Features & amenities checklist",
               "href": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent"
             }
@@ -2796,27 +2796,27 @@ window.RVU_COURSE = {
           "sourceNote": "Adapted from the Rentvine Client Training walkthrough program, cross-referenced with the official Rentvine Help Center.",
           "demo": [
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-05%20at%207.00.14%20PM.png?width=648&height=358",
+              "src": "assets/demo-screenshots/ownerportal-01-properties.jpg",
               "caption": "Properties tab in the Owner Portal",
               "href": "https://help.rentvine.com/en/articles/16602814-owner-portal-introduction"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-05%20at%207.04.57%20PM.png?width=688&height=380",
+              "src": "assets/demo-screenshots/ownerportal-02-rentroll.jpg",
               "caption": "Rent Roll view",
               "href": "https://help.rentvine.com/en/articles/16602814-owner-portal-introduction"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-05%20at%207.05.36%20PM.png?width=648&height=357",
+              "src": "assets/demo-screenshots/ownerportal-03-statements.jpg",
               "caption": "Statements tab in the Owner Portal",
               "href": "https://help.rentvine.com/en/articles/16602814-owner-portal-introduction"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-05%20at%207.10.33%20PM.png?width=648&height=358",
+              "src": "assets/demo-screenshots/ownerportal-04-bills.jpg",
               "caption": "Bills tab in the Owner Portal",
               "href": "https://help.rentvine.com/en/articles/16602814-owner-portal-introduction"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-05%20at%207.17.46%20PM.png?width=648&height=358",
+              "src": "assets/demo-screenshots/ownerportal-05-payments.jpg",
               "caption": "Payments tab in the Owner Portal",
               "href": "https://help.rentvine.com/en/articles/16602814-owner-portal-introduction"
             }
@@ -3823,27 +3823,27 @@ window.RVU_COURSE = {
           "sourceNote": "Adapted from the Rentvine Client Training walkthrough program, cross-referenced with the official Rentvine Help Center.",
           "demo": [
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-01%20at%2010-30-33%E2%80%AFAM-png.png?width=688&height=523",
+              "src": "assets/demo-screenshots/pay-bills-01-quick-actions.jpg",
               "caption": "Quick Actions → Pay Bills",
               "href": "https://help.rentvine.com/en/articles/16574818-how-to-pay-bills"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-01%20at%2010-32-59%E2%80%AFAM-png.png?width=688&height=464",
+              "src": "assets/demo-screenshots/pay-bills-02-filter-select.jpg",
               "caption": "Filter and select bills to pay",
               "href": "https://help.rentvine.com/en/articles/16574818-how-to-pay-bills"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-03%20at%206-13-01%E2%80%AFPM-png.png?width=2370&height=2098",
+              "src": "assets/demo-screenshots/pay-bills-03-review-screen.jpg",
               "caption": "Review screen before posting",
               "href": "https://help.rentvine.com/en/articles/16574818-how-to-pay-bills"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-03%20at%206-13-12%E2%80%AFPM-png.png?width=2368&height=2096",
+              "src": "assets/demo-screenshots/pay-bills-04-payment-batches.jpg",
               "caption": "Payments grouped into a batch",
               "href": "https://help.rentvine.com/en/articles/16574818-how-to-pay-bills"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-03%20at%206-13-25%E2%80%AFPM-png.png?width=2382&height=2104",
+              "src": "assets/demo-screenshots/pay-bills-05-actions-dropdown.jpg",
               "caption": "Actions dropdown — print checks, download NACHA file",
               "href": "https://help.rentvine.com/en/articles/16574818-how-to-pay-bills"
             }
@@ -4249,27 +4249,27 @@ window.RVU_COURSE = {
           "sourceNote": "Adapted from the Rentvine Client Training walkthrough program, cross-referenced with the official Rentvine Help Center.",
           "demo": [
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-21%20at%2011-27-41%20AM-png.png?width=688&height=417",
+              "src": "assets/demo-screenshots/workorder-01-new.jpg",
               "caption": "Quick Actions → New Work Order",
               "href": "https://help.rentvine.com/en/articles/16602009-how-to-add-edit-a-work-order"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-21%20at%2011-29-16%20AM-png.png?width=2668&height=1616",
+              "src": "assets/demo-screenshots/workorder-02-select-property.jpg",
               "caption": "Selecting the property or unit",
               "href": "https://help.rentvine.com/en/articles/16602009-how-to-add-edit-a-work-order"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-21%20at%2011-30-02%20AM-png.png?width=2668&height=1616",
+              "src": "assets/demo-screenshots/workorder-03-details-status.jpg",
               "caption": "Work order details: status, priority, assignee",
               "href": "https://help.rentvine.com/en/articles/16602009-how-to-add-edit-a-work-order"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-21%20at%2011-31-18%20AM-png.png?width=2662&height=1620",
+              "src": "assets/demo-screenshots/workorder-04-vendor-info.jpg",
               "caption": "Adding vendor information",
               "href": "https://help.rentvine.com/en/articles/16602009-how-to-add-edit-a-work-order"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-21%20at%2011-32-50%20AM-png.png?width=2662&height=1620",
+              "src": "assets/demo-screenshots/workorder-05-request-estimate.jpg",
               "caption": "Requesting an estimate from a vendor",
               "href": "https://help.rentvine.com/en/articles/16602009-how-to-add-edit-a-work-order"
             }
@@ -4739,27 +4739,27 @@ window.RVU_COURSE = {
           "sourceNote": "Adapted from the Rentvine Client Training walkthrough program, cross-referenced with the official Rentvine Help Center.",
           "demo": [
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.45.51%20PM.png?width=688&height=376",
+              "src": "assets/demo-screenshots/statement-01-settings-gear.jpg",
               "caption": "Settings gear → Accounting Settings",
               "href": "https://help.rentvine.com/en/articles/16574837-how-to-create-a-custom-owner-statement"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.46.18%20PM.png?width=688&height=376",
+              "src": "assets/demo-screenshots/statement-02-statements-list.jpg",
               "caption": "Statements list under Accounting Settings",
               "href": "https://help.rentvine.com/en/articles/16574837-how-to-create-a-custom-owner-statement"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.46.37%20PM.png?width=688&height=376",
+              "src": "assets/demo-screenshots/statement-03-settings-list.jpg",
               "caption": "List of available statement settings",
               "href": "https://help.rentvine.com/en/articles/16574837-how-to-create-a-custom-owner-statement"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202023-01-30%20at%208-27-40%20PM-png.png?width=561&height=497",
+              "src": "assets/demo-screenshots/statement-04-toggle-modules.jpg",
               "caption": "Toggling Paid Bills / Work Orders modules on or off",
               "href": "https://help.rentvine.com/en/articles/16574837-how-to-create-a-custom-owner-statement"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202023-04-19%20at%207-00-59%20AM-png.png?width=648&height=541",
+              "src": "assets/demo-screenshots/statement-05-transaction-details.jpg",
               "caption": "Example of the Transaction Details module",
               "href": "https://help.rentvine.com/en/articles/16574837-how-to-create-a-custom-owner-statement"
             }
@@ -4803,27 +4803,27 @@ window.RVU_COURSE = {
           "sourceNote": "Adapted from the Rentvine Client Training walkthrough program, cross-referenced with the official Rentvine Help Center.",
           "demo": [
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-25%20at%2011-45-13%E2%80%AFAM-png.png?width=2206&height=1878",
+              "src": "assets/demo-screenshots/payowners-01-quick-actions.jpg",
               "caption": "Quick Actions → Pay Owners",
               "href": "https://help.rentvine.com/en/articles/16574180-how-to-pay-owners"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-12%20at%2011-04-08%E2%80%AFAM-png.png?width=688&height=397",
+              "src": "assets/demo-screenshots/payowners-02-select-portfolios.jpg",
               "caption": "Selecting which portfolios to include",
               "href": "https://help.rentvine.com/en/articles/16574180-how-to-pay-owners"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-12%20at%2011-27-10%E2%80%AFAM-png.png?width=688&height=459",
+              "src": "assets/demo-screenshots/payowners-03-distributable-breakdown.jpg",
               "caption": "Distributable Amount breakdown",
               "href": "https://help.rentvine.com/en/articles/16574180-how-to-pay-owners"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-12%20at%2011-32-38%E2%80%AFAM-png.png?width=688&height=427",
+              "src": "assets/demo-screenshots/payowners-04-post-payments.jpg",
               "caption": "Posting owner payments",
               "href": "https://help.rentvine.com/en/articles/16574180-how-to-pay-owners"
             },
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-12%20at%2011-37-26%E2%80%AFAM-png.png?width=688&height=427",
+              "src": "assets/demo-screenshots/payowners-05-payment-batches.jpg",
               "caption": "Payment Batches tab after posting",
               "href": "https://help.rentvine.com/en/articles/16574180-how-to-pay-owners"
             }
@@ -6263,7 +6263,7 @@ window.RVU_COURSE = {
           "sourceNote": "Adapted from the Rentvine Client Training walkthrough program, cross-referenced with the official Rentvine Help Center.",
           "demo": [
             {
-              "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.45.51%20PM.png?width=688&height=376",
+              "src": "assets/demo-screenshots/statement-01-settings-gear.jpg",
               "caption": "Settings gear → Accounting Settings",
               "href": "https://help.rentvine.com/en/articles/16574837-how-to-create-a-custom-owner-statement"
             }
