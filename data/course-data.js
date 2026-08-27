@@ -306,91 +306,91 @@ window.RVU_COURSE = {
   "referenceLinks": [
     {
       "title": "Knowledge Base Welcome",
-      "url": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base"
+      "url": "https://help.rentvine.com/en/"
     },
     {
       "title": "Knowledge Base Home",
-      "url": "https://help.rentvine.com/"
+      "url": "https://help.rentvine.com/en/"
     },
     {
       "title": "Getting Started - Training Videos",
-      "url": "https://help.rentvine.com/getting-started-training-videos"
+      "url": "https://help.rentvine.com/en/collections/19629300-getting-started-training-videos"
     },
     {
       "title": "Suggested Monthly Workflow",
-      "url": "https://help.rentvine.com/rentvine-pm-monthly-accounting-cycle"
+      "url": "https://help.rentvine.com/en/articles/16574004-rentvine-pm-monthly-accounting-cycle"
     },
     {
       "title": "Portfolios",
-      "url": "https://help.rentvine.com/portfolios"
+      "url": "https://help.rentvine.com/en/collections/19727764-portfolios"
     },
     {
       "title": "Properties",
-      "url": "https://help.rentvine.com/properties"
+      "url": "https://help.rentvine.com/en/collections/19727763-properties"
     },
     {
       "title": "Screening",
-      "url": "https://help.rentvine.com/screening"
+      "url": "https://help.rentvine.com/en/collections/19727716-screening"
     },
     {
       "title": "Leases",
-      "url": "https://help.rentvine.com/leases"
+      "url": "https://help.rentvine.com/en/collections/19727717-leases"
     },
     {
       "title": "RentSign",
-      "url": "https://help.rentvine.com/how-to-use-the-rentsign-feature-of-rentvine"
+      "url": "https://help.rentvine.com/en/articles/16574329-how-to-use-the-rentsign-feature-of-rentvine"
     },
     {
       "title": "Accounting",
-      "url": "https://help.rentvine.com/accounting"
+      "url": "https://help.rentvine.com/en/collections/19727720-accounting"
     },
     {
       "title": "Accounting Overview",
-      "url": "https://help.rentvine.com/accounting-overview"
+      "url": "https://help.rentvine.com/en/articles/16574204-accounting-overview"
     },
     {
       "title": "Accounting Diagnostics",
-      "url": "https://help.rentvine.com/diagnostics-tab"
+      "url": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab"
     },
     {
       "title": "Portals Global Settings",
-      "url": "https://help.rentvine.com/portals-global-settings"
+      "url": "https://help.rentvine.com/en/articles/16574175-portals-global-settings"
     },
     {
       "title": "Maintenance",
-      "url": "https://help.rentvine.com/maintenance"
+      "url": "https://help.rentvine.com/en/collections/19727722-maintenance"
     },
     {
       "title": "Maintenance Settings",
-      "url": "https://help.rentvine.com/maintenance-settings"
+      "url": "https://help.rentvine.com/en/articles/16575322-maintenance-settings"
     },
     {
       "title": "Reports",
-      "url": "https://help.rentvine.com/reports"
+      "url": "https://help.rentvine.com/en/collections/19727723-reports"
     },
     {
       "title": "Scheduled Reports",
-      "url": "https://help.rentvine.com/how-to-create-scheduled-reports"
+      "url": "https://help.rentvine.com/en/articles/16574162-how-to-create-scheduled-reports"
     },
     {
       "title": "User Roles",
-      "url": "https://help.rentvine.com/user-roles"
+      "url": "https://help.rentvine.com/en/articles/16574157-user-roles"
     },
     {
       "title": "Open API Guide",
-      "url": "https://help.rentvine.com/tip-of-the-week-30-guide-to-rentvines-open-api"
+      "url": "https://help.rentvine.com/en/articles/16575275-tip-of-the-week-30-guide-to-rentvines-open-api"
     },
     {
       "title": "API Key Setup",
-      "url": "https://help.rentvine.com/how-to-create-an-api-key"
+      "url": "https://help.rentvine.com/en/articles/16575275-tip-of-the-week-30-guide-to-rentvines-open-api"
     },
     {
       "title": "Property Meld Integration",
-      "url": "https://help.rentvine.com/integration-overview-property-melt-/-rentvine"
+      "url": "https://help.rentvine.com/en/articles/16574840-integration-overview-property-meld-rentvine"
     },
     {
       "title": "QuickBooks Export",
-      "url": "https://help.rentvine.com/how-to-utilize-quickbooks-export-in-rentvine"
+      "url": "https://help.rentvine.com/en/articles/16574724-how-to-utilize-quickbooks-export-in-rentvine"
     },
     {
       "title": "Rentvine Support",
@@ -425,7 +425,7 @@ window.RVU_COURSE = {
           "id": "w01-res-1",
           "title": "Welcome to the Rentvine Knowledge Base",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+          "url": "https://help.rentvine.com/en/",
           "summary": "Start here to understand the main Rentvine Help Center areas: portfolios, properties, marketing, screening, leases, RentSign, accounting, contacts, maintenance, reports, settings, integrations, and vendors.",
           "videoCode": ""
         },
@@ -433,7 +433,7 @@ window.RVU_COURSE = {
           "id": "w01-res-2",
           "title": "Getting Started - Training Videos",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/getting-started-training-videos",
+          "url": "https://help.rentvine.com/en/collections/19629300-getting-started-training-videos",
           "summary": "Official training video index for property managers learning core Rentvine workflows.",
           "videoCode": ""
         },
@@ -441,7 +441,7 @@ window.RVU_COURSE = {
           "id": "w01-res-3",
           "title": "Suggested Monthly Workflow",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/rentvine-pm-monthly-accounting-cycle",
+          "url": "https://help.rentvine.com/en/articles/16574004-rentvine-pm-monthly-accounting-cycle",
           "summary": "Official workflow guide showing the recurring operational order for rent collection, deposits, work orders, bills, owner statements, and reconciliation.",
           "videoCode": ""
         },
@@ -449,7 +449,7 @@ window.RVU_COURSE = {
           "id": "w01-res-4",
           "title": "Knowledge Base Home",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/",
+          "url": "https://help.rentvine.com/en/",
           "summary": "Searchable Rentvine Help Center home page.",
           "videoCode": ""
         }
@@ -480,7 +480,7 @@ window.RVU_COURSE = {
           "explanation": "The owner is the person or legal entity that owns the property and receives owner reporting/distributions.",
           "points": 1,
           "remediationTitle": "Welcome to the Rentvine Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "w01-q01"
         },
         {
@@ -496,7 +496,7 @@ window.RVU_COURSE = {
           "explanation": "The portfolio is the owner-level container for ownership, properties, ledgers, statement settings, and payouts.",
           "points": 1,
           "remediationTitle": "Welcome to the Rentvine Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "w01-q02"
         },
         {
@@ -512,7 +512,7 @@ window.RVU_COURSE = {
           "explanation": "A simple lifecycle starts with setup, then vacancy, application, lease/move-in, operations/accounting, and end-of-lease transitions.",
           "points": 1,
           "remediationTitle": "Welcome to the Rentvine Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "w01-q03"
         },
         {
@@ -528,7 +528,7 @@ window.RVU_COURSE = {
           "explanation": "The lease is the resident agreement and accounting record for charges, payments, dates, and occupancy.",
           "points": 1,
           "remediationTitle": "Welcome to the Rentvine Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "w01-q04"
         },
         {
@@ -544,7 +544,7 @@ window.RVU_COURSE = {
           "explanation": "Work orders organize maintenance requests, vendor assignments, estimates, invoices, and completion status.",
           "points": 1,
           "remediationTitle": "Welcome to the Rentvine Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "w01-q05"
         },
         {
@@ -558,7 +558,7 @@ window.RVU_COURSE = {
           "explanation": "The official monthly workflow is a useful beginner roadmap for recurring property management operations.",
           "points": 1,
           "remediationTitle": "Welcome to the Rentvine Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "w01-q06"
         },
         {
@@ -572,7 +572,7 @@ window.RVU_COURSE = {
           "explanation": "Training labs should be completed in a training or sandbox database so practice records do not affect live accounting or customer data.",
           "points": 1,
           "remediationTitle": "Welcome to the Rentvine Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "w01-q07"
         },
         {
@@ -586,7 +586,7 @@ window.RVU_COURSE = {
           "explanation": "Ledgers show charges, receipts, bills, payments, deposits, distributions, and balances.",
           "points": 1,
           "remediationTitle": "Welcome to the Rentvine Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "w01-q08"
         },
         {
@@ -600,7 +600,7 @@ window.RVU_COURSE = {
           "explanation": "Learners should use official Help Center articles during every module for step-by-step instructions and screenshots.",
           "points": 1,
           "remediationTitle": "Welcome to the Rentvine Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "w01-q09"
         },
         {
@@ -614,7 +614,7 @@ window.RVU_COURSE = {
           "explanation": "Reports summarize activity such as delinquency, owner performance, accounting balances, maintenance, and operations.",
           "points": 1,
           "remediationTitle": "Welcome to the Rentvine Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "w01-q10"
         },
         {
@@ -630,7 +630,7 @@ window.RVU_COURSE = {
           "explanation": "Global settings live under the ellipsis menu next to your name -- that's the control center for templates, payment types, and account-wide configuration.",
           "points": 1,
           "remediationTitle": "Rentvine Getting Started",
-          "remediationUrl": "https://help.rentvine.com/how-to-pay-bills",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574818-how-to-pay-bills",
           "id": "w01-pwq1"
         },
         {
@@ -646,7 +646,7 @@ window.RVU_COURSE = {
           "explanation": "Quick Actions puts frequent tasks like Pay Bill one click away, without navigating through tabs.",
           "points": 1,
           "remediationTitle": "Rentvine Getting Started",
-          "remediationUrl": "https://help.rentvine.com/how-to-pay-bills",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574818-how-to-pay-bills",
           "id": "w01-pwq2"
         },
         {
@@ -662,7 +662,7 @@ window.RVU_COURSE = {
           "explanation": "Missing settings are often a permissions issue -- check your access level with the account owner before assuming something is broken.",
           "points": 1,
           "remediationTitle": "Rentvine Getting Started",
-          "remediationUrl": "https://help.rentvine.com/how-to-pay-bills",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574818-how-to-pay-bills",
           "id": "w01-pwq3"
         }
       ],
@@ -713,27 +713,27 @@ window.RVU_COURSE = {
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-01%20at%2010-30-33%E2%80%AFAM-png.png?width=688&height=523",
               "caption": "Quick Actions — the fastest way to start any task",
-              "href": "https://help.rentvine.com/how-to-pay-bills"
+              "href": "https://help.rentvine.com/en/articles/16574818-how-to-pay-bills"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.31.14%20PM.png?width=688&height=376",
               "caption": "Creating a new Portfolio",
-              "href": "https://help.rentvine.com/how-to-add-a-portfolio"
+              "href": "https://help.rentvine.com/en/articles/16603990-create-a-new-portfolio"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-21%20at%2011-27-41%20AM-png.png?width=688&height=417",
               "caption": "Opening a new Work Order",
-              "href": "https://help.rentvine.com/how-to-add-a-work-order"
+              "href": "https://help.rentvine.com/en/articles/16602009-how-to-add-edit-a-work-order"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-25%20at%2011-45-13%E2%80%AFAM-png.png?width=2206&height=1878",
               "caption": "Paying Owners",
-              "href": "https://help.rentvine.com/how-to-pay-owners"
+              "href": "https://help.rentvine.com/en/articles/16574180-how-to-pay-owners"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.45.51%20PM.png?width=688&height=376",
               "caption": "Account-wide Settings via the ••• menu",
-              "href": "https://help.rentvine.com/how-to-create-a-custom-owner-statement"
+              "href": "https://help.rentvine.com/en/articles/16574837-how-to-create-a-custom-owner-statement"
             }
           ]
         }
@@ -782,7 +782,7 @@ window.RVU_COURSE = {
           "id": "w02-res-3",
           "title": "Portfolios Knowledge Base",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/portfolios",
+          "url": "https://help.rentvine.com/en/collections/19727764-portfolios",
           "summary": "Official Portfolio articles for owners, reserves, overdraft override, statement settings, and owner statement actions.",
           "videoCode": ""
         },
@@ -790,7 +790,7 @@ window.RVU_COURSE = {
           "id": "w02-res-4",
           "title": "Owner Statements Introduction",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/owner-statements",
+          "url": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements",
           "summary": "Official training guide for reviewing and publishing owner statements.",
           "videoCode": ""
         },
@@ -806,7 +806,7 @@ window.RVU_COURSE = {
           "id": "w02-res-pw",
           "title": "How to Add a Portfolio (Rentvine Help Center)",
           "type": "Help Center article",
-          "url": "https://help.rentvine.com/how-to-add-a-portfolio",
+          "url": "https://help.rentvine.com/en/articles/16603990-create-a-new-portfolio",
           "summary": "Official step-by-step article covering owner setup, required fields, optional settings, and reserves when creating a portfolio.",
           "videoCode": null
         }
@@ -836,7 +836,7 @@ window.RVU_COURSE = {
           "explanation": "A reserve keeps a minimum balance in the portfolio so it isn't fully distributed.",
           "points": 1,
           "remediationTitle": "Portfolios Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/portfolios",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
           "id": "w02-q01"
         },
         {
@@ -852,7 +852,7 @@ window.RVU_COURSE = {
           "explanation": "Multi-owner portfolios support multiple owners with defined ownership percentages.",
           "points": 1,
           "remediationTitle": "Portfolios Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/portfolios",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
           "id": "w02-q02"
         },
         {
@@ -868,7 +868,7 @@ window.RVU_COURSE = {
           "explanation": "It stops a distribution from pushing the portfolio negative.",
           "points": 1,
           "remediationTitle": "Portfolios Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/portfolios",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
           "id": "w02-q03"
         },
         {
@@ -884,7 +884,7 @@ window.RVU_COURSE = {
           "explanation": "Owner statements report income, expenses, and the net distribution.",
           "points": 1,
           "remediationTitle": "Portfolios Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/portfolios",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
           "id": "w02-q04"
         },
         {
@@ -900,7 +900,7 @@ window.RVU_COURSE = {
           "explanation": "Owner distributions move available funds to the owner.",
           "points": 1,
           "remediationTitle": "Portfolios Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/portfolios",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
           "id": "w02-q05"
         },
         {
@@ -914,7 +914,7 @@ window.RVU_COURSE = {
           "explanation": "Portfolios group one or more properties under an owner.",
           "points": 1,
           "remediationTitle": "Portfolios Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/portfolios",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
           "id": "w02-q06"
         },
         {
@@ -928,7 +928,7 @@ window.RVU_COURSE = {
           "explanation": "A reserve holds funds back, reducing what is distributed.",
           "points": 1,
           "remediationTitle": "Portfolios Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/portfolios",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
           "id": "w02-q07"
         },
         {
@@ -942,7 +942,7 @@ window.RVU_COURSE = {
           "explanation": "Portfolios hold the owner and accounting context for their properties.",
           "points": 1,
           "remediationTitle": "Portfolios Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/portfolios",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
           "id": "w02-q08"
         },
         {
@@ -956,7 +956,7 @@ window.RVU_COURSE = {
           "explanation": "That is exactly what the overdraft/distribution-hold setting guards against.",
           "points": 1,
           "remediationTitle": "Portfolios Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/portfolios",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
           "id": "w02-q09"
         },
         {
@@ -970,7 +970,7 @@ window.RVU_COURSE = {
           "explanation": "Operating balance accounts for reserves/holds; cash balance is total cash on hand.",
           "points": 1,
           "remediationTitle": "Portfolios Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/portfolios",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
           "id": "w02-q10"
         },
         {
@@ -986,7 +986,7 @@ window.RVU_COURSE = {
           "explanation": "Portfolio name and fiscal year end month are the only required fields -- everything else (minimum distribution, override amount, statement template) is optional.",
           "points": 1,
           "remediationTitle": "How to Add a Portfolio",
-          "remediationUrl": "https://help.rentvine.com/how-to-add-a-portfolio",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16603990-create-a-new-portfolio",
           "id": "w02-pwq1"
         },
         {
@@ -1002,7 +1002,7 @@ window.RVU_COURSE = {
           "explanation": "Yes. This flexibility is exactly what allows Rentvine to handle complex ownership structures.",
           "points": 1,
           "remediationTitle": "How to Add a Portfolio",
-          "remediationUrl": "https://help.rentvine.com/how-to-add-a-portfolio",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16603990-create-a-new-portfolio",
           "id": "w02-pwq2"
         },
         {
@@ -1018,7 +1018,7 @@ window.RVU_COURSE = {
           "explanation": "Reserves withhold funds for a specific purpose (taxes, projects, unpaid bills, work order estimates) and are explained on the owner's statement.",
           "points": 1,
           "remediationTitle": "How to Add a Portfolio",
-          "remediationUrl": "https://help.rentvine.com/how-to-add-a-portfolio",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16603990-create-a-new-portfolio",
           "id": "w02-pwq3"
         }
       ],
@@ -1084,27 +1084,27 @@ window.RVU_COURSE = {
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.31.14%20PM.png?width=688&height=376",
               "caption": "Quick Actions → New Portfolio",
-              "href": "https://help.rentvine.com/how-to-add-a-portfolio"
+              "href": "https://help.rentvine.com/en/articles/16603990-create-a-new-portfolio"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.31.59%20PM.png?width=648&height=354",
               "caption": "Add an existing or brand-new owner",
-              "href": "https://help.rentvine.com/how-to-add-a-portfolio"
+              "href": "https://help.rentvine.com/en/articles/16603990-create-a-new-portfolio"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.32.18%20PM.png?width=655&height=358",
               "caption": "Fiscal year end & optional limits",
-              "href": "https://help.rentvine.com/how-to-add-a-portfolio"
+              "href": "https://help.rentvine.com/en/articles/16603990-create-a-new-portfolio"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.32.35%20PM.png?width=655&height=358",
               "caption": "Posting setting & statement template",
-              "href": "https://help.rentvine.com/how-to-add-a-portfolio"
+              "href": "https://help.rentvine.com/en/articles/16603990-create-a-new-portfolio"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.32.51%20PM.png?width=688&height=376",
               "caption": "Saving the finished portfolio",
-              "href": "https://help.rentvine.com/how-to-add-a-portfolio"
+              "href": "https://help.rentvine.com/en/articles/16603990-create-a-new-portfolio"
             }
           ]
         }
@@ -1153,7 +1153,7 @@ window.RVU_COURSE = {
           "id": "w03-res-3",
           "title": "Properties Knowledge Base",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/properties",
+          "url": "https://help.rentvine.com/en/collections/19727763-properties",
           "summary": "Official Property articles for property details, property-level settings, marketing, and related tabs.",
           "videoCode": ""
         },
@@ -1161,7 +1161,7 @@ window.RVU_COURSE = {
           "id": "w03-res-4",
           "title": "Getting Started - Training Videos",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/getting-started-training-videos",
+          "url": "https://help.rentvine.com/en/collections/19629300-getting-started-training-videos",
           "summary": "Official video index with Introduction to Properties and related beginner content.",
           "videoCode": ""
         },
@@ -1199,7 +1199,7 @@ window.RVU_COURSE = {
           "explanation": "A multifamily property is one record containing multiple units.",
           "points": 1,
           "remediationTitle": "Properties Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w03-q01"
         },
         {
@@ -1215,7 +1215,7 @@ window.RVU_COURSE = {
           "explanation": "Tags filter flexibly; groups provide structural organization.",
           "points": 1,
           "remediationTitle": "Properties Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w03-q02"
         },
         {
@@ -1231,7 +1231,7 @@ window.RVU_COURSE = {
           "explanation": "Associations represent HOAs and link at the property level.",
           "points": 1,
           "remediationTitle": "Properties Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w03-q03"
         },
         {
@@ -1247,7 +1247,7 @@ window.RVU_COURSE = {
           "explanation": "Manager assignment routes responsibility and communications.",
           "points": 1,
           "remediationTitle": "Properties Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w03-q04"
         },
         {
@@ -1263,7 +1263,7 @@ window.RVU_COURSE = {
           "explanation": "A single-family property is a single unit.",
           "points": 1,
           "remediationTitle": "Properties Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w03-q05"
         },
         {
@@ -1277,7 +1277,7 @@ window.RVU_COURSE = {
           "explanation": "Properties live under a portfolio that holds owner/accounting context.",
           "points": 1,
           "remediationTitle": "Properties Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w03-q06"
         },
         {
@@ -1291,7 +1291,7 @@ window.RVU_COURSE = {
           "explanation": "Tags are reusable labels you can apply across records.",
           "points": 1,
           "remediationTitle": "Properties Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w03-q07"
         },
         {
@@ -1305,7 +1305,7 @@ window.RVU_COURSE = {
           "explanation": "Associations model HOAs and attach to properties.",
           "points": 1,
           "remediationTitle": "Properties Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w03-q08"
         },
         {
@@ -1319,7 +1319,7 @@ window.RVU_COURSE = {
           "explanation": "Manager assignment is configured on the property.",
           "points": 1,
           "remediationTitle": "Properties Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w03-q09"
         },
         {
@@ -1333,7 +1333,7 @@ window.RVU_COURSE = {
           "explanation": "Units are configured within one multifamily property record.",
           "points": 1,
           "remediationTitle": "Properties Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w03-q10"
         },
         {
@@ -1349,7 +1349,7 @@ window.RVU_COURSE = {
           "explanation": "Custom fields are marked with two little dashes on the screen -- that's the giveaway that it's not a default field and can be fully configured (single line text, paragraph, drop-down, toggle, date, numeric, currency, or whole number).",
           "points": 1,
           "remediationTitle": "Properties Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w03-q11"
         },
         {
@@ -1365,7 +1365,7 @@ window.RVU_COURSE = {
           "explanation": "Rent Finder is completely optional. Running it gives a quick AI-driven scan of comparable rents in the market so a manager can sanity-check the asking rent before marketing the property.",
           "points": 1,
           "remediationTitle": "Properties Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w03-q12"
         }
       ],
@@ -1512,7 +1512,7 @@ window.RVU_COURSE = {
           "id": "w04-res-3",
           "title": "Properties / Marketing Knowledge Base",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/properties",
+          "url": "https://help.rentvine.com/en/collections/19727763-properties",
           "summary": "Official Property and Marketing articles for listing setup and property details.",
           "videoCode": ""
         },
@@ -1520,7 +1520,7 @@ window.RVU_COURSE = {
           "id": "w04-res-4",
           "title": "Getting Started - Training Videos",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/getting-started-training-videos",
+          "url": "https://help.rentvine.com/en/collections/19629300-getting-started-training-videos",
           "summary": "Official video index with property, application, and leasing introductions.",
           "videoCode": ""
         },
@@ -1536,7 +1536,7 @@ window.RVU_COURSE = {
           "id": "w04-res-pw",
           "title": "How Do I Market My Properties for Rent? (Rentvine Help Center)",
           "type": "Help Center article",
-          "url": "https://help.rentvine.com/how-do-i-market-my-properties-for-rent",
+          "url": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent",
           "summary": "Official article covering the Listing Flow, syndication networks, and how to manage active listings.",
           "videoCode": null
         }
@@ -1566,7 +1566,7 @@ window.RVU_COURSE = {
           "explanation": "Syndication pushes listings to partner/marketing sites.",
           "points": 1,
           "remediationTitle": "Properties / Marketing Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w04-q01"
         },
         {
@@ -1582,7 +1582,7 @@ window.RVU_COURSE = {
           "explanation": "A unit must be available with rent and dates set to market well.",
           "points": 1,
           "remediationTitle": "Properties / Marketing Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w04-q02"
         },
         {
@@ -1598,7 +1598,7 @@ window.RVU_COURSE = {
           "explanation": "AI drafts still require human review for accuracy and compliance.",
           "points": 1,
           "remediationTitle": "Properties / Marketing Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w04-q03"
         },
         {
@@ -1614,7 +1614,7 @@ window.RVU_COURSE = {
           "explanation": "They coordinate prospect showings and self-tours.",
           "points": 1,
           "remediationTitle": "Properties / Marketing Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w04-q04"
         },
         {
@@ -1630,7 +1630,7 @@ window.RVU_COURSE = {
           "explanation": "Correct availability prevents inquiries for unavailable units.",
           "points": 1,
           "remediationTitle": "Properties / Marketing Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w04-q05"
         },
         {
@@ -1644,7 +1644,7 @@ window.RVU_COURSE = {
           "explanation": "Syndication distributes listings to marketing sites, not credit bureaus.",
           "points": 1,
           "remediationTitle": "Properties / Marketing Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w04-q06"
         },
         {
@@ -1658,7 +1658,7 @@ window.RVU_COURSE = {
           "explanation": "Listing content must comply with fair-housing requirements.",
           "points": 1,
           "remediationTitle": "Properties / Marketing Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w04-q07"
         },
         {
@@ -1672,7 +1672,7 @@ window.RVU_COURSE = {
           "explanation": "Publishing makes the listing available to push out via syndication.",
           "points": 1,
           "remediationTitle": "Properties / Marketing Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w04-q08"
         },
         {
@@ -1686,7 +1686,7 @@ window.RVU_COURSE = {
           "explanation": "Photos are a core part of an effective listing.",
           "points": 1,
           "remediationTitle": "Properties / Marketing Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w04-q09"
         },
         {
@@ -1700,7 +1700,7 @@ window.RVU_COURSE = {
           "explanation": "Syndication increases reach by distributing the listing more widely.",
           "points": 1,
           "remediationTitle": "Properties / Marketing Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w04-q10"
         },
         {
@@ -1716,7 +1716,7 @@ window.RVU_COURSE = {
           "explanation": "The five required sections before activating marketing are syndication, property description, contact information, rental details, and property features. Everything else (utilities, restrictions, parking, area info, lease availability) is optional unless you want it included in the syndicated listing.",
           "points": 1,
           "remediationTitle": "Properties / Marketing Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w04-q11"
         },
         {
@@ -1732,7 +1732,7 @@ window.RVU_COURSE = {
           "explanation": "Rental Details feeds directly into marketing. Filling it out during property setup means a manager doesn't have to re-enter the same information again when they get to the five-step marketing/syndication flow.",
           "points": 1,
           "remediationTitle": "Properties / Marketing Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "w04-q12"
         },
         {
@@ -1748,7 +1748,7 @@ window.RVU_COURSE = {
           "explanation": "The marketing contact is required for every listing -- missing it causes an activation error.",
           "points": 1,
           "remediationTitle": "How Do I Market My Properties for Rent?",
-          "remediationUrl": "https://help.rentvine.com/how-do-i-market-my-properties-for-rent",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent",
           "id": "w04-pwq1"
         },
         {
@@ -1764,7 +1764,7 @@ window.RVU_COURSE = {
           "explanation": "You choose the Main Photo explicitly by selecting an image and checking the Main Photo box -- it's not automatic.",
           "points": 1,
           "remediationTitle": "How Do I Market My Properties for Rent?",
-          "remediationUrl": "https://help.rentvine.com/how-do-i-market-my-properties-for-rent",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent",
           "id": "w04-pwq2"
         },
         {
@@ -1780,7 +1780,7 @@ window.RVU_COURSE = {
           "explanation": "Zumper Network offers 5 free listings at a time and Apartments.com Network offers 10 -- beyond that, a paid account on their site is required.",
           "points": 1,
           "remediationTitle": "How Do I Market My Properties for Rent?",
-          "remediationUrl": "https://help.rentvine.com/how-do-i-market-my-properties-for-rent",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent",
           "id": "w04-pwq3"
         }
       ],
@@ -1843,27 +1843,27 @@ window.RVU_COURSE = {
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-08%20at%209-41-29%E2%80%AFAM-png.png?width=3498&height=2032",
               "caption": "Active listings under the Marketing tab",
-              "href": "https://help.rentvine.com/how-do-i-market-my-properties-for-rent"
+              "href": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-08%20at%209-42-11%E2%80%AFAM-png.png?width=3534&height=2044",
               "caption": "The Activate Listing toggle",
-              "href": "https://help.rentvine.com/how-do-i-market-my-properties-for-rent"
+              "href": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-08%20at%209-42-42%E2%80%AFAM-png.png?width=3518&height=2046",
               "caption": "Syndication network settings",
-              "href": "https://help.rentvine.com/how-do-i-market-my-properties-for-rent"
+              "href": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-08%20at%209-43-26%E2%80%AFAM-png.png?width=3524&height=2052",
               "caption": "AI-generated listing description",
-              "href": "https://help.rentvine.com/how-do-i-market-my-properties-for-rent"
+              "href": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-08%20at%209-46-30%E2%80%AFAM-png.png?width=3504&height=2050",
               "caption": "Features & amenities checklist",
-              "href": "https://help.rentvine.com/how-do-i-market-my-properties-for-rent"
+              "href": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent"
             }
           ]
         }
@@ -1904,7 +1904,7 @@ window.RVU_COURSE = {
           "id": "w05-res-2",
           "title": "Screening Knowledge Base",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/screening",
+          "url": "https://help.rentvine.com/en/collections/19727716-screening",
           "summary": "Official Screening articles for application templates, applicant portal, screening reports, and application payments.",
           "videoCode": ""
         },
@@ -1912,7 +1912,7 @@ window.RVU_COURSE = {
           "id": "w05-res-3",
           "title": "Getting Started - Introduction to Application and Screening",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/introduction-to-application-and-screening",
+          "url": "https://help.rentvine.com/en/articles/16573980-introduction-to-application-and-screening",
           "summary": "Official beginner videos for application and screening setup.",
           "videoCode": ""
         }
@@ -1942,7 +1942,7 @@ window.RVU_COURSE = {
           "explanation": "Templates standardize required fields, fees, and questions.",
           "points": 1,
           "remediationTitle": "Screening Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/screening",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727716-screening",
           "id": "w05-q01"
         },
         {
@@ -1958,7 +1958,7 @@ window.RVU_COURSE = {
           "explanation": "Guarantors back applicants who don't fully qualify alone.",
           "points": 1,
           "remediationTitle": "Screening Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/screening",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727716-screening",
           "id": "w05-q02"
         },
         {
@@ -1974,7 +1974,7 @@ window.RVU_COURSE = {
           "explanation": "Consistent documented criteria protect against fair-housing violations.",
           "points": 1,
           "remediationTitle": "Screening Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/screening",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727716-screening",
           "id": "w05-q03"
         },
         {
@@ -1990,7 +1990,7 @@ window.RVU_COURSE = {
           "explanation": "Applicants apply through the applicant portal.",
           "points": 1,
           "remediationTitle": "Screening Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/screening",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727716-screening",
           "id": "w05-q04"
         },
         {
@@ -2006,7 +2006,7 @@ window.RVU_COURSE = {
           "explanation": "Conditions like a higher deposit or guarantor are common.",
           "points": 1,
           "remediationTitle": "Screening Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/screening",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727716-screening",
           "id": "w05-q05"
         },
         {
@@ -2020,7 +2020,7 @@ window.RVU_COURSE = {
           "explanation": "Consistency is essential for fair-housing compliance.",
           "points": 1,
           "remediationTitle": "Screening Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/screening",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727716-screening",
           "id": "w05-q06"
         },
         {
@@ -2034,7 +2034,7 @@ window.RVU_COURSE = {
           "explanation": "Templates can include required application fees.",
           "points": 1,
           "remediationTitle": "Screening Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/screening",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727716-screening",
           "id": "w05-q07"
         },
         {
@@ -2048,7 +2048,7 @@ window.RVU_COURSE = {
           "explanation": "Standards must be applied consistently; subjective standards risk fair-housing violations.",
           "points": 1,
           "remediationTitle": "Screening Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/screening",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727716-screening",
           "id": "w05-q08"
         },
         {
@@ -2062,7 +2062,7 @@ window.RVU_COURSE = {
           "explanation": "These are typical components of tenant screening.",
           "points": 1,
           "remediationTitle": "Screening Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/screening",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727716-screening",
           "id": "w05-q09"
         },
         {
@@ -2076,7 +2076,7 @@ window.RVU_COURSE = {
           "explanation": "A guarantor backs the lease financially and need not reside there.",
           "points": 1,
           "remediationTitle": "Screening Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/screening",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727716-screening",
           "id": "w05-q10"
         }
       ],
@@ -2168,7 +2168,7 @@ window.RVU_COURSE = {
           "id": "w06-res-5",
           "title": "Leases Knowledge Base",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/leases",
+          "url": "https://help.rentvine.com/en/collections/19727717-leases",
           "summary": "Official Lease articles for lease details, financials, move-ins, security deposits, and move-outs.",
           "videoCode": ""
         },
@@ -2176,7 +2176,7 @@ window.RVU_COURSE = {
           "id": "w06-res-6",
           "title": "Creating a Lease Through the Application Process",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/creating-a-lease-through-the-application-process",
+          "url": "https://help.rentvine.com/en/articles/16573989-creating-a-lease-through-the-application-process",
           "summary": "Official article for converting an application into a lease.",
           "videoCode": ""
         },
@@ -2184,7 +2184,7 @@ window.RVU_COURSE = {
           "id": "w06-res-7",
           "title": "How to Use RentSign",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/how-to-use-the-rentsign-feature-of-rentvine",
+          "url": "https://help.rentvine.com/en/articles/16574329-how-to-use-the-rentsign-feature-of-rentvine",
           "summary": "Official RentSign guide for sending documents and tracking signatures.",
           "videoCode": ""
         },
@@ -2232,7 +2232,7 @@ window.RVU_COURSE = {
           "explanation": "The financial lease drives charges, payment activity, lease dates, ledgers, and related accounting.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w06-q01"
         },
         {
@@ -2248,7 +2248,7 @@ window.RVU_COURSE = {
           "explanation": "Proration calculates the partial amount due for a partial rental period.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w06-q02"
         },
         {
@@ -2264,7 +2264,7 @@ window.RVU_COURSE = {
           "explanation": "Recurring charges post based on the configured schedule.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w06-q03"
         },
         {
@@ -2280,7 +2280,7 @@ window.RVU_COURSE = {
           "explanation": "Hot fields reduce manual entry by pulling data from Rentvine records into forms.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w06-q04"
         },
         {
@@ -2296,7 +2296,7 @@ window.RVU_COURSE = {
           "explanation": "Signing order controls the order in which multiple parties receive signature requests.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w06-q05"
         },
         {
@@ -2310,7 +2310,7 @@ window.RVU_COURSE = {
           "explanation": "The financial lease controls accounting and occupancy data; the signed document is the legal paperwork sent through RentSign.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w06-q06"
         },
         {
@@ -2324,7 +2324,7 @@ window.RVU_COURSE = {
           "explanation": "Monthly fees should be recurring so they post automatically.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w06-q07"
         },
         {
@@ -2338,7 +2338,7 @@ window.RVU_COURSE = {
           "explanation": "Hot fields must be mapped to the right data source to populate correctly.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w06-q08"
         },
         {
@@ -2352,7 +2352,7 @@ window.RVU_COURSE = {
           "explanation": "RentSign packets can bundle multiple documents in one signing flow.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w06-q09"
         },
         {
@@ -2366,7 +2366,7 @@ window.RVU_COURSE = {
           "explanation": "Tracking signature status confirms who has signed and what remains pending.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w06-q10"
         },
         {
@@ -2382,7 +2382,7 @@ window.RVU_COURSE = {
           "explanation": "Escalations let you schedule a rent increase (or multiple increases) to take effect automatically on a future date, without having to manually edit the lease's recurring charge later.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w06-q11"
         },
         {
@@ -2398,7 +2398,7 @@ window.RVU_COURSE = {
           "explanation": "Global default monthly and default move-in charges are set once under Settings > Lease. Any charge configured there will pre-populate automatically every time a new lease is created, saving the step of re-adding it manually each time.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w06-q12"
         },
         {
@@ -2414,7 +2414,7 @@ window.RVU_COURSE = {
           "explanation": "Once a financial transaction (like a charge or payment) is attached to a lease, the lease can no longer be deleted. That's why, in practice, one-time and monthly charges are removed from a test lease before attempting to delete it.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w06-q13"
         }
       ],
@@ -2496,7 +2496,7 @@ window.RVU_COURSE = {
           "id": "w07-res-4",
           "title": "Portals Global Settings",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/portals-global-settings",
+          "url": "https://help.rentvine.com/en/articles/16574175-portals-global-settings",
           "summary": "Official guide for owner/resident portal settings and sending portal invitations.",
           "videoCode": ""
         },
@@ -2504,7 +2504,7 @@ window.RVU_COURSE = {
           "id": "w07-res-5",
           "title": "Resident Portal Registration",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/resident-portal-registration",
+          "url": "https://help.rentvine.com/en/articles/16573986-resident-portal-registration",
           "summary": "Resident portal registration and invitation guide.",
           "videoCode": ""
         },
@@ -2512,7 +2512,7 @@ window.RVU_COURSE = {
           "id": "w07-res-6",
           "title": "Owner Portal Registration",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/owner-portal-registration",
+          "url": "https://help.rentvine.com/en/articles/16574052-how-to-portal-invitations",
           "summary": "Owner portal registration and invitation guide.",
           "videoCode": ""
         },
@@ -2520,7 +2520,7 @@ window.RVU_COURSE = {
           "id": "w07-res-pw",
           "title": "Owner Portal Introduction (Rentvine Help Center)",
           "type": "Help Center article",
-          "url": "https://help.rentvine.com/owner-portal-introduction",
+          "url": "https://help.rentvine.com/en/articles/16602814-owner-portal-introduction",
           "summary": "Official article covering every tab an owner sees: Properties, Rent Roll, Files, Statements, Bills, Work Orders, Estimates, Payments, Chat, Reports, and Settings.",
           "videoCode": null
         },
@@ -2558,7 +2558,7 @@ window.RVU_COURSE = {
           "explanation": "Tenants use the portal for payments and maintenance requests.",
           "points": 1,
           "remediationTitle": "Portals Global Settings",
-          "remediationUrl": "https://help.rentvine.com/portals-global-settings",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574175-portals-global-settings",
           "id": "w07-q01"
         },
         {
@@ -2574,7 +2574,7 @@ window.RVU_COURSE = {
           "explanation": "Owners view statements, reports, and performance.",
           "points": 1,
           "remediationTitle": "Portals Global Settings",
-          "remediationUrl": "https://help.rentvine.com/portals-global-settings",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574175-portals-global-settings",
           "id": "w07-q02"
         },
         {
@@ -2590,7 +2590,7 @@ window.RVU_COURSE = {
           "explanation": "Login/access issues are the most frequent portal tickets.",
           "points": 1,
           "remediationTitle": "Portals Global Settings",
-          "remediationUrl": "https://help.rentvine.com/portals-global-settings",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574175-portals-global-settings",
           "id": "w07-q03"
         },
         {
@@ -2606,7 +2606,7 @@ window.RVU_COURSE = {
           "explanation": "Invitations give contacts secure portal access.",
           "points": 1,
           "remediationTitle": "Portals Global Settings",
-          "remediationUrl": "https://help.rentvine.com/portals-global-settings",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574175-portals-global-settings",
           "id": "w07-q04"
         },
         {
@@ -2622,7 +2622,7 @@ window.RVU_COURSE = {
           "explanation": "The portal supports tenant insurance tracking/enrollment.",
           "points": 1,
           "remediationTitle": "Portals Global Settings",
-          "remediationUrl": "https://help.rentvine.com/portals-global-settings",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574175-portals-global-settings",
           "id": "w07-q05"
         },
         {
@@ -2636,7 +2636,7 @@ window.RVU_COURSE = {
           "explanation": "Self-service requests are a portal feature.",
           "points": 1,
           "remediationTitle": "Portals Global Settings",
-          "remediationUrl": "https://help.rentvine.com/portals-global-settings",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574175-portals-global-settings",
           "id": "w07-q06"
         },
         {
@@ -2650,7 +2650,7 @@ window.RVU_COURSE = {
           "explanation": "Owners view information; they don't edit lease terms.",
           "points": 1,
           "remediationTitle": "Portals Global Settings",
-          "remediationUrl": "https://help.rentvine.com/portals-global-settings",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574175-portals-global-settings",
           "id": "w07-q07"
         },
         {
@@ -2664,7 +2664,7 @@ window.RVU_COURSE = {
           "explanation": "Self-service payments cut manual work.",
           "points": 1,
           "remediationTitle": "Portals Global Settings",
-          "remediationUrl": "https://help.rentvine.com/portals-global-settings",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574175-portals-global-settings",
           "id": "w07-q08"
         },
         {
@@ -2678,7 +2678,7 @@ window.RVU_COURSE = {
           "explanation": "Self-service lowers routine support requests.",
           "points": 1,
           "remediationTitle": "Portals Global Settings",
-          "remediationUrl": "https://help.rentvine.com/portals-global-settings",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574175-portals-global-settings",
           "id": "w07-q09"
         },
         {
@@ -2692,7 +2692,7 @@ window.RVU_COURSE = {
           "explanation": "Invitations are how access is granted.",
           "points": 1,
           "remediationTitle": "Portals Global Settings",
-          "remediationUrl": "https://help.rentvine.com/portals-global-settings",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574175-portals-global-settings",
           "id": "w07-q10"
         },
         {
@@ -2708,7 +2708,7 @@ window.RVU_COURSE = {
           "explanation": "The Bills (and Work Orders) tabs are hidden entirely if disabled, or simply empty if nothing has been shared -- both can look like \"missing\" to the owner.",
           "points": 1,
           "remediationTitle": "Owner Portal Introduction",
-          "remediationUrl": "https://help.rentvine.com/owner-portal-introduction",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16602814-owner-portal-introduction",
           "id": "w07-pwq1"
         },
         {
@@ -2724,7 +2724,7 @@ window.RVU_COURSE = {
           "explanation": "Card contributions carry a non-refundable 4% processing fee -- eCheck and saved payment methods don't.",
           "points": 1,
           "remediationTitle": "Owner Portal Introduction",
-          "remediationUrl": "https://help.rentvine.com/owner-portal-introduction",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16602814-owner-portal-introduction",
           "id": "w07-pwq2"
         },
         {
@@ -2740,7 +2740,7 @@ window.RVU_COURSE = {
           "explanation": "Owners can approve or reject estimates themselves from that tab, speeding up work order approvals.",
           "points": 1,
           "remediationTitle": "Owner Portal Introduction",
-          "remediationUrl": "https://help.rentvine.com/owner-portal-introduction",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16602814-owner-portal-introduction",
           "id": "w07-pwq3"
         }
       ],
@@ -2798,27 +2798,27 @@ window.RVU_COURSE = {
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-05%20at%207.00.14%20PM.png?width=648&height=358",
               "caption": "Properties tab in the Owner Portal",
-              "href": "https://help.rentvine.com/owner-portal-introduction"
+              "href": "https://help.rentvine.com/en/articles/16602814-owner-portal-introduction"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-05%20at%207.04.57%20PM.png?width=688&height=380",
               "caption": "Rent Roll view",
-              "href": "https://help.rentvine.com/owner-portal-introduction"
+              "href": "https://help.rentvine.com/en/articles/16602814-owner-portal-introduction"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-05%20at%207.05.36%20PM.png?width=648&height=357",
               "caption": "Statements tab in the Owner Portal",
-              "href": "https://help.rentvine.com/owner-portal-introduction"
+              "href": "https://help.rentvine.com/en/articles/16602814-owner-portal-introduction"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-05%20at%207.10.33%20PM.png?width=648&height=358",
               "caption": "Bills tab in the Owner Portal",
-              "href": "https://help.rentvine.com/owner-portal-introduction"
+              "href": "https://help.rentvine.com/en/articles/16602814-owner-portal-introduction"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-05%20at%207.17.46%20PM.png?width=648&height=358",
               "caption": "Payments tab in the Owner Portal",
-              "href": "https://help.rentvine.com/owner-portal-introduction"
+              "href": "https://help.rentvine.com/en/articles/16602814-owner-portal-introduction"
             }
           ]
         }
@@ -2875,7 +2875,7 @@ window.RVU_COURSE = {
           "id": "w08-res-4",
           "title": "Mass Messages",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/how-to-send-mass-messages",
+          "url": "https://help.rentvine.com/en/articles/16603291-how-to-send-a-mass-message-to-multiple-recipients-by-email-or-text",
           "summary": "Official guide for sending mass email or text messages with filters.",
           "videoCode": ""
         },
@@ -2883,7 +2883,7 @@ window.RVU_COURSE = {
           "id": "w08-res-5",
           "title": "Generate Mass Letters",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/how-to-generate-mass-letters",
+          "url": "https://help.rentvine.com/en/articles/16574859-how-to-generate-mass-letters",
           "summary": "Official guide for generating mass letters for leases, vendors, and portfolios.",
           "videoCode": ""
         },
@@ -2891,7 +2891,7 @@ window.RVU_COURSE = {
           "id": "w08-res-6",
           "title": "Settings & General",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/settings-general",
+          "url": "https://help.rentvine.com/en/collections/19727766-settings-general",
           "summary": "Official settings articles for templates, notifications, custom fields, and account configuration.",
           "videoCode": ""
         },
@@ -2929,7 +2929,7 @@ window.RVU_COURSE = {
           "explanation": "Mass messaging targets a group in a single send.",
           "points": 1,
           "remediationTitle": "Mass Messages",
-          "remediationUrl": "https://help.rentvine.com/how-to-send-mass-messages",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16603291-how-to-send-a-mass-message-to-multiple-recipients-by-email-or-text",
           "id": "w08-q01"
         },
         {
@@ -2945,7 +2945,7 @@ window.RVU_COURSE = {
           "explanation": "Templates standardize messaging and save time.",
           "points": 1,
           "remediationTitle": "Mass Messages",
-          "remediationUrl": "https://help.rentvine.com/how-to-send-mass-messages",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16603291-how-to-send-a-mass-message-to-multiple-recipients-by-email-or-text",
           "id": "w08-q02"
         },
         {
@@ -2961,7 +2961,7 @@ window.RVU_COURSE = {
           "explanation": "History logs the contact's message trail.",
           "points": 1,
           "remediationTitle": "Mass Messages",
-          "remediationUrl": "https://help.rentvine.com/how-to-send-mass-messages",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16603291-how-to-send-a-mass-message-to-multiple-recipients-by-email-or-text",
           "id": "w08-q03"
         },
         {
@@ -2977,7 +2977,7 @@ window.RVU_COURSE = {
           "explanation": "Segmentation targets a specific recipient group.",
           "points": 1,
           "remediationTitle": "Mass Messages",
-          "remediationUrl": "https://help.rentvine.com/how-to-send-mass-messages",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16603291-how-to-send-a-mass-message-to-multiple-recipients-by-email-or-text",
           "id": "w08-q04"
         },
         {
@@ -2993,7 +2993,7 @@ window.RVU_COURSE = {
           "explanation": "Sending to many tenants at once is mass messaging.",
           "points": 1,
           "remediationTitle": "Mass Messages",
-          "remediationUrl": "https://help.rentvine.com/how-to-send-mass-messages",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16603291-how-to-send-a-mass-message-to-multiple-recipients-by-email-or-text",
           "id": "w08-q05"
         },
         {
@@ -3007,7 +3007,7 @@ window.RVU_COURSE = {
           "explanation": "Templates standardize wording and branding.",
           "points": 1,
           "remediationTitle": "Mass Messages",
-          "remediationUrl": "https://help.rentvine.com/how-to-send-mass-messages",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16603291-how-to-send-a-mass-message-to-multiple-recipients-by-email-or-text",
           "id": "w08-q06"
         },
         {
@@ -3021,7 +3021,7 @@ window.RVU_COURSE = {
           "explanation": "Text communications must respect consent and opt-out rules.",
           "points": 1,
           "remediationTitle": "Mass Messages",
-          "remediationUrl": "https://help.rentvine.com/how-to-send-mass-messages",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16603291-how-to-send-a-mass-message-to-multiple-recipients-by-email-or-text",
           "id": "w08-q07"
         },
         {
@@ -3035,7 +3035,7 @@ window.RVU_COURSE = {
           "explanation": "It records the contact's message trail.",
           "points": 1,
           "remediationTitle": "Mass Messages",
-          "remediationUrl": "https://help.rentvine.com/how-to-send-mass-messages",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16603291-how-to-send-a-mass-message-to-multiple-recipients-by-email-or-text",
           "id": "w08-q08"
         },
         {
@@ -3049,7 +3049,7 @@ window.RVU_COURSE = {
           "explanation": "That is mass messaging.",
           "points": 1,
           "remediationTitle": "Mass Messages",
-          "remediationUrl": "https://help.rentvine.com/how-to-send-mass-messages",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16603291-how-to-send-a-mass-message-to-multiple-recipients-by-email-or-text",
           "id": "w08-q09"
         },
         {
@@ -3063,7 +3063,7 @@ window.RVU_COURSE = {
           "explanation": "Segments define who receives a message.",
           "points": 1,
           "remediationTitle": "Mass Messages",
-          "remediationUrl": "https://help.rentvine.com/how-to-send-mass-messages",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16603291-how-to-send-a-mass-message-to-multiple-recipients-by-email-or-text",
           "id": "w08-q10"
         }
       ],
@@ -3155,7 +3155,7 @@ window.RVU_COURSE = {
           "id": "w09-res-5",
           "title": "Introduction to Accounting",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/accounting-overview",
+          "url": "https://help.rentvine.com/en/articles/16574204-accounting-overview",
           "summary": "Official overview of Money In, Money Out, deposits, reconciliations, and diagnostics.",
           "videoCode": ""
         },
@@ -3163,7 +3163,7 @@ window.RVU_COURSE = {
           "id": "w09-res-6",
           "title": "Suggested Monthly Workflow",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/rentvine-pm-monthly-accounting-cycle",
+          "url": "https://help.rentvine.com/en/articles/16574004-rentvine-pm-monthly-accounting-cycle",
           "summary": "Official monthly workflow showing rent collection and deposit steps.",
           "videoCode": ""
         },
@@ -3171,7 +3171,7 @@ window.RVU_COURSE = {
           "id": "w09-res-7",
           "title": "How to Record a Deposit",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/how-to-record-a-deposit",
+          "url": "https://help.rentvine.com/en/articles/16573946-how-to-record-a-deposit",
           "summary": "Official deposit guide for cash, check, and money order payments.",
           "videoCode": ""
         },
@@ -3211,7 +3211,7 @@ window.RVU_COURSE = {
           "explanation": "Money In covers incoming funds like tenant receipts and owner contributions.",
           "points": 1,
           "remediationTitle": "Introduction to Accounting",
-          "remediationUrl": "https://help.rentvine.com/accounting-overview",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574204-accounting-overview",
           "id": "w09-q01"
         },
         {
@@ -3227,7 +3227,7 @@ window.RVU_COURSE = {
           "explanation": "Forte processes electronic (ACH/card) payments.",
           "points": 1,
           "remediationTitle": "Introduction to Accounting",
-          "remediationUrl": "https://help.rentvine.com/accounting-overview",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574204-accounting-overview",
           "id": "w09-q02"
         },
         {
@@ -3243,7 +3243,7 @@ window.RVU_COURSE = {
           "explanation": "Posted records the transaction; settlement is when funds clear.",
           "points": 1,
           "remediationTitle": "Introduction to Accounting",
-          "remediationUrl": "https://help.rentvine.com/accounting-overview",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574204-accounting-overview",
           "id": "w09-q03"
         },
         {
@@ -3259,7 +3259,7 @@ window.RVU_COURSE = {
           "explanation": "Deposit batches bundle receipts for one bank deposit.",
           "points": 1,
           "remediationTitle": "Introduction to Accounting",
-          "remediationUrl": "https://help.rentvine.com/accounting-overview",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574204-accounting-overview",
           "id": "w09-q04"
         },
         {
@@ -3275,7 +3275,7 @@ window.RVU_COURSE = {
           "explanation": "Owner contributions add cash to the portfolio.",
           "points": 1,
           "remediationTitle": "Introduction to Accounting",
-          "remediationUrl": "https://help.rentvine.com/accounting-overview",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574204-accounting-overview",
           "id": "w09-q05"
         },
         {
@@ -3289,7 +3289,7 @@ window.RVU_COURSE = {
           "explanation": "Forte is the integrated payment processor.",
           "points": 1,
           "remediationTitle": "Introduction to Accounting",
-          "remediationUrl": "https://help.rentvine.com/accounting-overview",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574204-accounting-overview",
           "id": "w09-q06"
         },
         {
@@ -3303,7 +3303,7 @@ window.RVU_COURSE = {
           "explanation": "Posted is not the same as settled; funds clear at settlement.",
           "points": 1,
           "remediationTitle": "Introduction to Accounting",
-          "remediationUrl": "https://help.rentvine.com/accounting-overview",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574204-accounting-overview",
           "id": "w09-q07"
         },
         {
@@ -3317,7 +3317,7 @@ window.RVU_COURSE = {
           "explanation": "Tenant receipts are incoming funds.",
           "points": 1,
           "remediationTitle": "Introduction to Accounting",
-          "remediationUrl": "https://help.rentvine.com/accounting-overview",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574204-accounting-overview",
           "id": "w09-q08"
         },
         {
@@ -3331,7 +3331,7 @@ window.RVU_COURSE = {
           "explanation": "They group receipts to match a bank deposit.",
           "points": 1,
           "remediationTitle": "Introduction to Accounting",
-          "remediationUrl": "https://help.rentvine.com/accounting-overview",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574204-accounting-overview",
           "id": "w09-q09"
         },
         {
@@ -3345,7 +3345,7 @@ window.RVU_COURSE = {
           "explanation": "Money Out covers outgoing payments.",
           "points": 1,
           "remediationTitle": "Introduction to Accounting",
-          "remediationUrl": "https://help.rentvine.com/accounting-overview",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574204-accounting-overview",
           "id": "w09-q10"
         },
         {
@@ -3361,7 +3361,7 @@ window.RVU_COURSE = {
           "explanation": "Bulk Tenant Receipts exist specifically for cases like Section 8/HUD payments, where one combined deposit needs to be recorded once and then allocated across multiple leases, instead of manually re-creating the same payment for every tenant.",
           "points": 1,
           "remediationTitle": "Introduction to Accounting",
-          "remediationUrl": "https://help.rentvine.com/accounting-overview",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574204-accounting-overview",
           "id": "w09-q11"
         },
         {
@@ -3377,7 +3377,7 @@ window.RVU_COURSE = {
           "explanation": "Every receipt is backed by either an electronic settlement (handled automatically) or a manual deposit. If it's a manual payment, the manager is responsible for recording the corresponding deposit at the same time, or the funds won't reconcile correctly.",
           "points": 1,
           "remediationTitle": "Introduction to Accounting",
-          "remediationUrl": "https://help.rentvine.com/accounting-overview",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574204-accounting-overview",
           "id": "w09-q12"
         }
       ],
@@ -3468,7 +3468,7 @@ window.RVU_COURSE = {
           "id": "w10-res-5",
           "title": "Accounting Knowledge Base",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/accounting",
+          "url": "https://help.rentvine.com/en/collections/19727720-accounting",
           "summary": "Official Accounting articles for Money Out, bills, pay bills, banking, management fees, and owners.",
           "videoCode": ""
         },
@@ -3476,7 +3476,7 @@ window.RVU_COURSE = {
           "id": "w10-res-6",
           "title": "Suggested Monthly Workflow",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/rentvine-pm-monthly-accounting-cycle",
+          "url": "https://help.rentvine.com/en/articles/16574004-rentvine-pm-monthly-accounting-cycle",
           "summary": "Official monthly workflow showing bill creation after work orders/invoices.",
           "videoCode": ""
         },
@@ -3492,7 +3492,7 @@ window.RVU_COURSE = {
           "id": "w10-res-pw",
           "title": "How to Pay Bills (Rentvine Help Center)",
           "type": "Help Center article",
-          "url": "https://help.rentvine.com/how-to-pay-bills",
+          "url": "https://help.rentvine.com/en/articles/16574818-how-to-pay-bills",
           "summary": "Official step-by-step article on the full Pay Bills workflow, from vendor payment type setup through submitting payments.",
           "videoCode": null
         }
@@ -3522,7 +3522,7 @@ window.RVU_COURSE = {
           "explanation": "NACHA is the ACH standard for electronic vendor payments.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w10-q01"
         },
         {
@@ -3538,7 +3538,7 @@ window.RVU_COURSE = {
           "explanation": "OCR captures invoice data automatically to speed entry.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w10-q02"
         },
         {
@@ -3554,7 +3554,7 @@ window.RVU_COURSE = {
           "explanation": "Vendor credits reduce what you owe a vendor.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w10-q03"
         },
         {
@@ -3570,7 +3570,7 @@ window.RVU_COURSE = {
           "explanation": "Bills are approved before being included in a payment batch.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w10-q04"
         },
         {
@@ -3586,7 +3586,7 @@ window.RVU_COURSE = {
           "explanation": "Payment batches process many approved bills together.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w10-q05"
         },
         {
@@ -3600,7 +3600,7 @@ window.RVU_COURSE = {
           "explanation": "NACHA is the ACH file format for paying vendors.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w10-q06"
         },
         {
@@ -3614,7 +3614,7 @@ window.RVU_COURSE = {
           "explanation": "Credits reduce what you owe.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w10-q07"
         },
         {
@@ -3628,7 +3628,7 @@ window.RVU_COURSE = {
           "explanation": "Auto-captured data can contain errors and needs review.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w10-q08"
         },
         {
@@ -3642,7 +3642,7 @@ window.RVU_COURSE = {
           "explanation": "Approval precedes payment.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w10-q09"
         },
         {
@@ -3656,7 +3656,7 @@ window.RVU_COURSE = {
           "explanation": "Its purpose is faster, more accurate data entry.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w10-q10"
         },
         {
@@ -3672,7 +3672,7 @@ window.RVU_COURSE = {
           "explanation": "Rapid Invoice supports dropping in an invoice file, scanning it with a mobile device, or emailing it to a dedicated address tied to the account -- there is no fax-based submission method.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w10-q11"
         },
         {
@@ -3688,7 +3688,7 @@ window.RVU_COURSE = {
           "explanation": "Rejecting an invoice is a hard delete, not a soft delete -- once rejected, it disappears from the screen and there is nowhere in the system to find or recover it afterward, so a rejection reason and vendor notification should be sent at the same time.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w10-q12"
         },
         {
@@ -3704,7 +3704,7 @@ window.RVU_COURSE = {
           "explanation": "Recurring Bills let a manager set up a bill (like a fixed monthly service charge) once, so it automatically populates each period instead of being manually re-entered every time it comes due.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w10-q13"
         },
         {
@@ -3720,7 +3720,7 @@ window.RVU_COURSE = {
           "explanation": "The default payment type on the vendor's contact page determines how the bill is grouped and paid.",
           "points": 1,
           "remediationTitle": "How to Pay Bills",
-          "remediationUrl": "https://help.rentvine.com/how-to-pay-bills",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574818-how-to-pay-bills",
           "id": "w10-pwq1"
         },
         {
@@ -3736,7 +3736,7 @@ window.RVU_COURSE = {
           "explanation": "Available Funds subtracts money that hasn't cleared yet (Undeposited Balance) from the Operating Balance -- a more conservative number to pay from.",
           "points": 1,
           "remediationTitle": "How to Pay Bills",
-          "remediationUrl": "https://help.rentvine.com/how-to-pay-bills",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574818-how-to-pay-bills",
           "id": "w10-pwq2"
         },
         {
@@ -3752,7 +3752,7 @@ window.RVU_COURSE = {
           "explanation": "With the toggle off, the batch is created but stays pending until someone with the right permissions approves it.",
           "points": 1,
           "remediationTitle": "How to Pay Bills",
-          "remediationUrl": "https://help.rentvine.com/how-to-pay-bills",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574818-how-to-pay-bills",
           "id": "w10-pwq3"
         }
       ],
@@ -3825,27 +3825,27 @@ window.RVU_COURSE = {
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-01%20at%2010-30-33%E2%80%AFAM-png.png?width=688&height=523",
               "caption": "Quick Actions → Pay Bills",
-              "href": "https://help.rentvine.com/how-to-pay-bills"
+              "href": "https://help.rentvine.com/en/articles/16574818-how-to-pay-bills"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-01%20at%2010-32-59%E2%80%AFAM-png.png?width=688&height=464",
               "caption": "Filter and select bills to pay",
-              "href": "https://help.rentvine.com/how-to-pay-bills"
+              "href": "https://help.rentvine.com/en/articles/16574818-how-to-pay-bills"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-03%20at%206-13-01%E2%80%AFPM-png.png?width=2370&height=2098",
               "caption": "Review screen before posting",
-              "href": "https://help.rentvine.com/how-to-pay-bills"
+              "href": "https://help.rentvine.com/en/articles/16574818-how-to-pay-bills"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-03%20at%206-13-12%E2%80%AFPM-png.png?width=2368&height=2096",
               "caption": "Payments grouped into a batch",
-              "href": "https://help.rentvine.com/how-to-pay-bills"
+              "href": "https://help.rentvine.com/en/articles/16574818-how-to-pay-bills"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-03%20at%206-13-25%E2%80%AFPM-png.png?width=2382&height=2104",
               "caption": "Actions dropdown — print checks, download NACHA file",
-              "href": "https://help.rentvine.com/how-to-pay-bills"
+              "href": "https://help.rentvine.com/en/articles/16574818-how-to-pay-bills"
             }
           ]
         }
@@ -3903,7 +3903,7 @@ window.RVU_COURSE = {
           "id": "w11-res-4",
           "title": "Maintenance Knowledge Base",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/maintenance",
+          "url": "https://help.rentvine.com/en/collections/19727722-maintenance",
           "summary": "Official Maintenance articles for work orders, categories, vendor processes, and internal maintenance.",
           "videoCode": ""
         },
@@ -3911,7 +3911,7 @@ window.RVU_COURSE = {
           "id": "w11-res-5",
           "title": "Maintenance Settings",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/maintenance-settings",
+          "url": "https://help.rentvine.com/en/articles/16575322-maintenance-settings",
           "summary": "Official settings guide for work order statuses, appointment settings, portal visibility, vendor invoice uploads, and automation.",
           "videoCode": ""
         },
@@ -3919,7 +3919,7 @@ window.RVU_COURSE = {
           "id": "w11-res-6",
           "title": "How to Add/Edit a Work Order",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/how-to-add-a-work-order",
+          "url": "https://help.rentvine.com/en/articles/16602009-how-to-add-edit-a-work-order",
           "summary": "Official guide for creating and editing work orders.",
           "videoCode": ""
         },
@@ -3957,7 +3957,7 @@ window.RVU_COURSE = {
           "explanation": "Costs above the owner's threshold require approval.",
           "points": 1,
           "remediationTitle": "Maintenance Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/maintenance",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727722-maintenance",
           "id": "w11-q01"
         },
         {
@@ -3973,7 +3973,7 @@ window.RVU_COURSE = {
           "explanation": "Projects bundle related work orders.",
           "points": 1,
           "remediationTitle": "Maintenance Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/maintenance",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727722-maintenance",
           "id": "w11-q02"
         },
         {
@@ -3989,7 +3989,7 @@ window.RVU_COURSE = {
           "explanation": "Vendor portals let vendors see assignments and update status.",
           "points": 1,
           "remediationTitle": "Maintenance Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/maintenance",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727722-maintenance",
           "id": "w11-q03"
         },
         {
@@ -4005,7 +4005,7 @@ window.RVU_COURSE = {
           "explanation": "Templates speed up standardized, recurring jobs.",
           "points": 1,
           "remediationTitle": "Maintenance Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/maintenance",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727722-maintenance",
           "id": "w11-q04"
         },
         {
@@ -4021,7 +4021,7 @@ window.RVU_COURSE = {
           "explanation": "Tenant/owner maintenance requests generate work orders.",
           "points": 1,
           "remediationTitle": "Maintenance Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/maintenance",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727722-maintenance",
           "id": "w11-q05"
         },
         {
@@ -4035,7 +4035,7 @@ window.RVU_COURSE = {
           "explanation": "Vendor portals support status updates.",
           "points": 1,
           "remediationTitle": "Maintenance Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/maintenance",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727722-maintenance",
           "id": "w11-q06"
         },
         {
@@ -4049,7 +4049,7 @@ window.RVU_COURSE = {
           "explanation": "Only costs above the owner's threshold require approval.",
           "points": 1,
           "remediationTitle": "Maintenance Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/maintenance",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727722-maintenance",
           "id": "w11-q07"
         },
         {
@@ -4063,7 +4063,7 @@ window.RVU_COURSE = {
           "explanation": "Projects group related work orders.",
           "points": 1,
           "remediationTitle": "Maintenance Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/maintenance",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727722-maintenance",
           "id": "w11-q08"
         },
         {
@@ -4077,7 +4077,7 @@ window.RVU_COURSE = {
           "explanation": "Completed work typically becomes a vendor bill.",
           "points": 1,
           "remediationTitle": "Maintenance Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/maintenance",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727722-maintenance",
           "id": "w11-q09"
         },
         {
@@ -4091,7 +4091,7 @@ window.RVU_COURSE = {
           "explanation": "Templates ensure consistency for repeated jobs.",
           "points": 1,
           "remediationTitle": "Maintenance Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/maintenance",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727722-maintenance",
           "id": "w11-q10"
         },
         {
@@ -4107,7 +4107,7 @@ window.RVU_COURSE = {
           "explanation": "Fixie is Rentvine's AI-powered maintenance assistant. When a tenant submits a request, Fixie asks follow-up questions and tries to help them resolve the issue on their own (or gather better information) before it becomes a full work order sent to the management company.",
           "points": 1,
           "remediationTitle": "Maintenance Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/maintenance",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727722-maintenance",
           "id": "w11-q11"
         },
         {
@@ -4123,7 +4123,7 @@ window.RVU_COURSE = {
           "explanation": "The appointment buffer blocks scheduling within that window. A 1-day buffer means the earliest available appointment slot is the next day, not the same day the appointment is being set up.",
           "points": 1,
           "remediationTitle": "Maintenance Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/maintenance",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727722-maintenance",
           "id": "w11-q12"
         },
         {
@@ -4139,7 +4139,7 @@ window.RVU_COURSE = {
           "explanation": "Entering an estimated cost acts like a reserve: it holds back funds from being distributed to the owner so there's enough available when the real bill comes in, without a manager having to worry about running short on a big job.",
           "points": 1,
           "remediationTitle": "Maintenance Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/maintenance",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727722-maintenance",
           "id": "w11-q13"
         },
         {
@@ -4155,7 +4155,7 @@ window.RVU_COURSE = {
           "explanation": "Publish with Owner is the toggle that shares the work order's details in the Owner Portal. Publish with Tenant does the same for the Resident Portal -- independently.",
           "points": 1,
           "remediationTitle": "How to Add a Work Order",
-          "remediationUrl": "https://help.rentvine.com/how-to-add-a-work-order",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16602009-how-to-add-edit-a-work-order",
           "id": "w11-pwq1"
         },
         {
@@ -4171,7 +4171,7 @@ window.RVU_COURSE = {
           "explanation": "Estimated Cost is subtracted from the Operating Balance, which factors into the Distributable Amount calculation when paying owners.",
           "points": 1,
           "remediationTitle": "How to Add a Work Order",
-          "remediationUrl": "https://help.rentvine.com/how-to-add-a-work-order",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16602009-how-to-add-edit-a-work-order",
           "id": "w11-pwq2"
         },
         {
@@ -4187,7 +4187,7 @@ window.RVU_COURSE = {
           "explanation": "Once a bill is linked to a work order, deleting the work order is blocked so the financial record stays intact.",
           "points": 1,
           "remediationTitle": "How to Add a Work Order",
-          "remediationUrl": "https://help.rentvine.com/how-to-add-a-work-order",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16602009-how-to-add-edit-a-work-order",
           "id": "w11-pwq3"
         }
       ],
@@ -4251,27 +4251,27 @@ window.RVU_COURSE = {
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-21%20at%2011-27-41%20AM-png.png?width=688&height=417",
               "caption": "Quick Actions → New Work Order",
-              "href": "https://help.rentvine.com/how-to-add-a-work-order"
+              "href": "https://help.rentvine.com/en/articles/16602009-how-to-add-edit-a-work-order"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-21%20at%2011-29-16%20AM-png.png?width=2668&height=1616",
               "caption": "Selecting the property or unit",
-              "href": "https://help.rentvine.com/how-to-add-a-work-order"
+              "href": "https://help.rentvine.com/en/articles/16602009-how-to-add-edit-a-work-order"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-21%20at%2011-30-02%20AM-png.png?width=2668&height=1616",
               "caption": "Work order details: status, priority, assignee",
-              "href": "https://help.rentvine.com/how-to-add-a-work-order"
+              "href": "https://help.rentvine.com/en/articles/16602009-how-to-add-edit-a-work-order"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-21%20at%2011-31-18%20AM-png.png?width=2662&height=1620",
               "caption": "Adding vendor information",
-              "href": "https://help.rentvine.com/how-to-add-a-work-order"
+              "href": "https://help.rentvine.com/en/articles/16602009-how-to-add-edit-a-work-order"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-21%20at%2011-32-50%20AM-png.png?width=2662&height=1620",
               "caption": "Requesting an estimate from a vendor",
-              "href": "https://help.rentvine.com/how-to-add-a-work-order"
+              "href": "https://help.rentvine.com/en/articles/16602009-how-to-add-edit-a-work-order"
             }
           ]
         }
@@ -4344,7 +4344,7 @@ window.RVU_COURSE = {
           "id": "w12-res-6",
           "title": "Owner Statements Introduction",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/owner-statements",
+          "url": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements",
           "summary": "Official guide for customizing, reviewing, and publishing owner statements.",
           "videoCode": ""
         },
@@ -4352,7 +4352,7 @@ window.RVU_COURSE = {
           "id": "w12-res-7",
           "title": "Create Owner Statements for Bulk Review or Publishing",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/how-to-send-owner-statements",
+          "url": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements",
           "summary": "Official owner statement batch guide.",
           "videoCode": ""
         },
@@ -4360,7 +4360,7 @@ window.RVU_COURSE = {
           "id": "w12-res-8",
           "title": "Accounting Knowledge Base",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/accounting",
+          "url": "https://help.rentvine.com/en/collections/19727720-accounting",
           "summary": "Official Accounting articles for management fees, paying owners, and Money Out.",
           "videoCode": ""
         },
@@ -4384,7 +4384,7 @@ window.RVU_COURSE = {
           "id": "w12-res-pw1",
           "title": "How to Create a Custom Owner Statement (Rentvine Help Center)",
           "type": "Help Center article",
-          "url": "https://help.rentvine.com/how-to-create-a-custom-owner-statement",
+          "url": "https://help.rentvine.com/en/articles/16574837-how-to-create-a-custom-owner-statement",
           "summary": "Official article on building and editing statement settings and choosing which modules appear.",
           "videoCode": null
         },
@@ -4392,7 +4392,7 @@ window.RVU_COURSE = {
           "id": "w12-res-pw2",
           "title": "How to Pay Owners (Rentvine Help Center)",
           "type": "Help Center article",
-          "url": "https://help.rentvine.com/how-to-pay-owners",
+          "url": "https://help.rentvine.com/en/articles/16574180-how-to-pay-owners",
           "summary": "Official article on the Pay Owners workflow and the Distributable Amount formula.",
           "videoCode": null
         }
@@ -4424,7 +4424,7 @@ window.RVU_COURSE = {
           "explanation": "Management fees represent revenue earned by the property management company.",
           "points": 1,
           "remediationTitle": "Owner Statements Introduction",
-          "remediationUrl": "https://help.rentvine.com/owner-statements",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements",
           "id": "w12-q01"
         },
         {
@@ -4440,7 +4440,7 @@ window.RVU_COURSE = {
           "explanation": "Owner statements explain financial activity and the owner-facing result for the period.",
           "points": 1,
           "remediationTitle": "Owner Statements Introduction",
-          "remediationUrl": "https://help.rentvine.com/owner-statements",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements",
           "id": "w12-q02"
         },
         {
@@ -4456,7 +4456,7 @@ window.RVU_COURSE = {
           "explanation": "Reserves hold back funds to cover repairs or other required minimum balances.",
           "points": 1,
           "remediationTitle": "Owner Statements Introduction",
-          "remediationUrl": "https://help.rentvine.com/owner-statements",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements",
           "id": "w12-q03"
         },
         {
@@ -4472,7 +4472,7 @@ window.RVU_COURSE = {
           "explanation": "Statements should be reviewed for completeness and accuracy before owners receive them.",
           "points": 1,
           "remediationTitle": "Owner Statements Introduction",
-          "remediationUrl": "https://help.rentvine.com/owner-statements",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements",
           "id": "w12-q04"
         },
         {
@@ -4488,7 +4488,7 @@ window.RVU_COURSE = {
           "explanation": "Statement settings determine how much detail and which reports are sent to owners.",
           "points": 1,
           "remediationTitle": "Owner Statements Introduction",
-          "remediationUrl": "https://help.rentvine.com/owner-statements",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements",
           "id": "w12-q05"
         },
         {
@@ -4502,7 +4502,7 @@ window.RVU_COURSE = {
           "explanation": "Reserves, payables, prepaid rent, deposits, and other holdbacks can reduce distributable funds.",
           "points": 1,
           "remediationTitle": "Owner Statements Introduction",
-          "remediationUrl": "https://help.rentvine.com/owner-statements",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements",
           "id": "w12-q06"
         },
         {
@@ -4516,7 +4516,7 @@ window.RVU_COURSE = {
           "explanation": "Manager Ledger mode creates a manager ledger and can automate fee movement and reversals.",
           "points": 1,
           "remediationTitle": "Owner Statements Introduction",
-          "remediationUrl": "https://help.rentvine.com/owner-statements",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements",
           "id": "w12-q07"
         },
         {
@@ -4530,7 +4530,7 @@ window.RVU_COURSE = {
           "explanation": "A human review helps catch missing bills, wrong settings, diagnostics, and owner-specific reporting needs.",
           "points": 1,
           "remediationTitle": "Owner Statements Introduction",
-          "remediationUrl": "https://help.rentvine.com/owner-statements",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements",
           "id": "w12-q08"
         },
         {
@@ -4544,7 +4544,7 @@ window.RVU_COURSE = {
           "explanation": "Bulk statement workflows support preparing statements for multiple owners/portfolios.",
           "points": 1,
           "remediationTitle": "Owner Statements Introduction",
-          "remediationUrl": "https://help.rentvine.com/owner-statements",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements",
           "id": "w12-q09"
         },
         {
@@ -4558,7 +4558,7 @@ window.RVU_COURSE = {
           "explanation": "Distribution holds help prevent overpayment and negative portfolio balances.",
           "points": 1,
           "remediationTitle": "Owner Statements Introduction",
-          "remediationUrl": "https://help.rentvine.com/owner-statements",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements",
           "id": "w12-q10"
         },
         {
@@ -4574,7 +4574,7 @@ window.RVU_COURSE = {
           "explanation": "Switching the fee type filter to Additional narrows the search to non-base charges like late fees and NSF fees, so a manager can post and collect those without also posting the base management fee in the same batch.",
           "points": 1,
           "remediationTitle": "Owner Statements Introduction",
-          "remediationUrl": "https://help.rentvine.com/owner-statements",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements",
           "id": "w12-q11"
         },
         {
@@ -4590,7 +4590,7 @@ window.RVU_COURSE = {
           "explanation": "Bulk Management Fees is not a shortcut for posting normal unbilled fees -- it creates a separate, one-time charge (like an annual portal activation fee) applied at once across whichever portfolios, units, properties, or property groups are selected, at the same fixed amount for everyone.",
           "points": 1,
           "remediationTitle": "Owner Statements Introduction",
-          "remediationUrl": "https://help.rentvine.com/owner-statements",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements",
           "id": "w12-q12"
         },
         {
@@ -4606,7 +4606,7 @@ window.RVU_COURSE = {
           "explanation": "Once the overall bill is created, the base fee is attached to it and the system credits the owner back accordingly. Removing the line item afterward doesn't undo that -- it still shows a bill was created and the fee was collected, even though the funds were never actually gathered, which is why this workaround causes more confusion than it resolves.",
           "points": 1,
           "remediationTitle": "Owner Statements Introduction",
-          "remediationUrl": "https://help.rentvine.com/owner-statements",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements",
           "id": "w12-q13"
         },
         {
@@ -4622,7 +4622,7 @@ window.RVU_COURSE = {
           "explanation": "Statement setting changes are global going forward but never retroactively alter statements that have already been generated or published.",
           "points": 1,
           "remediationTitle": "How to Create a Custom Owner Statement",
-          "remediationUrl": "https://help.rentvine.com/how-to-create-a-custom-owner-statement",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574837-how-to-create-a-custom-owner-statement",
           "id": "w12-pwq1"
         },
         {
@@ -4638,7 +4638,7 @@ window.RVU_COURSE = {
           "explanation": "Statement Preview generates the statement for review without notifying the owner or publishing it.",
           "points": 1,
           "remediationTitle": "How to Create a Custom Owner Statement",
-          "remediationUrl": "https://help.rentvine.com/how-to-create-a-custom-owner-statement",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574837-how-to-create-a-custom-owner-statement",
           "id": "w12-pwq2"
         },
         {
@@ -4654,7 +4654,7 @@ window.RVU_COURSE = {
           "explanation": "Rentvine subtracts reserves, unpaid bills, open estimates, and unsettled funds from the Operating Balance to land on a safe number to pay out.",
           "points": 1,
           "remediationTitle": "How to Pay Owners",
-          "remediationUrl": "https://help.rentvine.com/how-to-pay-owners",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574180-how-to-pay-owners",
           "id": "w12-pwq3"
         },
         {
@@ -4670,7 +4670,7 @@ window.RVU_COURSE = {
           "explanation": "Overriding the Amount to Pay is allowed, but it can push the account below its reserve requirement, which shows up as a request for the owner to contribute funds.",
           "points": 1,
           "remediationTitle": "How to Pay Owners",
-          "remediationUrl": "https://help.rentvine.com/how-to-pay-owners",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574180-how-to-pay-owners",
           "id": "w12-pwq4"
         },
         {
@@ -4686,7 +4686,7 @@ window.RVU_COURSE = {
           "explanation": "Select All Non-Zero grabs every portfolio with a positive amount to pay out -- no need to check them one by one.",
           "points": 1,
           "remediationTitle": "How to Pay Owners",
-          "remediationUrl": "https://help.rentvine.com/how-to-pay-owners",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574180-how-to-pay-owners",
           "id": "w12-pwq5"
         }
       ],
@@ -4741,27 +4741,27 @@ window.RVU_COURSE = {
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.45.51%20PM.png?width=688&height=376",
               "caption": "Settings gear → Accounting Settings",
-              "href": "https://help.rentvine.com/how-to-create-a-custom-owner-statement"
+              "href": "https://help.rentvine.com/en/articles/16574837-how-to-create-a-custom-owner-statement"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.46.18%20PM.png?width=688&height=376",
               "caption": "Statements list under Accounting Settings",
-              "href": "https://help.rentvine.com/how-to-create-a-custom-owner-statement"
+              "href": "https://help.rentvine.com/en/articles/16574837-how-to-create-a-custom-owner-statement"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.46.37%20PM.png?width=688&height=376",
               "caption": "List of available statement settings",
-              "href": "https://help.rentvine.com/how-to-create-a-custom-owner-statement"
+              "href": "https://help.rentvine.com/en/articles/16574837-how-to-create-a-custom-owner-statement"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202023-01-30%20at%208-27-40%20PM-png.png?width=561&height=497",
               "caption": "Toggling Paid Bills / Work Orders modules on or off",
-              "href": "https://help.rentvine.com/how-to-create-a-custom-owner-statement"
+              "href": "https://help.rentvine.com/en/articles/16574837-how-to-create-a-custom-owner-statement"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202023-04-19%20at%207-00-59%20AM-png.png?width=648&height=541",
               "caption": "Example of the Transaction Details module",
-              "href": "https://help.rentvine.com/how-to-create-a-custom-owner-statement"
+              "href": "https://help.rentvine.com/en/articles/16574837-how-to-create-a-custom-owner-statement"
             }
           ]
         },
@@ -4805,27 +4805,27 @@ window.RVU_COURSE = {
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-25%20at%2011-45-13%E2%80%AFAM-png.png?width=2206&height=1878",
               "caption": "Quick Actions → Pay Owners",
-              "href": "https://help.rentvine.com/how-to-pay-owners"
+              "href": "https://help.rentvine.com/en/articles/16574180-how-to-pay-owners"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-12%20at%2011-04-08%E2%80%AFAM-png.png?width=688&height=397",
               "caption": "Selecting which portfolios to include",
-              "href": "https://help.rentvine.com/how-to-pay-owners"
+              "href": "https://help.rentvine.com/en/articles/16574180-how-to-pay-owners"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-12%20at%2011-27-10%E2%80%AFAM-png.png?width=688&height=459",
               "caption": "Distributable Amount breakdown",
-              "href": "https://help.rentvine.com/how-to-pay-owners"
+              "href": "https://help.rentvine.com/en/articles/16574180-how-to-pay-owners"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-12%20at%2011-32-38%E2%80%AFAM-png.png?width=688&height=427",
               "caption": "Posting owner payments",
-              "href": "https://help.rentvine.com/how-to-pay-owners"
+              "href": "https://help.rentvine.com/en/articles/16574180-how-to-pay-owners"
             },
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-11-12%20at%2011-37-26%E2%80%AFAM-png.png?width=688&height=427",
               "caption": "Payment Batches tab after posting",
-              "href": "https://help.rentvine.com/how-to-pay-owners"
+              "href": "https://help.rentvine.com/en/articles/16574180-how-to-pay-owners"
             }
           ]
         }
@@ -4890,7 +4890,7 @@ window.RVU_COURSE = {
           "id": "w13-res-5",
           "title": "Reports Knowledge Base",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/reports",
+          "url": "https://help.rentvine.com/en/collections/19727723-reports",
           "summary": "Official Reports articles including scheduled reports and report customization.",
           "videoCode": ""
         },
@@ -4898,7 +4898,7 @@ window.RVU_COURSE = {
           "id": "w13-res-6",
           "title": "How to Use Reports",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/how-to-use-reports",
+          "url": "https://help.rentvine.com/en/articles/16574048-how-to-use-reports",
           "summary": "Official guide for filtering, customizing, and navigating reports.",
           "videoCode": ""
         },
@@ -4906,7 +4906,7 @@ window.RVU_COURSE = {
           "id": "w13-res-7",
           "title": "How to Create Scheduled Reports",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/how-to-create-scheduled-reports",
+          "url": "https://help.rentvine.com/en/articles/16574162-how-to-create-scheduled-reports",
           "summary": "Official guide for recurring emailed reports.",
           "videoCode": ""
         },
@@ -4944,7 +4944,7 @@ window.RVU_COURSE = {
           "explanation": "It buckets outstanding balances by how long they've been due.",
           "points": 1,
           "remediationTitle": "Reports Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/reports",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727723-reports",
           "id": "w13-q01"
         },
         {
@@ -4960,7 +4960,7 @@ window.RVU_COURSE = {
           "explanation": "Scheduled reports auto-run and deliver on a cadence.",
           "points": 1,
           "remediationTitle": "Reports Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/reports",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727723-reports",
           "id": "w13-q02"
         },
         {
@@ -4976,7 +4976,7 @@ window.RVU_COURSE = {
           "explanation": "Grouping clusters data by a shared field.",
           "points": 1,
           "remediationTitle": "Reports Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/reports",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727723-reports",
           "id": "w13-q03"
         },
         {
@@ -4992,7 +4992,7 @@ window.RVU_COURSE = {
           "explanation": "Saved reports preserve configuration for reuse.",
           "points": 1,
           "remediationTitle": "Reports Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/reports",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727723-reports",
           "id": "w13-q04"
         },
         {
@@ -5008,7 +5008,7 @@ window.RVU_COURSE = {
           "explanation": "Owner packages combine statements with supporting reports.",
           "points": 1,
           "remediationTitle": "Reports Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/reports",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727723-reports",
           "id": "w13-q05"
         },
         {
@@ -5022,7 +5022,7 @@ window.RVU_COURSE = {
           "explanation": "Scheduling automates recurring delivery.",
           "points": 1,
           "remediationTitle": "Reports Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/reports",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727723-reports",
           "id": "w13-q06"
         },
         {
@@ -5036,7 +5036,7 @@ window.RVU_COURSE = {
           "explanation": "Aging buckets organize overdue balances.",
           "points": 1,
           "remediationTitle": "Reports Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/reports",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727723-reports",
           "id": "w13-q07"
         },
         {
@@ -5050,7 +5050,7 @@ window.RVU_COURSE = {
           "explanation": "It surfaces tenants with outstanding balances.",
           "points": 1,
           "remediationTitle": "Reports Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/reports",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727723-reports",
           "id": "w13-q08"
         },
         {
@@ -5064,7 +5064,7 @@ window.RVU_COURSE = {
           "explanation": "That is the benefit of saving a report.",
           "points": 1,
           "remediationTitle": "Reports Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/reports",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727723-reports",
           "id": "w13-q09"
         },
         {
@@ -5078,7 +5078,7 @@ window.RVU_COURSE = {
           "explanation": "Filtering is a core reporting capability.",
           "points": 1,
           "remediationTitle": "Reports Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/reports",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727723-reports",
           "id": "w13-q10"
         }
       ],
@@ -5162,7 +5162,7 @@ window.RVU_COURSE = {
           "id": "w14-res-4",
           "title": "Accounting Diagnostics",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/diagnostics-tab",
+          "url": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
           "summary": "Official diagnostics guide covering negative bank accounts, reserve not met, escrow mismatches, and related health checks.",
           "videoCode": ""
         },
@@ -5170,7 +5170,7 @@ window.RVU_COURSE = {
           "id": "w14-res-5",
           "title": "Accounting Knowledge Base",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/accounting",
+          "url": "https://help.rentvine.com/en/collections/19727720-accounting",
           "summary": "Official Accounting articles for corrections, transfers, deposits, reconciliation, and ledgers.",
           "videoCode": ""
         },
@@ -5210,7 +5210,7 @@ window.RVU_COURSE = {
           "explanation": "Fee posting moves earned fees to the management company.",
           "points": 1,
           "remediationTitle": "Accounting Diagnostics",
-          "remediationUrl": "https://help.rentvine.com/diagnostics-tab",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
           "id": "w14-q01"
         },
         {
@@ -5226,7 +5226,7 @@ window.RVU_COURSE = {
           "explanation": "Negative balances signal over-distribution or excess expenses.",
           "points": 1,
           "remediationTitle": "Accounting Diagnostics",
-          "remediationUrl": "https://help.rentvine.com/diagnostics-tab",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
           "id": "w14-q02"
         },
         {
@@ -5242,7 +5242,7 @@ window.RVU_COURSE = {
           "explanation": "Trust accounting requires escrow to reconcile exactly.",
           "points": 1,
           "remediationTitle": "Accounting Diagnostics",
-          "remediationUrl": "https://help.rentvine.com/diagnostics-tab",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
           "id": "w14-q03"
         },
         {
@@ -5258,7 +5258,7 @@ window.RVU_COURSE = {
           "explanation": "Diagnostics flag accounting problems needing attention.",
           "points": 1,
           "remediationTitle": "Accounting Diagnostics",
-          "remediationUrl": "https://help.rentvine.com/diagnostics-tab",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
           "id": "w14-q04"
         },
         {
@@ -5274,7 +5274,7 @@ window.RVU_COURSE = {
           "explanation": "A mismatch means recorded trust balances don't tie to actuals.",
           "points": 1,
           "remediationTitle": "Accounting Diagnostics",
-          "remediationUrl": "https://help.rentvine.com/diagnostics-tab",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
           "id": "w14-q05"
         },
         {
@@ -5288,7 +5288,7 @@ window.RVU_COURSE = {
           "explanation": "Client funds must balance for compliance.",
           "points": 1,
           "remediationTitle": "Accounting Diagnostics",
-          "remediationUrl": "https://help.rentvine.com/diagnostics-tab",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
           "id": "w14-q06"
         },
         {
@@ -5302,7 +5302,7 @@ window.RVU_COURSE = {
           "explanation": "Negative balances indicate a problem to resolve.",
           "points": 1,
           "remediationTitle": "Accounting Diagnostics",
-          "remediationUrl": "https://help.rentvine.com/diagnostics-tab",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
           "id": "w14-q07"
         },
         {
@@ -5316,7 +5316,7 @@ window.RVU_COURSE = {
           "explanation": "Fees move from portfolios to the management company as income.",
           "points": 1,
           "remediationTitle": "Accounting Diagnostics",
-          "remediationUrl": "https://help.rentvine.com/diagnostics-tab",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
           "id": "w14-q08"
         },
         {
@@ -5330,7 +5330,7 @@ window.RVU_COURSE = {
           "explanation": "That is a core use of the diagnostics tools.",
           "points": 1,
           "remediationTitle": "Accounting Diagnostics",
-          "remediationUrl": "https://help.rentvine.com/diagnostics-tab",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
           "id": "w14-q09"
         },
         {
@@ -5344,7 +5344,7 @@ window.RVU_COURSE = {
           "explanation": "Posting errors are a common cause of mismatches.",
           "points": 1,
           "remediationTitle": "Accounting Diagnostics",
-          "remediationUrl": "https://help.rentvine.com/diagnostics-tab",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
           "id": "w14-q10"
         },
         {
@@ -5360,7 +5360,7 @@ window.RVU_COURSE = {
           "explanation": "A prepayment mismatch happens when funds tied to a charge that isn't due yet are sitting in the wrong account (for example, sitting in the security deposit account instead of the rental trust). An escrow mismatch is specifically about security deposit escrow bank activity not lining up with the security deposit amounts tracked on the lease. Both require some navigation to trace, but they are distinct issues.",
           "points": 1,
           "remediationTitle": "Accounting Diagnostics",
-          "remediationUrl": "https://help.rentvine.com/diagnostics-tab",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
           "id": "w14-q11"
         },
         {
@@ -5376,7 +5376,7 @@ window.RVU_COURSE = {
           "explanation": "An account only shows up under Bank Account Reconciliation Lapse once it has gone longer than 60 days since its last completed reconciliation -- it's a flag for accounts that are falling behind on a core month-end control.",
           "points": 1,
           "remediationTitle": "Accounting Diagnostics",
-          "remediationUrl": "https://help.rentvine.com/diagnostics-tab",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
           "id": "w14-q12"
         },
         {
@@ -5392,7 +5392,7 @@ window.RVU_COURSE = {
           "explanation": "This diagnostic flags vendors whose workers' compensation or liability insurance expiration date has already passed, so the manager can follow up and get updated proof of insurance on file before continuing to send them work.",
           "points": 1,
           "remediationTitle": "Accounting Diagnostics",
-          "remediationUrl": "https://help.rentvine.com/diagnostics-tab",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
           "id": "w14-q13"
         },
         {
@@ -5408,7 +5408,7 @@ window.RVU_COURSE = {
           "explanation": "A positive suppressed fee balance generally means money is due to the management company (resolved by posting and paying out the fee). A negative balance usually means funds were over-collected or a payment bounced, and the manager needs to either issue a vendor credit or refund the owner rather than treat it as income.",
           "points": 1,
           "remediationTitle": "Accounting Diagnostics",
-          "remediationUrl": "https://help.rentvine.com/diagnostics-tab",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
           "id": "w14-q14"
         }
       ],
@@ -5485,7 +5485,7 @@ window.RVU_COURSE = {
           "id": "w15-res-3",
           "title": "Leases Knowledge Base",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/leases",
+          "url": "https://help.rentvine.com/en/collections/19727717-leases",
           "summary": "Official Lease articles for move-out/in, security deposits, financials, and lease details.",
           "videoCode": ""
         },
@@ -5493,7 +5493,7 @@ window.RVU_COURSE = {
           "id": "w15-res-4",
           "title": "Accounting Diagnostics",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/diagnostics-tab",
+          "url": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
           "summary": "Reference for accounting issues that can surface after move-out activity.",
           "videoCode": ""
         },
@@ -5532,7 +5532,7 @@ window.RVU_COURSE = {
           "explanation": "Move-outs follow a defined four-step workflow.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w15-q01"
         },
         {
@@ -5548,7 +5548,7 @@ window.RVU_COURSE = {
           "explanation": "Refunds equal the held deposit minus documented deductions.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w15-q02"
         },
         {
@@ -5564,7 +5564,7 @@ window.RVU_COURSE = {
           "explanation": "Transfers move a deposit to a new lease instead of refunding.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w15-q03"
         },
         {
@@ -5580,7 +5580,7 @@ window.RVU_COURSE = {
           "explanation": "Renewals extend the term, often with an escalation.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w15-q04"
         },
         {
@@ -5596,7 +5596,7 @@ window.RVU_COURSE = {
           "explanation": "A properly processed move-out leaves a zero balance.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w15-q05"
         },
         {
@@ -5610,7 +5610,7 @@ window.RVU_COURSE = {
           "explanation": "Move-outs use a four-step workflow.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w15-q06"
         },
         {
@@ -5624,7 +5624,7 @@ window.RVU_COURSE = {
           "explanation": "Allowable deductions reduce the refund.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w15-q07"
         },
         {
@@ -5638,7 +5638,7 @@ window.RVU_COURSE = {
           "explanation": "That is the purpose of a transfer.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w15-q08"
         },
         {
@@ -5652,7 +5652,7 @@ window.RVU_COURSE = {
           "explanation": "Renewals often apply an escalation.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w15-q09"
         },
         {
@@ -5666,7 +5666,7 @@ window.RVU_COURSE = {
           "explanation": "The ledger should net to zero.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w15-q10"
         }
       ],
@@ -5743,7 +5743,7 @@ window.RVU_COURSE = {
           "id": "w16-res-3",
           "title": "Leases Knowledge Base",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/leases",
+          "url": "https://help.rentvine.com/en/collections/19727717-leases",
           "summary": "Official Lease articles including renewal feature, lease details, financials, and security deposits.",
           "videoCode": ""
         },
@@ -5751,7 +5751,7 @@ window.RVU_COURSE = {
           "id": "w16-res-4",
           "title": "Accounting Knowledge Base",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/accounting",
+          "url": "https://help.rentvine.com/en/collections/19727720-accounting",
           "summary": "Official Accounting articles including bulk tenant receipts and Money In activity.",
           "videoCode": ""
         },
@@ -5759,7 +5759,7 @@ window.RVU_COURSE = {
           "id": "w16-res-5",
           "title": "How to Use RentSign",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/how-to-use-the-rentsign-feature-of-rentvine",
+          "url": "https://help.rentvine.com/en/articles/16574329-how-to-use-the-rentsign-feature-of-rentvine",
           "summary": "Reference for renewal documents and signing workflow.",
           "videoCode": ""
         },
@@ -5799,7 +5799,7 @@ window.RVU_COURSE = {
           "explanation": "Renewal eligibility settings determine which leases show as due for renewal.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w16-q01"
         },
         {
@@ -5815,7 +5815,7 @@ window.RVU_COURSE = {
           "explanation": "Renewal offers can present options such as rent increases, base rent, or total proposed rent.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w16-q02"
         },
         {
@@ -5831,7 +5831,7 @@ window.RVU_COURSE = {
           "explanation": "Accepted renewals often move to signing documents and finalizing lease dates/recurring charges.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w16-q03"
         },
         {
@@ -5847,7 +5847,7 @@ window.RVU_COURSE = {
           "explanation": "Bulk receipts are useful for lump-sum payments such as housing authority payments allocated across leases.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w16-q04"
         },
         {
@@ -5863,7 +5863,7 @@ window.RVU_COURSE = {
           "explanation": "The renewal must update lease terms and recurring billing as agreed.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w16-q05"
         },
         {
@@ -5877,7 +5877,7 @@ window.RVU_COURSE = {
           "explanation": "Renewal keeps the resident under updated terms; move-out closes the tenancy and settles the ledger.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w16-q06"
         },
         {
@@ -5891,7 +5891,7 @@ window.RVU_COURSE = {
           "explanation": "Renewal agreements or addenda may be sent through RentSign.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w16-q07"
         },
         {
@@ -5905,7 +5905,7 @@ window.RVU_COURSE = {
           "explanation": "That is a common use case for bulk tenant receipt workflows.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w16-q08"
         },
         {
@@ -5919,7 +5919,7 @@ window.RVU_COURSE = {
           "explanation": "Current rent and lease dates should be reviewed to avoid inaccurate offers.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w16-q09"
         },
         {
@@ -5933,7 +5933,7 @@ window.RVU_COURSE = {
           "explanation": "Finalization updates lease dates/status and recurring charges to match the renewal.",
           "points": 1,
           "remediationTitle": "Leases Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/leases",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727717-leases",
           "id": "w16-q10"
         }
       ],
@@ -6022,7 +6022,7 @@ window.RVU_COURSE = {
           "id": "w17-res-5",
           "title": "Accounting Knowledge Base",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/accounting",
+          "url": "https://help.rentvine.com/en/collections/19727720-accounting",
           "summary": "Official Accounting articles for GL accounts, ledgers, payment allocation, banking, reconciliation, and management fees.",
           "videoCode": ""
         },
@@ -6030,7 +6030,7 @@ window.RVU_COURSE = {
           "id": "w17-res-6",
           "title": "Accounting Settings",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/accounting-setting",
+          "url": "https://help.rentvine.com/en/articles/16574190-accounting-setting",
           "summary": "Official guide for accounting settings, account mappings, 2FA, positive pay, and system-managed defaults.",
           "videoCode": ""
         },
@@ -6038,7 +6038,7 @@ window.RVU_COURSE = {
           "id": "w17-res-7",
           "title": "Accounting Diagnostics",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/diagnostics-tab",
+          "url": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
           "summary": "Reference for escrow mismatch, reserve not met, and negative balance issues.",
           "videoCode": ""
         }
@@ -6070,7 +6070,7 @@ window.RVU_COURSE = {
           "explanation": "GL accounts classify transactions so reports, ledgers, and statements are meaningful.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w17-q01"
         },
         {
@@ -6086,7 +6086,7 @@ window.RVU_COURSE = {
           "explanation": "Prepaid rent is not earned until the applicable charge posts; it should be held as a liability first.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w17-q02"
         },
         {
@@ -6102,7 +6102,7 @@ window.RVU_COURSE = {
           "explanation": "Trust accounting is based on fund separation, accurate records, and reconciliation.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w17-q03"
         },
         {
@@ -6118,7 +6118,7 @@ window.RVU_COURSE = {
           "explanation": "Escrow mismatches require investigation because client-held deposits must tie to ledger balances.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w17-q04"
         },
         {
@@ -6134,7 +6134,7 @@ window.RVU_COURSE = {
           "explanation": "Allocation order affects how incoming money applies across deposits, rent, fees, and late charges.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w17-q05"
         },
         {
@@ -6148,7 +6148,7 @@ window.RVU_COURSE = {
           "explanation": "Co-mingling is not acceptable trust accounting practice.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w17-q06"
         },
         {
@@ -6162,7 +6162,7 @@ window.RVU_COURSE = {
           "explanation": "Ledgers record charges, receipts, bills, deposits, distributions, liabilities, and balances.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w17-q07"
         },
         {
@@ -6176,7 +6176,7 @@ window.RVU_COURSE = {
           "explanation": "Manager Ledger mode uses a ledger for management-company fee activity and can automate certain fee movements/reversals.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w17-q08"
         },
         {
@@ -6190,7 +6190,7 @@ window.RVU_COURSE = {
           "explanation": "Reconciliation verifies that records agree and supports trustworthy statements.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w17-q09"
         },
         {
@@ -6204,7 +6204,7 @@ window.RVU_COURSE = {
           "explanation": "Settings changes can affect posting, reporting, payments, and compliance.",
           "points": 1,
           "remediationTitle": "Accounting Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "w17-q10"
         },
         {
@@ -6220,7 +6220,7 @@ window.RVU_COURSE = {
           "explanation": "Account Basis Type is set to either Cash or Accrual -- one of the fundamentals to confirm before relying on any report.",
           "points": 1,
           "remediationTitle": "Rentvine Accounting Settings",
-          "remediationUrl": "https://help.rentvine.com/how-to-create-a-custom-owner-statement",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574837-how-to-create-a-custom-owner-statement",
           "id": "w17-pwq1"
         }
       ],
@@ -6265,7 +6265,7 @@ window.RVU_COURSE = {
             {
               "src": "https://help.rentvine.com/hs-fs/hubfs/Screenshot%202025-12-04%20at%203.45.51%20PM.png?width=688&height=376",
               "caption": "Settings gear → Accounting Settings",
-              "href": "https://help.rentvine.com/how-to-create-a-custom-owner-statement"
+              "href": "https://help.rentvine.com/en/articles/16574837-how-to-create-a-custom-owner-statement"
             }
           ]
         }
@@ -6322,7 +6322,7 @@ window.RVU_COURSE = {
           "id": "w18-res-4",
           "title": "User Roles",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/user-roles",
+          "url": "https://help.rentvine.com/en/articles/16574157-user-roles",
           "summary": "Official user role guide emphasizing creating roles with only the needed permissions.",
           "videoCode": ""
         },
@@ -6330,7 +6330,7 @@ window.RVU_COURSE = {
           "id": "w18-res-5",
           "title": "Guide to Rentvine Open API",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/tip-of-the-week-30-guide-to-rentvines-open-api",
+          "url": "https://help.rentvine.com/en/articles/16575275-tip-of-the-week-30-guide-to-rentvines-open-api",
           "summary": "Official Open API overview for custom integrations and API key workflow.",
           "videoCode": ""
         },
@@ -6338,7 +6338,7 @@ window.RVU_COURSE = {
           "id": "w18-res-6",
           "title": "How to Create an API Key",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/how-to-create-an-api-key",
+          "url": "https://help.rentvine.com/en/articles/16575275-tip-of-the-week-30-guide-to-rentvines-open-api",
           "summary": "Official API key guide for third-party vendor access.",
           "videoCode": ""
         },
@@ -6346,7 +6346,7 @@ window.RVU_COURSE = {
           "id": "w18-res-7",
           "title": "Property Meld Integration Overview",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/integration-overview-property-melt-/-rentvine",
+          "url": "https://help.rentvine.com/en/articles/16574840-integration-overview-property-meld-rentvine",
           "summary": "Official integration guide showing how approved invoices/expenditures create Rentvine bills and what does not sync.",
           "videoCode": ""
         },
@@ -6354,7 +6354,7 @@ window.RVU_COURSE = {
           "id": "w18-res-8",
           "title": "QuickBooks Export",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/how-to-utilize-quickbooks-export-in-rentvine",
+          "url": "https://help.rentvine.com/en/articles/16574724-how-to-utilize-quickbooks-export-in-rentvine",
           "summary": "Official QuickBooks/Xero export guide.",
           "videoCode": ""
         },
@@ -6362,7 +6362,7 @@ window.RVU_COURSE = {
           "id": "w18-res-9",
           "title": "Account Settings",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/account-settings",
+          "url": "https://help.rentvine.com/en/articles/16574870-account-settings",
           "summary": "Official account settings guide for account manager, users, roles, API, notifications, and reminders.",
           "videoCode": ""
         },
@@ -6410,7 +6410,7 @@ window.RVU_COURSE = {
           "explanation": "Least privilege reduces risk by granting only what each user needs.",
           "points": 1,
           "remediationTitle": "User Roles",
-          "remediationUrl": "https://help.rentvine.com/user-roles",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574157-user-roles",
           "id": "w18-q01"
         },
         {
@@ -6426,7 +6426,7 @@ window.RVU_COURSE = {
           "explanation": "API access allows external systems or developers to connect with Rentvine data within the API scope.",
           "points": 1,
           "remediationTitle": "User Roles",
-          "remediationUrl": "https://help.rentvine.com/user-roles",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574157-user-roles",
           "id": "w18-q02"
         },
         {
@@ -6442,7 +6442,7 @@ window.RVU_COURSE = {
           "explanation": "Approved invoices/expenditures in Property Meld can create bills in Rentvine.",
           "points": 1,
           "remediationTitle": "User Roles",
-          "remediationUrl": "https://help.rentvine.com/user-roles",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574157-user-roles",
           "id": "w18-q03"
         },
         {
@@ -6458,7 +6458,7 @@ window.RVU_COURSE = {
           "explanation": "QuickBooks export supports accounting workflows outside Rentvine, especially management-company income/payout reporting.",
           "points": 1,
           "remediationTitle": "User Roles",
-          "remediationUrl": "https://help.rentvine.com/user-roles",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574157-user-roles",
           "id": "w18-q04"
         },
         {
@@ -6474,7 +6474,7 @@ window.RVU_COURSE = {
           "explanation": "Go-live requires operational, accounting, security, portal, and migration readiness.",
           "points": 1,
           "remediationTitle": "User Roles",
-          "remediationUrl": "https://help.rentvine.com/user-roles",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574157-user-roles",
           "id": "w18-q05"
         },
         {
@@ -6488,7 +6488,7 @@ window.RVU_COURSE = {
           "explanation": "API keys create data access and should be handled intentionally.",
           "points": 1,
           "remediationTitle": "User Roles",
-          "remediationUrl": "https://help.rentvine.com/user-roles",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574157-user-roles",
           "id": "w18-q06"
         },
         {
@@ -6502,7 +6502,7 @@ window.RVU_COURSE = {
           "explanation": "Integrations have scopes, directions, exceptions, and items that may not sync.",
           "points": 1,
           "remediationTitle": "User Roles",
-          "remediationUrl": "https://help.rentvine.com/user-roles",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574157-user-roles",
           "id": "w18-q07"
         },
         {
@@ -6516,7 +6516,7 @@ window.RVU_COURSE = {
           "explanation": "Roles define permission access and help protect sensitive workflows.",
           "points": 1,
           "remediationTitle": "User Roles",
-          "remediationUrl": "https://help.rentvine.com/user-roles",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574157-user-roles",
           "id": "w18-q08"
         },
         {
@@ -6530,7 +6530,7 @@ window.RVU_COURSE = {
           "explanation": "Testing in a safe environment helps validate settings before real customer data is affected.",
           "points": 1,
           "remediationTitle": "User Roles",
-          "remediationUrl": "https://help.rentvine.com/user-roles",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574157-user-roles",
           "id": "w18-q09"
         },
         {
@@ -6544,7 +6544,7 @@ window.RVU_COURSE = {
           "explanation": "Rentvine can provide API access/documentation; the third party typically builds the integration.",
           "points": 1,
           "remediationTitle": "User Roles",
-          "remediationUrl": "https://help.rentvine.com/user-roles",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574157-user-roles",
           "id": "w18-q10"
         },
         {
@@ -6560,7 +6560,7 @@ window.RVU_COURSE = {
           "explanation": "Personal notifications are always configured by the individual user for their own account -- no one else controls what a colleague is notified about. Account notifications are company-wide (for example, routing every work-order-submitted alert to a maintenance coordinator's inbox) and are not filtered by an assignee the way personal notifications are.",
           "points": 1,
           "remediationTitle": "User Roles",
-          "remediationUrl": "https://help.rentvine.com/user-roles",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574157-user-roles",
           "id": "w18-q11"
         },
         {
@@ -6576,7 +6576,7 @@ window.RVU_COURSE = {
           "explanation": "The assignee field is what lets a user control when they're notified -- for example, being notified only for records assigned to them, only when unassigned, or in every case, depending on how they configure it for themselves.",
           "points": 1,
           "remediationTitle": "User Roles",
-          "remediationUrl": "https://help.rentvine.com/user-roles",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574157-user-roles",
           "id": "w18-q12"
         }
       ],
@@ -6697,7 +6697,7 @@ window.RVU_COURSE = {
           "id": "w19-res-9",
           "title": "Full Rentvine Knowledge Base",
           "type": "Official KB",
-          "url": "https://help.rentvine.com/",
+          "url": "https://help.rentvine.com/en/",
           "summary": "Official Help Center index for final review and remediation.",
           "videoCode": ""
         }
@@ -6726,7 +6726,7 @@ window.RVU_COURSE = {
           "explanation": "The capstone tests the property management process end to end.",
           "points": 1,
           "remediationTitle": "Full Rentvine Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "w19-q01"
         },
         {
@@ -6742,7 +6742,7 @@ window.RVU_COURSE = {
           "explanation": "The final owner-facing financial output must reconcile and make sense.",
           "points": 1,
           "remediationTitle": "Full Rentvine Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "w19-q02"
         },
         {
@@ -6758,7 +6758,7 @@ window.RVU_COURSE = {
           "explanation": "The practical exam should be completed independently in a safe training environment.",
           "points": 1,
           "remediationTitle": "Full Rentvine Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "w19-q03"
         },
         {
@@ -6774,7 +6774,7 @@ window.RVU_COURSE = {
           "explanation": "Certification requires completion of the full learning path and successful capstone performance.",
           "points": 1,
           "remediationTitle": "Full Rentvine Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "w19-q04"
         },
         {
@@ -6790,7 +6790,7 @@ window.RVU_COURSE = {
           "explanation": "Video proof helps reviewers confirm the learner completed the process and can navigate the workflow.",
           "points": 1,
           "remediationTitle": "Full Rentvine Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "w19-q05"
         },
         {
@@ -6804,7 +6804,7 @@ window.RVU_COURSE = {
           "explanation": "Practice and assessment work belongs in training/sandbox data.",
           "points": 1,
           "remediationTitle": "Full Rentvine Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "w19-q06"
         },
         {
@@ -6818,7 +6818,7 @@ window.RVU_COURSE = {
           "explanation": "Accounting accuracy is required to pass.",
           "points": 1,
           "remediationTitle": "Full Rentvine Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "w19-q07"
         },
         {
@@ -6832,7 +6832,7 @@ window.RVU_COURSE = {
           "explanation": "The capstone spans the full process, not just one feature.",
           "points": 1,
           "remediationTitle": "Full Rentvine Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "w19-q08"
         },
         {
@@ -6846,7 +6846,7 @@ window.RVU_COURSE = {
           "explanation": "Critical failures such as unreconciled owner statement or trust/escrow problems should prevent certification.",
           "points": 1,
           "remediationTitle": "Full Rentvine Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "w19-q09"
         },
         {
@@ -6860,7 +6860,7 @@ window.RVU_COURSE = {
           "explanation": "Certification is about understanding the workflow, not just clicking screens.",
           "points": 1,
           "remediationTitle": "Full Rentvine Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "w19-q10"
         }
       ],
@@ -7070,7 +7070,7 @@ window.RVU_COURSE = {
       "definition": "The owner-level account that groups owner contacts, properties, ledgers, reserves, statements, and payout settings.",
       "whyItMatters": "Start here when you need to understand an owner's overall Rentvine account.",
       "guideTitle": "Portfolios",
-      "guideUrl": "https://help.rentvine.com/portfolios",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
       "seeAlso": []
     },
     {
@@ -7083,7 +7083,7 @@ window.RVU_COURSE = {
       "definition": "The person or company tied to a portfolio as the owner of the managed property or properties.",
       "whyItMatters": "Owner contacts determine who receives statements, portal access, tax reporting, and distributions.",
       "guideTitle": "Portfolios",
-      "guideUrl": "https://help.rentvine.com/portfolios",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
       "seeAlso": []
     },
     {
@@ -7096,7 +7096,7 @@ window.RVU_COURSE = {
       "definition": "A portfolio with more than one owner where ownership, distribution, or tax percentages may be split.",
       "whyItMatters": "Use this when two or more owners share income, expenses, and reporting for one portfolio.",
       "guideTitle": "Portfolios",
-      "guideUrl": "https://help.rentvine.com/portfolios",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
       "seeAlso": []
     },
     {
@@ -7109,7 +7109,7 @@ window.RVU_COURSE = {
       "definition": "The percentage relationship between owners in a multi-owner portfolio.",
       "whyItMatters": "Incorrect splits create incorrect payouts and owner statement results.",
       "guideTitle": "Portfolios",
-      "guideUrl": "https://help.rentvine.com/portfolios",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
       "seeAlso": []
     },
     {
@@ -7122,7 +7122,7 @@ window.RVU_COURSE = {
       "definition": "The percentage of available owner money paid to each owner when distributions are processed.",
       "whyItMatters": "This controls where owner payout dollars go.",
       "guideTitle": "Portfolios",
-      "guideUrl": "https://help.rentvine.com/portfolios",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
       "seeAlso": []
     },
     {
@@ -7135,7 +7135,7 @@ window.RVU_COURSE = {
       "definition": "The percentage used for reporting taxable income to each owner.",
       "whyItMatters": "This may differ from payout percentage, so confirm it carefully for year-end reporting.",
       "guideTitle": "Portfolios",
-      "guideUrl": "https://help.rentvine.com/portfolios",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
       "seeAlso": []
     },
     {
@@ -7149,7 +7149,7 @@ window.RVU_COURSE = {
       "definition": "The owner-level money history showing rent, expenses, fees, contributions, distributions, escrow, and liabilities.",
       "whyItMatters": "The ledger is the best place to trace what happened financially.",
       "guideTitle": "Portfolio Ledger Balances",
-      "guideUrl": "https://help.rentvine.com/ledger-balances",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574323-ledger-balances",
       "seeAlso": []
     },
     {
@@ -7163,7 +7163,7 @@ window.RVU_COURSE = {
       "definition": "The portfolio balance generally used to understand available operating funds after reserves and holdbacks.",
       "whyItMatters": "Beginners should look here before assuming money is available to pay an owner or bill.",
       "guideTitle": "Portfolio Ledger Balances",
-      "guideUrl": "https://help.rentvine.com/ledger-balances",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574323-ledger-balances",
       "seeAlso": []
     },
     {
@@ -7177,7 +7177,7 @@ window.RVU_COURSE = {
       "definition": "The total cash position before considering all operating availability, reserves, liabilities, or holdbacks.",
       "whyItMatters": "Cash on hand does not always mean cash available to distribute.",
       "guideTitle": "Portfolio Ledger Balances",
-      "guideUrl": "https://help.rentvine.com/ledger-balances",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574323-ledger-balances",
       "seeAlso": []
     },
     {
@@ -7191,7 +7191,7 @@ window.RVU_COURSE = {
       "definition": "Money intentionally held back so the property has funds available for bills, repairs, or owner-required minimum balances.",
       "whyItMatters": "Reserves prevent distributing every dollar when future expenses are expected.",
       "guideTitle": "Tip of the Week #4: Enabling Owner Balance Notifications",
-      "guideUrl": "https://help.rentvine.com/tips-of-the-week-4",
+      "guideUrl": "https://help.rentvine.com/en/articles/16573965-tips-of-the-week-4",
       "seeAlso": []
     },
     {
@@ -7205,7 +7205,7 @@ window.RVU_COURSE = {
       "definition": "An extra holdback for a specific purpose, such as a planned repair or short-term owner instruction.",
       "whyItMatters": "Use this for temporary or project-specific funds that should not be distributed.",
       "guideTitle": "How to Add an Additional Reserve Amount to a Portfolio",
-      "guideUrl": "https://help.rentvine.com/how-to-add-the-additonal-reserve-amount-and-description-to-a-portfolio",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574848-how-to-add-the-additonal-reserve-amount-and-description-to-a-portfolio",
       "seeAlso": []
     },
     {
@@ -7220,7 +7220,7 @@ window.RVU_COURSE = {
       "definition": "A setting that prevents or limits owner distributions when available funds would fall below the allowed threshold.",
       "whyItMatters": "It protects the portfolio from being overpaid into a negative position.",
       "guideTitle": "Portfolios",
-      "guideUrl": "https://help.rentvine.com/portfolios",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
       "seeAlso": []
     },
     {
@@ -7234,7 +7234,7 @@ window.RVU_COURSE = {
       "definition": "Money sent by an owner into the portfolio, usually to cover repairs, reserves, or negative balances.",
       "whyItMatters": "Owner contributions are Money In and should not be confused with reserves.",
       "guideTitle": "How to Record an Owner Contribution/Receipt (Money In)",
-      "guideUrl": "https://help.rentvine.com/how-to-record-an-owner-contribution/payment-money-in",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574039-how-to-record-an-owner-contribution-payment-money-in",
       "seeAlso": []
     },
     {
@@ -7248,7 +7248,7 @@ window.RVU_COURSE = {
       "definition": "A payment of available funds from the portfolio to the owner.",
       "whyItMatters": "This is how the owner receives net proceeds after income, expenses, and holdbacks.",
       "guideTitle": "Accounting",
-      "guideUrl": "https://help.rentvine.com/accounting",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
       "seeAlso": []
     },
     {
@@ -7264,7 +7264,7 @@ window.RVU_COURSE = {
       "definition": "The report package sent to an owner showing income, expenses, and the resulting owner distribution for a period.",
       "whyItMatters": "The owner statement is often the final deliverable owners use to understand portfolio performance.",
       "guideTitle": "How to Create Owner Statements for Bulk Review or Publishing",
-      "guideUrl": "https://help.rentvine.com/how-to-send-owner-statements",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements",
       "seeAlso": []
     },
     {
@@ -7279,7 +7279,7 @@ window.RVU_COURSE = {
       "definition": "The saved configuration that controls what sections, reports, and details are included on owner statements.",
       "whyItMatters": "Different owners may need simple summaries or detailed supporting reports.",
       "guideTitle": "How to Create or Edit an Owner Statement Setting",
-      "guideUrl": "https://help.rentvine.com/how-to-create-a-custom-owner-statement",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574837-how-to-create-a-custom-owner-statement",
       "seeAlso": []
     },
     {
@@ -7293,7 +7293,7 @@ window.RVU_COURSE = {
       "definition": "A statement delivery option that allows an owner to access a statement through a shared email link/code.",
       "whyItMatters": "This can reduce portal login friction but should be reviewed for security expectations.",
       "guideTitle": "How to Create or Edit an Owner Statement Setting",
-      "guideUrl": "https://help.rentvine.com/how-to-create-a-custom-owner-statement",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574837-how-to-create-a-custom-owner-statement",
       "seeAlso": []
     },
     {
@@ -7308,7 +7308,7 @@ window.RVU_COURSE = {
       "definition": "The rental asset being managed, such as a single-family home, multifamily building, or other rentable property.",
       "whyItMatters": "Properties connect physical details, units, marketing, maintenance, leases, and accounting settings.",
       "guideTitle": "Properties & Units Global Settings",
-      "guideUrl": "https://help.rentvine.com/properties-and-units-globals-settings",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574156-properties-and-units-globals-settings",
       "seeAlso": []
     },
     {
@@ -7323,7 +7323,7 @@ window.RVU_COURSE = {
       "definition": "A rentable space inside a property; a multifamily property usually contains multiple units.",
       "whyItMatters": "Understanding property versus unit prevents duplicate or incorrect setup.",
       "guideTitle": "Properties & Units Global Settings",
-      "guideUrl": "https://help.rentvine.com/properties-and-units-globals-settings",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574156-properties-and-units-globals-settings",
       "seeAlso": []
     },
     {
@@ -7336,7 +7336,7 @@ window.RVU_COURSE = {
       "definition": "A property record that contains multiple units within one building or complex.",
       "whyItMatters": "Use one property with multiple units instead of creating unrelated property records.",
       "guideTitle": "Properties & Units Global Settings",
-      "guideUrl": "https://help.rentvine.com/properties-and-units-globals-settings",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574156-properties-and-units-globals-settings",
       "seeAlso": []
     },
     {
@@ -7349,7 +7349,7 @@ window.RVU_COURSE = {
       "definition": "An HOA-style entity linked to a property, often for tracking association details and payments.",
       "whyItMatters": "HOA information belongs with the property and can impact bills, rules, and owner reporting.",
       "guideTitle": "How to Add a Homeowners Association to a Property",
-      "guideUrl": "https://help.rentvine.com/how-to-add-a-home-owner-association-to-a-property",
+      "guideUrl": "https://help.rentvine.com/en/articles/16603976-how-to-add-a-homeowners-association-to-a-property",
       "seeAlso": []
     },
     {
@@ -7363,7 +7363,7 @@ window.RVU_COURSE = {
       "definition": "A structured way to categorize properties for filtering and reporting.",
       "whyItMatters": "Groups help managers pull reports or lists for a defined set of properties.",
       "guideTitle": "How to Add/Create Property Groups",
-      "guideUrl": "https://help.rentvine.com/how-to-add/create-property-groups-1",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574371-how-to-add-create-property-groups-1",
       "seeAlso": []
     },
     {
@@ -7378,7 +7378,7 @@ window.RVU_COURSE = {
       "definition": "A flexible label that can be applied to records such as portfolios, properties, leases, contacts, and work orders.",
       "whyItMatters": "Tags are helpful for quick filtering, reporting, special handling, or internal segmentation.",
       "guideTitle": "What are Tags? How to Create One and Apply Them",
-      "guideUrl": "https://help.rentvine.com/what-are-tags-and-how-to-create-one-and-apply-them-to-objects-portfolios-properties-leases-etc",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574834-what-are-tags-and-how-to-create-one-and-apply-them-to-objects-portfolios-properties-leases-etc",
       "seeAlso": []
     },
     {
@@ -7392,7 +7392,7 @@ window.RVU_COURSE = {
       "definition": "The user or manager assigned to a property for responsibility, routing, and accountability.",
       "whyItMatters": "Assignments help route tasks, notifications, and communication ownership.",
       "guideTitle": "Properties & Units Global Settings",
-      "guideUrl": "https://help.rentvine.com/properties-and-units-globals-settings",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574156-properties-and-units-globals-settings",
       "seeAlso": []
     },
     {
@@ -7408,7 +7408,7 @@ window.RVU_COURSE = {
       "definition": "A configurable field added to capture information that is specific to a company's workflow.",
       "whyItMatters": "Custom fields can support reporting, RentSign hot fields, templates, and operational tracking.",
       "guideTitle": "Other Global Settings",
-      "guideUrl": "https://help.rentvine.com/other-global-settings-1",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574246-other-global-settings-1",
       "seeAlso": []
     },
     {
@@ -7421,7 +7421,7 @@ window.RVU_COURSE = {
       "definition": "The legal property description stored on the property record.",
       "whyItMatters": "This may support documents and internal reference, but tags/groups are usually better for filtering.",
       "guideTitle": "Properties & Units Global Settings",
-      "guideUrl": "https://help.rentvine.com/properties-and-units-globals-settings",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574156-properties-and-units-globals-settings",
       "seeAlso": []
     },
     {
@@ -7434,7 +7434,7 @@ window.RVU_COURSE = {
       "definition": "A market-facing rental advertisement created from property and unit information.",
       "whyItMatters": "Listings convert vacant units into marketable rental opportunities.",
       "guideTitle": "How do I market my properties for rent?",
-      "guideUrl": "https://help.rentvine.com/how-do-i-market-my-properties-for-rent",
+      "guideUrl": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent",
       "seeAlso": []
     },
     {
@@ -7447,7 +7447,7 @@ window.RVU_COURSE = {
       "definition": "The area used to prepare property-specific listing details, photos, amenities, and syndication information.",
       "whyItMatters": "This is where rental availability becomes public-facing marketing content.",
       "guideTitle": "How do I market my properties for rent?",
-      "guideUrl": "https://help.rentvine.com/how-do-i-market-my-properties-for-rent",
+      "guideUrl": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent",
       "seeAlso": []
     },
     {
@@ -7461,7 +7461,7 @@ window.RVU_COURSE = {
       "definition": "The process of distributing a listing to external rental listing websites or marketing networks.",
       "whyItMatters": "Syndication increases exposure but can take time to update on third-party sites.",
       "guideTitle": "How do I market my properties for rent?",
-      "guideUrl": "https://help.rentvine.com/how-do-i-market-my-properties-for-rent",
+      "guideUrl": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent",
       "seeAlso": []
     },
     {
@@ -7474,7 +7474,7 @@ window.RVU_COURSE = {
       "definition": "A connected service or workflow used to schedule showings or self-tours for prospective residents.",
       "whyItMatters": "Showing setup affects lead conversion and prospect experience.",
       "guideTitle": "How do I market my properties for rent?",
-      "guideUrl": "https://help.rentvine.com/how-do-i-market-my-properties-for-rent",
+      "guideUrl": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent",
       "seeAlso": []
     },
     {
@@ -7488,7 +7488,7 @@ window.RVU_COURSE = {
       "definition": "The date a property or unit is expected to be available for occupancy.",
       "whyItMatters": "Accurate availability dates prevent wasted inquiries and incorrect move-in expectations.",
       "guideTitle": "How do I market my properties for rent?",
-      "guideUrl": "https://help.rentvine.com/how-do-i-market-my-properties-for-rent",
+      "guideUrl": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent",
       "seeAlso": []
     },
     {
@@ -7501,7 +7501,7 @@ window.RVU_COURSE = {
       "definition": "A generated draft description for a rental listing that still needs human review.",
       "whyItMatters": "AI can speed up listing copy, but people must review for accuracy and fair-housing compliance.",
       "guideTitle": "How do I market my properties for rent?",
-      "guideUrl": "https://help.rentvine.com/how-do-i-market-my-properties-for-rent",
+      "guideUrl": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent",
       "seeAlso": []
     },
     {
@@ -7514,7 +7514,7 @@ window.RVU_COURSE = {
       "definition": "Images attached to the listing to show the rental property or unit.",
       "whyItMatters": "Photos strongly affect lead quality and listing performance.",
       "guideTitle": "How do I market my properties for rent?",
-      "guideUrl": "https://help.rentvine.com/how-do-i-market-my-properties-for-rent",
+      "guideUrl": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent",
       "seeAlso": []
     },
     {
@@ -7527,7 +7527,7 @@ window.RVU_COURSE = {
       "definition": "A reusable application setup that controls fields, fees, questions, and requirements.",
       "whyItMatters": "Templates standardize what every applicant must submit.",
       "guideTitle": "Screening Global Settings",
-      "guideUrl": "https://help.rentvine.com/screening-global-settings",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574074-screening-global-settings",
       "seeAlso": []
     },
     {
@@ -7540,7 +7540,7 @@ window.RVU_COURSE = {
       "definition": "The online portal experience where applicants complete and submit rental applications.",
       "whyItMatters": "Applicants enter information here before screening and leasing decisions.",
       "guideTitle": "Screening",
-      "guideUrl": "https://help.rentvine.com/screening",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727716-screening",
       "seeAlso": []
     },
     {
@@ -7553,7 +7553,7 @@ window.RVU_COURSE = {
       "definition": "The fee charged during the application process, usually controlled by application settings or templates.",
       "whyItMatters": "Incorrect fee setup can create payment and applicant-experience problems.",
       "guideTitle": "Screening Global Settings",
-      "guideUrl": "https://help.rentvine.com/screening-global-settings",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574074-screening-global-settings",
       "seeAlso": []
     },
     {
@@ -7566,7 +7566,7 @@ window.RVU_COURSE = {
       "definition": "A screening result used to support application review, such as credit, identity, criminal, or eviction information.",
       "whyItMatters": "Reports must be interpreted consistently against documented criteria.",
       "guideTitle": "Introduction to Application and Screening",
-      "guideUrl": "https://help.rentvine.com/introduction-to-application-and-screening",
+      "guideUrl": "https://help.rentvine.com/en/articles/16573980-introduction-to-application-and-screening",
       "seeAlso": []
     },
     {
@@ -7579,7 +7579,7 @@ window.RVU_COURSE = {
       "definition": "The application review area that aggregates an applicant's scores, screening records, and household summary onto one screen, with color-coded flags for anything that needs a closer look. It calculates income-to-rent ratio automatically and lets a PM run a report for a single applicant without merging co-applicants first.",
       "whyItMatters": "Decision View never auto-passes or auto-fails an applicant by itself -- it surfaces the information consistently so the PM can make and document a fair, auditable final decision.",
       "guideTitle": "From Application to Decision, Screening Done Right",
-      "guideUrl": "https://help.rentvine.com/from-application-to-decision-screening-done-right",
+      "guideUrl": "https://help.rentvine.com/en/articles/16573944-from-application-to-decision-screening-done-right",
       "seeAlso": []
     },
     {
@@ -7592,7 +7592,7 @@ window.RVU_COURSE = {
       "definition": "A configurable scoring tool, set up per application template, that lets a PM define credit, late-payment, eviction, criminal, and rental-history criteria to fit different leasing scenarios (student housing, Section 8, standard, etc.). Every submitted application is automatically tagged with the template it came from.",
       "whyItMatters": "Because the criteria are template-specific, a company can hold different applicant pools to different standards without changing anything account-wide -- and because it feeds Decision View, changing a criterion updates every affected applicant's review status immediately.",
       "guideTitle": "From Application to Decision, Screening Done Right",
-      "guideUrl": "https://help.rentvine.com/from-application-to-decision-screening-done-right",
+      "guideUrl": "https://help.rentvine.com/en/articles/16573944-from-application-to-decision-screening-done-right",
       "seeAlso": []
     },
     {
@@ -7606,7 +7606,7 @@ window.RVU_COURSE = {
       "definition": "A person who financially backs an applicant or tenant but may not live in the unit.",
       "whyItMatters": "Guarantors are common when an applicant needs additional financial support to qualify.",
       "guideTitle": "Screening",
-      "guideUrl": "https://help.rentvine.com/screening",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727716-screening",
       "seeAlso": []
     },
     {
@@ -7619,7 +7619,7 @@ window.RVU_COURSE = {
       "definition": "An approval that requires extra conditions, such as a guarantor or higher deposit.",
       "whyItMatters": "Conditions should be based on consistent screening criteria.",
       "guideTitle": "Introduction to Application and Screening",
-      "guideUrl": "https://help.rentvine.com/introduction-to-application-and-screening",
+      "guideUrl": "https://help.rentvine.com/en/articles/16573980-introduction-to-application-and-screening",
       "seeAlso": []
     },
     {
@@ -7632,7 +7632,7 @@ window.RVU_COURSE = {
       "definition": "The Rentvine lease record that drives accounting, charges, payments, balances, and ledger activity.",
       "whyItMatters": "This is different from the legal lease document; it controls the accounting workflow.",
       "guideTitle": "How To Create a Financial Lease (Move In)",
-      "guideUrl": "https://help.rentvine.com/how-to-create-a-financial-lease-move-in",
+      "guideUrl": "https://help.rentvine.com/en/articles/16603312-how-to-create-a-financial-lease-move-in",
       "seeAlso": []
     },
     {
@@ -7645,7 +7645,7 @@ window.RVU_COURSE = {
       "definition": "The process for creating a lease, tenant records, charges, deposits, and start-date accounting.",
       "whyItMatters": "Move-in setup determines what posts to the tenant ledger at the start of occupancy.",
       "guideTitle": "How To Create a Financial Lease (Move In)",
-      "guideUrl": "https://help.rentvine.com/how-to-create-a-financial-lease-move-in",
+      "guideUrl": "https://help.rentvine.com/en/articles/16603312-how-to-create-a-financial-lease-move-in",
       "seeAlso": []
     },
     {
@@ -7659,7 +7659,7 @@ window.RVU_COURSE = {
       "definition": "A charge that posts automatically on a scheduled basis, such as monthly rent or pet rent.",
       "whyItMatters": "Recurring charges prevent manual re-entry each month.",
       "guideTitle": "How to Add, Edit, or Delete Recurring Charges on a Lease",
-      "guideUrl": "https://help.rentvine.com/how-to-add-edit-or-delete-recurring-charges-on-a-lease",
+      "guideUrl": "https://help.rentvine.com/en/articles/16573957-how-to-add-edit-or-delete-recurring-charges-on-a-lease",
       "seeAlso": []
     },
     {
@@ -7672,7 +7672,7 @@ window.RVU_COURSE = {
       "definition": "A charge posted once, such as a move-in fee or one-time deposit-related charge.",
       "whyItMatters": "Use this when the tenant should not be charged repeatedly.",
       "guideTitle": "How To Create a Financial Lease (Move In)",
-      "guideUrl": "https://help.rentvine.com/how-to-create-a-financial-lease-move-in",
+      "guideUrl": "https://help.rentvine.com/en/articles/16603312-how-to-create-a-financial-lease-move-in",
       "seeAlso": []
     },
     {
@@ -7687,7 +7687,7 @@ window.RVU_COURSE = {
       "definition": "A partial-period calculation used when a tenant occupies only part of a billing period.",
       "whyItMatters": "Proration keeps move-in and move-out charges fair and accurate.",
       "guideTitle": "Prorate Settings",
-      "guideUrl": "https://help.rentvine.com/prorate-settings",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574316-prorate-settings",
       "seeAlso": []
     },
     {
@@ -7703,7 +7703,7 @@ window.RVU_COURSE = {
       "definition": "Money collected and held as security for lease obligations, subject to refund or allowable deductions.",
       "whyItMatters": "Security deposits affect escrow, move-out accounting, and compliance obligations.",
       "guideTitle": "Leases",
-      "guideUrl": "https://help.rentvine.com/leases",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727717-leases",
       "seeAlso": []
     },
     {
@@ -7718,7 +7718,7 @@ window.RVU_COURSE = {
       "definition": "A scheduled rent increase, often used during a lease term or renewal.",
       "whyItMatters": "Escalations help automate approved future rent changes.",
       "guideTitle": "How to Edit / Modify a Lease",
-      "guideUrl": "https://help.rentvine.com/how-to-leases",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574327-introduction-to-leases",
       "seeAlso": []
     },
     {
@@ -7733,7 +7733,7 @@ window.RVU_COURSE = {
       "definition": "The tenant-level money history showing charges, payments, credits, deposits, and balance.",
       "whyItMatters": "Use the lease ledger to explain what a tenant owes or has paid.",
       "guideTitle": "Leases",
-      "guideUrl": "https://help.rentvine.com/leases",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727717-leases",
       "seeAlso": []
     },
     {
@@ -7746,7 +7746,7 @@ window.RVU_COURSE = {
       "definition": "The accounting area for incoming funds, such as tenant receipts, owner contributions, and other receipts.",
       "whyItMatters": "Money In is the starting point for payments entering Rentvine.",
       "guideTitle": "Introduction to Accounting",
-      "guideUrl": "https://help.rentvine.com/accounting-overview",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574204-accounting-overview",
       "seeAlso": []
     },
     {
@@ -7760,7 +7760,7 @@ window.RVU_COURSE = {
       "definition": "A payment recorded from a tenant or resident against a lease ledger.",
       "whyItMatters": "Tenant receipts reduce tenant balances and can affect owner funds after settlement/deposit handling.",
       "guideTitle": "Getting Started with Rentvine: Suggested Monthly Workflow",
-      "guideUrl": "https://help.rentvine.com/rentvine-pm-monthly-accounting-cycle",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574004-rentvine-pm-monthly-accounting-cycle",
       "seeAlso": []
     },
     {
@@ -7774,7 +7774,7 @@ window.RVU_COURSE = {
       "definition": "The bank deposit record that groups manual receipts and helps match Rentvine activity to the bank.",
       "whyItMatters": "Deposits support reconciliation and prevent receipts from staying in undeposited funds.",
       "guideTitle": "How to Record a Deposit",
-      "guideUrl": "https://help.rentvine.com/how-to-record-a-deposit",
+      "guideUrl": "https://help.rentvine.com/en/articles/16573946-how-to-record-a-deposit",
       "seeAlso": []
     },
     {
@@ -7787,7 +7787,7 @@ window.RVU_COURSE = {
       "definition": "The bank-level clearing record for electronic payments processed through the payment system.",
       "whyItMatters": "Settlements explain how electronic payments appear in the bank account.",
       "guideTitle": "How to View Settlements in Rentvine",
-      "guideUrl": "https://help.rentvine.com/how-to-view-settlements-in-rentvine",
+      "guideUrl": "https://help.rentvine.com/en/articles/16573995-how-to-view-settlements-in-rentvine",
       "seeAlso": []
     },
     {
@@ -7802,7 +7802,7 @@ window.RVU_COURSE = {
       "definition": "An electronic bank payment method used for receiving or sending funds.",
       "whyItMatters": "ACH timing affects when funds are posted versus settled.",
       "guideTitle": "How Long Does It Take To Receive eCheck Payments?",
-      "guideUrl": "https://help.rentvine.com/how-long-does-it-take-to-receive-echeck-ach-payments-made-by-residents-and-owners-into-your-bank-account",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574368-how-long-does-it-take-to-receive-echeck-ach-payments-made-by-residents-and-owners-into-your-bank-account",
       "seeAlso": []
     },
     {
@@ -7816,7 +7816,7 @@ window.RVU_COURSE = {
       "definition": "Rentvine's payment processor for electronic transactions such as ACH and card activity.",
       "whyItMatters": "Forte timing and applications affect when electronic transactions can process.",
       "guideTitle": "How Long Does It Take To Receive eCheck Payments?",
-      "guideUrl": "https://help.rentvine.com/how-long-does-it-take-to-receive-echeck-ach-payments-made-by-residents-and-owners-into-your-bank-account",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574368-how-long-does-it-take-to-receive-echeck-ach-payments-made-by-residents-and-owners-into-your-bank-account",
       "seeAlso": []
     },
     {
@@ -7829,7 +7829,7 @@ window.RVU_COURSE = {
       "definition": "A cash, check, or money order payment entered manually instead of through the portal.",
       "whyItMatters": "Manual payments usually need to be included in a recorded deposit.",
       "guideTitle": "How to Record a Deposit",
-      "guideUrl": "https://help.rentvine.com/how-to-record-a-deposit",
+      "guideUrl": "https://help.rentvine.com/en/articles/16573946-how-to-record-a-deposit",
       "seeAlso": []
     },
     {
@@ -7842,7 +7842,7 @@ window.RVU_COURSE = {
       "definition": "The accounting area for outgoing funds, including bills, vendor payments, owner payments, and payment batches.",
       "whyItMatters": "Money Out controls how funds leave the managed accounts.",
       "guideTitle": "Accounting",
-      "guideUrl": "https://help.rentvine.com/accounting",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
       "seeAlso": []
     },
     {
@@ -7855,7 +7855,7 @@ window.RVU_COURSE = {
       "definition": "A payable expense entered for a vendor, owner, management company, or other payee.",
       "whyItMatters": "Bills must be created and usually approved before payment.",
       "guideTitle": "How to Pay Bills",
-      "guideUrl": "https://help.rentvine.com/how-to-pay-bills",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574818-how-to-pay-bills",
       "seeAlso": []
     },
     {
@@ -7869,7 +7869,7 @@ window.RVU_COURSE = {
       "definition": "A vendor-provided document requesting payment for goods or services.",
       "whyItMatters": "Invoices can be converted into bills for payment and recordkeeping.",
       "guideTitle": "Rapid Invoice Feature",
-      "guideUrl": "https://help.rentvine.com/workflow-for-processing-vendor-invoices",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574366-workflow-for-processing-vendor-invoices",
       "seeAlso": []
     },
     {
@@ -7883,7 +7883,7 @@ window.RVU_COURSE = {
       "definition": "A workflow that helps process uploaded or vendor-submitted invoices faster, often with auto-fill assistance.",
       "whyItMatters": "It reduces manual bill entry but still requires review before approval.",
       "guideTitle": "Rapid Invoice Feature",
-      "guideUrl": "https://help.rentvine.com/workflow-for-processing-vendor-invoices",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574366-workflow-for-processing-vendor-invoices",
       "seeAlso": []
     },
     {
@@ -7896,7 +7896,7 @@ window.RVU_COURSE = {
       "definition": "A review step that requires approval before a bill can be paid.",
       "whyItMatters": "Approvals provide checks and balances before money leaves the account.",
       "guideTitle": "Accounting",
-      "guideUrl": "https://help.rentvine.com/accounting",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
       "seeAlso": []
     },
     {
@@ -7909,7 +7909,7 @@ window.RVU_COURSE = {
       "definition": "A group of approved payments processed together.",
       "whyItMatters": "Batches make it easier to review and control payment runs.",
       "guideTitle": "RVA - Reviewing Payments going out of Rentvine",
-      "guideUrl": "https://help.rentvine.com/rva-understand-payments",
+      "guideUrl": "https://help.rentvine.com/en/articles/16575286-rva-understand-payments",
       "seeAlso": []
     },
     {
@@ -7924,7 +7924,7 @@ window.RVU_COURSE = {
       "definition": "A credit that reduces the amount owed to a vendor.",
       "whyItMatters": "Credits should be applied before payment so vendors are not overpaid.",
       "guideTitle": "Accounting",
-      "guideUrl": "https://help.rentvine.com/accounting",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
       "seeAlso": []
     },
     {
@@ -7938,7 +7938,7 @@ window.RVU_COURSE = {
       "definition": "A standard ACH file used to send a batch of electronic payments through a bank.",
       "whyItMatters": "NACHA is a common workflow for vendor or owner ACH payment batches.",
       "guideTitle": "How to Configure the Default Payment Type for Owners, Vendors, or Associations",
-      "guideUrl": "https://help.rentvine.com/how-to-configure-the-default-payment-type-for-owners-vendors-or-associations",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574185-how-to-configure-the-default-payment-type-for-owners-vendors-or-associations",
       "seeAlso": []
     },
     {
@@ -7951,7 +7951,7 @@ window.RVU_COURSE = {
       "definition": "An added amount charged to the owner above the vendor cost.",
       "whyItMatters": "Markups must be configured and communicated according to company policy.",
       "guideTitle": "Accounting",
-      "guideUrl": "https://help.rentvine.com/accounting",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
       "seeAlso": []
     },
     {
@@ -7964,7 +7964,7 @@ window.RVU_COURSE = {
       "definition": "An amount retained or reduced from a vendor payment arrangement.",
       "whyItMatters": "Discounts affect both vendor payment and owner/manager accounting.",
       "guideTitle": "Accounting",
-      "guideUrl": "https://help.rentvine.com/accounting",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
       "seeAlso": []
     },
     {
@@ -7979,7 +7979,7 @@ window.RVU_COURSE = {
       "definition": "A fee earned by the property management company for managing the property or lease.",
       "whyItMatters": "Fee setup drives manager revenue and owner charges.",
       "guideTitle": "How to Set Up Management Fees Settings",
-      "guideUrl": "https://help.rentvine.com/how-to-set-up-management-fees",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574076-how-to-set-up-management-fees",
       "seeAlso": []
     },
     {
@@ -7993,7 +7993,7 @@ window.RVU_COURSE = {
       "definition": "The accounting dashboard used to review and process management fees and related manager activity.",
       "whyItMatters": "This is where teams often post fees, create bills, and review fee activity.",
       "guideTitle": "How to Post Management Fees and Pay the Property Management Company",
-      "guideUrl": "https://help.rentvine.com/how-to-pay-the-manager",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574322-how-to-pay-the-manager",
       "seeAlso": []
     },
     {
@@ -8007,7 +8007,7 @@ window.RVU_COURSE = {
       "definition": "A management fee collection mode where fees are typically handled through bills paid to the management company.",
       "whyItMatters": "Teams need to know the account's mode before troubleshooting fee movement.",
       "guideTitle": "How to Post Management Fees and Pay the Property Management Company",
-      "guideUrl": "https://help.rentvine.com/how-to-pay-the-manager",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574322-how-to-pay-the-manager",
       "seeAlso": []
     },
     {
@@ -8022,7 +8022,7 @@ window.RVU_COURSE = {
       "definition": "A mode where the property management company has a manager ledger that receives and reverses fees through ledger activity.",
       "whyItMatters": "Manager Ledger mode can simplify fee reversals and suppressed-fee cleanup.",
       "guideTitle": "How to Refund Management Fees on Manager Ledger mode",
-      "guideUrl": "https://help.rentvine.com/how-to-refund-management-fees-to-an-owner-on-manager-ledger-mode",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574854-how-to-refund-management-fees-to-an-owner-on-manager-ledger-mode",
       "seeAlso": []
     },
     {
@@ -8036,7 +8036,7 @@ window.RVU_COURSE = {
       "definition": "Accounting health-check cards that flag items such as negative balances, reserve issues, mismatches, lapses, or credits.",
       "whyItMatters": "Diagnostics point users to issues that should be resolved before month-end.",
       "guideTitle": "Accounting Diagnostics",
-      "guideUrl": "https://help.rentvine.com/diagnostics-tab",
+      "guideUrl": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
       "seeAlso": []
     },
     {
@@ -8050,7 +8050,7 @@ window.RVU_COURSE = {
       "definition": "A bank, portfolio, or ledger balance below zero.",
       "whyItMatters": "Negative balances often indicate overpayment, incorrect posting, or timing problems.",
       "guideTitle": "Accounting Diagnostics",
-      "guideUrl": "https://help.rentvine.com/diagnostics-tab",
+      "guideUrl": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
       "seeAlso": []
     },
     {
@@ -8065,7 +8065,7 @@ window.RVU_COURSE = {
       "definition": "A mismatch between escrow/security deposit bank activity and the security deposit amounts tracked on leases.",
       "whyItMatters": "Escrow mismatches must be corrected for trust accounting accuracy.",
       "guideTitle": "Diagnosing and Fixing an Escrow Mismatch",
-      "guideUrl": "https://help.rentvine.com/diagnosing-and-fixing-an-escrow-mismatch",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574790-accounting-diagnostics-escrow-and-suppressed-fee-mismatches",
       "seeAlso": []
     },
     {
@@ -8079,7 +8079,7 @@ window.RVU_COURSE = {
       "definition": "A diagnostic mismatch related to fee balances that were suppressed, undercharged, overcharged, reversed, or not paid out correctly.",
       "whyItMatters": "These can make owner statement and manager ledger balances confusing if not resolved.",
       "guideTitle": "How to Correct a Suppressed Fee Balance Mismatch",
-      "guideUrl": "https://help.rentvine.com/suppressed-fee-mismatch",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574267-suppressed-fee-mismatch",
       "seeAlso": []
     },
     {
@@ -8094,7 +8094,7 @@ window.RVU_COURSE = {
       "definition": "Rentvine's document and e-signature feature for templates, packets, signers, and completed documents.",
       "whyItMatters": "Use RentSign to send lease agreements, renewals, and other documents for signature.",
       "guideTitle": "How to use the RentSign feature of Rentvine",
-      "guideUrl": "https://help.rentvine.com/how-to-use-the-rentsign-feature-of-rentvine",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574329-how-to-use-the-rentsign-feature-of-rentvine",
       "seeAlso": []
     },
     {
@@ -8107,7 +8107,7 @@ window.RVU_COURSE = {
       "definition": "A reusable document layout configured before sending a RentSign document.",
       "whyItMatters": "Templates save time and standardize recurring document workflows.",
       "guideTitle": "How to use the RentSign feature of Rentvine",
-      "guideUrl": "https://help.rentvine.com/how-to-use-the-rentsign-feature-of-rentvine",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574329-how-to-use-the-rentsign-feature-of-rentvine",
       "seeAlso": []
     },
     {
@@ -8121,7 +8121,7 @@ window.RVU_COURSE = {
       "definition": "A dynamic merge field that pulls live Rentvine data into a document, email, letter, or template.",
       "whyItMatters": "Hot fields reduce retyping and help keep documents accurate.",
       "guideTitle": "How to use the RentSign feature of Rentvine",
-      "guideUrl": "https://help.rentvine.com/how-to-use-the-rentsign-feature-of-rentvine",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574329-how-to-use-the-rentsign-feature-of-rentvine",
       "seeAlso": []
     },
     {
@@ -8134,7 +8134,7 @@ window.RVU_COURSE = {
       "definition": "A field assigned to a signer for completion, such as a signature, initials, date, or text response.",
       "whyItMatters": "Fillable fields tell signers what they must complete.",
       "guideTitle": "How to use the RentSign feature of Rentvine",
-      "guideUrl": "https://help.rentvine.com/how-to-use-the-rentsign-feature-of-rentvine",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574329-how-to-use-the-rentsign-feature-of-rentvine",
       "seeAlso": []
     },
     {
@@ -8149,7 +8149,7 @@ window.RVU_COURSE = {
       "definition": "The sequence in which parties receive and sign a document.",
       "whyItMatters": "Signing order matters when one person should sign before another.",
       "guideTitle": "Tip of the Week #28: The Power of RentSign",
-      "guideUrl": "https://help.rentvine.com/tips-of-the-week-28",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574566-tips-of-the-week-28",
       "seeAlso": []
     },
     {
@@ -8164,7 +8164,7 @@ window.RVU_COURSE = {
       "definition": "A group of documents sent together through a signing workflow.",
       "whyItMatters": "Packets keep related documents in one send and tracking flow.",
       "guideTitle": "How to use the RentSign feature of Rentvine",
-      "guideUrl": "https://help.rentvine.com/how-to-use-the-rentsign-feature-of-rentvine",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574329-how-to-use-the-rentsign-feature-of-rentvine",
       "seeAlso": []
     },
     {
@@ -8179,7 +8179,7 @@ window.RVU_COURSE = {
       "definition": "A structured view of Rentvine data used for analysis, owner reporting, collections, operations, or auditing.",
       "whyItMatters": "Reports help users answer business questions with current Rentvine data.",
       "guideTitle": "How to Use Reports",
-      "guideUrl": "https://help.rentvine.com/how-to-use-reports",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574048-how-to-use-reports",
       "seeAlso": []
     },
     {
@@ -8192,7 +8192,7 @@ window.RVU_COURSE = {
       "definition": "The data level a report is built from, such as lease, portfolio, property, unit, or contact.",
       "whyItMatters": "Choosing the wrong level can make the report miss the data you need.",
       "guideTitle": "How to Use Reports",
-      "guideUrl": "https://help.rentvine.com/how-to-use-reports",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574048-how-to-use-reports",
       "seeAlso": []
     },
     {
@@ -8206,7 +8206,7 @@ window.RVU_COURSE = {
       "definition": "A condition used to narrow report or contact results.",
       "whyItMatters": "Filters help turn large lists into targeted work queues.",
       "guideTitle": "How to Use Reports",
-      "guideUrl": "https://help.rentvine.com/how-to-use-reports",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574048-how-to-use-reports",
       "seeAlso": []
     },
     {
@@ -8219,7 +8219,7 @@ window.RVU_COURSE = {
       "definition": "A report layout option that organizes rows by a shared attribute.",
       "whyItMatters": "Grouping makes reports easier to read by owner, property, manager, or category.",
       "guideTitle": "How to Use Reports",
-      "guideUrl": "https://help.rentvine.com/how-to-use-reports",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574048-how-to-use-reports",
       "seeAlso": []
     },
     {
@@ -8232,7 +8232,7 @@ window.RVU_COURSE = {
       "definition": "A report configuration saved for future reuse by the team or user.",
       "whyItMatters": "Saved reports prevent rebuilding the same columns and filters repeatedly.",
       "guideTitle": "Reports",
-      "guideUrl": "https://help.rentvine.com/reports",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727723-reports",
       "seeAlso": []
     },
     {
@@ -8246,7 +8246,7 @@ window.RVU_COURSE = {
       "definition": "A report configured to run and deliver automatically on a recurring schedule.",
       "whyItMatters": "Scheduled reports automate recurring manager or owner deliverables.",
       "guideTitle": "How to Create Scheduled Reports",
-      "guideUrl": "https://help.rentvine.com/how-to-create-scheduled-reports",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574162-how-to-create-scheduled-reports",
       "seeAlso": []
     },
     {
@@ -8259,7 +8259,7 @@ window.RVU_COURSE = {
       "definition": "A report showing outstanding balances grouped by how long they have been unpaid.",
       "whyItMatters": "This is a key collections and delinquency management report.",
       "guideTitle": "How to Use Reports",
-      "guideUrl": "https://help.rentvine.com/how-to-use-reports",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574048-how-to-use-reports",
       "seeAlso": []
     },
     {
@@ -8272,7 +8272,7 @@ window.RVU_COURSE = {
       "definition": "A report or saved view used to identify tenants with past-due balances.",
       "whyItMatters": "It supports collections follow-up and communication workflows.",
       "guideTitle": "How to Use Reports",
-      "guideUrl": "https://help.rentvine.com/how-to-use-reports",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574048-how-to-use-reports",
       "seeAlso": []
     },
     {
@@ -8286,7 +8286,7 @@ window.RVU_COURSE = {
       "definition": "A service request submitted by a resident, owner, or team member before or during work-order creation.",
       "whyItMatters": "Requests are the starting point for many work orders.",
       "guideTitle": "How do I submit a work order from the Tenant Portal?",
-      "guideUrl": "https://help.rentvine.com/how-do-i-submit-a-work-order-from-the-tenant-portal",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574137-how-do-i-submit-a-work-order-from-the-tenant-portal",
       "seeAlso": []
     },
     {
@@ -8300,7 +8300,7 @@ window.RVU_COURSE = {
       "definition": "A maintenance task record that tracks scope, status, vendor assignment, communication, estimates, invoices, and completion.",
       "whyItMatters": "Work orders are the operational hub for repairs and maintenance.",
       "guideTitle": "How to Add/Edit a Work Order",
-      "guideUrl": "https://help.rentvine.com/how-to-add-a-work-order",
+      "guideUrl": "https://help.rentvine.com/en/articles/16602009-how-to-add-edit-a-work-order",
       "seeAlso": []
     },
     {
@@ -8313,7 +8313,7 @@ window.RVU_COURSE = {
       "definition": "A reusable setup for standard or recurring work order details.",
       "whyItMatters": "Templates make repeated jobs such as turns, inspections, and seasonal maintenance faster.",
       "guideTitle": "How to Create a Work Order Template",
-      "guideUrl": "https://help.rentvine.com/how-to-create-a-work-order-template",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574192-how-to-create-a-work-order-template",
       "seeAlso": []
     },
     {
@@ -8326,7 +8326,7 @@ window.RVU_COURSE = {
       "definition": "A proposed cost or vendor quote attached to a work order.",
       "whyItMatters": "Estimates support approval and vendor selection before work begins.",
       "guideTitle": "How to Request/Add a Vendor Estimate",
-      "guideUrl": "https://help.rentvine.com/how-to-request/add-a-vendor-estimate",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574304-how-to-request-add-a-vendor-estimate",
       "seeAlso": []
     },
     {
@@ -8339,7 +8339,7 @@ window.RVU_COURSE = {
       "definition": "The dollar amount above which owner approval is required before maintenance proceeds.",
       "whyItMatters": "Thresholds protect owner expectations and company approval rules.",
       "guideTitle": "Maintenance Settings",
-      "guideUrl": "https://help.rentvine.com/maintenance-settings",
+      "guideUrl": "https://help.rentvine.com/en/articles/16575322-maintenance-settings",
       "seeAlso": []
     },
     {
@@ -8352,7 +8352,7 @@ window.RVU_COURSE = {
       "definition": "A collection of related work orders managed together for a larger maintenance effort.",
       "whyItMatters": "Projects help coordinate multi-step repairs or turns.",
       "guideTitle": "Maintenance",
-      "guideUrl": "https://help.rentvine.com/maintenance",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727722-maintenance",
       "seeAlso": []
     },
     {
@@ -8366,7 +8366,7 @@ window.RVU_COURSE = {
       "definition": "The vendor-facing portal where vendors can view assignments, update status, and upload invoices.",
       "whyItMatters": "Vendor portal adoption reduces manual follow-up and supports invoice-to-bill workflows.",
       "guideTitle": "Introduction to the Vendor Portal",
-      "guideUrl": "https://help.rentvine.com/introduction-to-the-vendor-portal",
+      "guideUrl": "https://help.rentvine.com/en/articles/16573970-introduction-to-the-vendor-portal",
       "seeAlso": []
     },
     {
@@ -8379,7 +8379,7 @@ window.RVU_COURSE = {
       "definition": "A scheduled block of availability for tenant-required maintenance access.",
       "whyItMatters": "Appointment windows help coordinate resident presence and reminders.",
       "guideTitle": "Maintenance Settings",
-      "guideUrl": "https://help.rentvine.com/maintenance-settings",
+      "guideUrl": "https://help.rentvine.com/en/articles/16575322-maintenance-settings",
       "seeAlso": []
     },
     {
@@ -8393,7 +8393,7 @@ window.RVU_COURSE = {
       "definition": "The stored profile for an owner, tenant, vendor, applicant, or other person/company.",
       "whyItMatters": "Contact records connect communication, portal access, payment settings, and history.",
       "guideTitle": "Contacts",
-      "guideUrl": "https://help.rentvine.com/contacts",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727721-contacts",
       "seeAlso": []
     },
     {
@@ -8406,7 +8406,7 @@ window.RVU_COURSE = {
       "definition": "A bulk email or text sent to a selected group of contacts.",
       "whyItMatters": "Mass messaging helps communicate quickly to tenants, owners, or vendors.",
       "guideTitle": "How to Send a Mass Message by Email or Text",
-      "guideUrl": "https://help.rentvine.com/how-to-send-mass-messages",
+      "guideUrl": "https://help.rentvine.com/en/articles/16603291-how-to-send-a-mass-message-to-multiple-recipients-by-email-or-text",
       "seeAlso": []
     },
     {
@@ -8419,7 +8419,7 @@ window.RVU_COURSE = {
       "definition": "A reusable email body saved for consistent future communication.",
       "whyItMatters": "Templates save time and keep wording consistent.",
       "guideTitle": "How to Add/Create Email Templates",
-      "guideUrl": "https://help.rentvine.com/how-to-add/create-email-templates",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574134-how-to-add-create-email-templates",
       "seeAlso": []
     },
     {
@@ -8432,7 +8432,7 @@ window.RVU_COURSE = {
       "definition": "A reusable letter format used for one-off or mass letters.",
       "whyItMatters": "Letters are useful when formal documents or physical mail workflows are needed.",
       "guideTitle": "Letter and Messaging Settings",
-      "guideUrl": "https://help.rentvine.com/letters-and-messaging-settings",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574208-letters-and-messaging-settings",
       "seeAlso": []
     },
     {
@@ -8446,7 +8446,7 @@ window.RVU_COURSE = {
       "definition": "The record of messages sent to or received from a contact or related record.",
       "whyItMatters": "History helps resolve disputes and keeps context in one place.",
       "guideTitle": "How to Send an Email to Tenants on a Lease",
-      "guideUrl": "https://help.rentvine.com/how-to-send-an-email-to-tenants-on-a-lease",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574893-how-to-send-an-email-to-tenants-on-a-lease",
       "seeAlso": []
     },
     {
@@ -8459,7 +8459,7 @@ window.RVU_COURSE = {
       "definition": "Filtering recipients into a targeted group before sending a message.",
       "whyItMatters": "Segmentation prevents sending the wrong communication to the wrong people.",
       "guideTitle": "How to Send a Mass Message by Email or Text",
-      "guideUrl": "https://help.rentvine.com/how-to-send-mass-messages",
+      "guideUrl": "https://help.rentvine.com/en/articles/16603291-how-to-send-a-mass-message-to-multiple-recipients-by-email-or-text",
       "seeAlso": []
     },
     {
@@ -8472,7 +8472,7 @@ window.RVU_COURSE = {
       "definition": "The owner-facing portal where owners can view statements, reports, ledgers, work orders, and other enabled information.",
       "whyItMatters": "Owner portal setup controls how much self-service visibility owners receive.",
       "guideTitle": "Owner Portal Introduction",
-      "guideUrl": "https://help.rentvine.com/owner-portal-introduction",
+      "guideUrl": "https://help.rentvine.com/en/articles/16602814-owner-portal-introduction",
       "seeAlso": []
     },
     {
@@ -8485,7 +8485,7 @@ window.RVU_COURSE = {
       "definition": "The resident-facing portal where tenants can pay, submit service requests, manage information, and complete allowed actions.",
       "whyItMatters": "Resident portal adoption reduces manual payments and support requests.",
       "guideTitle": "Portals Global Settings",
-      "guideUrl": "https://help.rentvine.com/portals-global-settings",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574175-portals-global-settings",
       "seeAlso": []
     },
     {
@@ -8498,7 +8498,7 @@ window.RVU_COURSE = {
       "definition": "An invite that grants a contact secure access to the appropriate portal.",
       "whyItMatters": "Most portal access begins with a correct invitation and email address.",
       "guideTitle": "Portals Global Settings",
-      "guideUrl": "https://help.rentvine.com/portals-global-settings",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574175-portals-global-settings",
       "seeAlso": []
     },
     {
@@ -8511,7 +8511,7 @@ window.RVU_COURSE = {
       "definition": "A resident or owner payment submitted through an online portal.",
       "whyItMatters": "Portal payments can reduce manual receipt entry and improve payment tracking.",
       "guideTitle": "How to Add a Saved Payment Method and Recurring Payment for a Resident",
-      "guideUrl": "https://help.rentvine.com/how-to-add-a-saved-payment-method-and-a-recurring-payment-for-a-resident",
+      "guideUrl": "https://help.rentvine.com/en/articles/16601375-how-to-add-a-saved-payment-method-and-a-recurring-payment-for-a-resident",
       "seeAlso": []
     },
     {
@@ -8524,7 +8524,7 @@ window.RVU_COURSE = {
       "definition": "A resident-submitted request for maintenance through the portal.",
       "whyItMatters": "Service requests can become work orders and start the maintenance workflow.",
       "guideTitle": "How do I submit a work order from the Tenant Portal?",
-      "guideUrl": "https://help.rentvine.com/how-do-i-submit-a-work-order-from-the-tenant-portal",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574137-how-do-i-submit-a-work-order-from-the-tenant-portal",
       "seeAlso": []
     },
     {
@@ -8537,7 +8537,7 @@ window.RVU_COURSE = {
       "definition": "An owner portal setting that can allow owners to view current ledger information.",
       "whyItMatters": "Ledger visibility should match company transparency and security policy.",
       "guideTitle": "Portals Global Settings",
-      "guideUrl": "https://help.rentvine.com/portals-global-settings",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574175-portals-global-settings",
       "seeAlso": []
     },
     {
@@ -8550,7 +8550,7 @@ window.RVU_COURSE = {
       "definition": "The owner portal action used by owners who have access to multiple portfolios or entities.",
       "whyItMatters": "This prevents confusion when one owner has separate LLCs or portfolios.",
       "guideTitle": "Owner Portal Introduction",
-      "guideUrl": "https://help.rentvine.com/owner-portal-introduction",
+      "guideUrl": "https://help.rentvine.com/en/articles/16602814-owner-portal-introduction",
       "seeAlso": []
     },
     {
@@ -8565,7 +8565,7 @@ window.RVU_COURSE = {
       "definition": "The guided workflow used to process lease end, forwarding information, charges, deposit handling, and finalization.",
       "whyItMatters": "The move-out flow should be completed rather than partially started and abandoned.",
       "guideTitle": "How to Move Out a Lease using the Move Out Flow",
-      "guideUrl": "https://help.rentvine.com/how-to-close-out-a-lease-and-move-out-all-tenants",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574815-how-to-close-out-a-lease-and-move-out-all-tenants",
       "seeAlso": []
     },
     {
@@ -8579,7 +8579,7 @@ window.RVU_COURSE = {
       "definition": "The tenant's post-move address used for refund, notice, and recordkeeping needs.",
       "whyItMatters": "Accurate forwarding information supports deposit refunds and final communication.",
       "guideTitle": "How to Move Out a Lease using the Move Out Flow",
-      "guideUrl": "https://help.rentvine.com/how-to-close-out-a-lease-and-move-out-all-tenants",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574815-how-to-close-out-a-lease-and-move-out-all-tenants",
       "seeAlso": []
     },
     {
@@ -8593,7 +8593,7 @@ window.RVU_COURSE = {
       "definition": "Charges assessed during move-out for remaining rent, damages, cleaning, utilities, or other allowable amounts.",
       "whyItMatters": "These charges determine whether a refund is due or a balance remains.",
       "guideTitle": "How to Move Out a Lease using the Move Out Flow",
-      "guideUrl": "https://help.rentvine.com/how-to-close-out-a-lease-and-move-out-all-tenants",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574815-how-to-close-out-a-lease-and-move-out-all-tenants",
       "seeAlso": []
     },
     {
@@ -8607,7 +8607,7 @@ window.RVU_COURSE = {
       "definition": "The remaining deposit amount returned to the tenant after allowable deductions and balance settlement.",
       "whyItMatters": "Refunds must tie to deposit, charges, deductions, and tenant ledger results.",
       "guideTitle": "How to Process a Security Deposit Outside of the Move-Out Flow",
-      "guideUrl": "https://help.rentvine.com/how-to-return-a-security-deposit-to-a-tenant",
+      "guideUrl": "https://help.rentvine.com/en/articles/16573985-how-to-return-a-security-deposit-to-a-tenant",
       "seeAlso": []
     },
     {
@@ -8621,7 +8621,7 @@ window.RVU_COURSE = {
       "definition": "A refund arrangement that divides a deposit refund between multiple tenants.",
       "whyItMatters": "This is important for roommate situations.",
       "guideTitle": "How to Split a Security Deposit Refund During the Move-Out Flow",
-      "guideUrl": "https://help.rentvine.com/how-to-split-a-security-deposit-refund-during-the-move-out-flow",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574890-how-to-split-a-security-deposit-refund-during-the-move-out-flow",
       "seeAlso": []
     },
     {
@@ -8635,7 +8635,7 @@ window.RVU_COURSE = {
       "definition": "Moving deposit funds to another lease, owner, or management scenario instead of refunding directly.",
       "whyItMatters": "Transfers require careful bank and ledger handling.",
       "guideTitle": "How to Send a Security Deposit to a New Property Management Company",
-      "guideUrl": "https://help.rentvine.com/how-to-send-a-security-deposit-to-a-new-property-management-company-through-the-move-out-flow",
+      "guideUrl": "https://help.rentvine.com/en/articles/16573993-how-to-send-a-security-deposit-to-a-new-property-management-company-through-the-move-out-flow",
       "seeAlso": []
     },
     {
@@ -8649,7 +8649,7 @@ window.RVU_COURSE = {
       "definition": "The rule or date window that determines when a lease appears for renewal workflow action.",
       "whyItMatters": "Eligibility settings control which leases show up for renewal follow-up.",
       "guideTitle": "Lease Renewal Feature",
-      "guideUrl": "https://help.rentvine.com/lease-renewal-feature",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574135-lease-renewal-feature",
       "seeAlso": []
     },
     {
@@ -8663,7 +8663,7 @@ window.RVU_COURSE = {
       "definition": "A proposed renewal option sent to a tenant, often including new term and rent amount.",
       "whyItMatters": "Offers are the starting point for tenant renewal acceptance and RentSign documents.",
       "guideTitle": "Lease Renewal Feature",
-      "guideUrl": "https://help.rentvine.com/lease-renewal-feature",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574135-lease-renewal-feature",
       "seeAlso": []
     },
     {
@@ -8676,7 +8676,7 @@ window.RVU_COURSE = {
       "definition": "A connection between Rentvine and another system, such as QuickBooks, Property Meld, RentCheck, or other tools.",
       "whyItMatters": "Integrations reduce duplicate data entry when configured correctly.",
       "guideTitle": "Property Managers - Integrations",
-      "guideUrl": "https://help.rentvine.com/property-managers",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727715-property-managers",
       "seeAlso": []
     },
     {
@@ -8689,7 +8689,7 @@ window.RVU_COURSE = {
       "definition": "A workflow used to export relevant financial activity from Rentvine to QuickBooks or Xero.",
       "whyItMatters": "This is generally for management company accounting, not replacing Rentvine ledgers.",
       "guideTitle": "How to Utilize Quickbooks Export in Rentvine",
-      "guideUrl": "https://help.rentvine.com/how-to-utilize-quickbooks-export-in-rentvine",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574724-how-to-utilize-quickbooks-export-in-rentvine",
       "seeAlso": []
     },
     {
@@ -8702,7 +8702,7 @@ window.RVU_COURSE = {
       "definition": "The maintenance integration that can sync approved invoices or expenditures from Property Meld into Rentvine bills.",
       "whyItMatters": "It reduces duplicate entry between maintenance coordination and accounting.",
       "guideTitle": "Integration Overview - Property Meld / Rentvine",
-      "guideUrl": "https://help.rentvine.com/integration-overview-property-melt-/-rentvine",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574840-integration-overview-property-meld-rentvine",
       "seeAlso": []
     },
     {
@@ -8715,7 +8715,7 @@ window.RVU_COURSE = {
       "definition": "Rentvine's programmatic access method for building custom integrations and automations.",
       "whyItMatters": "The API supports custom reporting, integrations, and data workflows.",
       "guideTitle": "Tip of the Week #30: Guide to Rentvine's Open API",
-      "guideUrl": "https://help.rentvine.com/tip-of-the-week-30-guide-to-rentvines-open-api",
+      "guideUrl": "https://help.rentvine.com/en/articles/16575275-tip-of-the-week-30-guide-to-rentvines-open-api",
       "seeAlso": []
     },
     {
@@ -8728,7 +8728,7 @@ window.RVU_COURSE = {
       "definition": "A credential generated to allow a third-party or integration to access Rentvine data.",
       "whyItMatters": "API keys should be protected and tied to appropriate user permissions.",
       "guideTitle": "How to Create an API Key",
-      "guideUrl": "https://help.rentvine.com/how-to-create-an-api-key",
+      "guideUrl": "https://help.rentvine.com/en/articles/16575275-tip-of-the-week-30-guide-to-rentvines-open-api",
       "seeAlso": []
     },
     {
@@ -8741,7 +8741,7 @@ window.RVU_COURSE = {
       "definition": "A permission set controlling what a Rentvine user can see or do.",
       "whyItMatters": "Roles are essential for security and least-privilege administration.",
       "guideTitle": "Account Settings",
-      "guideUrl": "https://help.rentvine.com/account-settings",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574870-account-settings",
       "seeAlso": []
     },
     {
@@ -8754,7 +8754,7 @@ window.RVU_COURSE = {
       "definition": "The security practice of giving users only the access needed for their job.",
       "whyItMatters": "This reduces accidental changes and protects sensitive accounting or payment areas.",
       "guideTitle": "Account Settings",
-      "guideUrl": "https://help.rentvine.com/account-settings",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574870-account-settings",
       "seeAlso": []
     },
     {
@@ -8767,7 +8767,7 @@ window.RVU_COURSE = {
       "definition": "A migration process used to load records from a legacy system into Rentvine.",
       "whyItMatters": "Imports are common during onboarding and acquisitions.",
       "guideTitle": "Welcome to the Rentvine Knowledge Base",
-      "guideUrl": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+      "guideUrl": "https://help.rentvine.com/en/",
       "seeAlso": []
     },
     {
@@ -8780,7 +8780,7 @@ window.RVU_COURSE = {
       "definition": "A settings-based connection point that can notify or trigger another system when certain events occur.",
       "whyItMatters": "Webhooks can support automation beyond the standard UI.",
       "guideTitle": "Other Global Settings",
-      "guideUrl": "https://help.rentvine.com/other-global-settings-1",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574246-other-global-settings-1",
       "seeAlso": []
     },
     {
@@ -8794,7 +8794,7 @@ window.RVU_COURSE = {
       "definition": "Accounting for client funds held by the property manager, requiring separation, accuracy, reconciliation, and proper disbursement.",
       "whyItMatters": "Trust accounting accuracy protects owners, tenants, and the property management company.",
       "guideTitle": "Introduction to Accounting",
-      "guideUrl": "https://help.rentvine.com/accounting-overview",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574204-accounting-overview",
       "seeAlso": []
     },
     {
@@ -8807,7 +8807,7 @@ window.RVU_COURSE = {
       "definition": "The rule that client funds should not be mixed with company operating funds.",
       "whyItMatters": "Co-mingling creates compliance and accounting risk.",
       "guideTitle": "Introduction to Accounting",
-      "guideUrl": "https://help.rentvine.com/accounting-overview",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574204-accounting-overview",
       "seeAlso": []
     },
     {
@@ -8820,7 +8820,7 @@ window.RVU_COURSE = {
       "definition": "Money held for owners or tenants, such as rent, deposits, reserves, or payable balances.",
       "whyItMatters": "Client funds must be accounted for separately and accurately.",
       "guideTitle": "Accounting",
-      "guideUrl": "https://help.rentvine.com/accounting",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
       "seeAlso": []
     },
     {
@@ -8833,7 +8833,7 @@ window.RVU_COURSE = {
       "definition": "An accounting model where owner entity funds are managed at the portfolio level across associated properties.",
       "whyItMatters": "This helps explain why multiple properties under one LLC may share portfolio-level funds.",
       "guideTitle": "Portfolios",
-      "guideUrl": "https://help.rentvine.com/portfolios",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
       "seeAlso": []
     },
     {
@@ -8846,7 +8846,7 @@ window.RVU_COURSE = {
       "definition": "An accounting model where each property is treated like its own separate book.",
       "whyItMatters": "Learners should contrast this with Rentvine's portfolio-centered workflow.",
       "guideTitle": "Introduction to Accounting",
-      "guideUrl": "https://help.rentvine.com/accounting-overview",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574204-accounting-overview",
       "seeAlso": []
     },
     {
@@ -8859,7 +8859,7 @@ window.RVU_COURSE = {
       "definition": "Funds held separately for obligations such as security deposits.",
       "whyItMatters": "Escrow must tie to lease-level security deposit records and bank balances.",
       "guideTitle": "Diagnosing and Fixing an Escrow Mismatch",
-      "guideUrl": "https://help.rentvine.com/diagnosing-and-fixing-an-escrow-mismatch",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574790-accounting-diagnostics-escrow-and-suppressed-fee-mismatches",
       "seeAlso": []
     },
     {
@@ -8872,7 +8872,7 @@ window.RVU_COURSE = {
       "definition": "Money held for a future obligation, such as prepaid rent or security deposits.",
       "whyItMatters": "Liabilities explain why some cash is not available income or distribution money.",
       "guideTitle": "Portfolio Ledger Balances",
-      "guideUrl": "https://help.rentvine.com/ledger-balances",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574323-ledger-balances",
       "seeAlso": []
     },
     {
@@ -8885,7 +8885,7 @@ window.RVU_COURSE = {
       "definition": "The list of financial categories used to classify transactions.",
       "whyItMatters": "A clean chart of accounts makes reports, owner statements, and accounting exports easier to trust.",
       "guideTitle": "Chart Of Accounts and Account Categories Settings",
-      "guideUrl": "https://help.rentvine.com/chart-of-accounts-and-account-categories-settings",
+      "guideUrl": "https://help.rentvine.com/en/articles/16573982-chart-of-accounts-and-account-categories-settings",
       "seeAlso": []
     },
     {
@@ -8898,7 +8898,7 @@ window.RVU_COURSE = {
       "definition": "A general ledger code used to categorize what a receipt, bill, charge, or payment is for.",
       "whyItMatters": "GL codes drive reporting and accounting accuracy.",
       "guideTitle": "How to Enter a General Ledger (GL) Account",
-      "guideUrl": "https://help.rentvine.com/how-to-enter-a-new-chart-of-accounts",
+      "guideUrl": "https://help.rentvine.com/en/articles/16575315-how-to-enter-a-new-chart-of-accounts",
       "seeAlso": []
     },
     {
@@ -8911,7 +8911,7 @@ window.RVU_COURSE = {
       "definition": "The order or method used to apply incoming funds to deposits, rent, fees, or other charges.",
       "whyItMatters": "Allocation rules affect what balances are paid first.",
       "guideTitle": "Accounting Setting",
-      "guideUrl": "https://help.rentvine.com/accounting-setting",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574190-accounting-setting",
       "seeAlso": []
     },
     {
@@ -8924,7 +8924,7 @@ window.RVU_COURSE = {
       "definition": "Rent received before it is due and held as a liability until the charge posts.",
       "whyItMatters": "Prepaid rent should not be treated as earned income too early.",
       "guideTitle": "Accounting Setting",
-      "guideUrl": "https://help.rentvine.com/accounting-setting",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574190-accounting-setting",
       "seeAlso": []
     },
     {
@@ -8937,7 +8937,7 @@ window.RVU_COURSE = {
       "definition": "A liability account or state where funds wait until they can be applied correctly.",
       "whyItMatters": "Held liabilities help explain funds that are collected but not yet available.",
       "guideTitle": "Portfolio Ledger Balances",
-      "guideUrl": "https://help.rentvine.com/ledger-balances",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574323-ledger-balances",
       "seeAlso": []
     },
     {
@@ -8950,7 +8950,7 @@ window.RVU_COURSE = {
       "definition": "A workflow where invoices are emailed to a dedicated Rentvine address for bill processing.",
       "whyItMatters": "It saves time by reducing download/upload steps.",
       "guideTitle": "Rapid Invoice Feature",
-      "guideUrl": "https://help.rentvine.com/workflow-for-processing-vendor-invoices",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574366-workflow-for-processing-vendor-invoices",
       "seeAlso": []
     },
     {
@@ -8963,7 +8963,7 @@ window.RVU_COURSE = {
       "definition": "A mobile workflow for scanning or uploading invoices into Rentvine.",
       "whyItMatters": "This supports faster invoice entry from the field or office.",
       "guideTitle": "Rapid Invoice Feature",
-      "guideUrl": "https://help.rentvine.com/workflow-for-processing-vendor-invoices",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574366-workflow-for-processing-vendor-invoices",
       "seeAlso": []
     },
     {
@@ -8977,7 +8977,7 @@ window.RVU_COURSE = {
       "definition": "A check payment option where checks are printed remotely rather than locally.",
       "whyItMatters": "Payment method selection affects payment batch handling and vendor/owner delivery.",
       "guideTitle": "RVA - Reviewing Payments going out of Rentvine",
-      "guideUrl": "https://help.rentvine.com/rva-understand-payments",
+      "guideUrl": "https://help.rentvine.com/en/articles/16575286-rva-understand-payments",
       "seeAlso": []
     },
     {
@@ -8990,7 +8990,7 @@ window.RVU_COURSE = {
       "definition": "The process of tying bank balances, property/portfolio balances, and the general ledger together.",
       "whyItMatters": "Three green reconciliation boxes indicate the balances tie.",
       "guideTitle": "How to Complete a Bank Reconciliation",
-      "guideUrl": "https://help.rentvine.com/how-to-complete-a-bank-reconciliation",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574862-how-to-complete-a-bank-reconciliation",
       "seeAlso": []
     },
     {
@@ -9003,7 +9003,7 @@ window.RVU_COURSE = {
       "definition": "The setup phase where bank accounts, payment processing, settings, users, roles, imports, and test records are configured.",
       "whyItMatters": "Good onboarding prevents go-live accounting and workflow issues.",
       "guideTitle": "Welcome to the Rentvine Knowledge Base",
-      "guideUrl": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+      "guideUrl": "https://help.rentvine.com/en/",
       "seeAlso": []
     },
     {
@@ -9016,7 +9016,7 @@ window.RVU_COURSE = {
       "definition": "The point when the team begins using Rentvine for real operations.",
       "whyItMatters": "Go-live readiness depends on settings, payment processing, data, training, and test validation.",
       "guideTitle": "Getting Started with Rentvine: Suggested Monthly Workflow",
-      "guideUrl": "https://help.rentvine.com/rentvine-pm-monthly-accounting-cycle",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574004-rentvine-pm-monthly-accounting-cycle",
       "seeAlso": []
     },
     {
@@ -9029,7 +9029,7 @@ window.RVU_COURSE = {
       "definition": "The bank account used for trust/client operating activity in Rentvine.",
       "whyItMatters": "Trust account setup affects receipts, bills, distributions, and reconciliation.",
       "guideTitle": "Accounting Setting",
-      "guideUrl": "https://help.rentvine.com/accounting-setting",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574190-accounting-setting",
       "seeAlso": []
     },
     {
@@ -9042,7 +9042,7 @@ window.RVU_COURSE = {
       "definition": "The account used to hold security deposit funds when managed separately.",
       "whyItMatters": "Deposit-account setup affects escrow tracking and move-out refunds.",
       "guideTitle": "Accounting Setting",
-      "guideUrl": "https://help.rentvine.com/accounting-setting",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574190-accounting-setting",
       "seeAlso": []
     },
     {
@@ -9055,7 +9055,7 @@ window.RVU_COURSE = {
       "definition": "The management company's business bank account, usually managed outside Rentvine for corporate accounting.",
       "whyItMatters": "Learners should not confuse business operating funds with client trust funds.",
       "guideTitle": "How to Utilize Quickbooks Export in Rentvine",
-      "guideUrl": "https://help.rentvine.com/how-to-utilize-quickbooks-export-in-rentvine",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574724-how-to-utilize-quickbooks-export-in-rentvine",
       "seeAlso": []
     },
     {
@@ -9068,7 +9068,7 @@ window.RVU_COURSE = {
       "definition": "The payment-processing application needed to enable electronic transactions for an account.",
       "whyItMatters": "Electronic payments require the correct processing setup before go-live.",
       "guideTitle": "How Long Does It Take To Receive eCheck Payments?",
-      "guideUrl": "https://help.rentvine.com/how-long-does-it-take-to-receive-echeck-ach-payments-made-by-residents-and-owners-into-your-bank-account",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574368-how-long-does-it-take-to-receive-echeck-ach-payments-made-by-residents-and-owners-into-your-bank-account",
       "seeAlso": []
     },
     {
@@ -9081,7 +9081,7 @@ window.RVU_COURSE = {
       "definition": "Account-wide settings that control defaults, portals, accounting, properties, communications, roles, and workflows.",
       "whyItMatters": "Global settings shape how the whole Rentvine account behaves.",
       "guideTitle": "Account Settings",
-      "guideUrl": "https://help.rentvine.com/account-settings",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574870-account-settings",
       "seeAlso": []
     },
     {
@@ -9094,7 +9094,7 @@ window.RVU_COURSE = {
       "definition": "The process of moving data from a prior system into Rentvine.",
       "whyItMatters": "Migration quality affects balances, records, and adoption at go-live.",
       "guideTitle": "Welcome to the Rentvine Knowledge Base",
-      "guideUrl": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+      "guideUrl": "https://help.rentvine.com/en/",
       "seeAlso": []
     },
     {
@@ -9107,7 +9107,7 @@ window.RVU_COURSE = {
       "definition": "A training or test database used to practice workflows without touching production data.",
       "whyItMatters": "All labs and capstone work should be done outside production customer data.",
       "guideTitle": "Welcome to the Rentvine Knowledge Base",
-      "guideUrl": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+      "guideUrl": "https://help.rentvine.com/en/",
       "seeAlso": []
     },
     {
@@ -9120,7 +9120,7 @@ window.RVU_COURSE = {
       "definition": "Screenshots, reports, exports, links, or videos submitted to prove the learner completed required work.",
       "whyItMatters": "Evidence supports review, scoring, and certification sign-off.",
       "guideTitle": "Welcome to the Rentvine Knowledge Base",
-      "guideUrl": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+      "guideUrl": "https://help.rentvine.com/en/",
       "seeAlso": []
     },
     {
@@ -9133,7 +9133,7 @@ window.RVU_COURSE = {
       "definition": "A hands-on assessment where the learner completes an end-to-end workflow.",
       "whyItMatters": "The capstone measures ability to perform, not just recall terms.",
       "guideTitle": "Getting Started - Training Videos",
-      "guideUrl": "https://help.rentvine.com/getting-started-training-videos",
+      "guideUrl": "https://help.rentvine.com/en/collections/19629300-getting-started-training-videos",
       "seeAlso": []
     },
     {
@@ -9146,7 +9146,7 @@ window.RVU_COURSE = {
       "definition": "The minimum score or completion requirement needed to pass a quiz, module, or capstone.",
       "whyItMatters": "Pass standards make certification decisions consistent.",
       "guideTitle": "Getting Started - Training Videos",
-      "guideUrl": "https://help.rentvine.com/getting-started-training-videos",
+      "guideUrl": "https://help.rentvine.com/en/collections/19629300-getting-started-training-videos",
       "seeAlso": []
     },
     {
@@ -9159,7 +9159,7 @@ window.RVU_COURSE = {
       "definition": "A serious error that can cause a failed capstone even if the point score is otherwise high.",
       "whyItMatters": "Critical failures protect production-safety and accounting-integrity expectations.",
       "guideTitle": "Getting Started - Training Videos",
-      "guideUrl": "https://help.rentvine.com/getting-started-training-videos",
+      "guideUrl": "https://help.rentvine.com/en/collections/19629300-getting-started-training-videos",
       "seeAlso": []
     },
     {
@@ -9172,7 +9172,7 @@ window.RVU_COURSE = {
       "definition": "The final confirmation that the owner statement reconciles to the completed workflow and balances.",
       "whyItMatters": "A correct capstone should end with an owner statement that makes accounting sense.",
       "guideTitle": "How to Create Owner Statements for Bulk Review or Publishing",
-      "guideUrl": "https://help.rentvine.com/how-to-send-owner-statements",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements",
       "seeAlso": []
     },
     {
@@ -9183,7 +9183,7 @@ window.RVU_COURSE = {
       "weeks": [
         1
       ],
-      "guideUrl": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+      "guideUrl": "https://help.rentvine.com/en/",
       "guideTitle": "Knowledge Base Welcome",
       "whyItMatters": "Property managers coordinate leasing, operations, maintenance, accounting, and owner reporting."
     },
@@ -9201,7 +9201,7 @@ window.RVU_COURSE = {
         15,
         16
       ],
-      "guideUrl": "https://help.rentvine.com/resident-portal-registration",
+      "guideUrl": "https://help.rentvine.com/en/articles/16573986-resident-portal-registration",
       "guideTitle": "Resident Portal Registration",
       "whyItMatters": "Resident actions drive payments, maintenance requests, move-ins, renewals, and move-outs."
     },
@@ -9214,7 +9214,7 @@ window.RVU_COURSE = {
         1,
         5
       ],
-      "guideUrl": "https://help.rentvine.com/screening",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727716-screening",
       "guideTitle": "Screening Knowledge Base",
       "whyItMatters": "Applicants must be processed and screened before a lease is created."
     },
@@ -9228,7 +9228,7 @@ window.RVU_COURSE = {
         10,
         11
       ],
-      "guideUrl": "https://help.rentvine.com/maintenance",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727722-maintenance",
       "guideTitle": "Maintenance Knowledge Base",
       "whyItMatters": "Vendors connect maintenance work to invoices, bills, approvals, and payments."
     },
@@ -9240,7 +9240,7 @@ window.RVU_COURSE = {
       "weeks": [
         1
       ],
-      "guideUrl": "https://help.rentvine.com/rentvine-pm-monthly-accounting-cycle",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574004-rentvine-pm-monthly-accounting-cycle",
       "guideTitle": "Suggested Monthly Workflow",
       "whyItMatters": "The lifecycle helps beginners understand why lessons are ordered the way they are."
     },
@@ -9253,7 +9253,7 @@ window.RVU_COURSE = {
         1,
         19
       ],
-      "guideUrl": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+      "guideUrl": "https://help.rentvine.com/en/",
       "guideTitle": "Knowledge Base Welcome",
       "whyItMatters": "Training work must not change production records or real money activity."
     },
@@ -9270,7 +9270,7 @@ window.RVU_COURSE = {
         12,
         17
       ],
-      "guideUrl": "https://help.rentvine.com/rentvine-pm-monthly-accounting-cycle",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574004-rentvine-pm-monthly-accounting-cycle",
       "guideTitle": "Suggested Monthly Workflow",
       "whyItMatters": "Monthly workflow connects daily work to owner reporting and accounting control."
     },
@@ -9284,7 +9284,7 @@ window.RVU_COURSE = {
       "definition": "Rentvine's AI-powered assistant that engages a tenant when they submit a maintenance request through the portal, asking follow-up questions (and accepting photos, video, or voice) to try to help resolve simple issues before a full work order is created.",
       "whyItMatters": "Fixie can reduce the number of work orders that need a vendor dispatched by helping tenants self-resolve simple issues, and it logs its own comments on the work order if one is still created.",
       "guideTitle": "Maintenance Knowledge Base",
-      "guideUrl": "https://help.rentvine.com/how-do-i-submit-a-work-order-from-the-tenant-portal",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574137-how-do-i-submit-a-work-order-from-the-tenant-portal",
       "seeAlso": [
         "Maintenance Request",
         "Work Order"
@@ -9301,7 +9301,7 @@ window.RVU_COURSE = {
       "definition": "An optional, AI-generated report run from a property's Details page that scans what similar units are currently renting for in the market.",
       "whyItMatters": "It gives a manager a quick, data-informed way to sanity-check an asking rent before a property goes out for marketing.",
       "guideTitle": "Properties Knowledge Base",
-      "guideUrl": "https://help.rentvine.com/properties-and-units-globals-settings",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574156-properties-and-units-globals-settings",
       "seeAlso": [
         "Property",
         "Marketing Tab"
@@ -9317,7 +9317,7 @@ window.RVU_COURSE = {
       "definition": "A single combined payment (most commonly a Section 8/HUD housing authority payment) entered once and then allocated across multiple tenant leases, instead of recording each tenant's portion as a separate individual receipt.",
       "whyItMatters": "It matches how housing authorities actually pay -- one deposit covering many tenants -- so the manager records reality once and then splits it, rather than fabricating individual receipts that never happened that way.",
       "guideTitle": "Introduction to Accounting",
-      "guideUrl": "https://help.rentvine.com/accounting-overview",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574204-accounting-overview",
       "seeAlso": [
         "Tenant Receipt",
         "Deposit"
@@ -9333,7 +9333,7 @@ window.RVU_COURSE = {
       "definition": "A tool that creates a one-time fee charge (the same flat amount) applied at once across a chosen set of portfolios, units, properties, or property groups -- separate from the normal unbilled management fee posting workflow.",
       "whyItMatters": "It's the right tool for charges like an annual portal activation fee, but it does not remove anything from the regular unbilled management fee queue, so it should not be confused with posting normal management fees.",
       "guideTitle": "Owner Statements Introduction",
-      "guideUrl": "https://help.rentvine.com/owner-statements",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements",
       "seeAlso": [
         "Management Fee",
         "Manager Dashboard"
@@ -9350,7 +9350,7 @@ window.RVU_COURSE = {
       "definition": "A diagnostic flag indicating funds tied to a charge that isn't due yet (a prepayment) are sitting in the wrong bank account -- for example, in the security deposit account instead of the rental trust account.",
       "whyItMatters": "Left unresolved, prepayment mismatches can lead to escrow mismatches once the prepaid funds are eventually applied, so they're worth tracing and fixing early.",
       "guideTitle": "Accounting Diagnostics",
-      "guideUrl": "https://help.rentvine.com/diagnostics-tab",
+      "guideUrl": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
       "seeAlso": [
         "Escrow Mismatch",
         "Prepaid Rent",
@@ -9368,7 +9368,7 @@ window.RVU_COURSE = {
       "definition": "A diagnostic flag that surfaces any bank account that has gone more than 60 days since its last completed reconciliation.",
       "whyItMatters": "Reconciliation is a core monthly control; this flag helps a manager catch accounts that are falling behind before errors compound.",
       "guideTitle": "Accounting Diagnostics",
-      "guideUrl": "https://help.rentvine.com/diagnostics-tab",
+      "guideUrl": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
       "seeAlso": [
         "Three-Way Reconciliation",
         "Diagnostics"
@@ -9384,7 +9384,7 @@ window.RVU_COURSE = {
       "definition": "A diagnostic flag identifying vendors whose workers' compensation or liability insurance expiration date on file has already passed.",
       "whyItMatters": "It prompts a manager to collect updated proof of insurance before continuing to dispatch work to that vendor, reducing liability exposure.",
       "guideTitle": "Accounting Diagnostics",
-      "guideUrl": "https://help.rentvine.com/diagnostics-tab",
+      "guideUrl": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
       "seeAlso": [
         "Vendor",
         "Diagnostics"
@@ -9400,7 +9400,7 @@ window.RVU_COURSE = {
       "definition": "Notification preferences (in-app, email, text, and Slack) that each individual user configures for themselves, including whether they're notified based on being assigned or unassigned on a record.",
       "whyItMatters": "Because these are self-configured, no user controls what another user is notified about -- each person decides their own alerts, which keeps notification volume relevant to the individual.",
       "guideTitle": "User Roles",
-      "guideUrl": "https://help.rentvine.com/user-roles",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574157-user-roles",
       "seeAlso": [
         "Account Notification Settings",
         "User Role"
@@ -9416,7 +9416,7 @@ window.RVU_COURSE = {
       "definition": "Company-wide notification routing (for example, sending every submitted work order to a maintenance coordinator's email and phone) that is not filtered by an assignee field the way personal notifications are.",
       "whyItMatters": "This is how a management company makes sure the right department or role always sees certain events, independent of any one person's personal notification choices.",
       "guideTitle": "User Roles",
-      "guideUrl": "https://help.rentvine.com/user-roles",
+      "guideUrl": "https://help.rentvine.com/en/articles/16574157-user-roles",
       "seeAlso": [
         "Personal Notification Settings",
         "User Role"
@@ -9440,11 +9440,11 @@ window.RVU_COURSE = {
       "links": [
         {
           "title": "Knowledge Base Welcome",
-          "url": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base"
+          "url": "https://help.rentvine.com/en/"
         },
         {
           "title": "Suggested Monthly Workflow",
-          "url": "https://help.rentvine.com/rentvine-pm-monthly-accounting-cycle"
+          "url": "https://help.rentvine.com/en/articles/16574004-rentvine-pm-monthly-accounting-cycle"
         }
       ]
     },
@@ -9456,11 +9456,11 @@ window.RVU_COURSE = {
       "links": [
         {
           "title": "Portfolios",
-          "url": "https://help.rentvine.com/portfolios"
+          "url": "https://help.rentvine.com/en/collections/19727764-portfolios"
         },
         {
           "title": "Properties",
-          "url": "https://help.rentvine.com/properties"
+          "url": "https://help.rentvine.com/en/collections/19727763-properties"
         }
       ]
     },
@@ -9472,15 +9472,15 @@ window.RVU_COURSE = {
       "links": [
         {
           "title": "Screening",
-          "url": "https://help.rentvine.com/screening"
+          "url": "https://help.rentvine.com/en/collections/19727716-screening"
         },
         {
           "title": "Leases",
-          "url": "https://help.rentvine.com/leases"
+          "url": "https://help.rentvine.com/en/collections/19727717-leases"
         },
         {
           "title": "RentSign",
-          "url": "https://help.rentvine.com/how-to-use-the-rentsign-feature-of-rentvine"
+          "url": "https://help.rentvine.com/en/articles/16574329-how-to-use-the-rentsign-feature-of-rentvine"
         }
       ]
     },
@@ -9492,11 +9492,11 @@ window.RVU_COURSE = {
       "links": [
         {
           "title": "Portals Global Settings",
-          "url": "https://help.rentvine.com/portals-global-settings"
+          "url": "https://help.rentvine.com/en/articles/16574175-portals-global-settings"
         },
         {
           "title": "Mass Messages",
-          "url": "https://help.rentvine.com/how-to-send-mass-messages"
+          "url": "https://help.rentvine.com/en/articles/16603291-how-to-send-a-mass-message-to-multiple-recipients-by-email-or-text"
         }
       ]
     },
@@ -9508,15 +9508,15 @@ window.RVU_COURSE = {
       "links": [
         {
           "title": "Accounting Overview",
-          "url": "https://help.rentvine.com/accounting-overview"
+          "url": "https://help.rentvine.com/en/articles/16574204-accounting-overview"
         },
         {
           "title": "Monthly Workflow",
-          "url": "https://help.rentvine.com/rentvine-pm-monthly-accounting-cycle"
+          "url": "https://help.rentvine.com/en/articles/16574004-rentvine-pm-monthly-accounting-cycle"
         },
         {
           "title": "Maintenance Settings",
-          "url": "https://help.rentvine.com/maintenance-settings"
+          "url": "https://help.rentvine.com/en/articles/16575322-maintenance-settings"
         }
       ]
     },
@@ -9528,15 +9528,15 @@ window.RVU_COURSE = {
       "links": [
         {
           "title": "Owner Statements",
-          "url": "https://help.rentvine.com/owner-statements"
+          "url": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements"
         },
         {
           "title": "Reports",
-          "url": "https://help.rentvine.com/reports"
+          "url": "https://help.rentvine.com/en/collections/19727723-reports"
         },
         {
           "title": "Diagnostics",
-          "url": "https://help.rentvine.com/diagnostics-tab"
+          "url": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab"
         }
       ]
     },
@@ -9548,11 +9548,11 @@ window.RVU_COURSE = {
       "links": [
         {
           "title": "Leases",
-          "url": "https://help.rentvine.com/leases"
+          "url": "https://help.rentvine.com/en/collections/19727717-leases"
         },
         {
           "title": "Accounting",
-          "url": "https://help.rentvine.com/accounting"
+          "url": "https://help.rentvine.com/en/collections/19727720-accounting"
         }
       ]
     },
@@ -9564,11 +9564,11 @@ window.RVU_COURSE = {
       "links": [
         {
           "title": "Accounting",
-          "url": "https://help.rentvine.com/accounting"
+          "url": "https://help.rentvine.com/en/collections/19727720-accounting"
         },
         {
           "title": "Accounting Settings",
-          "url": "https://help.rentvine.com/accounting-setting"
+          "url": "https://help.rentvine.com/en/articles/16574190-accounting-setting"
         }
       ]
     },
@@ -9580,15 +9580,15 @@ window.RVU_COURSE = {
       "links": [
         {
           "title": "User Roles",
-          "url": "https://help.rentvine.com/user-roles"
+          "url": "https://help.rentvine.com/en/articles/16574157-user-roles"
         },
         {
           "title": "Open API Guide",
-          "url": "https://help.rentvine.com/tip-of-the-week-30-guide-to-rentvines-open-api"
+          "url": "https://help.rentvine.com/en/articles/16575275-tip-of-the-week-30-guide-to-rentvines-open-api"
         },
         {
           "title": "Property Meld Integration",
-          "url": "https://help.rentvine.com/integration-overview-property-melt-/-rentvine"
+          "url": "https://help.rentvine.com/en/articles/16574840-integration-overview-property-meld-rentvine"
         }
       ]
     }
@@ -10066,7 +10066,7 @@ window.RVU_COURSE = {
           "explanation": "Sandbox databases exist so learners can practice real workflows without any risk to production data.",
           "points": 1,
           "remediationTitle": "Knowledge Base Welcome",
-          "remediationUrl": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "checkpoint-1-q01"
         },
         {
@@ -10082,7 +10082,7 @@ window.RVU_COURSE = {
           "explanation": "The portfolio is the owner-level container for ownership, properties, ledgers, statement settings, and payouts.",
           "points": 1,
           "remediationTitle": "Portfolios",
-          "remediationUrl": "https://help.rentvine.com/portfolios",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
           "id": "checkpoint-1-q02"
         },
         {
@@ -10098,7 +10098,7 @@ window.RVU_COURSE = {
           "explanation": "Taxable Percentage and Distribution Percentage can be set independently for a multi-owner portfolio.",
           "points": 1,
           "remediationTitle": "Portfolios",
-          "remediationUrl": "https://help.rentvine.com/portfolios",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
           "id": "checkpoint-1-q03"
         },
         {
@@ -10114,7 +10114,7 @@ window.RVU_COURSE = {
           "explanation": "Cash Balance is the raw cash position; Operating Balance reflects what's actually available for spending once reserves/holdbacks are set aside.",
           "points": 1,
           "remediationTitle": "Portfolio Ledger Balances",
-          "remediationUrl": "https://help.rentvine.com/ledger-balances",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574323-ledger-balances",
           "id": "checkpoint-1-q04"
         },
         {
@@ -10130,7 +10130,7 @@ window.RVU_COURSE = {
           "explanation": "Property Groups structure properties for filtering/reporting; Tags are the more flexible, cross-record labeling tool.",
           "points": 1,
           "remediationTitle": "How to Add/Create Property Groups",
-          "remediationUrl": "https://help.rentvine.com/how-to-add/create-property-groups-1",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574371-how-to-add-create-property-groups-1",
           "id": "checkpoint-1-q05"
         },
         {
@@ -10146,7 +10146,7 @@ window.RVU_COURSE = {
           "explanation": "Property Manager Assignment ties a user/manager to a property for responsibility, routing, and accountability.",
           "points": 1,
           "remediationTitle": "Properties & Units Global Settings",
-          "remediationUrl": "https://help.rentvine.com/properties-and-units-globals-settings",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574156-properties-and-units-globals-settings",
           "id": "checkpoint-1-q06"
         },
         {
@@ -10162,7 +10162,7 @@ window.RVU_COURSE = {
           "explanation": "The program is intentionally sequenced by real process order: setup before leasing, leasing before operations, operations before reporting/renewal/move-out.",
           "points": 1,
           "remediationTitle": "Suggested Monthly Workflow",
-          "remediationUrl": "https://help.rentvine.com/rentvine-pm-monthly-accounting-cycle",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574004-rentvine-pm-monthly-accounting-cycle",
           "id": "checkpoint-1-q07"
         },
         {
@@ -10178,7 +10178,7 @@ window.RVU_COURSE = {
           "explanation": "Required Reserve is the standing minimum; Additional Reserve is layered on top for a specific need such as a planned repair.",
           "points": 1,
           "remediationTitle": "Tip of the Week #4: Enabling Owner Balance Notifications",
-          "remediationUrl": "https://help.rentvine.com/tips-of-the-week-4",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16573965-tips-of-the-week-4",
           "id": "checkpoint-1-q08"
         },
         {
@@ -10194,7 +10194,7 @@ window.RVU_COURSE = {
           "explanation": "Associations model the HOA relationship and attach at the property level, as practiced in the Week 3 HOA property lab.",
           "points": 1,
           "remediationTitle": "Properties Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/properties",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727763-properties",
           "id": "checkpoint-1-q09"
         }
       ],
@@ -10248,7 +10248,7 @@ window.RVU_COURSE = {
           "explanation": "Syndication pushes your listing out to external sites/networks once it's published.",
           "points": 1,
           "remediationTitle": "How do I market my properties for rent?",
-          "remediationUrl": "https://help.rentvine.com/how-do-i-market-my-properties-for-rent",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16602484-how-do-i-market-my-properties-for-rent",
           "id": "checkpoint-2-q01"
         },
         {
@@ -10264,7 +10264,7 @@ window.RVU_COURSE = {
           "explanation": "Conditional Approval keeps the applicant moving forward but attaches specific conditions before full approval.",
           "points": 1,
           "remediationTitle": "Introduction to Application and Screening",
-          "remediationUrl": "https://help.rentvine.com/introduction-to-application-and-screening",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16573980-introduction-to-application-and-screening",
           "id": "checkpoint-2-q02"
         },
         {
@@ -10280,7 +10280,7 @@ window.RVU_COURSE = {
           "explanation": "Guarantors provide financial backing without necessarily being an occupant.",
           "points": 1,
           "remediationTitle": "Screening Knowledge Base",
-          "remediationUrl": "https://help.rentvine.com/screening",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727716-screening",
           "id": "checkpoint-2-q03"
         },
         {
@@ -10296,7 +10296,7 @@ window.RVU_COURSE = {
           "explanation": "The Financial Lease record is the system of record for charges, payments, and balances — the signed document is separate from that ledger.",
           "points": 1,
           "remediationTitle": "How To Create a Financial Lease (Move In)",
-          "remediationUrl": "https://help.rentvine.com/how-to-create-a-financial-lease-move-in",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16603312-how-to-create-a-financial-lease-move-in",
           "id": "checkpoint-2-q04"
         },
         {
@@ -10312,7 +10312,7 @@ window.RVU_COURSE = {
           "explanation": "Hot Fields merge live Rentvine data into documents so you don't retype lease details by hand.",
           "points": 1,
           "remediationTitle": "How to use the RentSign feature of Rentvine",
-          "remediationUrl": "https://help.rentvine.com/how-to-use-the-rentsign-feature-of-rentvine",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574329-how-to-use-the-rentsign-feature-of-rentvine",
           "id": "checkpoint-2-q05"
         },
         {
@@ -10328,7 +10328,7 @@ window.RVU_COURSE = {
           "explanation": "Signing Order determines who signs first, second, and so on within a document packet.",
           "points": 1,
           "remediationTitle": "Tip of the Week #28: The Power of RentSign",
-          "remediationUrl": "https://help.rentvine.com/tips-of-the-week-28",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574566-tips-of-the-week-28",
           "id": "checkpoint-2-q06"
         },
         {
@@ -10344,7 +10344,7 @@ window.RVU_COURSE = {
           "explanation": "This is a Week 2 concept: Distribution Hold / Overdraft Override protects against distributing funds the portfolio needs to keep on hand.",
           "points": 1,
           "remediationTitle": "Portfolios",
-          "remediationUrl": "https://help.rentvine.com/portfolios",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727764-portfolios",
           "id": "checkpoint-2-q07"
         },
         {
@@ -10360,7 +10360,7 @@ window.RVU_COURSE = {
           "explanation": "Every tab supports a business process — understanding the process first prevents 'disconnected tabs' learning.",
           "points": 1,
           "remediationTitle": "Knowledge Base Welcome",
-          "remediationUrl": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "checkpoint-2-q08"
         }
       ],
@@ -10414,7 +10414,7 @@ window.RVU_COURSE = {
           "explanation": "Receipts post to the lease ledger; settlements are how electronic payments clear at the bank/payment-processor level.",
           "points": 1,
           "remediationTitle": "How to View Settlements in Rentvine",
-          "remediationUrl": "https://help.rentvine.com/how-to-view-settlements-in-rentvine",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16573995-how-to-view-settlements-in-rentvine",
           "id": "checkpoint-3-q01"
         },
         {
@@ -10430,7 +10430,7 @@ window.RVU_COURSE = {
           "explanation": "Deposits bundle manual payments so they can be reconciled against what actually hits the bank.",
           "points": 1,
           "remediationTitle": "How to Record a Deposit",
-          "remediationUrl": "https://help.rentvine.com/how-to-record-a-deposit",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16573946-how-to-record-a-deposit",
           "id": "checkpoint-3-q02"
         },
         {
@@ -10446,7 +10446,7 @@ window.RVU_COURSE = {
           "explanation": "Bill Approval is the review gate that sits between entering a bill and including it in a payment batch.",
           "points": 1,
           "remediationTitle": "Accounting",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "checkpoint-3-q03"
         },
         {
@@ -10462,7 +10462,7 @@ window.RVU_COURSE = {
           "explanation": "NACHA files are how a batch of electronic payments actually gets transmitted through the banking system.",
           "points": 1,
           "remediationTitle": "How to Configure the Default Payment Type for Owners, Vendors, or Associations",
-          "remediationUrl": "https://help.rentvine.com/how-to-configure-the-default-payment-type-for-owners-vendors-or-associations",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574185-how-to-configure-the-default-payment-type-for-owners-vendors-or-associations",
           "id": "checkpoint-3-q04"
         },
         {
@@ -10478,7 +10478,7 @@ window.RVU_COURSE = {
           "explanation": "This threshold protects owners from surprise maintenance spend above a set dollar amount.",
           "points": 1,
           "remediationTitle": "Maintenance Settings",
-          "remediationUrl": "https://help.rentvine.com/maintenance-settings",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16575322-maintenance-settings",
           "id": "checkpoint-3-q05"
         },
         {
@@ -10494,7 +10494,7 @@ window.RVU_COURSE = {
           "explanation": "Segmentation targets who actually receives a mass email/text.",
           "points": 1,
           "remediationTitle": "How to Send a Mass Message by Email or Text",
-          "remediationUrl": "https://help.rentvine.com/how-to-send-mass-messages",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16603291-how-to-send-a-mass-message-to-multiple-recipients-by-email-or-text",
           "id": "checkpoint-3-q06"
         },
         {
@@ -10510,7 +10510,7 @@ window.RVU_COURSE = {
           "explanation": "Proration adjusts charges for partial periods, such as a mid-month move-in.",
           "points": 1,
           "remediationTitle": "Prorate Settings",
-          "remediationUrl": "https://help.rentvine.com/prorate-settings",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574316-prorate-settings",
           "id": "checkpoint-3-q07"
         },
         {
@@ -10526,7 +10526,7 @@ window.RVU_COURSE = {
           "explanation": "Tags are broader and more flexible; Property Groups are a structured, property-specific categorization tool.",
           "points": 1,
           "remediationTitle": "What are Tags? How to Create One and Apply Them",
-          "remediationUrl": "https://help.rentvine.com/what-are-tags-and-how-to-create-one-and-apply-them-to-objects-portfolios-properties-leases-etc",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574834-what-are-tags-and-how-to-create-one-and-apply-them-to-objects-portfolios-properties-leases-etc",
           "id": "checkpoint-3-q08"
         }
       ],
@@ -10582,7 +10582,7 @@ window.RVU_COURSE = {
           "explanation": "Manager Ledger Mode contrasts with Bill Mode, which typically routes fees through bills paid to the management company.",
           "points": 1,
           "remediationTitle": "How to Refund Management Fees on Manager Ledger mode",
-          "remediationUrl": "https://help.rentvine.com/how-to-refund-management-fees-to-an-owner-on-manager-ledger-mode",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574854-how-to-refund-management-fees-to-an-owner-on-manager-ledger-mode",
           "id": "checkpoint-4-q01"
         },
         {
@@ -10598,7 +10598,7 @@ window.RVU_COURSE = {
           "explanation": "Aged Receivables is a collections-focused view of how overdue each outstanding balance is.",
           "points": 1,
           "remediationTitle": "How to Use Reports",
-          "remediationUrl": "https://help.rentvine.com/how-to-use-reports",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574048-how-to-use-reports",
           "id": "checkpoint-4-q02"
         },
         {
@@ -10614,7 +10614,7 @@ window.RVU_COURSE = {
           "explanation": "This diagnostic protects the accuracy of security-deposit trust accounting.",
           "points": 1,
           "remediationTitle": "Diagnosing and Fixing an Escrow Mismatch",
-          "remediationUrl": "https://help.rentvine.com/diagnosing-and-fixing-an-escrow-mismatch",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574790-accounting-diagnostics-escrow-and-suppressed-fee-mismatches",
           "id": "checkpoint-4-q03"
         },
         {
@@ -10630,7 +10630,7 @@ window.RVU_COURSE = {
           "explanation": "The move-out flow ties charges, deposit deductions, refunds, and the final ledger balance together correctly.",
           "points": 1,
           "remediationTitle": "How to Move Out a Lease using the Move Out Flow",
-          "remediationUrl": "https://help.rentvine.com/how-to-close-out-a-lease-and-move-out-all-tenants",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574815-how-to-close-out-a-lease-and-move-out-all-tenants",
           "id": "checkpoint-4-q04"
         },
         {
@@ -10646,7 +10646,7 @@ window.RVU_COURSE = {
           "explanation": "A lease has to fall within the eligibility window before it shows up for renewal action.",
           "points": 1,
           "remediationTitle": "Lease Renewal Feature",
-          "remediationUrl": "https://help.rentvine.com/lease-renewal-feature",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574135-lease-renewal-feature",
           "id": "checkpoint-4-q05"
         },
         {
@@ -10662,7 +10662,7 @@ window.RVU_COURSE = {
           "explanation": "Keeping client funds separate from company operating funds is a core trust-accounting requirement.",
           "points": 1,
           "remediationTitle": "Introduction to Accounting",
-          "remediationUrl": "https://help.rentvine.com/accounting-overview",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574204-accounting-overview",
           "id": "checkpoint-4-q06"
         },
         {
@@ -10678,7 +10678,7 @@ window.RVU_COURSE = {
           "explanation": "Markup is the added amount charged to the owner above the vendor's actual cost.",
           "points": 1,
           "remediationTitle": "Accounting",
-          "remediationUrl": "https://help.rentvine.com/accounting",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
           "id": "checkpoint-4-q07"
         },
         {
@@ -10694,7 +10694,7 @@ window.RVU_COURSE = {
           "explanation": "Prepaid Rent is held as a liability until the corresponding charge is actually posted to the ledger.",
           "points": 1,
           "remediationTitle": "Accounting Setting",
-          "remediationUrl": "https://help.rentvine.com/accounting-setting",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574190-accounting-setting",
           "id": "checkpoint-4-q08"
         }
       ],
@@ -10765,7 +10765,7 @@ window.RVU_COURSE = {
           "explanation": "The financial lease is the accounting backbone of the tenancy, not the signed document itself.",
           "points": 1,
           "remediationTitle": "How To Create a Financial Lease (Move In)",
-          "remediationUrl": "https://help.rentvine.com/how-to-create-a-financial-lease-move-in",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16603312-how-to-create-a-financial-lease-move-in",
           "id": "checkpoint-5-q01"
         },
         {
@@ -10781,7 +10781,7 @@ window.RVU_COURSE = {
           "explanation": "Aged Receivables / delinquency reporting is built specifically to surface past-due balances.",
           "points": 1,
           "remediationTitle": "How to Use Reports",
-          "remediationUrl": "https://help.rentvine.com/how-to-use-reports",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574048-how-to-use-reports",
           "id": "checkpoint-5-q02"
         },
         {
@@ -10797,7 +10797,7 @@ window.RVU_COURSE = {
           "explanation": "Three-way reconciliation confirms the bank, the property/portfolio ledger, and the GL all agree.",
           "points": 1,
           "remediationTitle": "How to Complete a Bank Reconciliation",
-          "remediationUrl": "https://help.rentvine.com/how-to-complete-a-bank-reconciliation",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574862-how-to-complete-a-bank-reconciliation",
           "id": "checkpoint-5-q03"
         },
         {
@@ -10813,7 +10813,7 @@ window.RVU_COURSE = {
           "explanation": "API keys are the credential that lets an external system or integration talk to Rentvine.",
           "points": 1,
           "remediationTitle": "How to Create an API Key",
-          "remediationUrl": "https://help.rentvine.com/how-to-create-an-api-key",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16575275-tip-of-the-week-30-guide-to-rentvines-open-api",
           "id": "checkpoint-5-q04"
         },
         {
@@ -10829,7 +10829,7 @@ window.RVU_COURSE = {
           "explanation": "Least privilege limits each user's access to what their role actually requires.",
           "points": 1,
           "remediationTitle": "Account Settings",
-          "remediationUrl": "https://help.rentvine.com/account-settings",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574870-account-settings",
           "id": "checkpoint-5-q05"
         },
         {
@@ -10845,7 +10845,7 @@ window.RVU_COURSE = {
           "explanation": "Critical failures are serious enough to override an otherwise passing point total.",
           "points": 1,
           "remediationTitle": "Getting Started - Training Videos",
-          "remediationUrl": "https://help.rentvine.com/getting-started-training-videos",
+          "remediationUrl": "https://help.rentvine.com/en/collections/19629300-getting-started-training-videos",
           "id": "checkpoint-5-q06"
         },
         {
@@ -10861,7 +10861,7 @@ window.RVU_COURSE = {
           "explanation": "Trust accounting's defining requirements are separation, accuracy, and timely disbursement of client funds.",
           "points": 1,
           "remediationTitle": "Introduction to Accounting",
-          "remediationUrl": "https://help.rentvine.com/accounting-overview",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574204-accounting-overview",
           "id": "checkpoint-5-q07"
         },
         {
@@ -10877,7 +10877,7 @@ window.RVU_COURSE = {
           "explanation": "Renewal eligibility is date/rule-driven, not triggered by unrelated activity.",
           "points": 1,
           "remediationTitle": "Lease Renewal Feature",
-          "remediationUrl": "https://help.rentvine.com/lease-renewal-feature",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574135-lease-renewal-feature",
           "id": "checkpoint-5-q08"
         },
         {
@@ -10893,7 +10893,7 @@ window.RVU_COURSE = {
           "explanation": "Tie-out is the final check that the numbers on the owner statement actually match what happened in the workflow.",
           "points": 1,
           "remediationTitle": "How to Create Owner Statements for Bulk Review or Publishing",
-          "remediationUrl": "https://help.rentvine.com/how-to-send-owner-statements",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16574882-how-to-view-owner-statements",
           "id": "checkpoint-5-q09"
         },
         {
@@ -10909,7 +10909,7 @@ window.RVU_COURSE = {
           "explanation": "This is the Week 1 'watch for' lesson revisited: process understanding should come before tool mechanics.",
           "points": 1,
           "remediationTitle": "Knowledge Base Welcome",
-          "remediationUrl": "https://help.rentvine.com/welcome-to-the-rentvine-knowledge-base",
+          "remediationUrl": "https://help.rentvine.com/en/",
           "id": "checkpoint-5-q10"
         }
       ],
