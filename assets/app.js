@@ -89,11 +89,10 @@
       // module list (.role-week.dimmed): once a learner picks a narrower role path, weeks that
       // path doesn't require should look visually de-emphasized here in the persistent sidebar
       // too, not just on the Role Path Filters page itself. Still fully clickable/navigable --
-      // "Full certification still requires all core weeks and the capstone" per that page's copy.
-      // Bonus weeks (week.bonus === true) are additional/optional and never block certification.
+      // "Full certification requires all weeks and the capstone" per that page's copy.
       const inPath = isWeekInSelectedPath(w.week);
       return `<li><a class="nav-link ${!inPath ? 'dimmed' : ''} ${route === `#week-${String(w.week).padStart(2,'0')}` ? 'active' : ''}" href="#week-${String(w.week).padStart(2,'0')}">
-        <span>Week ${w.week}${w.bonus ? ' (Bonus)' : ''}: ${escapeHtml(w.title)}</span><span class="badge ${s.complete ? 'complete' : ''}">${pct(s.progress)}</span>
+        <span>Week ${w.week}: ${escapeHtml(w.title)}</span><span class="badge ${s.complete ? 'complete' : ''}">${pct(s.progress)}</span>
       </a></li>`;
     }).join('');
     const checkpointLinks = (course.checkpoints || []).map(cp => {
@@ -457,12 +456,8 @@
     if (!list.length) return 1;
     return list.reduce((acc, cp) => acc + checkpointProgress(cp).progress, 0) / list.length;
   }
-  // Certification progress is computed over the 19 core weeks only -- the optional bonus
-  // weeks (week.bonus === true) have their own progress badges in the sidebar/dashboard but
-  // don't count toward "full certification" completion or the capstone gate.
-  function coreWeeks() { return course.weeks.filter(w => !w.bonus); }
   function overallProgress() {
-    const cw = coreWeeks();
+    const cw = course.weeks;
     const weekAverage = cw.reduce((acc, w) => acc + weekStats(w).progress, 0) / cw.length;
     return (weekAverage * 0.8) + (checkpointsAverage() * 0.1) + (capstoneProgress() * 0.1);
   }
@@ -517,8 +512,7 @@
         <h1>${escapeHtml(course.meta.title)}</h1>
         <p>${escapeHtml(course.meta.description)}</p>
         <div class="stat-row">
-          <span class="stat-pill done">${coreWeeks().length} core weeks</span>
-          ${course.weeks.length > coreWeeks().length ? `<span class="stat-pill">+${course.weeks.length - coreWeeks().length} bonus deep-dives</span>` : ''}
+          <span class="stat-pill done">${course.weeks.length} weeks</span>
           <span class="stat-pill">57-76 learning hours</span>
           <span class="stat-pill">5 certification tracks</span>
           <span class="stat-pill done">Process-ordered lessons</span>
@@ -589,7 +583,7 @@
       const required = selected && (selected.weeks || []).includes(w.week);
       return `<article class="resource-card role-week ${required ? 'required' : 'dimmed'}"><div><span class="badge ${required ? 'complete' : ''}">${required ? 'Required' : 'Optional'}</span></div><div><div class="resource-title">Week ${w.week}: ${escapeHtml(w.title)}</div><div class="resource-meta">${escapeHtml(w.phase)} · ${escapeHtml(w.processStage || '')}</div></div><div><a class="button ${required ? 'primary' : 'secondary'} small" href="#week-${String(w.week).padStart(2,'0')}">Open</a></div></article>`;
     }).join('');
-    app.innerHTML = `<section class="module-header"><div class="kicker">Role path filters</div><h1>Choose your learner path</h1><p>Pick a role path to highlight the modules most relevant to that learner. Full certification still requires all ${coreWeeks().length} core weeks and the capstone; bonus weeks are optional continuing education.</p></section>
+    app.innerHTML = `<section class="module-header"><div class="kicker">Role path filters</div><h1>Choose your learner path</h1><p>Pick a role path to highlight the modules most relevant to that learner. Full certification requires all ${course.weeks.length} weeks and the capstone.</p></section>
       <section class="panel"><div class="field"><label>Current role path<select id="role-path-select" data-path="rolePath.selected">${options}</select></label></div><p><strong>${escapeHtml(selected?.title || '')}</strong>: ${escapeHtml(selected?.focus || '')}</p></section>
       <section class="panel"><h2>Filtered module list</h2>${weekCards}</section>`;
   }
@@ -758,7 +752,7 @@
       return `<li><a href="#${cp.id}">${escapeHtml(cp.title)}</a><span class="badge ${p.progress >= 1 ? 'complete' : ''}">${pct(p.progress)}</span></li>`;
     }).join('');
     return `<details class="process-detail" id="dashboard-details"><summary>Progress Dashboard &mdash; ${pct(overallProgress())} complete</summary>
-      <p>Overall progress across all ${coreWeeks().length} core weeks, weighted with phase checkpoints and the capstone (bonus weeks are tracked below but optional). Open a week for its full status (materials, guide, defined terms, lab, lab video, knowledge check, match practice).</p>
+      <p>Overall progress across all ${course.weeks.length} weeks, weighted with phase checkpoints and the capstone. Open a week for its full status (materials, guide, defined terms, lab, lab video, knowledge check, match practice).</p>
       <div class="module-progress"><div class="progress-rail"><div class="progress-fill" style="width:${pct(overallProgress())}"></div></div><strong>${pct(overallProgress())}</strong></div>
       <ul class="dashboard-week-list">${rows}</ul>
       ${cpRows ? `<h3>Phase checkpoints</h3><ul class="dashboard-week-list">${cpRows}</ul>` : ''}
