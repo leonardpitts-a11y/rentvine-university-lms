@@ -2,10 +2,10 @@ window.RVU_COURSE = {
   "meta": {
     "title": "Rentvine University",
     "edition": "Beginner Enhanced Edition",
-    "version": "7.3-scroll-to-top-on-navigation",
-    "lastUpdated": "2026-07-10",
+    "version": "7.4-financial-onboarding-bonus",
+    "lastUpdated": "2026-09-02",
     "owner": "Rentvine University",
-    "description": "Interactive 19-week Rentvine University learner program ordered by real property management processes for beginners. Includes a Before You Begin orientation, role-path filters, phase process maps, a continuing practice company case file, downloadable job aids, scored knowledge checks with remediation links, required lab video submissions, guided walkthrough examples, match-the-term glossary practice, accessibility controls, and progress tracking.",
+    "description": "Interactive 19-week Rentvine University learner program ordered by real property management processes for beginners, plus 2 optional bonus deep-dive weeks on financial onboarding. Includes a Before You Begin orientation, role-path filters, phase process maps, a continuing practice company case file, downloadable job aids, scored knowledge checks with remediation links, required lab video submissions, guided walkthrough examples, match-the-term glossary practice, accessibility controls, and progress tracking.",
     "safety": "Complete all labs in a training or sandbox database. Do not use production data.",
     "storageNote": "Progress is saved in this browser with localStorage. Export progress regularly for records or LMS upload.",
     "quizPassMark": 0.8,
@@ -43,6 +43,11 @@ window.RVU_COURSE = {
       "phase": "Administration & Certification",
       "weeks": "18-19",
       "outcome": "Configure integrations/roles/go-live readiness and demonstrate end-to-end competency in the capstone."
+    },
+    {
+      "phase": "Bonus: Financial Onboarding Specialist",
+      "weeks": "20-21",
+      "outcome": "Understand how new customers get migrated onto Rentvine's accounting system, from the customer-facing prep steps through the internal Balance Forward Workbook and reconciliation process."
     }
   ],
   "tracks": [
@@ -70,6 +75,11 @@ window.RVU_COURSE = {
       "track": "Rentvine Certified Professional",
       "weeks": "1-19",
       "focus": "Complete the full beginner-to-capstone process path and pass the scored practical certification."
+    },
+    {
+      "track": "Financial Onboarding Specialist (Bonus)",
+      "weeks": "20, 21",
+      "focus": "Customer-facing financial onboarding steps, Balance Forward Workbook methodology, data migration, and beginning-balance reconciliation for new Rentvine customers."
     }
   ],
   "videos": [
@@ -411,7 +421,10 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Explain the full property management process before learning individual Rentvine screens.",
       "realWorldConnection": "A new team member needs to understand who owns the property, who lives there, who performs work, how money moves, and why records must tie together before they can use Rentvine confidently.",
       "watchFor": "Avoid learning Rentvine as disconnected tabs. Every tab supports a business process: acquire/keep owners, market vacancies, lease to residents, collect rent, manage maintenance, pay bills, report to owners, and close or renew tenancies.",
-      "realWorldNotes": ["Real customers arrive from PropertyWare, AppFolio, Buildium, or Rent Manager &mdash; not from a blank slate. Expect early questions phrased as &ldquo;how do I do X the way my old system did it,&rdquo; not &ldquo;how does this feature work.&rdquo;","One customer's own founder said outright on a real onboarding call: &ldquo;Even if we were to train eight hours a day until we go live, we feel we may still struggle to fully grasp the system.&rdquo; Pacing and reassurance matter as much as content."],
+      "realWorldNotes": [
+        "Real customers arrive from PropertyWare, AppFolio, Buildium, or Rent Manager &mdash; not from a blank slate. Expect early questions phrased as &ldquo;how do I do X the way my old system did it,&rdquo; not &ldquo;how does this feature work.&rdquo;",
+        "One customer's own founder said outright on a real onboarding call: &ldquo;Even if we were to train eight hours a day until we go live, we feel we may still struggle to fully grasp the system.&rdquo; Pacing and reassurance matter as much as content."
+      ],
       "topics": "Property management roles, record relationships, lifecycle flow, monthly workflow, sandbox safety",
       "objectives": [
         "Identify the main property management roles: owner, property manager, resident/tenant, applicant, vendor, and internal user.",
@@ -752,7 +765,12 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Create owner portfolio structures and explain how reserves, balances, statement settings, and payout rules affect owner payments.",
       "realWorldConnection": "Onboard a new owner entity and set reserve rules before the first owner payment cycle.",
       "watchFor": "Confusing reserves with owner contributions. A reserve holds existing portfolio funds; a contribution adds new money.",
-      "realWorldNotes": ["Five settings a trainer will always confirm on a new portfolio: posting settings, statement settings, additional (portfolio-level) reserve, regular (property-level) reserve, and overdraft override.","Reserve vs. Additional Reserve is really just a level distinction (property vs. portfolio) &mdash; both hold back owner distributions only, never bill payments.","Real discrepancy walked through live on a customer call: a <strong>$2,805</strong> externally-paid tree-removal reimbursement recorded as a matching owner receipt plus vendor bill, alongside a separate <strong>$115</strong> gap traced to rent collected in a parallel third-party tool that never got disbursed through Rentvine.","Trainers consistently warn against using Overdraft Override to push a portfolio negative &mdash; it can effectively borrow from another owner's trust funds. A real example set it to <strong>$1,000</strong> temporarily, then explicitly reset it to $0 once the balance recovered."],
+      "realWorldNotes": [
+        "Five settings a trainer will always confirm on a new portfolio: posting settings, statement settings, additional (portfolio-level) reserve, regular (property-level) reserve, and overdraft override.",
+        "Reserve vs. Additional Reserve is really just a level distinction (property vs. portfolio) &mdash; both hold back owner distributions only, never bill payments.",
+        "Real discrepancy walked through live on a customer call: a <strong>$2,805</strong> externally-paid tree-removal reimbursement recorded as a matching owner receipt plus vendor bill, alongside a separate <strong>$115</strong> gap traced to rent collected in a parallel third-party tool that never got disbursed through Rentvine.",
+        "Trainers consistently warn against using Overdraft Override to push a portfolio negative &mdash; it can effectively borrow from another owner's trust funds. A real example set it to <strong>$1,000</strong> temporarily, then explicitly reset it to $0 once the balance recovered."
+      ],
       "topics": "Portfolios, owners, reserves, overdraft, owner splits & statements",
       "objectives": [
         "Create single-owner, LLC, and multi-owner portfolios",
@@ -1123,7 +1141,11 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Create property and unit records that connect the physical rental asset to the correct owner portfolio and internal responsibility.",
       "realWorldConnection": "Set up different inventory types without creating duplicate or disconnected records.",
       "watchFor": "Using tags as a replacement for structural groups. Tags filter records; groups define organizational structure.",
-      "realWorldNotes": ["The multi-unit toggle being <strong>permanent</strong> once a property is created was independently flagged as a gotcha in at least six real customer calls across three different companies. Decide it correctly at creation &mdash; changing property type later does not retroactively enable it.","The Maintenance Limit Amount at the property level only triggers a notification &mdash; it does not block a bill or work order above that limit, a point of confusion repeated across several accounts.","Custom fields must be created at the correct level (property vs. unit) to actually display &mdash; a parking or storage-locker field created at the property level, for instance, silently fails to show where it's needed."],
+      "realWorldNotes": [
+        "The multi-unit toggle being <strong>permanent</strong> once a property is created was independently flagged as a gotcha in at least six real customer calls across three different companies. Decide it correctly at creation &mdash; changing property type later does not retroactively enable it.",
+        "The Maintenance Limit Amount at the property level only triggers a notification &mdash; it does not block a bill or work order above that limit, a point of confusion repeated across several accounts.",
+        "Custom fields must be created at the correct level (property vs. unit) to actually display &mdash; a parking or storage-locker field created at the property level, for instance, silently fails to show where it's needed."
+      ],
       "topics": "Property details, associations, groups, tags, manager assignment",
       "objectives": [
         "Configure single-family, HOA, and multifamily properties",
@@ -1482,7 +1504,11 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Turn an available property/unit into a marketable listing and understand how syndication supports lead generation.",
       "realWorldConnection": "Turn a vacancy into a market-ready listing that generates qualified leads.",
       "watchFor": "Publishing AI-generated copy without human review for accuracy, fair housing, and property-specific details.",
-      "realWorldNotes": ["Never combine a third-party showing-provider integration (Tenant Turner, ShowMojo) with individually-checked syndication boxes for the same platform &mdash; flagged independently across at least five customer calls as a cause of duplicate listings.","Syndication timing to outside sites genuinely varies (24 to 72 hours depending on the network) &mdash; set that expectation with owners rather than promising an instant listing.","Every trainer who demoed the AI listing-description generator also told the customer to proofread it before publishing &mdash; treat that as standard guidance, not an aside."],
+      "realWorldNotes": [
+        "Never combine a third-party showing-provider integration (Tenant Turner, ShowMojo) with individually-checked syndication boxes for the same platform &mdash; flagged independently across at least five customer calls as a cause of duplicate listings.",
+        "Syndication timing to outside sites genuinely varies (24 to 72 hours depending on the network) &mdash; set that expectation with owners rather than promising an instant listing.",
+        "Every trainer who demoed the AI listing-description generator also told the customer to proofread it before publishing &mdash; treat that as standard guidance, not an aside."
+      ],
       "topics": "Listings, syndication, showing providers, AI descriptions",
       "objectives": [
         "Publish a property listing",
@@ -1882,7 +1908,21 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Process an applicant from application submission through screening review and a documented decision.",
       "realWorldConnection": "Apply objective screening criteria for applicants, co-applicants, and guarantors.",
       "watchFor": "Applying screening standards inconsistently or failing to document the decision rationale.",
-      "realWorldNotes": ["The most consequential real gotcha found in this research: an applicant can bypass Plaid income verification entirely by skipping to document upload, and the system does not validate that the uploaded file is actually a bank statement. Rentvine's product team is actively redesigning this flow to make skipping harder.","Native pet screening now triple-confirms a &ldquo;no pet&rdquo; response inside the application itself, and flags any applicant who claims a pet but never completes a pet-screening profile.","HUD/FCRA rules cap eviction look-back at 7 years and criminal-record look-back at 10 years (guilty verdicts only) &mdash; the accredited data bureau already excludes pending/unadjudicated cases automatically.","<strong>Custom Scoring</strong> is configured per application template, so different templates (student housing, Section 8, standard) can carry different scoring criteria &mdash; every submitted application is automatically tagged with the template it came from.","The template builder is also where Plaid identity/income verification and pet screening get turned on for that specific template, not as a single account-wide switch.","Credit scoring look-back periods are configurable from the past 2 years up to all available data, but that window only controls what shows on the Decision View summary tiles &mdash; the full screening report always shows the applicant's complete credit history regardless of the configured look-back.","<strong>Set late-payment thresholds higher, not lower.</strong> A single late payment can get counted across the 30-, 60-, and 90-day buckets at once, which inflates the apparent number of late payments if the threshold is set too aggressively.","Criminal records on the full report only ever show guilty verdicts from the last 10 years &mdash; non-guilty and pending charges are excluded automatically, on top of the 7-year eviction cap already noted above.","Rental history and identity verification results are configurable to fail, review, or pass &mdash; a verification request shows as a neutral grayed-out &ldquo;sent&rdquo; status (not a red fail) until the applicant actually responds.","Decision View flags issues in color but never auto-passes or auto-fails an applicant on its own &mdash; a late payment or a low score doesn't trigger an automatic decision. The PM always makes the final call.","Decision View calculates an applicant's income-to-rent ratio automatically and lets a PM run a screening report directly from a single applicant's record, without first merging co-applicants together.","Once an application is marked Declined or Withdrawn, its details lock for editing. To correct a field like SSN or address history, the status has to be reverted to Pending or Screening first.","No criminal-background data bureau has complete U.S. coverage &mdash; real coverage runs roughly 83&ndash;85%, since state and county laws vary and many court records still aren't digitized."],
+      "realWorldNotes": [
+        "The most consequential real gotcha found in this research: an applicant can bypass Plaid income verification entirely by skipping to document upload, and the system does not validate that the uploaded file is actually a bank statement. Rentvine's product team is actively redesigning this flow to make skipping harder.",
+        "Native pet screening now triple-confirms a &ldquo;no pet&rdquo; response inside the application itself, and flags any applicant who claims a pet but never completes a pet-screening profile.",
+        "HUD/FCRA rules cap eviction look-back at 7 years and criminal-record look-back at 10 years (guilty verdicts only) &mdash; the accredited data bureau already excludes pending/unadjudicated cases automatically.",
+        "<strong>Custom Scoring</strong> is configured per application template, so different templates (student housing, Section 8, standard) can carry different scoring criteria &mdash; every submitted application is automatically tagged with the template it came from.",
+        "The template builder is also where Plaid identity/income verification and pet screening get turned on for that specific template, not as a single account-wide switch.",
+        "Credit scoring look-back periods are configurable from the past 2 years up to all available data, but that window only controls what shows on the Decision View summary tiles &mdash; the full screening report always shows the applicant's complete credit history regardless of the configured look-back.",
+        "<strong>Set late-payment thresholds higher, not lower.</strong> A single late payment can get counted across the 30-, 60-, and 90-day buckets at once, which inflates the apparent number of late payments if the threshold is set too aggressively.",
+        "Criminal records on the full report only ever show guilty verdicts from the last 10 years &mdash; non-guilty and pending charges are excluded automatically, on top of the 7-year eviction cap already noted above.",
+        "Rental history and identity verification results are configurable to fail, review, or pass &mdash; a verification request shows as a neutral grayed-out &ldquo;sent&rdquo; status (not a red fail) until the applicant actually responds.",
+        "Decision View flags issues in color but never auto-passes or auto-fails an applicant on its own &mdash; a late payment or a low score doesn't trigger an automatic decision. The PM always makes the final call.",
+        "Decision View calculates an applicant's income-to-rent ratio automatically and lets a PM run a screening report directly from a single applicant's record, without first merging co-applicants together.",
+        "Once an application is marked Declined or Withdrawn, its details lock for editing. To correct a field like SSN or address history, the status has to be reverted to Pending or Screening first.",
+        "No criminal-background data bureau has complete U.S. coverage &mdash; real coverage runs roughly 83&ndash;85%, since state and county laws vary and many court records still aren't digitized."
+      ],
       "topics": "Applicant workflow, screening, guarantors, application templates",
       "objectives": [
         "Configure application templates",
@@ -2122,7 +2162,12 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Create the financial lease, configure move-in charges, generate the signing packet, and confirm the tenant is ready to occupy.",
       "realWorldConnection": "After an applicant is approved, the team must convert the application into a lease, collect move-in amounts, and send accurate documents for signature.",
       "watchFor": "Do not confuse the financial lease with the signed legal document. The financial lease controls accounting; RentSign sends the document packet for signatures.",
-      "realWorldNotes": ["Create leases from the approved application, not manually from the property &mdash; this is the single most repeated recommendation across the entire research set, since it auto-populates tenant, co-signer, occupant, and pet data.","Hard system constraint: a property cannot carry two active leases at once. Create the new one as Pending until the old lease actually closes.","A RentSign document only inherits hot-field data (and stays linked to its record) when it's generated from inside the specific property, portfolio, or lease &mdash; never from the general RentSign section.","If a lease has more than three signers, someone has to manually confirm enough signing &ldquo;parties&rdquo; are configured, or the document will not send correctly."],
+      "realWorldNotes": [
+        "Create leases from the approved application, not manually from the property &mdash; this is the single most repeated recommendation across the entire research set, since it auto-populates tenant, co-signer, occupant, and pet data.",
+        "Hard system constraint: a property cannot carry two active leases at once. Create the new one as Pending until the old lease actually closes.",
+        "A RentSign document only inherits hot-field data (and stays linked to its record) when it's generated from inside the specific property, portfolio, or lease &mdash; never from the general RentSign section.",
+        "If a lease has more than three signers, someone has to manually confirm enough signing &ldquo;parties&rdquo; are configured, or the document will not send correctly."
+      ],
       "topics": "Financial leases, one-time charges, recurring charges, proration, RentSign templates, hot fields, signing order, move-in readiness",
       "objectives": [
         "Create a financial lease from an approved application or directly from a property/unit.",
@@ -2458,7 +2503,11 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Invite owners, residents, and vendors to the correct portals and understand which self-service tasks each portal supports.",
       "realWorldConnection": "Increase portal adoption to reduce support volume and manual payment/request handling.",
       "watchFor": "Assuming portal issues are workflow issues before checking access/invitation status.",
-      "realWorldNotes": ["The single most common portal support scenario in this research: an applicant who already has a registered email from a rental application needs to use &ldquo;sign in,&rdquo; not &ldquo;register,&rdquo; once they become an owner or tenant.","&ldquo;View Portal&rdquo; impersonation is the standard first troubleshooting step for any reported login issue &mdash; before assuming anything else is broken.","Portal invitations are tracked under Global Settings &rarr; Portal Invitations, where a toggle filters out already-registered contacts so staff can isolate exactly who still needs an invite."],
+      "realWorldNotes": [
+        "The single most common portal support scenario in this research: an applicant who already has a registered email from a rental application needs to use &ldquo;sign in,&rdquo; not &ldquo;register,&rdquo; once they become an owner or tenant.",
+        "&ldquo;View Portal&rdquo; impersonation is the standard first troubleshooting step for any reported login issue &mdash; before assuming anything else is broken.",
+        "Portal invitations are tracked under Global Settings &rarr; Portal Invitations, where a toggle filters out already-registered contacts so staff can isolate exactly who still needs an invite."
+      ],
       "topics": "Portal invitations, payments, insurance, maintenance requests",
       "objectives": [
         "Invite owners and tenants to portals",
@@ -2837,7 +2886,10 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Use contact records, templates, mass messages, and communication history to support consistent service.",
       "realWorldConnection": "Send a portfolio-wide announcement or rent reminder to the right audience.",
       "watchFor": "Sending blasts without validating recipient segment and opt-out/compliance requirements.",
-      "realWorldNotes": ["The two-tier notification system trips up nearly every real customer: Account (global) Notifications require someone to manually enter every recipient for every event type and then alert that person every time, everywhere, with no per-user filtering. Personal Notifications default to on for whoever is the record's assignee and can be filtered per user across four channels (system, email, text, Slack).","An administrator must send the first text message before an owner or tenant can text back &mdash; two-way SMS only activates after the manager initiates contact."],
+      "realWorldNotes": [
+        "The two-tier notification system trips up nearly every real customer: Account (global) Notifications require someone to manually enter every recipient for every event type and then alert that person every time, everywhere, with no per-user filtering. Personal Notifications default to on for whoever is the record's assignee and can be filtered per user across four channels (system, email, text, Slack).",
+        "An administrator must send the first text message before an owner or tenant can text back &mdash; two-way SMS only activates after the manager initiates contact."
+      ],
       "topics": "Mass messaging, texting, email templates, communication history",
       "objectives": [
         "Manage contact records",
@@ -3109,7 +3161,11 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Record incoming money correctly and understand the difference between posted receipts, deposits, and electronic settlements.",
       "realWorldConnection": "Match tenant receipts and owner contributions to a bank deposit batch.",
       "watchFor": "Assuming posted electronic payments have already settled at the bank.",
-      "realWorldNotes": ["The single most repeated rule across nearly every accounting call in this research: the &ldquo;date deposited&rdquo; entered for a receipt must exactly match the date funds actually hit the bank, or reconciliation breaks.","E-check settlements take two to three business days (occasionally longer) to clear. Trainers consistently advise against including unsettled e-check funds in an owner payout in case a payment bounces afterward.","Bulk Receipts is built specifically for lump-sum payments like Section 8/HUD disbursements &mdash; one incoming payment applied across many unpaid charges in a single step."],
+      "realWorldNotes": [
+        "The single most repeated rule across nearly every accounting call in this research: the &ldquo;date deposited&rdquo; entered for a receipt must exactly match the date funds actually hit the bank, or reconciliation breaks.",
+        "E-check settlements take two to three business days (occasionally longer) to clear. Trainers consistently advise against including unsettled e-check funds in an owner payout in case a payment bounces afterward.",
+        "Bulk Receipts is built specifically for lump-sum payments like Section 8/HUD disbursements &mdash; one incoming payment applied across many unpaid charges in a single step."
+      ],
       "topics": "Tenant receipts, owner contributions, manual deposits, electronic settlements, bulk tenant receipts, bank deposit matching",
       "objectives": [
         "Record tenant receipts, owner contributions, and other incoming funds.",
@@ -3421,7 +3477,11 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Create bills, verify invoice data, apply credits/markups/discounts, approve bills, and process vendor payments.",
       "realWorldConnection": "Manage the full payables lifecycle from invoice intake to ACH/NACHA batch.",
       "watchFor": "Approving OCR-captured invoice details without verifying amount, property, vendor, and GL code.",
-      "realWorldNotes": ["Never future-date a bill &mdash; independently warned against in at least four separate real customer calls.","Rejecting a vendor invoice is a hard delete: it removes the invoice entirely and notifies the vendor, with no way to recover it afterward.","Use Other Receipt or Other Payment instead of a manual &ldquo;adjustment&rdquo; &mdash; repeated as a strong directive in nearly every accounting-heavy call reviewed."],
+      "realWorldNotes": [
+        "Never future-date a bill &mdash; independently warned against in at least four separate real customer calls.",
+        "Rejecting a vendor invoice is a hard delete: it removes the invoice entirely and notifies the vendor, with no way to recover it afterward.",
+        "Use Other Receipt or Other Payment instead of a manual &ldquo;adjustment&rdquo; &mdash; repeated as a strong directive in nearly every accounting-heavy call reviewed."
+      ],
       "topics": "Bills, invoice OCR, Rapid Invoice, NACHA, vendor credits, bill approvals, payment batches, remote checks",
       "objectives": [
         "Create and approve vendor bills",
@@ -3864,7 +3924,11 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Create, assign, schedule, track, close, and bill work orders using owner/resident/vendor workflows.",
       "realWorldConnection": "Coordinate owner-approved maintenance without losing accounting visibility.",
       "watchFor": "Skipping owner approval thresholds before sending work to the vendor.",
-      "realWorldNotes": ["Rentvine's AI maintenance agent troubleshoots a tenant's request before a work order is created, but does not auto-assign a vendor &mdash; a limitation more than one customer specifically asked about, expecting more automation than the product currently offers.","Several customers use a third-party inspection tool (Z Inspector was named by at least four separate accounts) specifically because Rentvine's native inspection tool requires manual photo upload rather than in-app capture.","Open work orders and invoices consistently fail to migrate cleanly from PropertyWare and require manual re-entry &mdash; worth setting that expectation early with any customer coming from that platform."],
+      "realWorldNotes": [
+        "Rentvine's AI maintenance agent troubleshoots a tenant's request before a work order is created, but does not auto-assign a vendor &mdash; a limitation more than one customer specifically asked about, expecting more automation than the product currently offers.",
+        "Several customers use a third-party inspection tool (Z Inspector was named by at least four separate accounts) specifically because Rentvine's native inspection tool requires manual photo upload rather than in-app capture.",
+        "Open work orders and invoices consistently fail to migrate cleanly from PropertyWare and require manual re-entry &mdash; worth setting that expectation early with any customer coming from that platform."
+      ],
       "topics": "Estimates, approvals, projects, templates, vendor portals, scheduling, tenant portal requests, vendor invoices, settings automation",
       "objectives": [
         "Create work orders and estimates",
@@ -4290,7 +4354,10 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Post management fees, prepare owner statements, review available funds, and understand owner distributions.",
       "realWorldConnection": "At month-end, owners expect clear statements showing income, expenses, reserves, fees, and available distributions.",
       "watchFor": "Do not publish owner statements until receipts, bills, fees, reserves, and diagnostics have been reviewed. Owner statements should explain what happened financially.",
-      "realWorldNotes": ["If a base fee and an additional (suppressed) fee get posted together as one bill by mistake, don't fix it by deleting the suppressed line item afterward &mdash; the owner's already been credited, so that just creates a second problem. Filter to &ldquo;Additional&rdquo; before posting so the base fee is never included in the first place.","It's highly recommended to post management fees before running Pay Owners, so the correct amount is automatically held back rather than paid out and chased down after the fact."],
+      "realWorldNotes": [
+        "If a base fee and an additional (suppressed) fee get posted together as one bill by mistake, don't fix it by deleting the suppressed line item afterward &mdash; the owner's already been credited, so that just creates a second problem. Filter to &ldquo;Additional&rdquo; before posting so the base fee is never included in the first place.",
+        "It's highly recommended to post management fees before running Pay Owners, so the correct amount is automatically held back rather than paid out and chased down after the fact."
+      ],
       "topics": "Management fees, owner statements, distributions, statement settings, owner reporting packages, Manager Dashboard",
       "objectives": [
         "Post management fees individually or in bulk.",
@@ -4844,7 +4911,11 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Build, filter, save, schedule, and interpret reports that support operations, accounting, and owner communication.",
       "realWorldConnection": "Create recurring reporting packages and collections triage reports.",
       "watchFor": "Saving reports without confirming filters, date ranges, and grouping logic.",
-      "realWorldNotes": ["The framing point that resolves most reporting confusion: a report can only pull data from the level where it actually lives. A management-contract date stored on the Property record will never show up on a Portfolio- or Lease-level report.","There's no native side-by-side dashboard for an owner with multiple portfolios &mdash; the standard workaround is generating a Property Comparison report and attaching it to the owner statement.","One customer was specifically advised against emailing sensitive reports directly to owners from the report function."],
+      "realWorldNotes": [
+        "The framing point that resolves most reporting confusion: a report can only pull data from the level where it actually lives. A management-contract date stored on the Property record will never show up on a Portfolio- or Lease-level report.",
+        "There's no native side-by-side dashboard for an owner with multiple portfolios &mdash; the standard workaround is generating a Property Comparison report and attaching it to the owner statement.",
+        "One customer was specifically advised against emailing sensitive reports directly to owners from the report function."
+      ],
       "topics": "Grouping, filters, scheduled reports, Aged Receivables",
       "objectives": [
         "Build and save custom reports",
@@ -5124,7 +5195,10 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Use diagnostics as a health check to identify and correct negative balances, reserve shortages, escrow mismatches, stale reconciliations, and other accounting issues.",
       "realWorldConnection": "A property manager should not wait until the owner asks a question to discover accounting problems. Diagnostics creates an operational cleanup list.",
       "watchFor": "Do not treat diagnostics as informational only. Each diagnostic is a prompt to research, explain, and resolve the root cause or document why it is expected.",
-      "realWorldNotes": ["If a management company uses a single combined bank account for both rent and deposits, the Escrow Mismatch diagnostic will always show a mismatch &mdash; the correct move is toggling that diagnostic off rather than chasing a false positive every week.","Reading the sign on a Suppressed Fee Balance Mismatch: positive means money is owed to the management company (bill and collect it); negative means money needs to be returned (a refund or credit). Pick exactly one remediation method &mdash; combining both re-breaks the balance."],
+      "realWorldNotes": [
+        "If a management company uses a single combined bank account for both rent and deposits, the Escrow Mismatch diagnostic will always show a mismatch &mdash; the correct move is toggling that diagnostic off rather than chasing a false positive every week.",
+        "Reading the sign on a Suppressed Fee Balance Mismatch: positive means money is owed to the management company (bill and collect it); negative means money needs to be returned (a refund or credit). Pick exactly one remediation method &mdash; combining both re-breaks the balance."
+      ],
       "topics": "Accounting diagnostics, negative bank accounts, reserve not met, escrow mismatch, prepayment mismatch, stale reconciliations, vendor credits, cleanup workflow",
       "objectives": [
         "Use the Diagnostics tab as a system health check.",
@@ -5455,7 +5529,10 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Complete a move-out, calculate deposit deductions/refunds, and confirm the final tenant ledger is accurate.",
       "realWorldConnection": "Close out a tenancy and prepare the property/tenant for the next lifecycle event.",
       "watchFor": "Mixing deposit transfers and refunds or forgetting to document deductions.",
-      "realWorldNotes": ["The four-part Move-Out workflow (Move-Out Details, Tenant Information, Accounting/deposit calculation, Finalize) ends with printing the Move-Out Statement and processing the refund check &mdash; but the actual bank transfer still has to happen manually, or the escrow account falls out of sync with the security deposit ledger.","Move-Out and Lease Renewal training is consistently the <em>last</em> module covered in a real customer's onboarding sequence &mdash; worth not shortchanging here just because live training often does."],
+      "realWorldNotes": [
+        "The four-part Move-Out workflow (Move-Out Details, Tenant Information, Accounting/deposit calculation, Finalize) ends with printing the Move-Out Statement and processing the refund check &mdash; but the actual bank transfer still has to happen manually, or the escrow account falls out of sync with the security deposit ledger.",
+        "Move-Out and Lease Renewal training is consistently the <em>last</em> module covered in a real customer's onboarding sequence &mdash; worth not shortchanging here just because live training often does."
+      ],
       "topics": "Move-out flow, forwarding information, final accounting, security deposit refund, deductions, tenant ledger closeout",
       "objectives": [
         "Execute the four-step move-out workflow in order.",
@@ -5713,7 +5790,11 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Renew an existing lease when the resident is staying, or apply one lump-sum tenant payment across multiple lease obligations.",
       "realWorldConnection": "A lease does not always end with a move-out. Many residents renew, and some rent payments arrive as one combined payment from a housing authority or other payer.",
       "watchFor": "Do not confuse renewing a lease with moving a tenant out. Also, use bulk receipts only when one payment genuinely applies across multiple lease-level obligations.",
-      "realWorldNotes": ["The renewal fee pulls directly from the property's management-fee settings and is charged to the owner the moment the renewal is entered &mdash; one customer specifically praised this for eliminating a manual, paperwork-heavy process that used to create real accounting backlogs.","A real, repeatable failure mode: if a renewal-fee bill gets created before the renewal itself is finalized, the renewal can show as &ldquo;signed&rdquo; while never actually completing. Fix: void the conflicting bill (or set it to $0), then finalize the renewal through the lease record.","The system's automatic lease end-date fill defaults to the first day of a month rather than the last day of the previous month, which affects the &ldquo;next eligible increase date&rdquo; calculation downstream."],
+      "realWorldNotes": [
+        "The renewal fee pulls directly from the property's management-fee settings and is charged to the owner the moment the renewal is entered &mdash; one customer specifically praised this for eliminating a manual, paperwork-heavy process that used to create real accounting backlogs.",
+        "A real, repeatable failure mode: if a renewal-fee bill gets created before the renewal itself is finalized, the renewal can show as &ldquo;signed&rdquo; while never actually completing. Fix: void the conflicting bill (or set it to $0), then finalize the renewal through the lease record.",
+        "The system's automatic lease end-date fill defaults to the first day of a month rather than the last day of the previous month, which affects the &ldquo;next eligible increase date&rdquo; calculation downstream."
+      ],
       "topics": "Renewal eligibility, renewal offers, tenant portal acceptance, RentSign renewal documents, recurring charge updates, bulk tenant receipts",
       "objectives": [
         "Explain how renewal eligibility days place leases on the renewal dashboard.",
@@ -5976,7 +6057,10 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Explain how trust accounting principles, GL coding, payment allocation, prepaid rent, and reconciliation keep client funds accurate.",
       "realWorldConnection": "Trust accounting is the control layer under the operational workflows. It explains why money must be classified, separated, reconciled, and reviewed before statements or payouts are trusted.",
       "watchFor": "Do not treat accounting settings casually. Changes to accounts, allocation order, or fee definitions can affect ledgers, reports, owner statements, and trust compliance.",
-      "realWorldNotes": ["Chart of Accounts account types are permanent once created and cannot be changed later &mdash; a real first-time-setup gotcha worth getting right before any transactions post.","Two Buildium-migration customers in this research both ran into undocumented credits or adjustments carried over from the old system that caused real owner-statement discrepancies (one as large as <strong>$5,000</strong>) &mdash; worth checking for specifically after any migration."],
+      "realWorldNotes": [
+        "Chart of Accounts account types are permanent once created and cannot be changed later &mdash; a real first-time-setup gotcha worth getting right before any transactions post.",
+        "Two Buildium-migration customers in this research both ran into undocumented credits or adjustments carried over from the old system that caused real owner-statement discrepancies (one as large as <strong>$5,000</strong>) &mdash; worth checking for specifically after any migration."
+      ],
       "topics": "Trust accounting, Chart of Accounts, GL codes, payment allocation, prepaid rent, manager ledger, triple-tie reconciliation, security deposits, liabilities",
       "objectives": [
         "Explain separation of client funds, no co-mingling, accurate records, and timely disbursements.",
@@ -6284,7 +6368,11 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Configure the administrative foundation for secure users, integrations, API access, migration support, global settings, and go-live readiness.",
       "realWorldConnection": "Before or during go-live, teams need clean settings, safe user permissions, working payment applications, and clear integration boundaries.",
       "watchFor": "Do not give broad admin access when a narrow role will work. Do not assume integrations sync every field; verify direction, scope, exceptions, and ownership.",
-      "realWorldNotes": ["&ldquo;Pods&rdquo; (portfolio groups that restrict staff access) are explicitly a large-company feature (1,000+ units) &mdash; smaller customers shouldn't feel they're missing something by not using them.","Role-based access, including a view-only role, applies equally to human users and API keys.","Customers migrating in this research came from AppFolio (including one after 24 years on the platform), Buildium, PropertyWare, and Rent Manager &mdash; expect comparisons to a prior system's terminology and workflow, not a blank-slate learner."],
+      "realWorldNotes": [
+        "&ldquo;Pods&rdquo; (portfolio groups that restrict staff access) are explicitly a large-company feature (1,000+ units) &mdash; smaller customers shouldn't feel they're missing something by not using them.",
+        "Role-based access, including a view-only role, applies equally to human users and API keys.",
+        "Customers migrating in this research came from AppFolio (including one after 24 years on the platform), Buildium, PropertyWare, and Rent Manager &mdash; expect comparisons to a prior system's terminology and workflow, not a blank-slate learner."
+      ],
       "topics": "QuickBooks export, Property Meld, open API, API keys, user roles, least privilege, global/account settings, bank/Forte readiness, migration, go-live checklist",
       "objectives": [
         "Explain what QuickBooks export is used for and what financial information it supports.",
@@ -6620,7 +6708,9 @@ window.RVU_COURSE = {
       "buildForwardOutcome": "Demonstrate an end-to-end property management workflow from orientation concepts through owner/property setup, leasing, operations, accounting, reporting, and transition steps.",
       "realWorldConnection": "Prove readiness to support or perform a complete Rentvine operating lifecycle.",
       "watchFor": "Completing steps with program reviewer assistance or in production data instead of a training sandbox.",
-      "realWorldNotes": ["Before certifying, double-check the habits that trip up real customers most often: never future-date a bill, never change a management fee percentage mid-cycle, always match &ldquo;date deposited&rdquo; to the actual bank date, never combine a showing-provider integration with individually-checked syndication boxes, and remember the multi-unit toggle can't be changed after a property is created."],
+      "realWorldNotes": [
+        "Before certifying, double-check the habits that trip up real customers most often: never future-date a bill, never change a management fee percentage mid-cycle, always match &ldquo;date deposited&rdquo; to the actual bank date, never combine a showing-provider integration with individually-checked syndication boxes, and remember the multi-unit toggle can't be changed after a property is created."
+      ],
       "topics": "End-to-end practical exam across all modules",
       "objectives": [
         "Demonstrate end-to-end competency across the full system",
@@ -6893,6 +6983,516 @@ window.RVU_COURSE = {
         "caseFile": "Smith Family Rentals LLC / 123 Maple Street / Jordan Lee / Reliable Plumbing Co.",
         "instruction": "Continue the practice case file in this module: apply the capstone certification workflow to Smith Family Rentals LLC or 123 Maple Street, using Jordan Lee and Reliable Plumbing Co. when tenant/vendor context is needed."
       }
+    },
+    {
+      "week": 20,
+      "bonus": true,
+      "title": "Financial Onboarding: The Customer-Facing Process",
+      "fullTitle": "Week 20 (Bonus): Financial Onboarding: The Customer-Facing Process",
+      "phase": "Bonus: Financial Onboarding Specialist",
+      "processStage": "20. Understand what a new customer experiences during financial onboarding",
+      "checkpoint": "Financial Onboarding Specialist I · Customer process",
+      "estimatedTime": "2-3 learning hours",
+      "prerequisite": "Week 17 (Trust Accounting, Chart of Accounts & Reconciliation) completed, or equivalent familiarity with ledgers, GL accounts, and reconciliation.",
+      "evidence": "Timeline worksheet and disclosure checklist review.",
+      "buildForwardOutcome": "Explain the four customer-facing steps of Rentvine's financial onboarding process, why new trust bank accounts are recommended, and what the financial blackout period protects against.",
+      "realWorldConnection": "Every new Rentvine customer goes through this exact sequence before go-live. Support, sales, and CX all field questions about it -- knowing the real steps (not a guess) keeps a customer confident during a stressful software switch.",
+      "watchFor": "Do not tell a customer to fund or start using their new trust bank accounts before the onboarding team gives the go-ahead -- early activity in the new accounts breaks the clean-slate reconciliation the whole process depends on.",
+      "realWorldNotes": [
+        "This is a bonus, continuing-education module built from Rentvine's internal Financial Onboarding process documents and the Sep 2, 2026 “Deep Dive Financial Onboarding” training led by Jimmy Roling.",
+        "Rentvine recommends new trust bank accounts over carrying old ones forward specifically because NSFs and chargebacks can hit an old account up to 90 days later, and those are very difficult to trace once the switch is complete.",
+        "The customer signs off on the compiled financial balances before anything is imported -- Rentvine's onboarding disclosures are explicit that the company is not responsible for accounting errors that existed in the old software."
+      ],
+      "topics": "Financial onboarding timeline, new trust bank accounts, three-way reconciliation, financial blackout period, cutoff date, customer sign-off",
+      "objectives": [
+        "Sequence the four steps of Rentvine's financial onboarding process: open new bank accounts, reconcile existing accounts, financial blackout period, and financial balance forward.",
+        "Explain why Rentvine recommends new trust bank accounts instead of carrying old ones forward.",
+        "Describe the purpose of the financial blackout period and why it starts three days before the cutoff date.",
+        "Explain what a customer is asked to confirm before their financial balances are imported into Rentvine."
+      ],
+      "resources": [
+        {
+          "id": "w20-res-1",
+          "title": "Rentvine Financial Onboarding Process",
+          "type": "Internal process doc",
+          "url": "https://drive.google.com/file/d/1YV3QFfwPggpmTEPAymF_Y5G6PYOn63HX/view",
+          "summary": "The official 4-step customer-facing onboarding timeline: new bank accounts, reconciliation, blackout period, and balance forward.",
+          "videoCode": ""
+        },
+        {
+          "id": "w20-res-2",
+          "title": "New Trust Bank Account Recommendations",
+          "type": "Internal process doc",
+          "url": "https://docs.google.com/document/d/1BdAW2guBQW7HbwizHa8T5hVogt0pTwW-pqC8z7tuc_E/view",
+          "summary": "Why Rentvine recommends opening new trust bank accounts rather than carrying old ones forward, including the NSF/chargeback risk window.",
+          "videoCode": ""
+        },
+        {
+          "id": "w20-res-3",
+          "title": "Financial Balances List of Exemptions",
+          "type": "Internal process doc",
+          "url": "https://docs.google.com/document/d/16o9fmnCqAkJo9CyjFwvxBRAZyNppbjQimDekshrF8d8/view",
+          "summary": "The disclosures and sign-off language a customer confirms before balances are imported.",
+          "videoCode": ""
+        },
+        {
+          "id": "w20-res-4",
+          "title": "Department Intro: Financial Onboarding (recording)",
+          "type": "Internal recording",
+          "url": "https://drive.google.com/file/d/1GlzIZo2_gChhWNLxUg00YWhD_loBclf_/view",
+          "summary": "Dondre Brown's Aug 11, 2026 department overview covering the same purpose, migrated-vs-not-migrated balances, and timeline.",
+          "videoCode": ""
+        }
+      ],
+      "labSteps": [
+        "Using the Financial Onboarding Process resource, write out the 4 steps in order with their timeline (start of onboarding / throughout onboarding / 3 days prior to cutoff / cutoff date).",
+        "Explain in your own words why opening new trust bank accounts avoids cross-reconciling between two systems.",
+        "List the categories of balances the Rentvine finance team pulls on the cutoff date (owner/property balances, security deposits, tenant prepayments, unpaid lease charges, unpaid bills, owner/vendor 1099 balances).",
+        "Draft a short answer you'd give a customer who asks, \"Why can't I just keep using my old bank account?\""
+      ],
+      "successCriteria": [
+        "Learner can list all 4 steps of the financial onboarding process in the correct order.",
+        "Learner can explain the reasoning behind new trust bank accounts in their own words.",
+        "Learner can describe the financial blackout period and why it exists.",
+        "Learner understands that the customer must sign off on compiled balances before import."
+      ],
+      "questions": [
+        {
+          "question": "Q1. What is the first step in Rentvine's financial onboarding process?",
+          "options": [
+            "A. Open new trust bank accounts",
+            "B. Balance forward on the cutoff date",
+            "C. Financial blackout period",
+            "D. Cancel the old software subscription"
+          ],
+          "correctOptionIndex": 0,
+          "correctAnswer": "A. Open new trust bank accounts",
+          "explanation": "At the start of onboarding, the customer opens new trust bank accounts that stay unfunded until the team gives the go-ahead.",
+          "points": 1,
+          "remediationTitle": "Rentvine Financial Onboarding Process",
+          "remediationUrl": "https://drive.google.com/file/d/1YV3QFfwPggpmTEPAymF_Y5G6PYOn63HX/view",
+          "id": "w20-q01"
+        },
+        {
+          "question": "Q2. When does the Financial Blackout Period begin?",
+          "options": [
+            "A. On the cutoff date itself",
+            "B. Three days prior to the cutoff date",
+            "C. At the very start of onboarding",
+            "D. One week after go-live"
+          ],
+          "correctOptionIndex": 1,
+          "correctAnswer": "B. Three days prior to the cutoff date",
+          "explanation": "Shutting off incoming electronic payments three days early helps ensure most transactions have settled by the cutoff date.",
+          "points": 1,
+          "remediationTitle": "Rentvine Financial Onboarding Process",
+          "remediationUrl": "https://drive.google.com/file/d/1YV3QFfwPggpmTEPAymF_Y5G6PYOn63HX/view",
+          "id": "w20-q02"
+        },
+        {
+          "question": "Q3. Why does Rentvine recommend opening new trust bank accounts instead of carrying old ones forward?",
+          "options": [
+            "A. It's required by law in every state",
+            "B. Old accounts can be closed for free",
+            "C. It avoids cross-reconciling two systems and keeps old NSFs/chargebacks out of the new account",
+            "D. New accounts earn a higher interest rate"
+          ],
+          "correctOptionIndex": 2,
+          "correctAnswer": "C. It avoids cross-reconciling two systems and keeps old NSFs/chargebacks out of the new account",
+          "explanation": "NSFs or chargebacks can hit a trust account up to 90 days later; leaving old accounts behind keeps those old problems from following the customer into Rentvine.",
+          "points": 1,
+          "remediationTitle": "New Trust Bank Account Recommendations",
+          "remediationUrl": "https://docs.google.com/document/d/1BdAW2guBQW7HbwizHa8T5hVogt0pTwW-pqC8z7tuc_E/view",
+          "id": "w20-q03"
+        },
+        {
+          "question": "Q4. On the cutoff date, which of the following does the Rentvine finance team pull from the customer's prior software?",
+          "options": [
+            "A. Only the operating bank balance",
+            "B. Owner/property balances, security deposits, tenant prepayments, unpaid lease charges, unpaid bills, and 1099 balances",
+            "C. Marketing listing photos",
+            "D. Vendor W-9 forms only"
+          ],
+          "correctOptionIndex": 1,
+          "correctAnswer": "B. Owner/property balances, security deposits, tenant prepayments, unpaid lease charges, unpaid bills, and 1099 balances",
+          "explanation": "The Financial Balance Forward step pulls the full set of balances needed to start Rentvine accounting accurately.",
+          "points": 1,
+          "remediationTitle": "Rentvine Financial Onboarding Process",
+          "remediationUrl": "https://drive.google.com/file/d/1YV3QFfwPggpmTEPAymF_Y5G6PYOn63HX/view",
+          "id": "w20-q04"
+        },
+        {
+          "question": "Q5. New trust bank accounts should be funded and used immediately once they are opened.",
+          "options": [
+            "A. True",
+            "B. False"
+          ],
+          "correctOptionIndex": 1,
+          "correctAnswer": "B. False",
+          "explanation": "New accounts stay unfunded and unused until the onboarding team gives the go-ahead at the end of onboarding -- funding early breaks the clean-slate reconciliation.",
+          "points": 1,
+          "remediationTitle": "Rentvine Financial Onboarding Process",
+          "remediationUrl": "https://drive.google.com/file/d/1YV3QFfwPggpmTEPAymF_Y5G6PYOn63HX/view",
+          "id": "w20-q05"
+        },
+        {
+          "question": "Q6. A customer must sign off on their compiled financial balances before those balances are imported into Rentvine.",
+          "options": [
+            "A. True",
+            "B. False"
+          ],
+          "correctOptionIndex": 0,
+          "correctAnswer": "A. True",
+          "explanation": "Sign-off confirms the customer reviewed and agrees the balances are correct, and clarifies that Rentvine isn't responsible for errors baked into the prior software.",
+          "points": 1,
+          "remediationTitle": "Financial Balances List of Exemptions",
+          "remediationUrl": "https://docs.google.com/document/d/16o9fmnCqAkJo9CyjFwvxBRAZyNppbjQimDekshrF8d8/view",
+          "id": "w20-q06"
+        },
+        {
+          "question": "Q7. Throughout onboarding, what should the customer be doing with their existing bank accounts?",
+          "options": [
+            "A. Closing them immediately",
+            "B. Three-way reconciling them through the month prior to the cutoff date",
+            "C. Nothing -- Rentvine handles it entirely",
+            "D. Merging them into one account"
+          ],
+          "correctOptionIndex": 1,
+          "correctAnswer": "B. Three-way reconciling them through the month prior to the cutoff date",
+          "explanation": "Clean, reconciled records going into the cutoff date make the balance forward far more accurate.",
+          "points": 1,
+          "remediationTitle": "Rentvine Financial Onboarding Process",
+          "remediationUrl": "https://drive.google.com/file/d/1YV3QFfwPggpmTEPAymF_Y5G6PYOn63HX/view",
+          "id": "w20-q07"
+        }
+      ],
+      "videoUploadUrl": "upload-lab-video.html?week=20",
+      "videoUploadRequired": false,
+      "labVideoRequirement": "No walkthrough video is required for this bonus week. Attach your timeline worksheet or written answers as a supporting document below.",
+      "guidedExample": {
+        "title": "Guided walkthrough: Why the sequence matters",
+        "scenario": "A prospective customer asks why they can't just “flip a switch” and start using Rentvine the same day they sign up.",
+        "paragraphs": [
+          "Financial onboarding exists because accounting is the backbone of the product experience. If a customer's starting balances are wrong, every owner statement, every reconciliation, and every report is wrong from day one -- so Rentvine treats this as a structured, sequenced process rather than a flip-a-switch migration.",
+          "Step one is opening new trust bank accounts. These can stay with the customer's current bank, but they start as a blank slate -- no funding, no transactions -- until the onboarding team says it's time.",
+          "Step two runs throughout onboarding: the customer keeps their existing accounts three-way reconciled through the month before the cutoff date. Clean historical records make everything downstream easier and faster.",
+          "Step three is the financial blackout period, starting three days before the cutoff date. Incoming electronic payments get shut off in the old software so that, by the cutoff date, nearly everything has settled and the balance snapshot is accurate.",
+          "Step four is the balance forward itself. On (or shortly after) the cutoff date, the Rentvine finance team pulls the financial reports from the old software, validates them, and tells the customer exactly how much to transfer into the new trust accounts. Once that's confirmed, the onboarding specialist enters the balances into Rentvine."
+        ],
+        "memoryHook": "New accounts → reconcile through cutoff → blackout 3 days before → balances forward on cutoff day.",
+        "summaryQuestions": [
+          "Why can't a customer start using their new trust bank accounts right away?",
+          "What does the financial blackout period actually prevent?",
+          "What has to happen before the Rentvine finance team will import a customer's balances?"
+        ]
+      },
+      "practiceCompanyStep": {
+        "company": "Green Valley Property Management",
+        "caseFile": "Smith Family Rentals LLC / 123 Maple Street / Jordan Lee / Reliable Plumbing Co.",
+        "instruction": "Imagine Green Valley Property Management is migrating Smith Family Rentals LLC onto Rentvine. Walk through the 4-step financial onboarding timeline as it would apply to this practice portfolio, and note what would need to be reconciled before the cutoff date."
+      },
+      "productWalkthrough": [
+        {
+          "title": "Product Walkthrough: The Financial Onboarding Timeline",
+          "intro": "This is the exact 4-step timeline Rentvine gives every new customer during onboarding, reproduced from the internal Financial Onboarding Process document.",
+          "steps": [
+            {
+              "title": "The 4-step customer timeline",
+              "body": "<table style=\"width:100%;border-collapse:collapse\"><thead><tr><th style=\"text-align:left;border-bottom:1px solid #ccc;padding:6px\">Step</th><th style=\"text-align:left;border-bottom:1px solid #ccc;padding:6px\">Timeline</th><th style=\"text-align:left;border-bottom:1px solid #ccc;padding:6px\">Details</th></tr></thead><tbody><tr><td style=\"padding:6px;vertical-align:top\"><b>Open New Bank Accounts</b></td><td style=\"padding:6px;vertical-align:top\">Start of onboarding</td><td style=\"padding:6px;vertical-align:top\">Open new trust bank accounts to use in Rentvine. They can be with the current bank but should be a blank slate -- do not fund or record transactions until instructed.</td></tr><tr><td style=\"padding:6px;vertical-align:top\"><b>Reconcile Existing Bank Accounts</b></td><td style=\"padding:6px;vertical-align:top\">Throughout onboarding</td><td style=\"padding:6px;vertical-align:top\">Make sure all bank accounts in the existing software have been three-way reconciled through the month prior to the cutoff date. A mid-month reconciliation through the cutoff date helps too.</td></tr><tr><td style=\"padding:6px;vertical-align:top\"><b>Financial Blackout Period</b></td><td style=\"padding:6px;vertical-align:top\">3 days prior to cutoff date</td><td style=\"padding:6px;vertical-align:top\">Shut down incoming electronic payments (including cash-pay slips) so most transactions have settled by the cutoff date.</td></tr><tr><td style=\"padding:6px;vertical-align:top\"><b>Financial Balance Forward</b></td><td style=\"padding:6px;vertical-align:top\">Cutoff date</td><td style=\"padding:6px;vertical-align:top\">The Rentvine finance team pulls and validates the financial balance reports, tells the customer how much to transfer into the new accounts, and enters the balances into Rentvine.</td></tr></tbody></table>",
+              "tip": "This table is reproduced directly from Rentvine's internal Financial Onboarding Process document -- it's the same one Rentvine sends to real customers."
+            }
+          ],
+          "sourceNote": "Sourced from Rentvine's internal “Rentvine Financial Onboarding Process” document and the Sep 2, 2026 Deep Dive Financial Onboarding training led by Jimmy Roling.",
+          "demo": []
+        }
+      ]
+    },
+    {
+      "week": 21,
+      "bonus": true,
+      "title": "Deep Dive: Balance Forward Workbook, Data Migration & Reconciliation",
+      "fullTitle": "Week 21 (Bonus): Deep Dive: Balance Forward Workbook, Data Migration & Reconciliation",
+      "phase": "Bonus: Financial Onboarding Specialist",
+      "processStage": "21. Understand how the Financial Onboarding team actually migrates and reconciles balances",
+      "checkpoint": "Financial Onboarding Specialist II · Workbook & migration deep dive",
+      "estimatedTime": "3-4 learning hours",
+      "prerequisite": "Week 20 (Financial Onboarding: The Customer-Facing Process) completed.",
+      "evidence": "Balance Forward Workbook walkthrough notes and a written explanation of the reconciliation step.",
+      "buildForwardOutcome": "Explain the Balance Forward Workbook methodology, what does and doesn't migrate, how data gets imported, and how beginning balances get reconciled.",
+      "realWorldConnection": "This is the internal mechanics behind Week 20's customer-facing timeline -- the actual workbook, import tools, and reconciliation steps the Financial Onboarding team runs on every single migration.",
+      "watchFor": "Address-format mismatches (e.g. “Road” vs “RD”) between the import file and Rentvine records are the most common reason an automated import fails -- these need manual remediation, not a retry.",
+      "realWorldNotes": [
+        "Built from the Sep 2, 2026 “Deep Dive Financial Onboarding” training (Jimmy Roling) and the Aug 11, 2026 “Department Intro: Financial Onboarding” session (Dondre Brown).",
+        "A real sample workbook reviewed in the Sep 2 training covered a client who migrated in July with roughly 1,800 properties -- the same workbook methodology scales from a handful of doors to portfolios that size.",
+        "Onboarding completion typically takes 1 to 7 business days, depending on account size, the quality of the prior records, and how quickly the client responds."
+      ],
+      "topics": "Balance Forward Workbook, cutoff date, data migration, import tools vs. manual journal entries, 1099 migration, core data dependency, beginning balance reconciliation",
+      "objectives": [
+        "Explain how Balance Forward Workbook templates differ for existing vs. new bank accounts.",
+        "List what migrates and affects bank balances vs. what migrates without touching bank balances vs. what does not migrate at all.",
+        "Describe the two data-entry paths: automated import tools vs. manual journal entries, and the most common import failure point.",
+        "Explain why core data (portfolios, owners, properties, tenants, vendors) must exist before any financial data can be imported.",
+        "Describe how beginning balances get reconciled against the client's bank statement at the cutoff date."
+      ],
+      "resources": [
+        {
+          "id": "w21-res-1",
+          "title": "How To Balance Forward An Owner Portfolio Ledger",
+          "type": "Official KB",
+          "url": "https://help.rentvine.com/en/articles/16602022-how-to-balance-forward-an-owner-portfolio-ledger",
+          "summary": "Official steps for balance-forwarding a portfolio ledger via Journal Entry or Record Owner Payment, including the required deposit step.",
+          "videoCode": ""
+        },
+        {
+          "id": "w21-res-2",
+          "title": "How to Enter the Current Balance of Tenant/Lease Ledger as a Balance Forward",
+          "type": "Official KB",
+          "url": "https://help.rentvine.com/en/articles/16603250-how-to-enter-the-current-balance-of-tenant-lease-ledger-from-a-prior-software-as-a-balance-forward-into-rentvine",
+          "summary": "Official steps for balance-forwarding a tenant/lease ledger, covering prepayments and security deposits.",
+          "videoCode": ""
+        },
+        {
+          "id": "w21-res-3",
+          "title": "1099 Reporting",
+          "type": "Official KB",
+          "url": "https://help.rentvine.com/en/?q=1099",
+          "summary": "How 1099 income migrates and reports inside Rentvine once onboarding is complete.",
+          "videoCode": ""
+        },
+        {
+          "id": "w21-res-4",
+          "title": "Deep Dive Financial Onboarding — Notes by Gemini (Sep 2, 2026)",
+          "type": "Internal training notes",
+          "url": "https://docs.google.com/document/d/1sGnf8KphB5IO8Mep9L7ZYtUPNmVcKPRxqi2KJnkV8_M/view",
+          "summary": "Full notes from Jimmy Roling's Deep Dive Financial Onboarding training: workbook methodology, migration, reconciliation, and a live ~1,800-property workbook example.",
+          "videoCode": ""
+        },
+        {
+          "id": "w21-res-5",
+          "title": "Deep Dive Financial Onboarding — recording",
+          "type": "Internal recording",
+          "url": "https://drive.google.com/file/d/1crREAipKEY0ZJONIhskfFk5KmvbFvf76/view",
+          "summary": "Sep 2, 2026 recording of the Deep Dive training this module is based on.",
+          "videoCode": ""
+        },
+        {
+          "id": "w21-res-6",
+          "title": "Department Intro: Financial Onboarding (recording)",
+          "type": "Internal recording",
+          "url": "https://drive.google.com/file/d/1GlzIZo2_gChhWNLxUg00YWhD_loBclf_/view",
+          "summary": "Aug 11, 2026 companion recording covering the same migration mechanics from a department-overview angle.",
+          "videoCode": ""
+        }
+      ],
+      "labSteps": [
+        "Explain the difference between a Balance Forward Workbook template for a client keeping existing bank accounts vs. one opening new accounts.",
+        "Sort these into the correct migration bucket: security deposits, tenant prepayments, unpaid tenant charges, unpaid vendor bills, vendor credits, owner/vendor 1099 income, and 3 years of historical transaction detail.",
+        "Using the official Balance Forward KB articles, write out the fields required to balance-forward a portfolio ledger via Journal Entry.",
+        "Explain why an address formatted as “123 Main Road” in an import file might fail to match a Rentvine record listed as “123 Main RD”, and how that gets resolved.",
+        "Describe how the Rentvine finance team reconciles a beginning balance at the cutoff date so it matches the client's real bank balance."
+      ],
+      "successCriteria": [
+        "Learner can distinguish the three migration buckets: affects bank balance, does not affect bank balance, and does not migrate at all.",
+        "Learner can explain the two-step receipt-then-deposit mechanic for manually entered balance forwards.",
+        "Learner can explain the address-matching failure mode for automated imports.",
+        "Learner can explain why core data must exist before financial data imports.",
+        "Learner can describe how a beginning balance gets reconciled at the cutoff date."
+      ],
+      "questions": [
+        {
+          "question": "Q1. What determines which Balance Forward Workbook template is used for a client?",
+          "options": [
+            "A. The number of units under management",
+            "B. Whether the client is using existing or new bank accounts",
+            "C. The client's state of operation",
+            "D. Whether the client uses QuickBooks"
+          ],
+          "correctOptionIndex": 1,
+          "correctAnswer": "B. Whether the client is using existing or new bank accounts",
+          "explanation": "The template accounts for uncleared transactions differently depending on whether old accounts are being kept or fresh ones opened.",
+          "points": 1,
+          "remediationTitle": "Deep Dive Financial Onboarding — Notes by Gemini",
+          "remediationUrl": "https://docs.google.com/document/d/1sGnf8KphB5IO8Mep9L7ZYtUPNmVcKPRxqi2KJnkV8_M/view",
+          "id": "w21-q01"
+        },
+        {
+          "question": "Q2. Which of the following migrates AND affects the client's starting bank balance?",
+          "options": [
+            "A. Unpaid vendor bills",
+            "B. Security deposits and tenant prepayments",
+            "C. Owner/vendor 1099 income only",
+            "D. Three years of transaction history"
+          ],
+          "correctOptionIndex": 1,
+          "correctAnswer": "B. Security deposits and tenant prepayments",
+          "explanation": "Security deposits, prepayments, and uncleared items are the balances that directly affect the migrated bank balance.",
+          "points": 1,
+          "remediationTitle": "Deep Dive Financial Onboarding — Notes by Gemini",
+          "remediationUrl": "https://docs.google.com/document/d/1sGnf8KphB5IO8Mep9L7ZYtUPNmVcKPRxqi2KJnkV8_M/view",
+          "id": "w21-q02"
+        },
+        {
+          "question": "Q3. Which of the following migrates into Rentvine WITHOUT affecting the starting bank balance?",
+          "options": [
+            "A. Unpaid tenant charges, unpaid vendor bills, and vendor credits",
+            "B. The bank's current cash balance",
+            "C. Uncleared outstanding checks",
+            "D. Nothing -- everything affects the bank balance"
+          ],
+          "correctOptionIndex": 0,
+          "correctAnswer": "A. Unpaid tenant charges, unpaid vendor bills, and vendor credits",
+          "explanation": "These are tracked in the workbook for future processing but don't move the client's starting bank balance.",
+          "points": 1,
+          "remediationTitle": "Deep Dive Financial Onboarding — Notes by Gemini",
+          "remediationUrl": "https://docs.google.com/document/d/1sGnf8KphB5IO8Mep9L7ZYtUPNmVcKPRxqi2KJnkV8_M/view",
+          "id": "w21-q03"
+        },
+        {
+          "question": "Q4. What historical data does the Financial Onboarding team NOT migrate into Rentvine?",
+          "options": [
+            "A. Security deposit balances",
+            "B. Multi-year individual payment/charge history",
+            "C. Unpaid bills",
+            "D. 1099 income amounts"
+          ],
+          "correctOptionIndex": 1,
+          "correctAnswer": "B. Multi-year individual payment/charge history",
+          "explanation": "Detailed historical ledger data (e.g. 3 years of individual transactions) isn't migrated -- customers can store it as an external file attachment in Rentvine instead.",
+          "points": 1,
+          "remediationTitle": "Deep Dive Financial Onboarding — Notes by Gemini",
+          "remediationUrl": "https://docs.google.com/document/d/1sGnf8KphB5IO8Mep9L7ZYtUPNmVcKPRxqi2KJnkV8_M/view",
+          "id": "w21-q04"
+        },
+        {
+          "question": "Q5. What is the most common reason an automated data import fails to match a Rentvine record?",
+          "options": [
+            "A. The file is the wrong color",
+            "B. Address-format mismatches, like “Road” vs. “RD”",
+            "C. The bank account number is too long",
+            "D. The client's name has a middle initial"
+          ],
+          "correctOptionIndex": 1,
+          "correctAnswer": "B. Address-format mismatches, like “Road” vs. “RD”",
+          "explanation": "Import tools require exact matches; formatting differences between the CSV and Rentvine's records are the top source of manual remediation.",
+          "points": 1,
+          "remediationTitle": "Deep Dive Financial Onboarding — Notes by Gemini",
+          "remediationUrl": "https://docs.google.com/document/d/1sGnf8KphB5IO8Mep9L7ZYtUPNmVcKPRxqi2KJnkV8_M/view",
+          "id": "w21-q05"
+        },
+        {
+          "question": "Q6. What has to exist in Rentvine BEFORE any financial data can be imported?",
+          "options": [
+            "A. A signed lease for every unit",
+            "B. Core data -- portfolios, owners, properties, tenants, and vendors",
+            "C. A completed capstone certification",
+            "D. An active Rentvine mobile app account"
+          ],
+          "correctOptionIndex": 1,
+          "correctAnswer": "B. Core data -- portfolios, owners, properties, tenants, and vendors",
+          "explanation": "Core data creates the ledgers that financial balances get mapped to -- without it, there's nowhere for the workbook balances to go.",
+          "points": 1,
+          "remediationTitle": "Deep Dive Financial Onboarding — Notes by Gemini",
+          "remediationUrl": "https://docs.google.com/document/d/1sGnf8KphB5IO8Mep9L7ZYtUPNmVcKPRxqi2KJnkV8_M/view",
+          "id": "w21-q06"
+        },
+        {
+          "question": "Q7. When manually entering a balance forward as an Owner Payment, what is the required second step?",
+          "options": [
+            "A. Nothing else is required",
+            "B. The payment must also be deposited (recorded as a New Deposit)",
+            "C. The property must be re-marketed",
+            "D. A new lease must be created"
+          ],
+          "correctOptionIndex": 1,
+          "correctAnswer": "B. The payment must also be deposited (recorded as a New Deposit)",
+          "explanation": "Any owner payment recorded as part of a balance forward must be deposited to complete the opening balance reconciliation.",
+          "points": 1,
+          "remediationTitle": "How To Balance Forward An Owner Portfolio Ledger",
+          "remediationUrl": "https://help.rentvine.com/en/articles/16602022-how-to-balance-forward-an-owner-portfolio-ledger",
+          "id": "w21-q07"
+        },
+        {
+          "question": "Q8. How does the Financial Onboarding team confirm a beginning balance is accurate?",
+          "options": [
+            "A. They ask the client to trust the number without checking",
+            "B. They reconcile the bank account using the cutoff date so the migrated items match the client's real bank balance",
+            "C. They skip reconciliation for accounts under 50 units",
+            "D. They wait until the next fiscal year"
+          ],
+          "correctOptionIndex": 1,
+          "correctAnswer": "B. They reconcile the bank account using the cutoff date so the migrated items match the client's real bank balance",
+          "explanation": "Setting the reconciliation's start and end dates to the cutoff date and selecting the migrated items confirms the starting balance ties to the bank.",
+          "points": 1,
+          "remediationTitle": "Deep Dive Financial Onboarding — Notes by Gemini",
+          "remediationUrl": "https://docs.google.com/document/d/1sGnf8KphB5IO8Mep9L7ZYtUPNmVcKPRxqi2KJnkV8_M/view",
+          "id": "w21-q08"
+        },
+        {
+          "question": "Q9. Onboarding completion timelines typically range from 1 to 7 business days.",
+          "options": [
+            "A. True",
+            "B. False"
+          ],
+          "correctOptionIndex": 0,
+          "correctAnswer": "A. True",
+          "explanation": "The range depends on account size, quality of prior records, and how responsive the client is.",
+          "points": 1,
+          "remediationTitle": "Deep Dive Financial Onboarding — Notes by Gemini",
+          "remediationUrl": "https://docs.google.com/document/d/1sGnf8KphB5IO8Mep9L7ZYtUPNmVcKPRxqi2KJnkV8_M/view",
+          "id": "w21-q09"
+        }
+      ],
+      "videoUploadUrl": "upload-lab-video.html?week=21",
+      "videoUploadRequired": false,
+      "labVideoRequirement": "No walkthrough video is required for this bonus week. Attach your workbook walkthrough notes or written answers as a supporting document below.",
+      "guidedExample": {
+        "title": "Guided walkthrough: Building a Balance Forward Workbook from scratch",
+        "scenario": "A client with no prior property management software needs a Balance Forward Workbook built manually, starting from their raw bank balance as of the cutoff date.",
+        "paragraphs": [
+          "Start with the bank balance as of the cutoff date -- for example, $5,650 as of August 17th. That single number has to be broken down into everything it represents.",
+          "Allocate the balance into rental trust (organized by property and owner), security deposits (organized by lease, and further split by deposit type -- pet, cleaning, key/fob, last month's rent, and so on), and tenant prepayments, until the variance against the bank balance reaches zero.",
+          "Separately, capture anything that doesn't touch the bank balance but still needs to exist in Rentvine: unpaid tenant charges, unpaid vendor bills, vendor credits, and owner/vendor 1099 income for the current tax year.",
+          "Once the workbook balances, it goes to the customer for sign-off -- for a client with roughly 1,800 properties, that sign-off sheet is what lets the team import balances that large with confidence instead of guesswork.",
+          "After core data (portfolios, owners, properties, tenants, vendors) exists in Rentvine, the workbook balances get mapped in -- either through an automated import for high-volume accounts, or manual journal entries for smaller ones -- and the beginning balance gets reconciled against the bank at the cutoff date."
+        ],
+        "memoryHook": "One bank number in, allocated out to rental trust + deposits + prepayments until the variance hits zero -- then everything else (unpaid charges, bills, 1099s) gets tracked alongside it.",
+        "summaryQuestions": [
+          "Why does the workbook need a single fixed cutoff date rather than a range?",
+          "What's the difference between data that affects the bank balance and data that doesn't?",
+          "Why does core data have to exist before any financial import happens?"
+        ]
+      },
+      "practiceCompanyStep": {
+        "company": "Green Valley Property Management",
+        "caseFile": "Smith Family Rentals LLC / 123 Maple Street / Jordan Lee / Reliable Plumbing Co.",
+        "instruction": "Assume Smith Family Rentals LLC is migrating from a prior software with no clean records. Practice allocating a sample bank balance into rental trust, security deposits, and prepayments the way the guided example describes, using 123 Maple Street as your reference property."
+      },
+      "productWalkthrough": [
+        {
+          "title": "Product Walkthrough: Entering a Balance Forward",
+          "intro": "These are the real, official steps Rentvine support publishes for entering a balance forward -- the same screens the Financial Onboarding team uses on every migration.",
+          "steps": [
+            {
+              "title": "Balance-forward a portfolio ledger",
+              "body": "Two options, both under <b>Accounting</b>:<ul><li><b>Create a Journal Entry</b> (Accounting → Transactions → Actions → New Journal Entry): set the Ledger, Date Posted to the cutoff date, and Description (e.g. “Balance Forward”), then enter a debit or credit against an equity account (e.g. Balance Forward/Opening Balance) and the offsetting entry against the bank account.</li><li><b>Record an Owner Payment</b> (Accounting → Money In → Actions → Record Owner Payment) when the money needs to show as deposited into a bank account -- then the payment must also be recorded as a New Deposit to complete the opening balance reconciliation.</li></ul>",
+              "tip": "Never enter prepayments or security deposits on the portfolio ledger -- those belong on the lease."
+            },
+            {
+              "title": "Balance-forward a tenant/lease ledger",
+              "body": "Use the tenant/lease ledger balance-forward flow for a tenant's current balance from prior software -- this is where prepayments and security deposits actually belong, separate from the portfolio-level entry above.",
+              "tip": null
+            }
+          ],
+          "sourceNote": "Reproduced from the official Rentvine Help Center articles “How To Balance Forward An Owner Portfolio Ledger” and “How to Enter the Current Balance of Tenant/Lease Ledger... as a Balance Forward,” cross-referenced with the Sep 2, 2026 Deep Dive Financial Onboarding training.",
+          "demo": [
+            {
+              "src": "assets/demo-screenshots/statement-01-settings-gear.jpg",
+              "caption": "Accounting settings live under the same gear-icon menu referenced throughout the balance-forward workflow.",
+              "href": "https://help.rentvine.com/en/articles/16602022-how-to-balance-forward-an-owner-portfolio-ledger"
+            }
+          ]
+        }
+      ]
     }
   ],
   "capstone": {
@@ -9828,6 +10428,17 @@ window.RVU_COURSE = {
         19
       ],
       "focus": "Complete all modules and the capstone certification."
+    },
+    {
+      "id": "financial-onboarding-bonus",
+      "title": "Bonus: Financial Onboarding Specialist Path",
+      "weeks": [
+        1,
+        17,
+        20,
+        21
+      ],
+      "focus": "Optional continuing-education path for learners going deeper on how new customers get migrated onto Rentvine's accounting system, beyond the core 19-week certification."
     }
   ],
   "phaseMaps": [
@@ -9915,6 +10526,22 @@ window.RVU_COURSE = {
         "Export proof of completion"
       ],
       "question": "Can the learner complete the process safely, accurately, and independently?"
+    },
+    {
+      "phase": "Bonus: Financial Onboarding Specialist",
+      "weeks": [
+        20,
+        21
+      ],
+      "flow": [
+        "Open new trust bank accounts",
+        "Reconcile through cutoff date",
+        "Blackout electronic payments",
+        "Balance forward on cutoff date",
+        "Build the Balance Forward Workbook",
+        "Migrate & reconcile beginning balances"
+      ],
+      "question": "How does a brand-new customer's accounting history become accurate, reconciled Rentvine data on day one?"
     }
   ],
   "jobAids": [
