@@ -2,10 +2,10 @@ window.RVU_COURSE = {
   "meta": {
     "title": "Rentvine University",
     "edition": "Beginner Enhanced Edition",
-    "version": "7.5-financial-onboarding-call-content",
+    "version": "8.0-financial-onboarding-core-weeks",
     "lastUpdated": "2026-09-02",
     "owner": "Rentvine University",
-    "description": "Interactive 19-week Rentvine University learner program ordered by real property management processes for beginners, plus 2 optional bonus deep-dive weeks on financial onboarding. Includes a Before You Begin orientation, role-path filters, phase process maps, a continuing practice company case file, downloadable job aids, scored knowledge checks with remediation links, required lab video submissions, guided walkthrough examples, match-the-term glossary practice, accessibility controls, and progress tracking.",
+    "description": "Interactive 21-week Rentvine University learner program ordered by real property management processes for beginners, including a Financial Onboarding Specialist phase covering how new customers get migrated onto Rentvine's accounting system. Includes a Before You Begin orientation, role-path filters, phase process maps, a continuing practice company case file, downloadable job aids, scored knowledge checks with remediation links, required lab video submissions, guided walkthrough examples, match-the-term glossary practice, accessibility controls, and progress tracking.",
     "safety": "Complete all labs in a training or sandbox database. Do not use production data.",
     "storageNote": "Progress is saved in this browser with localStorage. Export progress regularly for records or LMS upload.",
     "quizPassMark": 0.8,
@@ -45,7 +45,7 @@ window.RVU_COURSE = {
       "outcome": "Configure integrations/roles/go-live readiness and demonstrate end-to-end competency in the capstone."
     },
     {
-      "phase": "Bonus: Financial Onboarding Specialist",
+      "phase": "Financial Onboarding Specialist",
       "weeks": "20-21",
       "outcome": "Understand how new customers get migrated onto Rentvine's accounting system, from the customer-facing prep steps through the internal Balance Forward Workbook and reconciliation process."
     }
@@ -73,11 +73,11 @@ window.RVU_COURSE = {
     },
     {
       "track": "Rentvine Certified Professional",
-      "weeks": "1-19",
-      "focus": "Complete the full beginner-to-capstone process path and pass the scored practical certification."
+      "weeks": "1-21",
+      "focus": "Complete the full beginner-to-capstone process path -- including the Financial Onboarding Specialist weeks -- and pass the scored practical certification."
     },
     {
-      "track": "Financial Onboarding Specialist (Bonus)",
+      "track": "Financial Onboarding Specialist",
       "weeks": "20, 21",
       "focus": "Customer-facing financial onboarding steps, Balance Forward Workbook methodology, data migration, and beginning-balance reconciliation for new Rentvine customers."
     }
@@ -6986,10 +6986,9 @@ window.RVU_COURSE = {
     },
     {
       "week": 20,
-      "bonus": true,
       "title": "Financial Onboarding: The Customer-Facing Process",
-      "fullTitle": "Week 20 (Bonus): Financial Onboarding: The Customer-Facing Process",
-      "phase": "Bonus: Financial Onboarding Specialist",
+      "fullTitle": "Week 20: Financial Onboarding: The Customer-Facing Process",
+      "phase": "Financial Onboarding Specialist",
       "processStage": "20. Understand what a new customer experiences during financial onboarding",
       "checkpoint": "Financial Onboarding Specialist I · Customer process",
       "estimatedTime": "2-3 learning hours",
@@ -6999,7 +6998,7 @@ window.RVU_COURSE = {
       "realWorldConnection": "Every new Rentvine customer goes through this exact sequence before go-live. Support, sales, and CX all field questions about it -- knowing the real steps (not a guess) keeps a customer confident during a stressful software switch.",
       "watchFor": "Do not tell a customer to fund or start using their new trust bank accounts before the onboarding team gives the go-ahead -- early activity in the new accounts breaks the clean-slate reconciliation the whole process depends on.",
       "realWorldNotes": [
-        "This is a bonus, continuing-education module built from Rentvine's internal Financial Onboarding process documents and the Sep 2, 2026 “Deep Dive Financial Onboarding” training led by Jimmy Roling.",
+        "This module is built from Rentvine's internal Financial Onboarding process documents and the Sep 2, 2026 “Deep Dive Financial Onboarding” training led by Jimmy Roling.",
         "Rentvine recommends new trust bank accounts over carrying old ones forward specifically because NSFs and chargebacks can hit an old account up to 90 days later, and those are very difficult to trace once the switch is complete.",
         "The customer signs off on the compiled financial balances before anything is imported -- Rentvine's onboarding disclosures are explicit that the company is not responsible for accounting errors that existed in the old software."
       ],
@@ -7168,7 +7167,7 @@ window.RVU_COURSE = {
       ],
       "videoUploadUrl": "upload-lab-video.html?week=20",
       "videoUploadRequired": false,
-      "labVideoRequirement": "No walkthrough video is required for this bonus week. Attach your timeline worksheet or written answers as a supporting document below.",
+      "labVideoRequirement": "No walkthrough video is required for this week. Attach your timeline worksheet or written answers as a supporting document below.",
       "guidedExample": {
         "title": "Guided walkthrough: Why the sequence matters",
         "scenario": "A prospective customer asks why they can't just “flip a switch” and start using Rentvine the same day they sign up.",
@@ -7209,10 +7208,9 @@ window.RVU_COURSE = {
     },
     {
       "week": 21,
-      "bonus": true,
       "title": "Deep Dive: Balance Forward Workbook, Data Migration & Reconciliation",
-      "fullTitle": "Week 21 (Bonus): Deep Dive: Balance Forward Workbook, Data Migration & Reconciliation",
-      "phase": "Bonus: Financial Onboarding Specialist",
+      "fullTitle": "Week 21: Deep Dive: Balance Forward Workbook, Data Migration & Reconciliation",
+      "phase": "Financial Onboarding Specialist",
       "processStage": "21. Understand how the Financial Onboarding team actually migrates and reconciles balances",
       "checkpoint": "Financial Onboarding Specialist II · Workbook & migration deep dive",
       "estimatedTime": "3-4 learning hours",
@@ -7445,7 +7443,7 @@ window.RVU_COURSE = {
       ],
       "videoUploadUrl": "upload-lab-video.html?week=21",
       "videoUploadRequired": false,
-      "labVideoRequirement": "No walkthrough video is required for this bonus week. Attach your workbook walkthrough notes or written answers as a supporting document below.",
+      "labVideoRequirement": "No walkthrough video is required for this week. Attach your workbook walkthrough notes or written answers as a supporting document below.",
       "guidedExample": {
         "title": "Guided walkthrough: Building a Balance Forward Workbook from scratch",
         "scenario": "A client with no prior property management software needs a Balance Forward Workbook built manually, starting from their raw bank balance as of the cutoff date.",
@@ -10396,9 +10394,11 @@ window.RVU_COURSE = {
         12,
         14,
         17,
-        19
+        19,
+        20,
+        21
       ],
-      "focus": "Portfolios, receipts, deposits, bills, fees, owner statements, diagnostics, trust accounting, and reconciliation."
+      "focus": "Portfolios, receipts, deposits, bills, fees, owner statements, diagnostics, trust accounting, reconciliation, and financial onboarding for new customers."
     },
     {
       "id": "maintenance",
@@ -10451,20 +10451,11 @@ window.RVU_COURSE = {
         16,
         17,
         18,
-        19
-      ],
-      "focus": "Complete all modules and the capstone certification."
-    },
-    {
-      "id": "financial-onboarding-bonus",
-      "title": "Bonus: Financial Onboarding Specialist Path",
-      "weeks": [
-        1,
-        17,
+        19,
         20,
         21
       ],
-      "focus": "Optional continuing-education path for learners going deeper on how new customers get migrated onto Rentvine's accounting system, beyond the core 19-week certification."
+      "focus": "Complete all modules and the capstone certification."
     }
   ],
   "phaseMaps": [
@@ -10554,7 +10545,7 @@ window.RVU_COURSE = {
       "question": "Can the learner complete the process safely, accurately, and independently?"
     },
     {
-      "phase": "Bonus: Financial Onboarding Specialist",
+      "phase": "Financial Onboarding Specialist",
       "weeks": [
         20,
         21
@@ -11380,8 +11371,8 @@ window.RVU_COURSE = {
     {
       "id": "checkpoint-5",
       "title": "Certification Readiness Review",
-      "afterWeek": 19,
-      "phase": "Administration & Certification",
+      "afterWeek": 21,
+      "phase": "Financial Onboarding Specialist",
       "weeksCovered": [
         1,
         2,
@@ -11401,9 +11392,11 @@ window.RVU_COURSE = {
         16,
         17,
         18,
-        19
+        19,
+        20,
+        21
       ],
-      "purpose": "A comprehensive, cumulative gate before capstone submission. This is the last chance to catch a gap before it shows up in a scored capstone rubric or, worse, in a live customer account.",
+      "purpose": "A comprehensive, cumulative gate before capstone submission, covering the full 21-week program including financial onboarding. This is the last chance to catch a gap before it shows up in a scored capstone rubric or, worse, in a live customer account.",
       "questions": [
         {
           "question": "Which record connects a tenant to a property and drives all lease-level accounting?",
@@ -11564,6 +11557,38 @@ window.RVU_COURSE = {
           "remediationTitle": "Knowledge Base Welcome",
           "remediationUrl": "https://help.rentvine.com/en/",
           "id": "checkpoint-5-q10"
+        },
+        {
+          "question": "In Rentvine's financial onboarding process, why does the Financial Blackout Period start three days before the cutoff date rather than on the cutoff date itself?",
+          "options": [
+            "A. To give the sales team more time to close the deal",
+            "B. So most incoming electronic payments have settled by the cutoff date, keeping the balance snapshot accurate",
+            "C. Because state law requires a 3-day waiting period",
+            "D. To allow the customer to close their old bank accounts immediately"
+          ],
+          "correctOptionIndex": 1,
+          "correctAnswer": "B. So most incoming electronic payments have settled by the cutoff date, keeping the balance snapshot accurate",
+          "explanation": "Shutting off incoming electronic payments three days early gives transactions time to settle so the cutoff-date balance snapshot is accurate.",
+          "points": 1,
+          "remediationTitle": "Rentvine Financial Onboarding Process",
+          "remediationUrl": "https://drive.google.com/file/d/1YV3QFfwPggpmTEPAymF_Y5G6PYOn63HX/view",
+          "id": "checkpoint-5-q11"
+        },
+        {
+          "question": "A client's Balance Forward Workbook lists a property address as “123 Main Road,” but the automated import fails because Rentvine's record is listed as “123 Main RD.” What is the correct fix?",
+          "options": [
+            "A. Skip that property and import the rest",
+            "B. Manually correct the address format in the import file, then re-run the import",
+            "C. Delete the property from Rentvine and recreate it",
+            "D. Ask the client to legally change their address"
+          ],
+          "correctOptionIndex": 1,
+          "correctAnswer": "B. Manually correct the address format in the import file, then re-run the import",
+          "explanation": "Address-format mismatches are the top cause of failed automated imports; the fix is a manual correction in the source file, not a retry or a workaround.",
+          "points": 1,
+          "remediationTitle": "Deep Dive Financial Onboarding — Notes by Gemini",
+          "remediationUrl": "https://docs.google.com/document/d/1sGnf8KphB5IO8Mep9L7ZYtUPNmVcKPRxqi2KJnkV8_M/view",
+          "id": "checkpoint-5-q12"
         }
       ],
       "managerSignOff": {
