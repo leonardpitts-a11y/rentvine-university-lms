@@ -2,7 +2,7 @@ window.RVU_COURSE = {
   "meta": {
     "title": "Rentvine University",
     "edition": "Beginner Enhanced Edition",
-    "version": "7.4-financial-onboarding-bonus",
+    "version": "7.5-financial-onboarding-call-content",
     "lastUpdated": "2026-09-02",
     "owner": "Rentvine University",
     "description": "Interactive 19-week Rentvine University learner program ordered by real property management processes for beginners, plus 2 optional bonus deep-dive weeks on financial onboarding. Includes a Before You Begin orientation, role-path filters, phase process maps, a continuing practice company case file, downloadable job aids, scored knowledge checks with remediation links, required lab video submissions, guided walkthrough examples, match-the-term glossary practice, accessibility controls, and progress tracking.",
@@ -7224,7 +7224,8 @@ window.RVU_COURSE = {
       "realWorldNotes": [
         "Built from the Sep 2, 2026 “Deep Dive Financial Onboarding” training (Jimmy Roling) and the Aug 11, 2026 “Department Intro: Financial Onboarding” session (Dondre Brown).",
         "A real sample workbook reviewed in the Sep 2 training covered a client who migrated in July with roughly 1,800 properties -- the same workbook methodology scales from a handful of doors to portfolios that size.",
-        "Onboarding completion typically takes 1 to 7 business days, depending on account size, the quality of the prior records, and how quickly the client responds."
+        "Onboarding completion typically takes 1 to 7 business days, depending on account size, the quality of the prior records, and how quickly the client responds.",
+        "The Sep 2 Deep Dive recording's on-screen software demo was reviewed via generated transcript (Google Drive's video was too large to scrub frame-by-frame directly, but the transcript captured the full 03:57-58:09 screen-share segment) -- the walkthrough and product steps below are reproduced from that real demo, not a generic description."
       ],
       "topics": "Balance Forward Workbook, cutoff date, data migration, import tools vs. manual journal entries, 1099 migration, core data dependency, beginning balance reconciliation",
       "objectives": [
@@ -7453,7 +7454,9 @@ window.RVU_COURSE = {
           "Allocate the balance into rental trust (organized by property and owner), security deposits (organized by lease, and further split by deposit type -- pet, cleaning, key/fob, last month's rent, and so on), and tenant prepayments, until the variance against the bank balance reaches zero.",
           "Separately, capture anything that doesn't touch the bank balance but still needs to exist in Rentvine: unpaid tenant charges, unpaid vendor bills, vendor credits, and owner/vendor 1099 income for the current tax year.",
           "Once the workbook balances, it goes to the customer for sign-off -- for a client with roughly 1,800 properties, that sign-off sheet is what lets the team import balances that large with confidence instead of guesswork.",
-          "After core data (portfolios, owners, properties, tenants, vendors) exists in Rentvine, the workbook balances get mapped in -- either through an automated import for high-volume accounts, or manual journal entries for smaller ones -- and the beginning balance gets reconciled against the bank at the cutoff date."
+          "After core data (portfolios, owners, properties, tenants, vendors) exists in Rentvine, the workbook balances get mapped in -- either through an automated import for high-volume accounts, or manual journal entries for smaller ones -- and the beginning balance gets reconciled against the bank at the cutoff date.",
+          "In the Sep 2 training, Jimmy built this exact workbook live for a mock client called Hawkins Family Trust: a Sign-Off Sheet bank balance of $5,650 as of August 17th, $500 in Rental Trust operating balances split across two properties, Security Deposits of $1,800 and $1,700 for two tenants, and a $1,150 Prepayment -- allocated until the variance against the bank balance hit zero, exactly as described above.",
+          "He then switched to Rentvine's own software (a sandbox environment) to show where those numbers actually land: a manual Journal Entry at a sample property, a manual Owner Receipt plus its offsetting bank deposit, and -- for larger accounts -- the Import Security Deposits tool under Global Settings, where he uploaded a CSV, hit a real address-format mismatch (\"Road\" vs. \"RD\"), corrected it, and re-ran the import. He confirmed the import worked by checking the newly generated charges and receipts on the tenant's ledger, then finished by opening Bank Reconciliation 2.0 and checking off every recorded balance-forward item until the variance cleared to $0 -- that's the actual moment a client's starting balance is considered reconciled."
         ],
         "memoryHook": "One bank number in, allocated out to rental trust + deposits + prepayments until the variance hits zero -- then everything else (unpaid charges, bills, 1099s) gets tracked alongside it.",
         "summaryQuestions": [
@@ -7491,6 +7494,29 @@ window.RVU_COURSE = {
               "href": "https://help.rentvine.com/en/articles/16602022-how-to-balance-forward-an-owner-portfolio-ledger"
             }
           ]
+        },
+        {
+          "title": "Watch It In Action: Live Software Demo (Sep 2 Deep Dive Training)",
+          "intro": "This is what the Balance Forward Workbook actually looks like once it moves into Rentvine -- reproduced from the screen-share portion (03:57-58:09) of the Sep 2, 2026 Deep Dive Financial Onboarding training led by Jimmy Roling.",
+          "steps": [
+            {
+              "title": "Recording a manual balance forward",
+              "body": "In the sandbox environment, the presenter recorded a manual <b>Journal Entry</b> at a sample property, then demonstrated the alternate path -- a manual <b>Owner Receipt</b> at the portfolio level followed by its required bank deposit -- matching the two-step receipt-then-deposit mechanic covered in Week 21's objectives.",
+              "tip": "Both paths land on the portfolio ledger -- the Journal Entry path is faster for a single adjusting entry, while Owner Receipt + Deposit mirrors how a real payment would flow through Rentvine."
+            },
+            {
+              "title": "Importing security deposits at scale (Global Settings)",
+              "body": "For larger accounts, the presenter used the <b>Import Security Deposits</b> tool (Global Settings) to bulk-import from a CSV built from a Security Deposit Import Sheet. The import initially failed to match one property because the file listed \"Road\" and Rentvine's record listed \"RD\" -- he corrected the address format in the file and re-ran the import successfully, then verified the result by checking the newly generated lease charges and receipts on the tenant's ledger.",
+              "tip": "This is the real-world version of the address-matching failure mode covered in this week's quiz -- it's a formatting mismatch, not a data error, and the fix is a manual correction in the source file, not a retry."
+            },
+            {
+              "title": "Finishing with Bank Reconciliation 2.0",
+              "body": "To close out the balance forward, the presenter opened <b>Bank Reconciliation 2.0</b>, checked off every recorded balance-forward item (the manual prepayment receipt, the imported security deposits, the journal entries), and watched the variance clear to $0 -- confirming the client's starting balance now matches their real bank statement.",
+              "tip": "A $0 variance at this step is the actual finish line for the Financial Balance Forward step described in Week 20 -- until reconciliation clears, the migration isn't done."
+            }
+          ],
+          "sourceNote": "Reproduced from the screen-share portion of the Sep 2, 2026 Deep Dive Financial Onboarding training (Jimmy Roling), captured via Google Drive's generated transcript.",
+          "demo": []
         }
       ]
     }
