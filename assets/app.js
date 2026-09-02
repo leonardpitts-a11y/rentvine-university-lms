@@ -53,7 +53,6 @@
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
     updateOverallProgress();
     if (!skipScorm) syncScorm();
-    syncMonday();
   }
   function getPath(path) {
     return path.split('.').reduce((obj, key) => (obj && obj[key] !== undefined ? obj[key] : undefined), state);
@@ -90,10 +89,11 @@
       // module list (.role-week.dimmed): once a learner picks a narrower role path, weeks that
       // path doesn't require should look visually de-emphasized here in the persistent sidebar
       // too, not just on the Role Path Filters page itself. Still fully clickable/navigable --
-      // "Full certification still requires all 19 weeks and the capstone" per that page's copy.
+      // "Full certification still requires all core weeks and the capstone" per that page's copy.
+      // Bonus weeks (week.bonus === true) are additional/optional and never block certification.
       const inPath = isWeekInSelectedPath(w.week);
       return `<li><a class="nav-link ${!inPath ? 'dimmed' : ''} ${route === `#week-${String(w.week).padStart(2,'0')}` ? 'active' : ''}" href="#week-${String(w.week).padStart(2,'0')}">
-        <span>Week ${w.week}: ${escapeHtml(w.title)}</span><span class="badge ${s.complete ? 'complete' : ''}">${pct(s.progress)}</span>
+        <span>Week ${w.week}${w.bonus ? ' (Bonus)' : ''}: ${escapeHtml(w.title)}</span><span class="badge ${s.complete ? 'complete' : ''}">${pct(s.progress)}</span>
       </a></li>`;
     }).join('');
     const checkpointLinks = (course.checkpoints || []).map(cp => {
@@ -457,8 +457,13 @@
     if (!list.length) return 1;
     return list.reduce((acc, cp) => acc + checkpointProgress(cp).progress, 0) / list.length;
   }
+  // Certification progress is computed over the 19 core weeks only -- the optional bonus
+  // weeks (week.bonus === true) have their own progress badges in the sidebar/dashboard but
+  // don't count toward "full certification" completion or the capstone gate.
+  function coreWeeks() { return course.weeks.filter(w => !w.bonus); }
   function overallProgress() {
-    const weekAverage = course.weeks.reduce((acc, w) => acc + weekStats(w).progress, 0) / course.weeks.length;
+    const cw = coreWeeks();
+    const weekAverage = cw.reduce((acc, w) => acc + weekStats(w).progress, 0) / cw.length;
     return (weekAverage * 0.8) + (checkpointsAverage() * 0.1) + (capstoneProgress() * 0.1);
   }
   function updateOverallProgress() {
@@ -512,7 +517,8 @@
         <h1>${escapeHtml(course.meta.title)}</h1>
         <p>${escapeHtml(course.meta.description)}</p>
         <div class="stat-row">
-          <span class="stat-pill done">19 weeks</span>
+          <span class="stat-pill done">${coreWeeks().length} core weeks</span>
+          ${course.weeks.length > coreWeeks().length ? `<span class="stat-pill">+${course.weeks.length - coreWeeks().length} bonus deep-dives</span>` : ''}
           <span class="stat-pill">57-76 learning hours</span>
           <span class="stat-pill">5 certification tracks</span>
           <span class="stat-pill done">Process-ordered lessons</span>
@@ -583,7 +589,7 @@
       const required = selected && (selected.weeks || []).includes(w.week);
       return `<article class="resource-card role-week ${required ? 'required' : 'dimmed'}"><div><span class="badge ${required ? 'complete' : ''}">${required ? 'Required' : 'Optional'}</span></div><div><div class="resource-title">Week ${w.week}: ${escapeHtml(w.title)}</div><div class="resource-meta">${escapeHtml(w.phase)} · ${escapeHtml(w.processStage || '')}</div></div><div><a class="button ${required ? 'primary' : 'secondary'} small" href="#week-${String(w.week).padStart(2,'0')}">Open</a></div></article>`;
     }).join('');
-    app.innerHTML = `<section class="module-header"><div class="kicker">Role path filters</div><h1>Choose your learner path</h1><p>Pick a role path to highlight the modules most relevant to that learner. Full certification still requires all 19 weeks and the capstone.</p></section>
+    app.innerHTML = `<section class="module-header"><div class="kicker">Role path filters</div><h1>Choose your learner path</h1><p>Pick a role path to highlight the modules most relevant to that learner. Full certification still requires all ${coreWeeks().length} core weeks and the capstone; bonus weeks are optional continuing education.</p></section>
       <section class="panel"><div class="field"><label>Current role path<select id="role-path-select" data-path="rolePath.selected">${options}</select></label></div><p><strong>${escapeHtml(selected?.title || '')}</strong>: ${escapeHtml(selected?.focus || '')}</p></section>
       <section class="panel"><h2>Filtered module list</h2>${weekCards}</section>`;
   }
@@ -752,7 +758,7 @@
       return `<li><a href="#${cp.id}">${escapeHtml(cp.title)}</a><span class="badge ${p.progress >= 1 ? 'complete' : ''}">${pct(p.progress)}</span></li>`;
     }).join('');
     return `<details class="process-detail" id="dashboard-details"><summary>Progress Dashboard &mdash; ${pct(overallProgress())} complete</summary>
-      <p>Overall progress across all ${course.weeks.length} weeks, weighted with phase checkpoints and the capstone. Open a week for its full status (materials, guide, defined terms, lab, lab video, knowledge check, match practice).</p>
+      <p>Overall progress across all ${coreWeeks().length} core weeks, weighted with phase checkpoints and the capstone (bonus weeks are tracked below but optional). Open a week for its full status (materials, guide, defined terms, lab, lab video, knowledge check, match practice).</p>
       <div class="module-progress"><div class="progress-rail"><div class="progress-fill" style="width:${pct(overallProgress())}"></div></div><strong>${pct(overallProgress())}</strong></div>
       <ul class="dashboard-week-list">${rows}</ul>
       ${cpRows ? `<h3>Phase checkpoints</h3><ul class="dashboard-week-list">${cpRows}</ul>` : ''}
@@ -1157,91 +1163,6 @@
   }
   window.addEventListener('beforeunload', () => { try { if (scormApi) { syncScorm(); scormApi.LMSFinish(''); } } catch(e) {} });
 
-  // --- monday.com live sync -------------------------------------------------
-  // When RU is hosted and opened inside a monday.com "Item view" app (a custom
-  // iframe tab on a specific board item/row), this pushes a learner's computed
-  // progress snapshot into that item's columns automatically every time
-  // saveState() runs. Outside of monday.com -- the standalone HTML file, the
-  // SCORM package, a plain browser tab -- window.self === window.top, so this
-  // entire block no-ops immediately and never loads any external script.
-  // See MONDAY-APP-SETUP.md for the full walkthrough (registering the app,
-  // hosting RU, and wiring up the column IDs below).
-  // Board: "Rentvine University - Learner Progress" (id 18425625099)
-  // https://rentvine.monday.com/boards/18425625099
-  const MONDAY_COLUMNS = {
-    status: 'color_mm60dn4d',          // Status column -- Not Started / In Progress / At Risk / Completed
-    rolePath: 'dropdown_mm60r460',      // Dropdown column -- learner's selected role path title
-    currentWeek: 'numeric_mm605dsa',    // Numbers column -- next incomplete week in their path
-    weeksCompleted: 'numeric_mm60jyg7', // Numbers column -- count of fully completed weeks
-    overallProgress: 'numeric_mm60d0d', // Numbers column -- 0-100
-    quizAvg: 'numeric_mm60n74n',        // Numbers column -- 0-100, average score across attempted quizzes
-    matchAvg: 'numeric_mm60m2pw',       // Numbers column -- 0-100, average score across attempted match practice
-    capstoneStatus: 'color_mm60my49',   // Status column -- Not Started / In Progress / Submitted / Passed
-    lastSync: 'date_mm60dhx0'           // Date column -- date of the most recent sync
-  };
-  let mondayClient = null;
-  let mondayContext = null;
-  function initMondaySync() {
-    if (window.self === window.top) return; // not embedded in an iframe -- nothing to sync to
-    try {
-      const script = document.createElement('script');
-      script.src = 'https://cdn.jsdelivr.net/npm/monday-sdk-js/dist/main.js';
-      script.onload = () => {
-        try {
-          mondayClient = window.mondaySdk();
-          mondayClient.listen('context', (res) => {
-            const ctx = res && res.data;
-            if (ctx && ctx.itemId && ctx.boardId) { mondayContext = ctx; syncMonday(); }
-          });
-        } catch (e) { mondayClient = null; }
-      };
-      script.onerror = () => { mondayClient = null; };
-      document.head.appendChild(script);
-    } catch (e) { /* ignore -- never let sync setup break the app */ }
-  }
-  function mondayProgressSnapshot() {
-    const path = selectedRolePath();
-    const weeksInPath = path ? course.weeks.filter(w => isWeekInSelectedPath(w.week)) : course.weeks;
-    const statsList = weeksInPath.map(w => weekStats(w));
-    const weeksCompleted = statsList.filter(s => s.complete).length;
-    const nextWeek = weeksInPath.find(w => !weekStats(w).complete);
-    const currentWeek = nextWeek ? nextWeek.week : (weeksInPath.length ? weeksInPath[weeksInPath.length - 1].week : '');
-    const quizzed = statsList.filter(s => s.quizStatus.total > 0);
-    const quizAvg = quizzed.length ? Math.round(quizzed.reduce((a, s) => a + s.quizStatus.score, 0) / quizzed.length * 100) : 0;
-    const matched = statsList.filter(s => s.matchStatus.total > 0);
-    const matchAvg = matched.length ? Math.round(matched.reduce((a, s) => a + s.matchStatus.score, 0) / matched.length * 100) : 0;
-    const overallPct = Math.round(overallProgress() * 100);
-    const cs = capstoneScore();
-    const capstoneStatusLabel = cs.passed ? 'Passed' : (state.capstone.submit?.submitted ? 'Submitted' : (capstoneProgress() > 0 ? 'In Progress' : 'Not Started'));
-    const target = state.profile?.targetDate ? new Date(state.profile.targetDate) : null;
-    const overdue = target && !isNaN(target) && target < new Date() && overallPct < 100;
-    const statusLabel = overallPct >= 100 ? 'Completed' : overdue ? 'At Risk' : overallPct > 0 ? 'In Progress' : 'Not Started';
-    return { status: statusLabel, rolePath: path ? path.title : '', currentWeek, weeksCompleted, overallProgress: overallPct, quizAvg, matchAvg, capstoneStatus: capstoneStatusLabel, lastSync: new Date().toISOString().slice(0, 10) };
-  }
-  function syncMonday() {
-    if (!mondayClient || !mondayContext) return;
-    try {
-      const snap = mondayProgressSnapshot();
-      const columnValues = {};
-      if (MONDAY_COLUMNS.status) columnValues[MONDAY_COLUMNS.status] = { label: snap.status };
-      if (MONDAY_COLUMNS.rolePath && snap.rolePath) columnValues[MONDAY_COLUMNS.rolePath] = { labels: [snap.rolePath] };
-      if (MONDAY_COLUMNS.currentWeek) columnValues[MONDAY_COLUMNS.currentWeek] = String(snap.currentWeek);
-      if (MONDAY_COLUMNS.weeksCompleted) columnValues[MONDAY_COLUMNS.weeksCompleted] = String(snap.weeksCompleted);
-      if (MONDAY_COLUMNS.overallProgress) columnValues[MONDAY_COLUMNS.overallProgress] = String(snap.overallProgress);
-      if (MONDAY_COLUMNS.quizAvg) columnValues[MONDAY_COLUMNS.quizAvg] = String(snap.quizAvg);
-      if (MONDAY_COLUMNS.matchAvg) columnValues[MONDAY_COLUMNS.matchAvg] = String(snap.matchAvg);
-      if (MONDAY_COLUMNS.capstoneStatus) columnValues[MONDAY_COLUMNS.capstoneStatus] = { label: snap.capstoneStatus };
-      if (MONDAY_COLUMNS.lastSync) columnValues[MONDAY_COLUMNS.lastSync] = { date: snap.lastSync };
-      if (!Object.keys(columnValues).length) return;
-      mondayClient.api(
-        `mutation ($boardId: ID!, $itemId: ID!, $columnValues: JSON!) {
-          change_multiple_column_values(board_id: $boardId, item_id: $itemId, column_values: $columnValues) { id }
-        }`,
-        { variables: { boardId: mondayContext.boardId, itemId: mondayContext.itemId, columnValues: JSON.stringify(columnValues) } }
-      ).catch(() => {});
-    } catch (e) { /* ignore -- sync is best-effort and must never break the learner experience */ }
-  }
-
   document.addEventListener('input', e => {
     const el = e.target;
     if (el.matches('[data-path]')) {
@@ -1497,7 +1418,6 @@
   }
 
   initScorm();
-  initMondaySync();
   initTrainerBanner();
   document.body.classList.toggle('high-contrast', !!state.accessibility?.highContrast);
   if (!window.location.hash) window.location.hash = '#overview';
