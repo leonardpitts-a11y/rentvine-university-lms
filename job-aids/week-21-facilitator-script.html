@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Leonard Pitts">
+<title>Facilitator Script: Balance Forward Workbook, Data Migration &amp; Reconciliation</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;max-width:900px;margin:2rem auto;padding:0 1rem;color:#1f2933}
+  h1{color:#006b47}
+  h2{color:#006b47;border-top:1px solid #d9e3dd;padding-top:1.25rem;margin-top:2rem}
+  h3{color:#0a5c3f;margin-top:1.5rem}
+  .kicker{color:#5a6b63;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+  .box{border:1px solid #d9e3dd;border-radius:12px;padding:1rem 1.25rem;background:#f7faf8;margin-bottom:1rem}
+  blockquote.script-line{border-left:4px solid #00875a;background:#f0f7f3;margin:.75rem 0;padding:.6rem 1rem;font-style:italic}
+  blockquote.script-line::before{content:"Suggested trainer language: ";font-style:normal;font-weight:700;color:#006b47}
+  ul, ol{padding-left:1.4rem}
+  li{margin:.3rem 0}
+  a.toc-link{display:block;padding:.15rem 0}
+  .toc{columns:2;column-gap:2rem}
+  @media (max-width:700px){.toc{columns:1}}
+  button.print-btn{padding:.6rem .85rem;border-radius:8px;border:1px solid #d9e3dd;background:#00875a;color:white;font-weight:700;margin-bottom:1rem}
+  button.top-btn{padding:.4rem .7rem;border-radius:8px;border:1px solid #d9e3dd;background:#fff;color:#006b47;font-weight:700;font-size:.8rem}
+  @media print{button{display:none}}
+  table.qref{width:100%;border-collapse:collapse;margin-top:.5rem}
+  table.qref td,table.qref th{border:1px solid #d9e3dd;padding:.5rem;text-align:left;vertical-align:top}
+  table.qref th{background:#f0f5f2}
+</style>
+</head>
+<body id="top">
+
+<button class="print-btn" onclick="window.print()">Print this facilitator script</button>
+
+<div class="kicker">Rentvine University &middot; Facilitator Script</div>
+<h1>Balance Forward Workbook, Data Migration &amp; Reconciliation</h1>
+<p class="box"><strong>Purpose:</strong> This is a full trainer/facilitator script covering the Balance Forward Workbook methodology, what does and doesn't migrate, how data actually gets entered into Rentvine, and how beginning balances get reconciled. It's adapted from Jimmy Roling's Sep 2, 2026 "Deep Dive Financial Onboarding" training, including the live workbook build and the software demo that followed it. Use it to prepare for explaining this process to a new team member or yourself while practicing. Lines marked <em>"Suggested trainer language"</em> are ready-to-use scripting you can say almost word for word.</p>
+
+<div class="box">
+<strong>Table of contents</strong>
+<div class="toc">
+<a class="toc-link" href="#intro">Introduction</a>
+<a class="toc-link" href="#templates">The Balance Forward Workbook: Two Templates</a>
+<a class="toc-link" href="#example">Building the Workbook: A Real Example</a>
+<a class="toc-link" href="#affects-balance">What Migrates and Affects the Bank Balance</a>
+<a class="toc-link" href="#no-affect-balance">What Migrates but Doesn't Affect the Bank Balance</a>
+<a class="toc-link" href="#no-migrate">What Doesn't Migrate at All</a>
+<a class="toc-link" href="#manual-entry">Recording a Manual Balance Forward in Rentvine</a>
+<a class="toc-link" href="#import-tool">Importing at Scale: The Import Security Deposits Tool</a>
+<a class="toc-link" href="#address-mismatch">The Address-Matching Failure Mode</a>
+<a class="toc-link" href="#verify-import">Verifying the Import</a>
+<a class="toc-link" href="#bank-recon">Finishing with Bank Reconciliation 2.0</a>
+<a class="toc-link" href="#core-data">Core Data Has to Exist First</a>
+<a class="toc-link" href="#scale-timeline">Timeline and Scale</a>
+<a class="toc-link" href="#closing">Closing</a>
+</div>
+</div>
+
+<section id="intro">
+<h2>Introduction</h2>
+<p>Last session we covered the customer-facing side of financial onboarding: the four-step timeline. Today we go under the hood into the actual mechanics -- the Balance Forward Workbook, how data gets migrated or entered, and how we prove a beginning balance is correct.</p>
+</section>
+
+<section id="templates">
+<h2>The Balance Forward Workbook: Two Templates</h2>
+<p>Which workbook template we use depends on one thing: is the client keeping their existing bank accounts, or opening new ones? The two templates account for uncleared transactions differently depending on that answer, so picking the right one first matters before any numbers go in.</p>
+</section>
+
+<section id="example">
+<h2>Building the Workbook: A Real Example</h2>
+<p>Let's walk through a real example the way it actually gets built. Say the bank balance as of the cutoff date -- August 17th, for example -- comes back at $5,650. That single number has to be broken down into everything it represents.</p>
+<p>On the Sign-Off Sheet, that $5,650 balance gets allocated out: Rental Trust operating balances split across each property (say $500 for two separate properties), Security Deposits organized by lease and further split by deposit type -- pet, cleaning, key/fob, last month's rent, and so on (for example, $1,800 for one tenant and $1,700 for another), and Tenant Prepayments (say $1,150 for one tenant) -- allocated until the variance against the bank balance hits exactly zero.</p>
+<blockquote class="script-line">We start with one number from the bank, and we don't stop until every dollar of it is accounted for somewhere in the workbook -- trust, deposits, or prepayments -- and the variance reads zero.</blockquote>
+<p>Separately, the workbook also captures anything that doesn't touch the bank balance but still needs to exist in Rentvine: unpaid tenant charges, unpaid vendor bills, vendor credits, and owner/vendor 1099 income for the current tax year.</p>
+<p>Once the workbook balances, it goes to the customer for sign-off. That sign-off is what lets us import balances with confidence instead of guesswork -- and it scales. We've reviewed a real sample workbook from a client with roughly 1,800 properties that used this exact same methodology.</p>
+</section>
+
+<section id="affects-balance">
+<h2>What Migrates and Affects the Bank Balance</h2>
+<p>Security deposits, tenant prepayments, and uncleared items like outstanding checks or deposits all migrate <em>and</em> directly affect the client's starting bank balance. These are the categories that make up the variance we're solving for in the workbook.</p>
+</section>
+
+<section id="no-affect-balance">
+<h2>What Migrates but Doesn't Affect the Bank Balance</h2>
+<p>Unpaid tenant charges, unpaid vendor bills, vendor credits, and owner/vendor 1099 income all migrate into Rentvine so they're tracked going forward, but none of them move the client's starting bank balance. They're recorded for future processing, not for the balance-forward math itself.</p>
+</section>
+
+<section id="no-migrate">
+<h2>What Doesn't Migrate at All</h2>
+<p>Detailed historical ledger data -- individual payment and charge history going back multiple years -- doesn't migrate into Rentvine's ledgers. That doesn't mean it's lost: customers can keep it as an external file attachment inside Rentvine for reference.</p>
+</section>
+
+<section id="manual-entry">
+<h2>Recording a Manual Balance Forward in Rentvine</h2>
+<p>For smaller accounts, balances get entered manually rather than imported. There are two ways to do this, both under Accounting:</p>
+<ul>
+<li><strong>Create a Journal Entry</strong> (Accounting &rarr; Transactions &rarr; Actions &rarr; New Journal Entry): set the ledger, set Date Posted to the cutoff date, add a description like "Balance Forward," then enter a debit or credit against an equity account (an Opening Balance / Balance Forward account) and the offsetting entry against the bank account.</li>
+<li><strong>Record an Owner Payment</strong> (Accounting &rarr; Money In &rarr; Actions &rarr; Record Owner Payment) when the money needs to show as deposited into a bank account. When you use this path, the payment must also be recorded as a New Deposit to complete the opening balance reconciliation -- that's the required second step, not optional.</li>
+</ul>
+<p>Never enter prepayments or security deposits on the portfolio ledger -- those belong on the tenant/lease ledger instead, using the separate tenant balance-forward flow.</p>
+</section>
+
+<section id="import-tool">
+<h2>Importing at Scale: The Import Security Deposits Tool</h2>
+<p>For larger accounts, we don't hand-enter every deposit -- we use the Import Security Deposits tool under Global Settings. The source is a Security Deposit Import Sheet: a structured spreadsheet using the raw database field names the system needs for ingestion. Upload the CSV, and the import maps each row to the matching property and lease in Rentvine.</p>
+</section>
+
+<section id="address-mismatch">
+<h2>The Address-Matching Failure Mode</h2>
+<p>Here's the single most common reason an automated import fails: address-format mismatches. If the import file lists a property as "123 Main Road" and Rentvine's own record has it as "123 Main RD," the import won't recognize them as the same property.</p>
+<blockquote class="script-line">If an import comes back with a property that didn't match, check the address format first -- nine times out of ten it's "Road" versus "RD," not a real data problem.</blockquote>
+<p>The fix is a manual correction in the source file -- update the address format so it matches Rentvine's record exactly -- and then re-run the import. It's not a system error and it's not something you fix by simply retrying.</p>
+</section>
+
+<section id="verify-import">
+<h2>Verifying the Import</h2>
+<p>After a successful import, don't just assume it worked -- verify it. Open the affected tenant's ledger and confirm the newly generated lease charges and receipts are present and correct. That's the real confirmation the import landed where it should.</p>
+</section>
+
+<section id="bank-recon">
+<h2>Finishing with Bank Reconciliation 2.0</h2>
+<p>Once every recorded balance-forward item is in Rentvine -- manual journal entries, owner receipts and deposits, imported security deposits, manual prepayment receipts -- the last step is opening Bank Reconciliation 2.0 and checking off each of those items one by one.</p>
+<p>When every item is checked off and the variance clears to exactly $0, that's the real finish line. A $0 variance at this step is what confirms the client's starting balance now matches their actual bank statement -- not before.</p>
+</section>
+
+<section id="core-data">
+<h2>Core Data Has to Exist First</h2>
+<p>None of this works without core data already in place. Portfolios, owners, properties, tenants, and vendors all have to exist in Rentvine before any financial data can be imported or entered -- core data is what creates the ledgers that the workbook's balances get mapped onto. Without it, there's nowhere for those numbers to go.</p>
+</section>
+
+<section id="scale-timeline">
+<h2>Timeline and Scale</h2>
+<p>Onboarding completion typically takes 1 to 7 business days, depending on account size, the quality of the client's prior records, and how quickly they respond to requests. The workbook methodology itself doesn't change with size -- we've used this same approach on accounts from a handful of doors up to roughly 1,800 properties.</p>
+</section>
+
+<section id="closing">
+<h2>Closing</h2>
+<p>That's the full mechanical picture behind the customer-facing timeline from last session: build the workbook against one bank-balance number, know which of the three migration buckets each item falls into, enter or import the data with core data already in place, watch for the address-matching failure mode, and finish with Bank Reconciliation 2.0 clearing the variance to zero.</p>
+</section>
+
+
+<p><a class="top-btn" href="#top">Back to top</a> &nbsp; <a href="../index.html">Back to Rentvine University</a></p>
+<p style="text-align:center;color:#5a6b63;font-size:.85rem;margin-top:2rem;padding-top:1rem;border-top:1px solid #d9e3dd">Rentvine University &middot; Created by Leonard Pitts</p></body>
+</html>
