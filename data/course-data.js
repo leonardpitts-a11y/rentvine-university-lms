@@ -2,7 +2,7 @@ window.RVU_COURSE = {
   "meta": {
     "title": "Rentvine University",
     "edition": "Beginner Enhanced Edition",
-    "version": "8.0-financial-onboarding-core-weeks",
+    "version": "8.1-facilitator-scripts-screening-marketing-paths",
     "lastUpdated": "2026-09-02",
     "owner": "Rentvine University",
     "description": "Interactive 21-week Rentvine University learner program ordered by real property management processes for beginners, including a Financial Onboarding Specialist phase covering how new customers get migrated onto Rentvine's accounting system. Includes a Before You Begin orientation, role-path filters, phase process maps, a continuing practice company case file, downloadable job aids, scored knowledge checks with remediation links, required lab video submissions, guided walkthrough examples, match-the-term glossary practice, accessibility controls, and progress tracking.",
@@ -1507,7 +1507,8 @@ window.RVU_COURSE = {
       "realWorldNotes": [
         "Never combine a third-party showing-provider integration (Tenant Turner, ShowMojo) with individually-checked syndication boxes for the same platform &mdash; flagged independently across at least five customer calls as a cause of duplicate listings.",
         "Syndication timing to outside sites genuinely varies (24 to 72 hours depending on the network) &mdash; set that expectation with owners rather than promising an instant listing.",
-        "Every trainer who demoed the AI listing-description generator also told the customer to proofread it before publishing &mdash; treat that as standard guidance, not an aside."
+        "Every trainer who demoed the AI listing-description generator also told the customer to proofread it before publishing &mdash; treat that as standard guidance, not an aside.",
+        "Industry-wide framing worth passing on to customers: syndicating one listing out to 30+ external sites (Zillow, Apartments.com, Trulia, etc.) instead of manually reposting is the standard way small teams get comparable reach to much larger competitors -- but only if the listing itself has real photos, an accurate description, and current pricing, since syndication amplifies whatever quality the source listing already has, good or bad."
       ],
       "topics": "Listings, syndication, showing providers, AI descriptions",
       "objectives": [
@@ -1921,7 +1922,10 @@ window.RVU_COURSE = {
         "Decision View flags issues in color but never auto-passes or auto-fails an applicant on its own &mdash; a late payment or a low score doesn't trigger an automatic decision. The PM always makes the final call.",
         "Decision View calculates an applicant's income-to-rent ratio automatically and lets a PM run a screening report directly from a single applicant's record, without first merging co-applicants together.",
         "Once an application is marked Declined or Withdrawn, its details lock for editing. To correct a field like SSN or address history, the status has to be reverted to Pending or Screening first.",
-        "No criminal-background data bureau has complete U.S. coverage &mdash; real coverage runs roughly 83&ndash;85%, since state and county laws vary and many court records still aren't digitized."
+        "No criminal-background data bureau has complete U.S. coverage &mdash; real coverage runs roughly 83&ndash;85%, since state and county laws vary and many court records still aren't digitized.",
+        "A real customer screening call (Rentvine Cru, Aug 21, 2026) showed what screening looks like before standardization: fully manual application review with no written approval criteria, landlord references tracked by phone and stored on paper, and applicants routinely bypassing Plaid income/identity verification by uploading alternative documents instead -- exactly the gap the Custom Scoring templates and mandatory-verification settings in this week's objectives are designed to close.",
+        "That same call confirmed native pet screening now blocks the old workaround of skipping an external pet-screening link entirely -- it's mandatory inside the application flow -- and that verified service animals are auto-approved with no fee, which matters for fair housing handling.",
+        "Industry-wide compliance context: FCRA requires a compliant adverse action notice (naming the screening company, stating it didn't make the decision, and explaining the applicant's dispute rights) any time an application is denied based on a screening report -- and while a written screening policy isn't legally mandated, one is strongly recommended because it demonstrates consistent, good-faith criteria across every applicant."
       ],
       "topics": "Applicant workflow, screening, guarantors, application templates",
       "objectives": [
@@ -7041,6 +7045,14 @@ window.RVU_COURSE = {
           "url": "https://drive.google.com/file/d/1GlzIZo2_gChhWNLxUg00YWhD_loBclf_/view",
           "summary": "Dondre Brown's Aug 11, 2026 department overview covering the same purpose, migrated-vs-not-migrated balances, and timeline.",
           "videoCode": ""
+        },
+        {
+          "id": "w20-res-5",
+          "title": "Facilitator Script: Financial Onboarding — The Customer-Facing Process",
+          "type": "Facilitator Script",
+          "url": "job-aids/week-20-facilitator-script.html",
+          "summary": "Full trainer script covering the 4-step timeline: new trust accounts, reconciliation, the blackout period, and the balance forward, with ready-to-use suggested language.",
+          "videoCode": ""
         }
       ],
       "labSteps": [
@@ -7280,6 +7292,14 @@ window.RVU_COURSE = {
           "type": "Internal recording",
           "url": "https://drive.google.com/file/d/1GlzIZo2_gChhWNLxUg00YWhD_loBclf_/view",
           "summary": "Aug 11, 2026 companion recording covering the same migration mechanics from a department-overview angle.",
+          "videoCode": ""
+        },
+        {
+          "id": "w21-res-7",
+          "title": "Facilitator Script: Balance Forward Workbook, Data Migration & Reconciliation",
+          "type": "Facilitator Script",
+          "url": "job-aids/week-21-facilitator-script.html",
+          "summary": "Full trainer script covering the workbook build, migration buckets, the address-matching failure mode, and Bank Reconciliation 2.0, with ready-to-use suggested language.",
           "videoCode": ""
         }
       ],
@@ -10456,6 +10476,29 @@ window.RVU_COURSE = {
         21
       ],
       "focus": "Complete all modules and the capstone certification."
+    },
+    {
+      "id": "screening",
+      "title": "Screening Specialist Path",
+      "weeks": [
+        1,
+        3,
+        4,
+        5,
+        19
+      ],
+      "focus": "Property setup context, listing/marketing basics, application templates, screening reports and compliance (FCRA/HUD look-back rules), and documented applicant decisions."
+    },
+    {
+      "id": "marketing",
+      "title": "Marketing Specialist Path",
+      "weeks": [
+        1,
+        3,
+        4,
+        19
+      ],
+      "focus": "Property details, photos and rental details, the 5-step marketing/syndication flow, showing providers, and AI-assisted listing descriptions."
     }
   ],
   "phaseMaps": [
@@ -10675,6 +10718,18 @@ window.RVU_COURSE = {
       "title": "Facilitator Script: Global Settings & Final Review",
       "url": "job-aids/call-4b-facilitator-script.html",
       "summary": "Full trainer script for the final onboarding session — Account, Accounting, and Lease Settings, key settings mechanics, the final review checklist, and closing out onboarding — with ready-to-use suggested language."
+    },
+    {
+      "id": "week-20-facilitator-script",
+      "title": "Facilitator Script: Financial Onboarding — The Customer-Facing Process",
+      "url": "job-aids/week-20-facilitator-script.html",
+      "summary": "Full trainer script for the four-step customer-facing financial onboarding timeline — new trust accounts, reconciliation, the blackout period, and the balance forward — adapted from Rentvine's internal process docs and the Aug 11, 2026 Department Intro session."
+    },
+    {
+      "id": "week-21-facilitator-script",
+      "title": "Facilitator Script: Balance Forward Workbook, Data Migration & Reconciliation",
+      "url": "job-aids/week-21-facilitator-script.html",
+      "summary": "Full trainer script for the Balance Forward Workbook methodology, data migration paths, the address-matching failure mode, and Bank Reconciliation 2.0 — adapted from Jimmy Roling's Sep 2, 2026 Deep Dive Financial Onboarding training and live software demo."
     }
   ],
   "realCaseExposure": {
