@@ -2,8 +2,8 @@ window.RVU_COURSE = {
   "meta": {
     "title": "Rentvine University",
     "edition": "Beginner Enhanced Edition",
-    "version": "8.1-facilitator-scripts-screening-marketing-paths",
-    "lastUpdated": "2026-09-02",
+    "version": "8.2-content-refresh-2026-09-15",
+    "lastUpdated": "2026-09-15",
     "owner": "Rentvine University",
     "description": "Interactive 21-week Rentvine University learner program ordered by real property management processes for beginners, including a Financial Onboarding Specialist phase covering how new customers get migrated onto Rentvine's accounting system. Includes a Before You Begin orientation, role-path filters, phase process maps, a continuing practice company case file, downloadable job aids, scored knowledge checks with remediation links, required lab video submissions, guided walkthrough examples, match-the-term glossary practice, accessibility controls, and progress tracking.",
     "safety": "Complete all labs in a training or sandbox database. Do not use production data.",
@@ -769,7 +769,8 @@ window.RVU_COURSE = {
         "Five settings a trainer will always confirm on a new portfolio: posting settings, statement settings, additional (portfolio-level) reserve, regular (property-level) reserve, and overdraft override.",
         "Reserve vs. Additional Reserve is really just a level distinction (property vs. portfolio) &mdash; both hold back owner distributions only, never bill payments.",
         "Real discrepancy walked through live on a customer call: a <strong>$2,805</strong> externally-paid tree-removal reimbursement recorded as a matching owner receipt plus vendor bill, alongside a separate <strong>$115</strong> gap traced to rent collected in a parallel third-party tool that never got disbursed through Rentvine.",
-        "Trainers consistently warn against using Overdraft Override to push a portfolio negative &mdash; it can effectively borrow from another owner's trust funds. A real example set it to <strong>$1,000</strong> temporarily, then explicitly reset it to $0 once the balance recovered."
+        "Trainers consistently warn against using Overdraft Override to push a portfolio negative &mdash; it can effectively borrow from another owner's trust funds. A real example set it to <strong>$1,000</strong> temporarily, then explicitly reset it to $0 once the balance recovered.",
+        "Each portfolio is capped at a maximum of two bank accounts in Rentvine -- one for the rental trust, one for security deposits. When a situation calls for a separate account (a third-party vendor requirement, for example), the practical workaround trainers use is a manual fund transfer between the existing accounts rather than trying to add a third."
       ],
       "topics": "Portfolios, owners, reserves, overdraft, owner splits & statements",
       "objectives": [
@@ -1144,7 +1145,8 @@ window.RVU_COURSE = {
       "realWorldNotes": [
         "The multi-unit toggle being <strong>permanent</strong> once a property is created was independently flagged as a gotcha in at least six real customer calls across three different companies. Decide it correctly at creation &mdash; changing property type later does not retroactively enable it.",
         "The Maintenance Limit Amount at the property level only triggers a notification &mdash; it does not block a bill or work order above that limit, a point of confusion repeated across several accounts.",
-        "Custom fields must be created at the correct level (property vs. unit) to actually display &mdash; a parking or storage-locker field created at the property level, for instance, silently fails to show where it's needed."
+        "Custom fields must be created at the correct level (property vs. unit) to actually display &mdash; a parking or storage-locker field created at the property level, for instance, silently fails to show where it's needed.",
+        "Transferring a property from one portfolio to another isn't just a record move -- Rentvine automatically carries the property's unpaid charges and unallocated funds over to the new portfolio, so accounting continuity is preserved instead of leaving orphaned balances behind on the old portfolio."
       ],
       "topics": "Property details, associations, groups, tags, manager assignment",
       "objectives": [
@@ -3168,7 +3170,8 @@ window.RVU_COURSE = {
       "realWorldNotes": [
         "The single most repeated rule across nearly every accounting call in this research: the &ldquo;date deposited&rdquo; entered for a receipt must exactly match the date funds actually hit the bank, or reconciliation breaks.",
         "E-check settlements take two to three business days (occasionally longer) to clear. Trainers consistently advise against including unsettled e-check funds in an owner payout in case a payment bounces afterward.",
-        "Bulk Receipts is built specifically for lump-sum payments like Section 8/HUD disbursements &mdash; one incoming payment applied across many unpaid charges in a single step."
+        "Bulk Receipts is built specifically for lump-sum payments like Section 8/HUD disbursements &mdash; one incoming payment applied across many unpaid charges in a single step.",
+        "Global Settings can apply a fully automated late fee to overdue tenant balances (a commonly configured default is 5% starting on day 8) -- worth confirming with the owner what's actually configured rather than assuming a system default, since this runs without manual intervention once it's turned on."
       ],
       "topics": "Tenant receipts, owner contributions, manual deposits, electronic settlements, bulk tenant receipts, bank deposit matching",
       "objectives": [
@@ -4360,7 +4363,8 @@ window.RVU_COURSE = {
       "watchFor": "Do not publish owner statements until receipts, bills, fees, reserves, and diagnostics have been reviewed. Owner statements should explain what happened financially.",
       "realWorldNotes": [
         "If a base fee and an additional (suppressed) fee get posted together as one bill by mistake, don't fix it by deleting the suppressed line item afterward &mdash; the owner's already been credited, so that just creates a second problem. Filter to &ldquo;Additional&rdquo; before posting so the base fee is never included in the first place.",
-        "It's highly recommended to post management fees before running Pay Owners, so the correct amount is automatically held back rather than paid out and chased down after the fact."
+        "It's highly recommended to post management fees before running Pay Owners, so the correct amount is automatically held back rather than paid out and chased down after the fact.",
+        "Management fee percentages don't have to be a single flat rate across a portfolio -- they can be configured to vary by lease type or owner tenure (for example, a different commission on leases signed under a legacy pricing agreement versus new leases). Don't assume one fee percentage applies portfolio-wide without checking each lease's own fee settings."
       ],
       "topics": "Management fees, owner statements, distributions, statement settings, owner reporting packages, Manager Dashboard",
       "objectives": [
