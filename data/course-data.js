@@ -2,8 +2,8 @@ window.RVU_COURSE = {
   "meta": {
     "title": "Rentvine University",
     "edition": "Beginner Enhanced Edition",
-    "version": "8.2-content-refresh-2026-09-15",
-    "lastUpdated": "2026-09-15",
+    "version": "8.3-content-refresh-2026-09-16",
+    "lastUpdated": "2026-09-16",
     "owner": "Rentvine University",
     "description": "Interactive 21-week Rentvine University learner program ordered by real property management processes for beginners, including a Financial Onboarding Specialist phase covering how new customers get migrated onto Rentvine's accounting system. Includes a Before You Begin orientation, role-path filters, phase process maps, a continuing practice company case file, downloadable job aids, scored knowledge checks with remediation links, required lab video submissions, guided walkthrough examples, match-the-term glossary practice, accessibility controls, and progress tracking.",
     "safety": "Complete all labs in a training or sandbox database. Do not use production data.",
@@ -1146,7 +1146,8 @@ window.RVU_COURSE = {
         "The multi-unit toggle being <strong>permanent</strong> once a property is created was independently flagged as a gotcha in at least six real customer calls across three different companies. Decide it correctly at creation &mdash; changing property type later does not retroactively enable it.",
         "The Maintenance Limit Amount at the property level only triggers a notification &mdash; it does not block a bill or work order above that limit, a point of confusion repeated across several accounts.",
         "Custom fields must be created at the correct level (property vs. unit) to actually display &mdash; a parking or storage-locker field created at the property level, for instance, silently fails to show where it's needed.",
-        "Transferring a property from one portfolio to another isn't just a record move -- Rentvine automatically carries the property's unpaid charges and unallocated funds over to the new portfolio, so accounting continuity is preserved instead of leaving orphaned balances behind on the old portfolio."
+        "Transferring a property from one portfolio to another isn't just a record move -- Rentvine automatically carries the property's unpaid charges and unallocated funds over to the new portfolio, so accounting continuity is preserved instead of leaving orphaned balances behind on the old portfolio.",
+        "Management fee settings live at the property level, not the unit level &mdash; independently confirmed in two separate customer onboarding calls the same week (Edwards Property Management, CitySearch). For a multi-unit property, every unit shares one management fee configuration; if different units genuinely need different fee percentages, they need to stay separate properties rather than units on one multi-unit property."
       ],
       "topics": "Property details, associations, groups, tags, manager assignment",
       "objectives": [
@@ -4364,7 +4365,8 @@ window.RVU_COURSE = {
       "realWorldNotes": [
         "If a base fee and an additional (suppressed) fee get posted together as one bill by mistake, don't fix it by deleting the suppressed line item afterward &mdash; the owner's already been credited, so that just creates a second problem. Filter to &ldquo;Additional&rdquo; before posting so the base fee is never included in the first place.",
         "It's highly recommended to post management fees before running Pay Owners, so the correct amount is automatically held back rather than paid out and chased down after the fact.",
-        "Management fee percentages don't have to be a single flat rate across a portfolio -- they can be configured to vary by lease type or owner tenure (for example, a different commission on leases signed under a legacy pricing agreement versus new leases). Don't assume one fee percentage applies portfolio-wide without checking each lease's own fee settings."
+        "Management fee percentages don't have to be a single flat rate across a portfolio -- they can be configured to vary by lease type or owner tenure (for example, a different commission on leases signed under a legacy pricing agreement versus new leases). Don't assume one fee percentage applies portfolio-wide without checking each lease's own fee settings.",
+        "A real customer call (CitySearch, Sep 15 2026) surfaced a management-fee gotcha worth flagging: on a vacant-pending property, Rentvine pulls the fee bill from the vacant-property fee setting only &mdash; it does not automatically add the leased minimum fee on top. If a portfolio's policy is to charge both (e.g., a flat vacancy fee plus a separate minimum), that combined amount currently has to be corrected with a manual bill edit rather than relying on the system to calculate it. Set that expectation with owners who have both a minimum fee and a vacancy fee configured."
       ],
       "topics": "Management fees, owner statements, distributions, statement settings, owner reporting packages, Manager Dashboard",
       "objectives": [
