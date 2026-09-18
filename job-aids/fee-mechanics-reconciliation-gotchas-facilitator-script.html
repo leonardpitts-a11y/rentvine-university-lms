@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Leonard Pitts">
+<title>Facilitator Script: Fee Mechanics, GL Discipline &amp; Reconciliation Gotchas</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;max-width:900px;margin:2rem auto;padding:0 1rem;color:#1f2933}
+  h1{color:#006b47}
+  h2{color:#006b47;border-top:1px solid #d9e3dd;padding-top:1.25rem;margin-top:2rem}
+  h3{color:#0a5c3f;margin-top:1.5rem}
+  .kicker{color:#5a6b63;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+  .box{border:1px solid #d9e3dd;border-radius:12px;padding:1rem 1.25rem;background:#f7faf8;margin-bottom:1rem}
+  blockquote.script-line{border-left:4px solid #00875a;background:#f0f7f3;margin:.75rem 0;padding:.6rem 1rem;font-style:italic}
+  blockquote.script-line::before{content:"Suggested trainer language: ";font-style:normal;font-weight:700;color:#006b47}
+  ul, ol{padding-left:1.4rem}
+  li{margin:.3rem 0}
+  a.toc-link{display:block;padding:.15rem 0}
+  .toc{columns:2;column-gap:2rem}
+  @media (max-width:700px){.toc{columns:1}}
+  button.print-btn{padding:.6rem .85rem;border-radius:8px;border:1px solid #d9e3dd;background:#00875a;color:white;font-weight:700;margin-bottom:1rem}
+  button.top-btn{padding:.4rem .7rem;border-radius:8px;border:1px solid #d9e3dd;background:#fff;color:#006b47;font-weight:700;font-size:.8rem}
+  @media print{button{display:none}}
+  table.qref{width:100%;border-collapse:collapse;margin-top:.5rem}
+  table.qref td,table.qref th{border:1px solid #d9e3dd;padding:.5rem;text-align:left;vertical-align:top}
+  table.qref th{background:#f0f5f2}
+</style>
+</head>
+<body id="top">
+
+<button class="print-btn" onclick="window.print()">Print this facilitator script</button>
+
+<div class="kicker">Rentvine University &middot; Facilitator Script</div>
+<h1>Fee Mechanics, GL Discipline &amp; Reconciliation Gotchas</h1>
+<p class="box"><strong>Purpose:</strong> This script covers a set of accounting gotchas and fee mechanics surfaced in real Rentvine onboarding and QA calls the week of Sept 14&ndash;18, 2026 &mdash; the kind of thing a trainer only learns by watching a customer hit it live. It's meant as a companion to Weeks 9, 10, 12, 14, and 17, not a replacement: where RU already has strong coverage (suppressed fees, the vacant-pending fee gap, property-level fee settings, the two-bank-account cap, the Diagnostics tab, and Post vs. Bulk Post Management Fees), this script recaps briefly and points you back to the existing lesson. The bulk of this script is new material that wasn't in RU before this round: fee-percentage timing, GL account discipline, reimbursement coding, the Overdraft Override hard stop, e-check/Forte voiding limits, late fee handling, monthly close order, RUBS, vacant-unit utilities, migration balance-forward artifacts, and multi-portfolio bank account structure. Use it to prepare for explaining these processes to a new team member, a customer, or yourself while practicing. Lines marked <em>"Suggested trainer language"</em> are ready-to-use scripting you can say almost word for word. None of the language below is a verbatim quote from a call &mdash; it's paraphrased trainer guidance built from what those calls surfaced.</p>
+
+<div class="box"><strong>Source:</strong> Compiled from real Rentvine onboarding/QA calls, Sept 14&ndash;18, 2026: Judi, Timberline 2A, Southern Choice 1A/1B/2A, Edwards Property Management 1B, CitySearch, Barron Management Group 2A. Two additional claims surfaced in this research window &mdash; an unverified future-dated portfolio-transfer edge case, and a conflicting claim about a third portfolio bank account &mdash; were screened out as unconfirmed or contradicted by better-corroborated material, and are intentionally not included here.</div>
+
+<div class="box">
+<strong>Table of contents</strong>
+<div class="toc">
+<a class="toc-link" href="#intro">Introduction</a>
+<a class="toc-link" href="#recap">Quick Recap: What RU Already Covers</a>
+<a class="toc-link" href="#fee-timing">Management Fee % Is Locked at Charge Creation</a>
+<a class="toc-link" href="#gl-discipline">GL Account Discipline: Income vs. Expense</a>
+<a class="toc-link" href="#reimbursements">Coding Reimbursements Correctly</a>
+<a class="toc-link" href="#overdraft-zero">Overdraft Override: The $0 Hard Stop</a>
+<a class="toc-link" href="#echeck-void">E-Checks, Forte, and the Can't-Void Rule</a>
+<a class="toc-link" href="#late-fees">Late Fees: Automate, Then Void What You Waive</a>
+<a class="toc-link" href="#close-order">Monthly Close Order</a>
+<a class="toc-link" href="#rubs">RUBS: Ratio Utility Billing System</a>
+<a class="toc-link" href="#vacant-utilities">Vacant-Unit Utility Bills</a>
+<a class="toc-link" href="#balance-forward-artifact">Beginning Balances and the Migration Artifact</a>
+<a class="toc-link" href="#portfolio-bank-accounts">Separate Portfolios for Separate Bank Accounts</a>
+<a class="toc-link" href="#closing">Closing</a>
+</div>
+</div>
+
+<section id="intro">
+<h2>Introduction</h2>
+<p>Nothing here is theoretical &mdash; every point in this script traces back to a real customer hitting a real wall on a real onboarding or QA call during the week of Sept 14&ndash;18, 2026. Some of it confirms things RU already teaches; some of it is genuinely new. Use the recap section to refresh what's already covered, then treat the rest as new material worth folding into how you train fee mechanics, GL hygiene, and reconciliation.</p>
+</section>
+
+<section id="recap">
+<h2>Quick Recap: What RU Already Covers</h2>
+<p>These points came up again this week but RU already has solid coverage &mdash; don't re-teach them as new, just reinforce them:</p>
+<ul>
+<li><strong>Suppressed additional fees</strong> (Week 12/14): adding an income type like pet fee income or application fee income as an additional management fee and marking it suppressed hides it from the owner statement while still tracking it internally. Week 12's real-world notes already walk through a live example (a Pet Fee Income GL account that was never wired into fee settings after a platform migration).</li>
+<li><strong>Vacant-pending fee combining</strong> (Week 12): Rentvine pulls the fee bill from the vacant-property setting only and does not automatically add the leased minimum fee on top &mdash; the two have to be manually totaled into one bill when a portfolio's policy charges both.</li>
+<li><strong>Property-level fee settings</strong> (Week 12): management fee percentages live at the property level, not the unit level, which matters when commercial suites were built as separate properties instead of units.</li>
+<li><strong>Two-bank-account cap</strong> (Week 17): each portfolio is capped at two bank accounts &mdash; rental trust and security deposit. There is no third account for something like non-refundable fees; route it through the trust account and manually transfer if needed.</li>
+<li><strong>The Diagnostics tab</strong> (Week 14): already covered in depth, including reading the sign on a Suppressed Fee Balance Mismatch (positive = owed to the management company, negative = owed back to the owner).</li>
+<li><strong>Post Management Fees vs. Bulk Management Fees</strong> (Week 12): Bulk Management Fees is a separate one-time-charge tool (like an annual portal activation fee), not a shortcut for clearing the normal unbilled management fee queue.</li>
+<li><strong>Manual ledger adjustments</strong> (Week 10): already discouraged in favor of Other Receipt or Other Payment, since manual adjustments throw off reconciliation.</li>
+</ul>
+</section>
+
+<section id="fee-timing">
+<h2>Management Fee % Is Locked at Charge Creation</h2>
+<p>This one trips up new admins constantly: changing a portfolio or property's management fee percentage in settings is <em>not</em> retroactive. Any charge that already exists was created using whatever percentage was in effect at that moment, and it stays that way permanently &mdash; updating the setting only affects charges created after the change.</p>
+<p>If a customer needs an existing charge to reflect a new percentage, the only path is to void the original charge and recreate it under the new setting. There's no bulk "reprocess at new rate" tool.</p>
+<blockquote class="script-line">Changing the fee percentage in settings only affects new charges going forward. If you need last month's charge to reflect the new rate, we'll need to void it and recreate it &mdash; the setting change alone won't touch anything that's already posted.</blockquote>
+</section>
+
+<section id="gl-discipline">
+<h2>GL Account Discipline: Income vs. Expense</h2>
+<p>A recurring theme across the accounting-heavy calls this week: lease-level charges need to post to income-type GL accounts, and bills need to post to expense-type GL accounts. A common naming pattern makes the distinction obvious once you know to look for it &mdash; for example, "painting income" (charged to a tenant or owner) versus "painting expense" (paid to a vendor).</p>
+<p>When both sides accidentally use the same account type, the two entries can net to zero on reports instead of showing the true inflow and outflow. A related and even more damaging mistake: using a clearing or liability account instead of a proper expense account on a bill. That distorts the portfolio's real balance rather than just muddying one report.</p>
+<blockquote class="script-line">Before you save that bill, check the GL account type &mdash; bills need an expense account, not an income account and not a clearing or liability account. If both sides of a transaction use the same account type, your reports will show it as a wash even though real money moved.</blockquote>
+</section>
+
+<section id="reimbursements">
+<h2>Coding Reimbursements Correctly</h2>
+<p>Owner receipts or "other receipts" that represent a reimbursement &mdash; a vendor refund, or a refund from the management company itself &mdash; should not be coded to an income account. Code them to an offsetting account instead: either an owner contributions account, or back to the original expense account the reimbursement is correcting.</p>
+<p>Coding a reimbursement as income overstates the portfolio's actual income for the period and can throw off owner statements and 1099 reporting downstream.</p>
+</section>
+
+<section id="overdraft-zero">
+<h2>Overdraft Override: The $0 Hard Stop</h2>
+<p>RU already teaches that Overdraft Override shouldn't be used to push a portfolio negative. Here's the mechanical detail behind that warning: setting the override amount to exactly $0 is what hard-blocks any bill payment that would drive the portfolio balance negative. It's the strict, no-exceptions setting.</p>
+<p>Sometimes a temporary override is legitimately needed &mdash; for example, funds are confirmed to be arriving the next business day and a bill needs to go out today. That's fine as a short-term exception, but the override should always be reset back to $0 immediately afterward. Trust accounts commingle funds across owners, so leaving a nonzero override in place is what actually creates the cross-owner borrowing problem RU already warns about.</p>
+<blockquote class="script-line">If you need a one-time exception because funds are landing tomorrow, that's fine &mdash; but the moment that bill is paid, set the override back to $0. Leaving it open is how one owner's trust funds end up covering another owner's bill.</blockquote>
+</section>
+
+<section id="echeck-void">
+<h2>E-Checks, Forte, and the Can't-Void Rule</h2>
+<p>Checks and "other payment" types can be voided and re-recorded if something goes wrong. Electronic checks processed through Forte cannot &mdash; once an e-check payment is submitted, it's final. The same applies to bills paid via automated e-check: there's no direct void, only a return or a journal entry to correct it after the fact.</p>
+<p>This means the moment to catch a mistake is before submitting, not after. Double-check the payee, amount, and bank account on any Forte e-check before you send it.</p>
+<p>Separately, outbound electronic-check payments through Forte carry a $0.99-per-transaction fee that's auto-debited. NACHA files are the manual alternative: instead of Forte handling the transaction electronically, you download a NACHA file from Rentvine and upload it to the bank yourself.</p>
+<blockquote class="script-line">Once you hit submit on a Forte e-check, that's it &mdash; it can't be voided. Take the extra ten seconds to confirm the amount and payee before you send it, not after.</blockquote>
+</section>
+
+<section id="late-fees">
+<h2>Late Fees: Automate, Then Void What You Waive</h2>
+<p>The recommended pattern for late fees is to let the system's automation post them on schedule, then void the specific late fees you want to waive &mdash; for example, giving grace for a holiday or weekend rent due date. That's a cleaner approach than disabling automation altogether and entering late fees manually, which reintroduces the risk of forgetting one or getting the amount wrong.</p>
+</section>
+
+<section id="close-order">
+<h2>Monthly Close Order</h2>
+<p>A confirmed, repeatable monthly close sequence: post management fees, then pay bills, then print statements. Statements should always be generated for the previous period, not the current one still in progress.</p>
+<table class="qref">
+<tr><th>Step</th><th>Action</th></tr>
+<tr><td>1</td><td>Post management fees</td></tr>
+<tr><td>2</td><td>Pay bills</td></tr>
+<tr><td>3</td><td>Print/publish owner statements (for the previous period)</td></tr>
+</table>
+</section>
+
+<section id="rubs">
+<h2>RUBS: Ratio Utility Billing System</h2>
+<p>RUBS came up in the context of a shared water bill for a 4-unit building. Instead of trying to sub-meter or guess an individual unit's usage, RUBS splits one shared utility bill evenly across the units (or tenants) it serves. Depending on how a property is set up, that produces either tenant-facing charges (if the cost is billed back to residents) or an owner-side lease charge (if the owner is absorbing the utility cost instead of passing it through).</p>
+</section>
+
+<section id="vacant-utilities">
+<h2>Vacant-Unit Utility Bills</h2>
+<p>When a unit is vacant, its utility bill can be logged directly against that vacant unit rather than being divided across the occupied units in the portfolio. It's still paid out of the portfolio's overall operating balance &mdash; there's no need to allocate a vacant unit's utility cost across other tenants just because it doesn't have a resident to bill.</p>
+</section>
+
+<section id="balance-forward-artifact">
+<h2>Beginning Balances and the Migration Artifact</h2>
+<p>New customers sometimes look at their opening owner statement and question a lump-sum beginning or opening balance they don't recognize line by line. In most cases that's not a bug &mdash; it's the balance-forward import carrying over a single consolidated number from the customer's previous software (Buildium was the example that came up this week). Weeks 20 and 21 already cover the Balance Forward Workbook mechanics in depth; this is simply a good talking point to have ready when a confused or skeptical new owner asks about it.</p>
+<blockquote class="script-line">That beginning balance is a single number carried over from your old software during onboarding &mdash; it's a starting point, not a transaction we're hiding detail on. Everything from this point forward will show full detail.</blockquote>
+</section>
+
+<section id="portfolio-bank-accounts">
+<h2>Separate Portfolios for Separate Bank Accounts</h2>
+<p>An owner who wants different properties paid out to different bank accounts can't do that inside a single portfolio &mdash; that requires separate portfolios, one per bank account relationship. Owners with more than one portfolio switch between them from a 3-dot menu inside the owner portal.</p>
+<p>One thing worth confirming with owners moving between portfolios or coming from another platform: even though the underlying accounting is portfolio-based, owner statements still show property-level income, expense, and net breakdowns. Splitting into multiple portfolios for banking purposes doesn't mean losing property-level visibility in reporting.</p>
+</section>
+
+<section id="closing">
+<h2>Closing</h2>
+<p>Most of what surfaces on real onboarding and QA calls isn't a new feature to learn &mdash; it's a timing rule, a GL habit, or a one-sentence caveat that only becomes obvious after a customer hits it. Fee percentage timing, GL account discipline, the Overdraft Override $0 stop, e-check voiding limits, and monthly close order are exactly that kind of detail: small, easy to state clearly once you know it, and easy to miss otherwise.</p>
+</section>
+
+
+<p><a class="top-btn" href="#top">Back to top</a> &nbsp; <a href="../index.html">Back to Rentvine University</a></p>
+<p style="text-align:center;color:#5a6b63;font-size:.85rem;margin-top:2rem;padding-top:1rem;border-top:1px solid #d9e3dd">Rentvine University &middot; Created by Leonard Pitts</p></body>
+</html>
