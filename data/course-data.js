@@ -2,8 +2,8 @@ window.RVU_COURSE = {
   "meta": {
     "title": "Rentvine University",
     "edition": "Beginner Enhanced Edition",
-    "version": "8.4-nsf-petfee-gl-notes",
-    "lastUpdated": "2026-09-17",
+    "version": "8.5-fee-mechanics-reconciliation",
+    "lastUpdated": "2026-09-18",
     "owner": "Rentvine University",
     "description": "Interactive 21-week Rentvine University learner program ordered by real property management processes for beginners, including a Financial Onboarding Specialist phase covering how new customers get migrated onto Rentvine's accounting system. Includes a Before You Begin orientation, role-path filters, phase process maps, a continuing practice company case file, downloadable job aids, scored knowledge checks with remediation links, required lab video submissions, guided walkthrough examples, match-the-term glossary practice, accessibility controls, and progress tracking.",
     "safety": "Complete all labs in a training or sandbox database. Do not use production data.",
@@ -770,7 +770,8 @@ window.RVU_COURSE = {
         "Reserve vs. Additional Reserve is really just a level distinction (property vs. portfolio) &mdash; both hold back owner distributions only, never bill payments.",
         "Real discrepancy walked through live on a customer call: a <strong>$2,805</strong> externally-paid tree-removal reimbursement recorded as a matching owner receipt plus vendor bill, alongside a separate <strong>$115</strong> gap traced to rent collected in a parallel third-party tool that never got disbursed through Rentvine.",
         "Trainers consistently warn against using Overdraft Override to push a portfolio negative &mdash; it can effectively borrow from another owner's trust funds. A real example set it to <strong>$1,000</strong> temporarily, then explicitly reset it to $0 once the balance recovered.",
-        "Each portfolio is capped at a maximum of two bank accounts in Rentvine -- one for the rental trust, one for security deposits. When a situation calls for a separate account (a third-party vendor requirement, for example), the practical workaround trainers use is a manual fund transfer between the existing accounts rather than trying to add a third."
+        "Each portfolio is capped at a maximum of two bank accounts in Rentvine -- one for the rental trust, one for security deposits. When a situation calls for a separate account (a third-party vendor requirement, for example), the practical workaround trainers use is a manual fund transfer between the existing accounts rather than trying to add a third.",
+        "A real onboarding call (Barron Management Group 2A, Sept 18 2026, reinforcing Edwards Property Management 1B, Sept 15 2026) confirmed that an owner wanting separate properties paid to separate bank accounts needs separate portfolios -- it cannot be done inside one portfolio. Owners with more than one portfolio switch between them from a 3-dot menu in the owner portal, and statements still show property-level income/expense/net breakdowns even though the underlying accounting is portfolio-based."
       ],
       "topics": "Portfolios, owners, reserves, overdraft, owner splits & statements",
       "objectives": [
@@ -1512,7 +1513,9 @@ window.RVU_COURSE = {
         "Never combine a third-party showing-provider integration (Tenant Turner, ShowMojo) with individually-checked syndication boxes for the same platform &mdash; flagged independently across at least five customer calls as a cause of duplicate listings.",
         "Syndication timing to outside sites genuinely varies (24 to 72 hours depending on the network) &mdash; set that expectation with owners rather than promising an instant listing.",
         "Every trainer who demoed the AI listing-description generator also told the customer to proofread it before publishing &mdash; treat that as standard guidance, not an aside.",
-        "Industry-wide framing worth passing on to customers: syndicating one listing out to 30+ external sites (Zillow, Apartments.com, Trulia, etc.) instead of manually reposting is the standard way small teams get comparable reach to much larger competitors -- but only if the listing itself has real photos, an accurate description, and current pricing, since syndication amplifies whatever quality the source listing already has, good or bad."
+        "Industry-wide framing worth passing on to customers: syndicating one listing out to 30+ external sites (Zillow, Apartments.com, Trulia, etc.) instead of manually reposting is the standard way small teams get comparable reach to much larger competitors -- but only if the listing itself has real photos, an accurate description, and current pricing, since syndication amplifies whatever quality the source listing already has, good or bad.",
+        "A real onboarding call (Southern Choice 1B, Sept 16 2026) clarified that Zillow's well-known \"10 listings per account\" limit works differently through Rentvine: listings sync out through one company-wide Rentvine-connected account, so Zillow sees the aggregate feed rather than individual staff logins.",
+        "A real onboarding call (Edwards Property Management 1B, Sept 15 2026) flagged a caveat worth stating out loud when teaching the Rent Finder Report: it costs $2.50 per run, and its market-rent estimate's historical accuracy has occasionally been an issue -- treat it as a quick sanity check, not a guaranteed number."
       ],
       "topics": "Listings, syndication, showing providers, AI descriptions",
       "objectives": [
@@ -2896,7 +2899,8 @@ window.RVU_COURSE = {
       "watchFor": "Sending blasts without validating recipient segment and opt-out/compliance requirements.",
       "realWorldNotes": [
         "The two-tier notification system trips up nearly every real customer: Account (global) Notifications require someone to manually enter every recipient for every event type and then alert that person every time, everywhere, with no per-user filtering. Personal Notifications default to on for whoever is the record's assignee and can be filtered per user across four channels (system, email, text, Slack).",
-        "An administrator must send the first text message before an owner or tenant can text back &mdash; two-way SMS only activates after the manager initiates contact."
+        "An administrator must send the first text message before an owner or tenant can text back &mdash; two-way SMS only activates after the manager initiates contact.",
+        "A real onboarding call (Edwards Property Management 1B, Sept 15 2026) flagged a trial-account gotcha worth surfacing proactively: text messaging is disabled until an account is fully active, because trial accounts don't yet have an assigned Twilio number. New customers testing texting during a trial should be told this up front rather than left thinking texting is broken."
       ],
       "topics": "Mass messaging, texting, email templates, communication history",
       "objectives": [
@@ -3173,7 +3177,8 @@ window.RVU_COURSE = {
         "The single most repeated rule across nearly every accounting call in this research: the &ldquo;date deposited&rdquo; entered for a receipt must exactly match the date funds actually hit the bank, or reconciliation breaks.",
         "E-check settlements take two to three business days (occasionally longer) to clear. Trainers consistently advise against including unsettled e-check funds in an owner payout in case a payment bounces afterward.",
         "Bulk Receipts is built specifically for lump-sum payments like Section 8/HUD disbursements &mdash; one incoming payment applied across many unpaid charges in a single step.",
-        "Global Settings can apply a fully automated late fee to overdue tenant balances (a commonly configured default is 5% starting on day 8) -- worth confirming with the owner what's actually configured rather than assuming a system default, since this runs without manual intervention once it's turned on."
+        "Global Settings can apply a fully automated late fee to overdue tenant balances (a commonly configured default is 5% starting on day 8) -- worth confirming with the owner what's actually configured rather than assuming a system default, since this runs without manual intervention once it's turned on.",
+        "Two real onboarding calls (Southern Choice 1A, Sept 14 2026, and Southern Choice 2A, Sept 18 2026) confirmed that checks and \"other payment\" types can be voided and re-recorded, but electronic checks processed through Forte cannot be voided once submitted -- double-check the payee and amount before sending. Forte e-check payments also carry a $0.99/transaction fee that is auto-debited; NACHA files are the manual-download/upload alternative to the bank."
       ],
       "topics": "Tenant receipts, owner contributions, manual deposits, electronic settlements, bulk tenant receipts, bank deposit matching",
       "objectives": [
@@ -3489,7 +3494,8 @@ window.RVU_COURSE = {
       "realWorldNotes": [
         "Never future-date a bill &mdash; independently warned against in at least four separate real customer calls.",
         "Rejecting a vendor invoice is a hard delete: it removes the invoice entirely and notifies the vendor, with no way to recover it afterward.",
-        "Use Other Receipt or Other Payment instead of a manual &ldquo;adjustment&rdquo; &mdash; repeated as a strong directive in nearly every accounting-heavy call reviewed."
+        "Use Other Receipt or Other Payment instead of a manual &ldquo;adjustment&rdquo; &mdash; repeated as a strong directive in nearly every accounting-heavy call reviewed.",
+        "A real onboarding call (Edwards Property Management 1B, Sept 15 2026) surfaced a workflow that solves a common pain point: HOA dues can be paid directly from the trust account by creating the HOA as a contact/payee, generating a bill with the HOA as payee, and attaching the property -- avoiding the amenity/pool-key deactivation that follows landlord non-payment of HOA dues."
       ],
       "topics": "Bills, invoice OCR, Rapid Invoice, NACHA, vendor credits, bill approvals, payment batches, remote checks",
       "objectives": [
@@ -4368,7 +4374,8 @@ window.RVU_COURSE = {
         "It's highly recommended to post management fees before running Pay Owners, so the correct amount is automatically held back rather than paid out and chased down after the fact.",
         "Management fee percentages don't have to be a single flat rate across a portfolio -- they can be configured to vary by lease type or owner tenure (for example, a different commission on leases signed under a legacy pricing agreement versus new leases). Don't assume one fee percentage applies portfolio-wide without checking each lease's own fee settings.",
         "A real customer call (CitySearch, Sep 15 2026) surfaced a management-fee gotcha worth flagging: on a vacant-pending property, Rentvine pulls the fee bill from the vacant-property fee setting only &mdash; it does not automatically add the leased minimum fee on top. If a portfolio's policy is to charge both (e.g., a flat vacancy fee plus a separate minimum), that combined amount currently has to be corrected with a manual bill edit rather than relying on the system to calculate it. Set that expectation with owners who have both a minimum fee and a vacancy fee configured.",
-        "That same CitySearch call (Sep 15 2026) also surfaced a migration-era gotcha worth flagging separately from the vacancy-fee issue above: their Pet Fee Income GL account (4250) had never been added to management fee settings after converting from their old software, so pet fees were not being suppressed and were showing up incorrectly on owner statements across multiple portfolios (Cover Art Leasing, Roto Holdings, and others). The fix was manual and repetitive -- add the GL account as a suppressed additional management fee on every affected property one at a time -- so when onboarding a customer coming from another platform, proactively check that every fee-income GL account they actually use (pet fees, application fees, etc.) is wired into management fee settings rather than waiting for it to surface on a statement."
+        "That same CitySearch call (Sep 15 2026) also surfaced a migration-era gotcha worth flagging separately from the vacancy-fee issue above: their Pet Fee Income GL account (4250) had never been added to management fee settings after converting from their old software, so pet fees were not being suppressed and were showing up incorrectly on owner statements across multiple portfolios (Cover Art Leasing, Roto Holdings, and others). The fix was manual and repetitive -- add the GL account as a suppressed additional management fee on every affected property one at a time -- so when onboarding a customer coming from another platform, proactively check that every fee-income GL account they actually use (pet fees, application fees, etc.) is wired into management fee settings rather than waiting for it to surface on a statement.",
+        "A real onboarding call (Edwards Property Management 1B, Sept 15 2026) surfaced a fee-timing gotcha: the management fee percentage that applies to a charge is locked in at the moment that charge is created. Updating the fee percentage in settings only affects future charges -- it is not retroactive. To apply a new percentage to an existing charge, void it and recreate it under the new setting."
       ],
       "topics": "Management fees, owner statements, distributions, statement settings, owner reporting packages, Manager Dashboard",
       "objectives": [
@@ -4474,6 +4481,14 @@ window.RVU_COURSE = {
           "url": "https://help.rentvine.com/en/articles/16574180-how-to-pay-owners",
           "summary": "Official article on the Pay Owners workflow and the Distributable Amount formula.",
           "videoCode": null
+        },
+        {
+          "id": "w12-res-11",
+          "title": "Facilitator Script: Fee Mechanics, GL Discipline & Reconciliation Gotchas (Fee Timing section)",
+          "type": "Facilitator Script",
+          "url": "job-aids/fee-mechanics-reconciliation-gotchas-facilitator-script.html",
+          "summary": "New companion script -- jump to the Management Fee % Is Locked at Charge Creation and Monthly Close Order sections for this week's topics.",
+          "videoCode": ""
         }
       ],
       "labSteps": [
@@ -5266,6 +5281,14 @@ window.RVU_COURSE = {
           "type": "Facilitator Script",
           "url": "job-aids/call-2a-facilitator-script.html",
           "summary": "The same accounting script referenced in Weeks 9, 10, and 12 — jump to the Diagnostics sections (negative bank accounts, reserves not met, escrow/prepayment mismatches, reconciliation lapse, suppressed fee mismatches, vendor credits) for this week's topics.",
+          "videoCode": ""
+        },
+        {
+          "id": "w14-res-7",
+          "title": "Facilitator Script: Fee Mechanics, GL Discipline & Reconciliation Gotchas (Recap + GL sections)",
+          "type": "Facilitator Script",
+          "url": "job-aids/fee-mechanics-reconciliation-gotchas-facilitator-script.html",
+          "summary": "New companion script -- jump to the Quick Recap and GL Account Discipline sections for this week's diagnostics-adjacent topics.",
           "videoCode": ""
         }
       ],
@@ -6071,7 +6094,8 @@ window.RVU_COURSE = {
       "watchFor": "Do not treat accounting settings casually. Changes to accounts, allocation order, or fee definitions can affect ledgers, reports, owner statements, and trust compliance.",
       "realWorldNotes": [
         "Chart of Accounts account types are permanent once created and cannot be changed later &mdash; a real first-time-setup gotcha worth getting right before any transactions post.",
-        "Two Buildium-migration customers in this research both ran into undocumented credits or adjustments carried over from the old system that caused real owner-statement discrepancies (one as large as <strong>$5,000</strong>) &mdash; worth checking for specifically after any migration."
+        "Two Buildium-migration customers in this research both ran into undocumented credits or adjustments carried over from the old system that caused real owner-statement discrepancies (one as large as <strong>$5,000</strong>) &mdash; worth checking for specifically after any migration.",
+        "A real onboarding call (Barron Management Group 2A, Sept 18 2026) highlighted a GL account discipline gotcha: lease-level charges need income-type GL accounts and bills need expense-type GL accounts (for example, \"painting income\" vs. \"painting expense\"). Using the same account type on both sides nets to zero on reports instead of showing true inflow and outflow, and using a clearing or liability account instead of an expense account on a bill distorts the portfolio balance."
       ],
       "topics": "Trust accounting, Chart of Accounts, GL codes, payment allocation, prepaid rent, manager ledger, triple-tie reconciliation, security deposits, liabilities",
       "objectives": [
@@ -6136,6 +6160,14 @@ window.RVU_COURSE = {
           "type": "Official KB",
           "url": "https://help.rentvine.com/en/articles/16573962-diagnostics-tab",
           "summary": "Reference for escrow mismatch, reserve not met, and negative balance issues.",
+          "videoCode": ""
+        },
+        {
+          "id": "w17-res-8",
+          "title": "Facilitator Script: Fee Mechanics, GL Discipline & Reconciliation Gotchas",
+          "type": "Facilitator Script",
+          "url": "job-aids/fee-mechanics-reconciliation-gotchas-facilitator-script.html",
+          "summary": "New companion script covering GL account discipline, reimbursement coding, e-check/Forte voiding limits, RUBS, and multi-portfolio bank account structure -- compiled from real onboarding/QA calls, Sept 14-18, 2026.",
           "videoCode": ""
         }
       ],
@@ -8285,7 +8317,24 @@ window.RVU_COURSE = {
       "whyItMatters": "This is different from the legal lease document; it controls the accounting workflow.",
       "guideTitle": "How To Create a Financial Lease (Move In)",
       "guideUrl": "https://help.rentvine.com/en/articles/16603312-how-to-create-a-financial-lease-move-in",
-      "seeAlso": []
+      "seeAlso": [
+        "Lease Agreement"
+      ]
+    },
+    {
+      "id": "lease-agreement",
+      "term": "Lease Agreement",
+      "category": "Leasing",
+      "weeks": [
+        6
+      ],
+      "definition": "The actual signable lease document, generated separately under Lease Documents (often through RentSign) -- distinct from the Financial Lease record itself.",
+      "whyItMatters": "New users often conflate \"lease\" (the tenant/transaction record that drives accounting) with \"lease agreement\" (the physical or digital document to sign). Confusing the two means looking in the wrong place for signatures versus ledger activity.",
+      "guideTitle": "How To Create a Financial Lease (Move In)",
+      "guideUrl": "https://help.rentvine.com/en/articles/16603312-how-to-create-a-financial-lease-move-in",
+      "seeAlso": [
+        "Financial Lease"
+      ]
     },
     {
       "id": "move-in-flow",
@@ -10073,6 +10122,20 @@ window.RVU_COURSE = {
         "Personal Notification Settings",
         "User Role"
       ]
+    },
+    {
+      "id": "rubs-ratio-utility-billing-system",
+      "term": "RUBS (Ratio Utility Billing System)",
+      "category": "Accounting",
+      "weeks": [
+        9,
+        10
+      ],
+      "definition": "A method of splitting one shared utility bill (for example, a single water bill for a multi-unit building) evenly across the units or tenants it serves, rather than sub-metering individual usage.",
+      "whyItMatters": "Depending on setup, RUBS produces either tenant-facing charges (if the cost is billed back to residents) or an owner-side lease charge (if the owner absorbs the utility cost) -- useful for buildings where individual unit utility usage cannot be metered separately.",
+      "guideTitle": "Accounting Knowledge Base",
+      "guideUrl": "https://help.rentvine.com/en/collections/19727720-accounting",
+      "seeAlso": []
     }
   ],
   "glossaryMeta": {
@@ -10080,7 +10143,7 @@ window.RVU_COURSE = {
     "description": "Beginner-friendly definitions mapped to weekly lessons and official Rentvine Help Center articles.",
     "instructions": "Use this board like a lesson companion: search a term, open the weekly lesson guide, open the related Help Center article, and mark the term reviewed once you can explain it in your own words.",
     "sourceNote": "Help links point to help.rentvine.com article or category pages. Some broad terms use the best matching Knowledge Base category when a single term-specific article is not available.",
-    "count": 162,
+    "count": 174,
     "note": "Glossary week references were remapped to the process-ordered learning path and expanded with beginner property-management roles and lifecycle terms."
   },
   "processMap": [
@@ -10738,6 +10801,12 @@ window.RVU_COURSE = {
       "title": "Facilitator Script: Balance Forward Workbook, Data Migration & Reconciliation",
       "url": "job-aids/week-21-facilitator-script.html",
       "summary": "Full trainer script for the Balance Forward Workbook methodology, data migration paths, the address-matching failure mode, and Bank Reconciliation 2.0 — adapted from Jimmy Roling's Sep 2, 2026 Deep Dive Financial Onboarding training and live software demo."
+    },
+    {
+      "id": "fee-mechanics-reconciliation-gotchas",
+      "title": "Facilitator Script: Fee Mechanics, GL Discipline & Reconciliation Gotchas",
+      "url": "job-aids/fee-mechanics-reconciliation-gotchas-facilitator-script.html",
+      "summary": "Companion script covering fee-percentage timing, GL account discipline, reimbursement coding, the Overdraft Override $0 stop, e-check/Forte voiding limits, late fee handling, monthly close order, RUBS, vacant-unit utilities, migration balance-forward artifacts, and multi-portfolio bank account structure -- compiled from real onboarding/QA calls, Sept 14-18, 2026."
     }
   ],
   "realCaseExposure": {
