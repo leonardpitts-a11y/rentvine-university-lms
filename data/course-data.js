@@ -2,7 +2,7 @@ window.RVU_COURSE = {
   "meta": {
     "title": "Rentvine University",
     "edition": "Beginner Enhanced Edition",
-    "version": "8.9-maintenance-global-settings",
+    "version": "8.10-recent-call-updates",
     "lastUpdated": "2026-09-24",
     "owner": "Rentvine University",
     "description": "Interactive 21-week Rentvine University learner program ordered by real property management processes for beginners, including a Financial Onboarding Specialist phase covering how new customers get migrated onto Rentvine's accounting system. Includes a Before You Begin orientation, role-path filters, phase process maps, a continuing practice company case file, downloadable job aids, scored knowledge checks with remediation links, required lab video submissions, guided walkthrough examples, match-the-term glossary practice, accessibility controls, and progress tracking.",
@@ -2270,7 +2270,7 @@ window.RVU_COURSE = {
           "title": "Facilitator Script: RentSign Template Management & Portal Payment Routing",
           "type": "Facilitator Script",
           "url": "job-aids/rentsign-template-portal-payments-facilitator-script.html",
-          "summary": "New companion script (Sept 22 2026 customer call): RentSign's conditional-logic limitation, the Replace Form feature, signature font-size standardization, and tenant portal payment routing between the rental trust and security deposit accounts.",
+          "summary": "Companion script (Sept 22 2026 customer call, updated Sept 24 2026): RentSign's conditional-logic limitation, the Replace Form feature, signature font-size standardization, tenant portal payment routing between the rental trust and security deposit accounts, and troubleshooting a document not correctly attached to a lease.",
           "videoCode": ""
         }
       ],
@@ -3192,7 +3192,8 @@ window.RVU_COURSE = {
         "E-check settlements take two to three business days (occasionally longer) to clear. Trainers consistently advise against including unsettled e-check funds in an owner payout in case a payment bounces afterward.",
         "Bulk Receipts is built specifically for lump-sum payments like Section 8/HUD disbursements &mdash; one incoming payment applied across many unpaid charges in a single step.",
         "Global Settings can apply a fully automated late fee to overdue tenant balances (a commonly configured default is 5% starting on day 8) -- worth confirming with the owner what's actually configured rather than assuming a system default, since this runs without manual intervention once it's turned on.",
-        "Two real onboarding calls (Southern Choice 1A, Sept 14 2026, and Southern Choice 2A, Sept 18 2026) confirmed that checks and \"other payment\" types can be voided and re-recorded, but electronic checks processed through Forte cannot be voided once submitted -- double-check the payee and amount before sending. Forte e-check payments also carry a $0.99/transaction fee that is auto-debited; NACHA files are the manual-download/upload alternative to the bank."
+        "Two real onboarding calls (Southern Choice 1A, Sept 14 2026, and Southern Choice 2A, Sept 18 2026) confirmed that checks and \"other payment\" types can be voided and re-recorded, but electronic checks processed through Forte cannot be voided once submitted -- double-check the payee and amount before sending. Forte e-check payments also carry a $0.99/transaction fee that is auto-debited; NACHA files are the manual-download/upload alternative to the bank.",
+        "A real onboarding call (Edwards Property Management 2A, Sept 22 2026) showed the “reapply” mechanic used specifically to fix a misallocated portion of an already-posted bulk/Section 8 tenant receipt: open the lease's transaction history, find the receipt line, and reapply it across the correct unpaid charges. This is a distinct use of Reapply from the bank-account-mismatch fix covered elsewhere — here nothing moved between bank accounts, only which charges the existing deposit satisfies."
       ],
       "topics": "Tenant receipts, owner contributions, manual deposits, electronic settlements, bulk tenant receipts, bank deposit matching",
       "objectives": [
@@ -3509,7 +3510,8 @@ window.RVU_COURSE = {
         "Never future-date a bill &mdash; independently warned against in at least four separate real customer calls.",
         "Rejecting a vendor invoice is a hard delete: it removes the invoice entirely and notifies the vendor, with no way to recover it afterward.",
         "Use Other Receipt or Other Payment instead of a manual &ldquo;adjustment&rdquo; &mdash; repeated as a strong directive in nearly every accounting-heavy call reviewed.",
-        "A real onboarding call (Edwards Property Management 1B, Sept 15 2026) surfaced a workflow that solves a common pain point: HOA dues can be paid directly from the trust account by creating the HOA as a contact/payee, generating a bill with the HOA as payee, and attaching the property -- avoiding the amenity/pool-key deactivation that follows landlord non-payment of HOA dues."
+        "A real onboarding call (Edwards Property Management 1B, Sept 15 2026) surfaced a workflow that solves a common pain point: HOA dues can be paid directly from the trust account by creating the HOA as a contact/payee, generating a bill with the HOA as payee, and attaching the property -- avoiding the amenity/pool-key deactivation that follows landlord non-payment of HOA dues.",
+        "A real onboarding call (Edwards Property Management 2A, Sept 22 2026) surfaced an open gap: Rentvine's bill-payment screen only lists bank accounts as a payment source, with no “paid by credit card” checkbox the way some legacy systems (e.g. Buildium) offer for a company AMEX. As of that call this was unresolved and escalated internally; discussed workarounds were linking the card directly to the trust account or setting the management company itself up as the bill's payee. Treat this as a known open question — confirm current guidance with support before promising a customer a specific answer."
       ],
       "topics": "Bills, invoice OCR, Rapid Invoice, NACHA, vendor credits, bill approvals, payment batches, remote checks",
       "objectives": [
@@ -3957,7 +3959,8 @@ window.RVU_COURSE = {
         "Rentvine's AI maintenance agent troubleshoots a tenant's request before a work order is created, but does not auto-assign a vendor &mdash; a limitation more than one customer specifically asked about, expecting more automation than the product currently offers.",
         "Several customers use a third-party inspection tool (Z Inspector was named by at least four separate accounts) specifically because Rentvine's native inspection tool requires manual photo upload rather than in-app capture.",
         "Open work orders and invoices consistently fail to migrate cleanly from PropertyWare and require manual re-entry &mdash; worth setting that expectation early with any customer coming from that platform.",
-        "A real maintenance-settings call (Sept 23, 2026) with a vendor-only management company showed that maintenance categories assigned to vendor contacts filter which vendors surface on a new work order, that Internal Maintenance settings (labor descriptions, price book, no-markup toggle) still matter even for shops with no in-house techs, that default inspection areas/items/actions are configured once globally rather than per property, and that Work Order Projects group multiple tasks (with rolled-up cost/completion tracking) for turnovers."
+        "A real maintenance-settings call (Sept 23, 2026) with a vendor-only management company showed that maintenance categories assigned to vendor contacts filter which vendors surface on a new work order, that Internal Maintenance settings (labor descriptions, price book, no-markup toggle) still matter even for shops with no in-house techs, that default inspection areas/items/actions are configured once globally rather than per property, and that Work Order Projects group multiple tasks (with rolled-up cost/completion tracking) for turnovers.",
+        "A Rentvine mock-call training review (Sept 22, 2026) confirmed a real product limitation worth flagging to new users: once an inspection is created it cannot be deleted — it uses a one-size-fits-all template, and a mistaken or unwanted inspection has to be recreated/reworked under Maintenance rather than removed outright."
       ],
       "topics": "Estimates, approvals, projects, templates, vendor portals, scheduling, tenant portal requests, vendor invoices, settings automation",
       "objectives": [
@@ -5591,7 +5594,8 @@ window.RVU_COURSE = {
       "watchFor": "Mixing deposit transfers and refunds or forgetting to document deductions.",
       "realWorldNotes": [
         "The four-part Move-Out workflow (Move-Out Details, Tenant Information, Accounting/deposit calculation, Finalize) ends with printing the Move-Out Statement and processing the refund check &mdash; but the actual bank transfer still has to happen manually, or the escrow account falls out of sync with the security deposit ledger.",
-        "Move-Out and Lease Renewal training is consistently the <em>last</em> module covered in a real customer's onboarding sequence &mdash; worth not shortchanging here just because live training often does."
+        "Move-Out and Lease Renewal training is consistently the <em>last</em> module covered in a real customer's onboarding sequence &mdash; worth not shortchanging here just because live training often does.",
+        "A real onboarding call (Welcome Home 2A, Sept 22 2026) surfaced a compliance-relevant gotcha: a former tenant's portal login keeps access to that property's shared files after move-out unless portal access is explicitly disabled as part of the move-out flow. Don't assume moving a tenant out automatically cuts off file visibility — disabling portal access is a separate, deliberate step."
       ],
       "topics": "Move-out flow, forwarding information, final accounting, security deposit refund, deductions, tenant ledger closeout",
       "objectives": [
@@ -10837,7 +10841,7 @@ window.RVU_COURSE = {
       "id": "rentsign-template-portal-payments-facilitator-script",
       "title": "Facilitator Script: RentSign Template Management & Portal Payment Routing",
       "url": "job-aids/rentsign-template-portal-payments-facilitator-script.html",
-      "summary": "Companion script covering RentSign's conditional-logic limitation, the Replace Form feature for swapping a template's background PDF, signature field font-size standardization, tenant portal 'Make a Payment' vs. 'Pay Deposit' routing, correcting funds that land in the wrong bank account, and sending application invitations during a data-migration gap -- from a real Rentvine customer call, Sept 22 2026."
+      "summary": "Companion script covering RentSign's conditional-logic limitation, the Replace Form feature for swapping a template's background PDF, signature field font-size standardization, tenant portal 'Make a Payment' vs. 'Pay Deposit' routing, correcting funds that land in the wrong bank account, sending application invitations during a data-migration gap, and (added Sept 24 2026) troubleshooting a document not correctly attached to a lease -- from real Rentvine customer calls, Sept 22 and Sept 24, 2026."
     },
     {
       "id": "maintenance-global-settings-facilitator-script",
