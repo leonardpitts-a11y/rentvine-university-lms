@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Leonard Pitts">
+<title>Facilitator Script: Maintenance Global Settings &amp; Internal Operations</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;max-width:900px;margin:2rem auto;padding:0 1rem;color:#1f2933}
+  h1{color:#006b47}
+  h2{color:#006b47;border-top:1px solid #d9e3dd;padding-top:1.25rem;margin-top:2rem}
+  h3{color:#0a5c3f;margin-top:1.5rem}
+  .kicker{color:#5a6b63;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+  .box{border:1px solid #d9e3dd;border-radius:12px;padding:1rem 1.25rem;background:#f7faf8;margin-bottom:1rem}
+  blockquote.script-line{border-left:4px solid #00875a;background:#f0f7f3;margin:.75rem 0;padding:.6rem 1rem;font-style:italic}
+  blockquote.script-line::before{content:"Suggested trainer language: ";font-style:normal;font-weight:700;color:#006b47}
+  ul, ol{padding-left:1.4rem}
+  li{margin:.3rem 0}
+  a.toc-link{display:block;padding:.15rem 0}
+  .toc{columns:2;column-gap:2rem}
+  @media (max-width:700px){.toc{columns:1}}
+  button.print-btn{padding:.6rem .85rem;border-radius:8px;border:1px solid #d9e3dd;background:#00875a;color:white;font-weight:700;margin-bottom:1rem}
+  button.top-btn{padding:.4rem .7rem;border-radius:8px;border:1px solid #d9e3dd;background:#fff;color:#006b47;font-weight:700;font-size:.8rem}
+  @media print{button{display:none}}
+  table.qref{width:100%;border-collapse:collapse;margin-top:.5rem}
+  table.qref td,table.qref th{border:1px solid #d9e3dd;padding:.5rem;text-align:left;vertical-align:top}
+  table.qref th{background:#f0f5f2}
+</style>
+</head>
+<body id="top">
+
+<button class="print-btn" onclick="window.print()">Print this facilitator script</button>
+
+<div class="kicker">Rentvine University &middot; Facilitator Script</div>
+<h1>Maintenance Global Settings &amp; Internal Operations</h1>
+<p class="box"><strong>Purpose:</strong> This script covers global maintenance-configuration mechanics surfaced in a real Rentvine customer call on Sept 23, 2026 &mdash; a maintenance-settings deep dive with a customer who exclusively uses third-party vendors. It's a companion to Week 11 (Maintenance Management &amp; Work Orders) and the existing Maintenance &amp; Work Order Lifecycle facilitator script, not a replacement &mdash; where RU already has strong coverage (the work order life cycle itself, estimates, closing out a work order, appointment settings, and Fixie the AI maintenance assistant), this script recaps briefly and points back to the existing lesson. The material below is genuinely new: maintenance categories used to filter vendor selection, why internal-maintenance settings still matter for vendor-only shops, global default inspection areas/items/actions as a settings-level concept (distinct from performing an inspection), work order projects for grouping turnover tasks, and the admin-side steps for inviting a vendor to their portal. Lines marked <em>"Suggested trainer language"</em> are ready-to-use scripting you can say almost word for word. None of the language below is a verbatim transcript quote &mdash; it's paraphrased trainer guidance reconstructed from what the call surfaced.</p>
+
+<div class="box"><strong>Source:</strong> A real Rentvine customer call, "Call With Southern Choice" (Sept 23, 2026) &mdash; a global maintenance-settings walkthrough covering work order statuses, internal maintenance/price book configuration, inspection defaults, maintenance categories, appointment scheduling, the Fixie AI agent, and vendor portal setup.</div>
+
+<div class="box">
+<strong>Table of contents</strong>
+<div class="toc">
+<a class="toc-link" href="#intro">Introduction</a>
+<a class="toc-link" href="#recap">Quick Recap: What RU Already Covers</a>
+<a class="toc-link" href="#categories">Maintenance Categories: Filtering Vendor Selection</a>
+<a class="toc-link" href="#internal-vendor-only">Internal Maintenance Settings for Vendor-Only Shops</a>
+<a class="toc-link" href="#inspection-defaults">Global Default Inspection Areas, Items, and Actions</a>
+<a class="toc-link" href="#wo-projects">Work Order Projects: Grouping Tasks for Turnovers</a>
+<a class="toc-link" href="#vendor-invite">Inviting a Vendor to the Vendor Portal</a>
+<a class="toc-link" href="#closing">Closing</a>
+</div>
+</div>
+
+<section id="intro">
+<h2>Introduction</h2>
+<p>This call was a global-settings walkthrough, not a work-order-creation walkthrough &mdash; the customer (a third-party-vendor-only shop transitioning between inspection tools) was setting up the maintenance module from the ground up before go-live. That settings-first framing is why several of the details below live one level "above" the work order lifecycle RU already teaches: they're configuration decisions made once, in Settings &gt; Maintenance, that shape how every future work order, inspection, and vendor interaction behaves.</p>
+</section>
+
+<section id="recap">
+<h2>Quick Recap: What RU Already Covers</h2>
+<p>These topics came up again on this call but RU already has solid coverage &mdash; don't re-teach them as new, just reinforce them:</p>
+<ul>
+<li><strong>The work order life cycle</strong> (Week 11, Maintenance &amp; Work Order Lifecycle script): creating a work order, requesting/entering estimates, owner approval, closing out and converting an invoice to a bill &mdash; all already covered in depth.</li>
+<li><strong>Appointment scheduling settings</strong> (Week 11): scheduling days, time zones, appointment window durations, and buffers are already taught in detail.</li>
+<li><strong>Fixie, the AI maintenance assistant</strong> (Week 11): already covered thoroughly, including that it troubleshoots with tenants before a work order is created and appends its chat log to the resulting work order.</li>
+<li><strong>Vendor invoice upload and default vendor reviews</strong> (Week 11): already covered as part of Vendor Management settings.</li>
+</ul>
+</section>
+
+<section id="categories">
+<h2>Maintenance Categories: Filtering Vendor Selection</h2>
+<p>Maintenance categories aren't just a reporting label &mdash; they're assigned directly to vendor contacts, and Rentvine uses that assignment to filter which vendors show up as options when a work order is being created. If a vendor is tagged as "Plumbing," they'll surface as a suggested match when a work order's category is plumbing-related, instead of a manager scrolling the full vendor list every time.</p>
+<p>This is separate from vendor <em>types</em>, which exist mainly for reporting rather than filtering.</p>
+<blockquote class="script-line">Set up your maintenance categories before you load in your vendors, then assign each vendor to the categories they actually work in. Once that's done, the vendor list on a new work order narrows itself down instead of you hunting through everyone.</blockquote>
+</section>
+
+<section id="internal-vendor-only">
+<h2>Internal Maintenance Settings for Vendor-Only Shops</h2>
+<p>A useful trainer moment from this call: even a management company that exclusively uses third-party vendors (no in-house maintenance techs) still has an Internal Maintenance settings section, and it's worth explaining why it exists rather than assuming it's irrelevant to a vendor-only shop.</p>
+<p>The internal maintenance settings include:</p>
+<ul>
+<li>A default internal maintenance company name.</li>
+<li>Labor descriptions and labor type names (used on invoices generated for internal techs).</li>
+<li>An option to print total hours worked on invoices.</li>
+<li>Material and labor cost tracking, tied to the internal price book.</li>
+<li>A permission toggle for whether internal technicians can accept or reject work orders themselves.</li>
+<li>A "no markup on material pricing" option for internal techs.</li>
+</ul>
+<p>The trainer framing worth reusing: a management company typically collects payment from the owner/tenant side and then pays its own internal technicians separately, so these settings exist to support that internal payroll-adjacent workflow &mdash; not to replace the vendor relationship a company already has.</p>
+<blockquote class="script-line">Even if you only work with outside vendors today, walk through the internal maintenance settings once so you know they're there. If you ever bring on an in-house tech, the price book and labor settings are already waiting for you instead of being a surprise later.</blockquote>
+</section>
+
+<section id="inspection-defaults">
+<h2>Global Default Inspection Areas, Items, and Actions</h2>
+<p>RU already covers how to <em>perform</em> a property inspection (marking items good/bad, adding photos, sharing the report). This call surfaced the settings-level piece that sits above that: default inspection areas, items, and actions are configured globally, in Settings, not per unit or per property.</p>
+<p>That means when a manager sets up "Kitchen" as an area with items like "Cabinets," "Countertops," and "Appliances," those defaults apply system-wide to every inspection created afterward &mdash; they aren't something a user configures fresh on every single inspection. A company transitioning from a dedicated legacy inspection tool should expect to do this setup once, up front, rather than per property.</p>
+<blockquote class="script-line">Build your inspection areas and items once, globally, before you start running inspections. You're not customizing this per property &mdash; you're setting the template every inspection will pull from.</blockquote>
+</section>
+
+<section id="wo-projects">
+<h2>Work Order Projects: Grouping Tasks for Turnovers</h2>
+<p>Work Order Projects group multiple individual work orders under one umbrella &mdash; commonly used for a property turnover or a move-in where several separate repairs and make-ready tasks need to happen together. The Projects view rolls up total estimated costs, owner bills, actual costs, profit margin, and completion percentage across every work order in the group, giving a manager a single place to track a turnover instead of checking each work order individually.</p>
+<blockquote class="script-line">If you've got five or six things to fix before a unit is ready to re-rent, don't create five separate untracked work orders &mdash; group them into a project so you can see total cost and completion percentage for the whole turnover in one place.</blockquote>
+</section>
+
+<section id="vendor-invite">
+<h2>Inviting a Vendor to the Vendor Portal</h2>
+<p>RU already covers what a vendor sees and does once they're in their portal (accepting/rejecting work orders, scheduling, submitting invoices). This call added the admin-side first step: to actually get a vendor into their portal in the first place, go to the vendor's contact record, scroll to Portal Access/Invitation, and send the portal invite.</p>
+<p>Worth pairing with the existing note elsewhere in RU that a vendor who tries to register with an email already tied to another account will hit a login error &mdash; if a vendor reports they can't accept the invite, check whether that email is already registered before troubleshooting further.</p>
+</section>
+
+<section id="closing">
+<h2>Closing</h2>
+<p>Most of what this call surfaced lives one layer above the day-to-day work order lifecycle RU already teaches: category-to-vendor filtering, internal maintenance settings that matter even for vendor-only shops, inspection defaults as global settings rather than a per-inspection task, work order projects for grouping turnover work, and the admin-side vendor invite step. None of it changes how the work order lifecycle itself works &mdash; it fills in the configuration layer a manager sets up once before that lifecycle runs smoothly.</p>
+</section>
+
+
+<p><a class="top-btn" href="#top">Back to top</a> &nbsp; <a href="../index.html">Back to Rentvine University</a></p>
+<p style="text-align:center;color:#5a6b63;font-size:.85rem;margin-top:2rem;padding-top:1rem;border-top:1px solid #d9e3dd">Rentvine University &middot; Created by Leonard Pitts</p></body>
+</html>
