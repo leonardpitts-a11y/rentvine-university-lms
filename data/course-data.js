@@ -2,8 +2,8 @@ window.RVU_COURSE = {
   "meta": {
     "title": "Rentvine University",
     "edition": "Beginner Enhanced Edition",
-    "version": "8.7-welcome-home-1a-notes",
-    "lastUpdated": "2026-09-22",
+    "version": "8.9-maintenance-global-settings",
+    "lastUpdated": "2026-09-24",
     "owner": "Rentvine University",
     "description": "Interactive 21-week Rentvine University learner program ordered by real property management processes for beginners, including a Financial Onboarding Specialist phase covering how new customers get migrated onto Rentvine's accounting system. Includes a Before You Begin orientation, role-path filters, phase process maps, a continuing practice company case file, downloadable job aids, scored knowledge checks with remediation links, required lab video submissions, guided walkthrough examples, match-the-term glossary practice, accessibility controls, and progress tracking.",
     "safety": "Complete all labs in a training or sandbox database. Do not use production data.",
@@ -2180,7 +2180,9 @@ window.RVU_COURSE = {
         "Create leases from the approved application, not manually from the property &mdash; this is the single most repeated recommendation across the entire research set, since it auto-populates tenant, co-signer, occupant, and pet data.",
         "Hard system constraint: a property cannot carry two active leases at once. Create the new one as Pending until the old lease actually closes.",
         "A RentSign document only inherits hot-field data (and stays linked to its record) when it's generated from inside the specific property, portfolio, or lease &mdash; never from the general RentSign section.",
-        "If a lease has more than three signers, someone has to manually confirm enough signing &ldquo;parties&rdquo; are configured, or the document will not send correctly."
+        "If a lease has more than three signers, someone has to manually confirm enough signing &ldquo;parties&rdquo; are configured, or the document will not send correctly.",
+        "A real customer call (Timberline RentSign, Sept 22 2026) surfaced RentSign mechanics worth flagging: it does not support conditional/branching logic in documents, and a template's background PDF can be swapped without rebuilding the whole template using the Replace Form feature (hot/fillable fields carry over, though positions may need a minor nudge if the new PDF's page size differs slightly).",
+        "That same call clarified tenant portal payment routing: 'Make a Payment' deposits to the rental trust account while 'Pay Deposit' routes straight to the security deposit/escrow account -- and if a payment still lands in the wrong account, reallocating the ledger entry does not move the actual cash, so a manual bank transfer is required, the same underlying mechanic as an escrow mismatch correction."
       ],
       "topics": "Financial leases, one-time charges, recurring charges, proration, RentSign templates, hot fields, signing order, move-in readiness",
       "objectives": [
@@ -2261,6 +2263,14 @@ window.RVU_COURSE = {
           "type": "Facilitator Script",
           "url": "job-aids/call-3a-facilitator-script.html",
           "summary": "Post-go-live QA1 script — jump to the RentSign sections for template setup, hot fields vs. fillable fields, signing order, and handling documents signed outside Rentvine.",
+          "videoCode": ""
+        },
+        {
+          "id": "w06-res-10",
+          "title": "Facilitator Script: RentSign Template Management & Portal Payment Routing",
+          "type": "Facilitator Script",
+          "url": "job-aids/rentsign-template-portal-payments-facilitator-script.html",
+          "summary": "New companion script (Sept 22 2026 customer call): RentSign's conditional-logic limitation, the Replace Form feature, signature font-size standardization, and tenant portal payment routing between the rental trust and security deposit accounts.",
           "videoCode": ""
         }
       ],
@@ -3946,7 +3956,8 @@ window.RVU_COURSE = {
       "realWorldNotes": [
         "Rentvine's AI maintenance agent troubleshoots a tenant's request before a work order is created, but does not auto-assign a vendor &mdash; a limitation more than one customer specifically asked about, expecting more automation than the product currently offers.",
         "Several customers use a third-party inspection tool (Z Inspector was named by at least four separate accounts) specifically because Rentvine's native inspection tool requires manual photo upload rather than in-app capture.",
-        "Open work orders and invoices consistently fail to migrate cleanly from PropertyWare and require manual re-entry &mdash; worth setting that expectation early with any customer coming from that platform."
+        "Open work orders and invoices consistently fail to migrate cleanly from PropertyWare and require manual re-entry &mdash; worth setting that expectation early with any customer coming from that platform.",
+        "A real maintenance-settings call (Sept 23, 2026) with a vendor-only management company showed that maintenance categories assigned to vendor contacts filter which vendors surface on a new work order, that Internal Maintenance settings (labor descriptions, price book, no-markup toggle) still matter even for shops with no in-house techs, that default inspection areas/items/actions are configured once globally rather than per property, and that Work Order Projects group multiple tasks (with rolled-up cost/completion tracking) for turnovers."
       ],
       "topics": "Estimates, approvals, projects, templates, vendor portals, scheduling, tenant portal requests, vendor invoices, settings automation",
       "objectives": [
@@ -4012,6 +4023,14 @@ window.RVU_COURSE = {
           "type": "Facilitator Script",
           "url": "job-aids/call-2b-facilitator-script.html",
           "summary": "A full trainer script covering the work order life cycle end to end — templates, creation, estimates, the vendor portal, work order settings, appointment settings, and Fixie (the AI maintenance assistant) — with ready-to-use suggested language.",
+          "videoCode": ""
+        },
+        {
+          "id": "w11-res-8",
+          "title": "Facilitator Script: Maintenance Global Settings & Internal Operations",
+          "type": "Facilitator Script",
+          "url": "job-aids/maintenance-global-settings-facilitator-script.html",
+          "summary": "Real customer call (Sept 23, 2026): maintenance categories filtering vendors, internal maintenance settings for vendor-only shops, global inspection defaults, work order projects, and vendor portal invites.",
           "videoCode": ""
         }
       ],
@@ -10813,6 +10832,18 @@ window.RVU_COURSE = {
       "title": "Facilitator Script: Fee Mechanics, GL Discipline & Reconciliation Gotchas",
       "url": "job-aids/fee-mechanics-reconciliation-gotchas-facilitator-script.html",
       "summary": "Companion script covering fee-percentage timing, GL account discipline, reimbursement coding, the Overdraft Override $0 stop, e-check/Forte voiding limits, late fee handling, monthly close order, RUBS, vacant-unit utilities, migration balance-forward artifacts, and multi-portfolio bank account structure -- compiled from real onboarding/QA calls, Sept 14-18, 2026."
+    },
+    {
+      "id": "rentsign-template-portal-payments-facilitator-script",
+      "title": "Facilitator Script: RentSign Template Management & Portal Payment Routing",
+      "url": "job-aids/rentsign-template-portal-payments-facilitator-script.html",
+      "summary": "Companion script covering RentSign's conditional-logic limitation, the Replace Form feature for swapping a template's background PDF, signature field font-size standardization, tenant portal 'Make a Payment' vs. 'Pay Deposit' routing, correcting funds that land in the wrong bank account, and sending application invitations during a data-migration gap -- from a real Rentvine customer call, Sept 22 2026."
+    },
+    {
+      "id": "maintenance-global-settings-facilitator-script",
+      "title": "Facilitator Script: Maintenance Global Settings & Internal Operations",
+      "url": "job-aids/maintenance-global-settings-facilitator-script.html",
+      "summary": "Maintenance-settings deep dive from a real customer call (Sept 23, 2026): maintenance categories filtering vendor selection, internal maintenance settings for vendor-only shops, global default inspection areas/items/actions, work order projects for turnovers, and the admin-side vendor portal invite step."
     }
   ],
   "realCaseExposure": {
