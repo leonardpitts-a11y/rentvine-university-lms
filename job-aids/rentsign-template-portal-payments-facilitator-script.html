@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Leonard Pitts">
+<title>Facilitator Script: RentSign Template Management &amp; Portal Payment Routing</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;max-width:900px;margin:2rem auto;padding:0 1rem;color:#1f2933}
+  h1{color:#006b47}
+  h2{color:#006b47;border-top:1px solid #d9e3dd;padding-top:1.25rem;margin-top:2rem}
+  h3{color:#0a5c3f;margin-top:1.5rem}
+  .kicker{color:#5a6b63;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+  .box{border:1px solid #d9e3dd;border-radius:12px;padding:1rem 1.25rem;background:#f7faf8;margin-bottom:1rem}
+  blockquote.script-line{border-left:4px solid #00875a;background:#f0f7f3;margin:.75rem 0;padding:.6rem 1rem;font-style:italic}
+  blockquote.script-line::before{content:"Suggested trainer language: ";font-style:normal;font-weight:700;color:#006b47}
+  ul, ol{padding-left:1.4rem}
+  li{margin:.3rem 0}
+  a.toc-link{display:block;padding:.15rem 0}
+  .toc{columns:2;column-gap:2rem}
+  @media (max-width:700px){.toc{columns:1}}
+  button.print-btn{padding:.6rem .85rem;border-radius:8px;border:1px solid #d9e3dd;background:#00875a;color:white;font-weight:700;margin-bottom:1rem}
+  button.top-btn{padding:.4rem .7rem;border-radius:8px;border:1px solid #d9e3dd;background:#fff;color:#006b47;font-weight:700;font-size:.8rem}
+  @media print{button{display:none}}
+  table.qref{width:100%;border-collapse:collapse;margin-top:.5rem}
+  table.qref td,table.qref th{border:1px solid #d9e3dd;padding:.5rem;text-align:left;vertical-align:top}
+  table.qref th{background:#f0f5f2}
+</style>
+</head>
+<body id="top">
+
+<button class="print-btn" onclick="window.print()">Print this facilitator script</button>
+
+<div class="kicker">Rentvine University &middot; Facilitator Script</div>
+<h1>RentSign Template Management &amp; Portal Payment Routing</h1>
+<p class="box"><strong>Purpose:</strong> This script covers RentSign template-management mechanics and tenant portal payment-routing behavior surfaced in a real Rentvine customer call on Sept 22, 2026. It's meant as a companion to Week 6 (Lease Creation, RentSign &amp; Move-In) and the existing RentSign/reporting facilitator scripts, not a replacement &mdash; where RU already has strong coverage (RentSign templates, hot fields, parties and signing order, sending documents, and screening/application workflows), this script recaps briefly and points back to the existing lesson. The material below is genuinely new: RentSign's conditional-logic limitation, the Replace Form feature for swapping a template's background PDF, signature field font-size standardization, the tenant portal's two distinct payment paths ("Make a Payment" vs. "Pay Deposit") and what happens when funds land in the wrong bank account, and sending standalone application invitations during a data-migration gap. Lines marked <em>"Suggested trainer language"</em> are ready-to-use scripting you can say almost word for word. None of the language below is a verbatim transcript quote &mdash; it's paraphrased trainer guidance reconstructed from what the call surfaced.</p>
+
+<div class="box"><strong>Source:</strong> A real Rentvine customer call, "Call with Timberline RentSign" (Sept 22, 2026) &mdash; a walkthrough of lease agreement setup, RentSign template/document management, and tenant portal payment allocation, prompted by the customer's prior experience with Echo Sign and Appfolio. The troubleshooting section below adds material from a second real call, "Customer Education Training Call QA 3 &mdash; Fabiani Realty" (Sept 24, 2026), a live troubleshooting session on documents not properly attached to a lease.</div>
+
+<div class="box">
+<strong>Table of contents</strong>
+<div class="toc">
+<a class="toc-link" href="#intro">Introduction</a>
+<a class="toc-link" href="#recap">Quick Recap: What RU Already Covers</a>
+<a class="toc-link" href="#conditional-logic">RentSign Does Not Support Conditional Logic</a>
+<a class="toc-link" href="#font-size">Standardizing Signature Field Font Size</a>
+<a class="toc-link" href="#replace-form">Swapping a Template's Background PDF: The Replace Form Feature</a>
+<a class="toc-link" href="#portal-payments">Tenant Portal Payment Routing: "Make a Payment" vs. "Pay Deposit"</a>
+<a class="toc-link" href="#wrong-account">When Funds Land in the Wrong Bank Account</a>
+<a class="toc-link" href="#migration-invite">Sending Application Invitations During a Data-Migration Gap</a>
+<a class="toc-link" href="#doc-not-attached">Troubleshooting: A Document Isn't Correctly Attached to the Lease</a>
+<a class="toc-link" href="#closing">Closing</a>
+</div>
+</div>
+
+<section id="intro">
+<h2>Introduction</h2>
+<p>This customer was migrating from Appfolio and had previously used Echo Sign (now part of Adobe) for document signing, so several of their questions were direct comparisons: what Rentvine does differently, and where the two systems' mental models don't map cleanly onto each other. Those comparison questions are exactly what surfaced the details below &mdash; they're the kind of limitation or mechanic a trainer usually only discovers when a customer coming from another platform asks "does it also do X?"</p>
+</section>
+
+<section id="recap">
+<h2>Quick Recap: What RU Already Covers</h2>
+<p>These points came up again on this call but RU already has solid coverage &mdash; don't re-teach them as new, just reinforce them:</p>
+<ul>
+<li><strong>RentSign templates, hot fields, and signing order</strong> (Week 6): already covered in depth, including that a document only inherits hot-field data when generated from inside the specific property, portfolio, or lease record.</li>
+<li><strong>Monthly and move-in charges auto-populating lease documents</strong> (Week 6): RU already teaches that Rentvine's designated monthly-charges field and move-in charge list aggregate fees automatically, rather than requiring them to be listed line by line the way some legacy systems require.</li>
+<li><strong>Sending applications through the Screening menu</strong> (Week 5): the core applicant/screening workflow is already covered; this script only adds the migration-specific "send invitation" variant below.</li>
+</ul>
+</section>
+
+<section id="conditional-logic">
+<h2>RentSign Does Not Support Conditional Logic</h2>
+<p>A customer asked whether RentSign can branch a document path based on a prospect's selections &mdash; for example, routing to a different disclosure page depending on an answer given earlier in the signing flow. It cannot. RentSign templates rely solely on an uploaded document plus fillable/hot fields; there's no conditional or branching logic layered on top.</p>
+<p>This is a fair question to expect from customers coming off contract-builder tools like Echo Sign/Adobe Sign that do support conditional logic, so it's worth stating up front rather than letting a customer discover the limitation mid-build.</p>
+<blockquote class="script-line">RentSign doesn't support conditional logic &mdash; there's no way to branch the document based on an earlier answer. If you need different disclosures for different scenarios, the workaround is either separate templates per scenario, or bundling every possible disclosure into one packet and letting the sender choose which pages to include before sending.</blockquote>
+</section>
+
+<section id="font-size">
+<h2>Standardizing Signature Field Font Size</h2>
+<p>RentSign doesn't offer automatic grid-locking or alignment for signature and fillable fields &mdash; placement is manual. It does, however, let you standardize the font size across fillable fields (the customer's call used size 14 as the example), which gives a document a more consistent, professional look even without automated alignment.</p>
+</section>
+
+<section id="replace-form">
+<h2>Swapping a Template's Background PDF: The Replace Form Feature</h2>
+<p>When the underlying document behind a template needs to be revised &mdash; a new PMA version, an updated disclosure form, a corrected lease template &mdash; the whole template does not need to be rebuilt from scratch. Under Document Management, the <strong>Replace Form</strong> feature (with left/right replacement arrows) swaps the background PDF while keeping previously placed hot and fillable fields intact.</p>
+<p>One caveat worth setting expectations on: if the new PDF's page dimensions differ even slightly from the original, field positions may need minor manual adjustment after the swap. It's still far faster than recreating a template, but it isn't guaranteed to be pixel-perfect automatically.</p>
+<blockquote class="script-line">You don't have to rebuild the whole template when the document changes &mdash; use Replace Form to swap in the new PDF and your fields carry over. Just do a quick pass afterward in case the new document's page size shifted anything slightly.</blockquote>
+</section>
+
+<section id="portal-payments">
+<h2>Tenant Portal Payment Routing: "Make a Payment" vs. "Pay Deposit"</h2>
+<p>A customer coming from Appfolio raised a real concern: lump-sum move-in payments that combine rent and a security deposit had previously created accounting complications when they landed as a single undifferentiated payment. Rentvine's tenant portal addresses this with two distinct payment options:</p>
+<ul>
+<li><strong>Make a Payment</strong> &mdash; deposits funds into the rental trust account.</li>
+<li><strong>Pay Deposit</strong> &mdash; routes funds directly into the security deposit/escrow bank account.</li>
+</ul>
+<p>If a tenant pays a combined total (for example, $2,100 covering rent plus a $1,000 deposit) through a single payment, Rentvine applies the funds across all unpaid charges on the lease rather than guessing which bank account each portion belongs in. The cleaner outcome comes from tenants using <strong>Pay Deposit</strong> first to clear the deposit charge, then paying the remaining move-in balance separately &mdash; that keeps each payment routed to the correct bank account from the start.</p>
+<blockquote class="script-line">Encourage tenants to use Pay Deposit first for the security deposit, then Make a Payment for the rest. If they pay everything in one lump sum instead, the system will still apply it to the open charges, but it won't necessarily land in the bank account you'd expect for each piece.</blockquote>
+</section>
+
+<section id="wrong-account">
+<h2>When Funds Land in the Wrong Bank Account</h2>
+<p>This is the mechanical detail that matters most for accounting staff: reallocating a payment's <em>charge</em> assignment inside Rentvine (via the tenant receipt's "applied to" section and the Reapply action) does not move real money between bank accounts. If a payment actually deposited into the rental trust account but should have gone to the security deposit/escrow account (or vice versa), correcting the ledger allocation alone leaves the cash sitting in the wrong account.</p>
+<p>The only way to fix that is a manual bank transfer between the two accounts to match what the ledger now says. This is the same underlying mechanic RU already teaches for Escrow Mismatch corrections in Week 14 (Diagnostics) &mdash; this call just surfaces the tenant-payment-specific version of it.</p>
+<blockquote class="script-line">Reapplying a payment to a different charge changes what the ledger says happened &mdash; it doesn't move the actual cash. If the money landed in the wrong bank account, you still need a manual bank transfer to true it up, the same way we handle an escrow mismatch.</blockquote>
+</section>
+
+<section id="migration-invite">
+<h2>Sending Application Invitations During a Data-Migration Gap</h2>
+<p>Customers transitioning from another platform (Appfolio, in this case) sometimes need to send a prospective tenant an application link for a unit that's still mid-migration and not yet fully built out in Rentvine. The workflow: go to Screening &gt; Applications, click the green Actions button, and select <strong>Send Invitation</strong>. Filling in the specific unit, rent, deposit amount, and applicant details lets the invitation go out even while the property record is still being finalized.</p>
+<p>This is a useful workflow to have ready specifically for onboarding/migration-period conversations, separate from the standard post-go-live screening flow RU already covers.</p>
+</section>
+
+<section id="doc-not-attached">
+<h2>Troubleshooting: A Document Isn't Correctly Attached to the Lease</h2>
+<p>A live troubleshooting call, "Customer Education Training Call QA 3 &mdash; Fabiani Realty" (Sept 24, 2026), worked through a real symptom worth recognizing: a RentSign document generated with a name that's missing the lease address, which is a sign it was never properly attached to the lease it was meant to belong to. The fix sequence surfaced on that call:</p>
+<ol>
+<li>Click <strong>New Document</strong> from the lease.</li>
+<li>Give the document a clear, correct name (one that includes the lease/property address).</li>
+<li>Set the document type to <strong>Lease</strong>.</li>
+<li>Select the correct tenant.</li>
+<li>Pick the correct template.</li>
+<li>Click <strong>Create</strong> &mdash; this regenerates the document's hot fields correctly against the lease record.</li>
+</ol>
+<blockquote class="script-line">If a document's name doesn't include the property address, that's your signal it isn't properly attached to the lease. Don't try to patch the existing one &mdash; start a New Document, name it clearly, set the type to Lease, pick the tenant and template, and Create. That regenerates the hot fields correctly.</blockquote>
+<p>The same call surfaced two related mechanics worth knowing alongside that fix:</p>
+<ul>
+<li><strong>Security deposit hot field for a tenant who already paid:</strong> rather than leaving a stale dollar amount on a regenerated document, set the hot field to $0, delete the hot field entirely, or convert it to a plain text box that says something like "already paid."</li>
+<li><strong>Tenant signature blocks are driven by template settings, not per-document edits:</strong> how many tenant "parties" sign a document is configured in the template's RentSign settings. Manage the number of signing parties there, rather than trying to manually adjust signature fields on an individual document.</li>
+</ul>
+<p>This call also reinforced (not new, but worth restating alongside the fix above) that a renewal document should be uploaded and marked with document type <strong>Renewal</strong> in global settings so it flows through Rentvine's built-in renewal workflow rather than sitting as an unrecognized document type.</p>
+</section>
+
+<section id="closing">
+<h2>Closing</h2>
+<p>Most of what this call surfaced is exactly the kind of thing a customer coming from another platform asks about by comparison: whether RentSign branches logic the way their old e-signature tool did, whether a template rebuild is required for a routine document update, and whether a lump-sum payment behaves the way their old accounting system handled it. None of it changes how Rentvine works &mdash; it just fills in mechanics and caveats worth having ready before a customer asks.</p>
+</section>
+
+
+<p><a class="top-btn" href="#top">Back to top</a> &nbsp; <a href="../index.html">Back to Rentvine University</a></p>
+<p style="text-align:center;color:#5a6b63;font-size:.85rem;margin-top:2rem;padding-top:1rem;border-top:1px solid #d9e3dd">Rentvine University &middot; Created by Leonard Pitts</p></body>
+</html>
