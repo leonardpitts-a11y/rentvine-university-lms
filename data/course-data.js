@@ -2,8 +2,8 @@ window.RVU_COURSE = {
   "meta": {
     "title": "Rentvine University",
     "edition": "Beginner Enhanced Edition",
-    "version": "8.10-recent-call-updates",
-    "lastUpdated": "2026-09-24",
+    "version": "8.11-maintenance-ai-invoice-alerts",
+    "lastUpdated": "2026-09-28",
     "owner": "Rentvine University",
     "description": "Interactive 21-week Rentvine University learner program ordered by real property management processes for beginners, including a Financial Onboarding Specialist phase covering how new customers get migrated onto Rentvine's accounting system. Includes a Before You Begin orientation, role-path filters, phase process maps, a continuing practice company case file, downloadable job aids, scored knowledge checks with remediation links, required lab video submissions, guided walkthrough examples, match-the-term glossary practice, accessibility controls, and progress tracking.",
     "safety": "Complete all labs in a training or sandbox database. Do not use production data.",
@@ -3960,7 +3960,8 @@ window.RVU_COURSE = {
         "Several customers use a third-party inspection tool (Z Inspector was named by at least four separate accounts) specifically because Rentvine's native inspection tool requires manual photo upload rather than in-app capture.",
         "Open work orders and invoices consistently fail to migrate cleanly from PropertyWare and require manual re-entry &mdash; worth setting that expectation early with any customer coming from that platform.",
         "A real maintenance-settings call (Sept 23, 2026) with a vendor-only management company showed that maintenance categories assigned to vendor contacts filter which vendors surface on a new work order, that Internal Maintenance settings (labor descriptions, price book, no-markup toggle) still matter even for shops with no in-house techs, that default inspection areas/items/actions are configured once globally rather than per property, and that Work Order Projects group multiple tasks (with rolled-up cost/completion tracking) for turnovers.",
-        "A Rentvine mock-call training review (Sept 22, 2026) confirmed a real product limitation worth flagging to new users: once an inspection is created it cannot be deleted — it uses a one-size-fits-all template, and a mistaken or unwanted inspection has to be recreated/reworked under Maintenance rather than removed outright."
+        "A Rentvine mock-call training review (Sept 22, 2026) confirmed a real product limitation worth flagging to new users: once an inspection is created it cannot be deleted — it uses a one-size-fits-all template, and a mistaken or unwanted inspection has to be recreated/reworked under Maintenance rather than removed outright.",
+        "Two additional real maintenance calls (Barron 1B, Sept 24 2026, and Customer Education Training Call 2B - The Alpine Group Inc, Sept 25 2026) added further detail to the Sept 23 Southern Choice call already referenced above: Rentvine's AI reads an uploaded vendor invoice and auto-fills roughly 70% of its data; work order notes and files are never auto-shared with owners/tenants and must be shared case by case; a property-level alert can be configured to flag owner restrictions automatically on future work orders; and more than one customer has asked whether third-party tools (Venderoo, Iron Ledger) integrate with Rentvine -- no native integration is confirmed for either, though the open API makes it technically possible."
       ],
       "topics": "Estimates, approvals, projects, templates, vendor portals, scheduling, tenant portal requests, vendor invoices, settings automation",
       "objectives": [
@@ -10847,7 +10848,7 @@ window.RVU_COURSE = {
       "id": "maintenance-global-settings-facilitator-script",
       "title": "Facilitator Script: Maintenance Global Settings & Internal Operations",
       "url": "job-aids/maintenance-global-settings-facilitator-script.html",
-      "summary": "Maintenance-settings deep dive from a real customer call (Sept 23, 2026): maintenance categories filtering vendor selection, internal maintenance settings for vendor-only shops, global default inspection areas/items/actions, work order projects for turnovers, and the admin-side vendor portal invite step."
+      "summary": "Maintenance-settings mechanics from three real customer calls (Sept 23-25, 2026): maintenance categories filtering vendor selection, internal maintenance settings for vendor-only shops, global inspection defaults, work order projects, vendor portal invites, AI-assisted invoice reading (~70% auto-fill), note/file sharing defaults, messaging limitations, the feature-request process, the maintenance mobile app roadmap, property-level alerts, a price-book markup example, fielding third-party integration questions, and confirming in-progress work orders during migration."
     }
   ],
   "realCaseExposure": {
