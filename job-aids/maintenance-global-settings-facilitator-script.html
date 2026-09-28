@@ -32,9 +32,9 @@
 
 <div class="kicker">Rentvine University &middot; Facilitator Script</div>
 <h1>Maintenance Global Settings &amp; Internal Operations</h1>
-<p class="box"><strong>Purpose:</strong> This script covers global maintenance-configuration mechanics surfaced in a real Rentvine customer call on Sept 23, 2026 &mdash; a maintenance-settings deep dive with a customer who exclusively uses third-party vendors. It's a companion to Week 11 (Maintenance Management &amp; Work Orders) and the existing Maintenance &amp; Work Order Lifecycle facilitator script, not a replacement &mdash; where RU already has strong coverage (the work order life cycle itself, estimates, closing out a work order, appointment settings, and Fixie the AI maintenance assistant), this script recaps briefly and points back to the existing lesson. The material below is genuinely new: maintenance categories used to filter vendor selection, why internal-maintenance settings still matter for vendor-only shops, global default inspection areas/items/actions as a settings-level concept (distinct from performing an inspection), work order projects for grouping turnover tasks, and the admin-side steps for inviting a vendor to their portal. Lines marked <em>"Suggested trainer language"</em> are ready-to-use scripting you can say almost word for word. None of the language below is a verbatim transcript quote &mdash; it's paraphrased trainer guidance reconstructed from what the call surfaced.</p>
+<p class="box"><strong>Purpose:</strong> This script covers global maintenance-configuration mechanics surfaced across three real Rentvine customer calls: Sept 23, 2026 (a maintenance-settings deep dive with a vendor-only shop), Sept 24, 2026 (a maintenance dashboard/work order setup call), and Sept 25, 2026 (a maintenance module walkthrough with a multi-property manager). It's a companion to Week 11 (Maintenance Management &amp; Work Orders) and the existing Maintenance &amp; Work Order Lifecycle facilitator script, not a replacement &mdash; where RU already has strong coverage (the work order life cycle itself, estimates, closing out a work order, appointment settings, and Fixie the AI maintenance assistant), this script recaps briefly and points back to the existing lesson. The material below is genuinely new: maintenance categories used to filter vendor selection, why internal-maintenance settings still matter for vendor-only shops, global default inspection areas/items/actions as a settings-level concept, work order projects for grouping turnover tasks, the admin-side steps for inviting a vendor to their portal, AI-assisted vendor invoice reading, work-order note/file sharing defaults, in-app messaging limitations, the feature-request submission process, the maintenance mobile app roadmap, property-level alerts, a concrete price-book markup example, how third-party maintenance-invoicing tools come up in customer questions, and confirming in-progress work orders during a data migration. Lines marked <em>"Suggested trainer language"</em> are ready-to-use scripting you can say almost word for word. None of the language below is a verbatim transcript quote &mdash; it's paraphrased trainer guidance reconstructed from what the calls surfaced.</p>
 
-<div class="box"><strong>Source:</strong> A real Rentvine customer call, "Call With Southern Choice" (Sept 23, 2026) &mdash; a global maintenance-settings walkthrough covering work order statuses, internal maintenance/price book configuration, inspection defaults, maintenance categories, appointment scheduling, the Fixie AI agent, and vendor portal setup.</div>
+<div class="box"><strong>Source:</strong> Three real Rentvine customer calls: "Call With Southern Choice" (Sept 23, 2026) &mdash; a global maintenance-settings walkthrough covering work order statuses, internal maintenance/price book configuration, inspection defaults, maintenance categories, appointment scheduling, the Fixie AI agent, and vendor portal setup; "Call with Barron 1B" (Sept 24, 2026) &mdash; a maintenance dashboard and work order configuration session covering data migration, price book markups, vendor types, property alerts, and owner payout holds; and "Customer Education Training Call 2B &ndash; The Alpine Group Inc" (Sept 25, 2026) &mdash; a maintenance module deep dive covering AI invoice reading, note/file sharing, messaging limitations, feature requests, and the mobile app roadmap.</div>
 
 <div class="box">
 <strong>Table of contents</strong>
@@ -46,6 +46,15 @@
 <a class="toc-link" href="#inspection-defaults">Global Default Inspection Areas, Items, and Actions</a>
 <a class="toc-link" href="#wo-projects">Work Order Projects: Grouping Tasks for Turnovers</a>
 <a class="toc-link" href="#vendor-invite">Inviting a Vendor to the Vendor Portal</a>
+<a class="toc-link" href="#ai-invoice">AI-Assisted Vendor Invoice Reading</a>
+<a class="toc-link" href="#note-sharing">Work Order Note and File Sharing Defaults</a>
+<a class="toc-link" href="#messaging-limits">In-App Messaging Limitations</a>
+<a class="toc-link" href="#feature-requests">Submitting a Feature Request</a>
+<a class="toc-link" href="#mobile-roadmap">Maintenance on the Mobile App: Current State and Roadmap</a>
+<a class="toc-link" href="#property-alerts">Property-Level Alerts for Owner Restrictions</a>
+<a class="toc-link" href="#price-book-example">Price Book Markups: A Concrete Example</a>
+<a class="toc-link" href="#third-party-tools">When a Customer Asks About a Third-Party Invoicing Tool</a>
+<a class="toc-link" href="#migration-wo">Confirming In-Progress Work Orders During Migration</a>
 <a class="toc-link" href="#closing">Closing</a>
 </div>
 </div>
@@ -108,9 +117,60 @@
 <p>Worth pairing with the existing note elsewhere in RU that a vendor who tries to register with an email already tied to another account will hit a login error &mdash; if a vendor reports they can't accept the invite, check whether that email is already registered before troubleshooting further.</p>
 </section>
 
+<section id="ai-invoice">
+<h2>AI-Assisted Vendor Invoice Reading</h2>
+<p>When a vendor uploads an invoice, Rentvine's AI automatically reads the document and auto-fills roughly 70 percent of the invoice data (line items, amounts, vendor details) rather than requiring a manager to key it all in by hand. It's a genuine time-saver, but set the right expectation: it's a head start, not a guarantee &mdash; staff should still glance over the auto-filled fields before converting the invoice into a bill.</p>
+<p>A related question that came up but wasn't fully resolved on the call: whether a vendor's payment terms (for example, net-30) can drive the invoice's due date automatically through the discount/grace-period settings. That's worth testing before promising it to a customer rather than stating it as confirmed behavior.</p>
+<blockquote class="script-line">When a vendor uploads their invoice, Rentvine's AI will read it and pre-fill most of the fields for you &mdash; usually around 70 percent of the data. Still give it a quick look before you convert it to a bill, since it's a head start, not the final word.</blockquote>
+</section>
+
+<section id="note-sharing">
+<h2>Work Order Note and File Sharing Defaults</h2>
+<p>Two visibility defaults worth calling out explicitly, since customers often assume the opposite: notes added to a work order are <em>not</em> automatically shared with anyone &mdash; sharing a note with the owner, tenant, or vendor is a manual, case-by-case decision made when the note is created or updated. Likewise, general file uploads on a work order do not automatically become visible to tenants or owners just because they're attached.</p>
+<blockquote class="script-line">Adding a note or a file to a work order doesn't automatically share it with your owner or tenant &mdash; you choose who sees it, note by note and file by file. If you want them to see something, you have to share it on purpose.</blockquote>
+</section>
+
+<section id="messaging-limits">
+<h2>In-App Messaging Limitations</h2>
+<p>Rentvine's built-in text messaging is intentionally basic: there's no date filtering on message history and no read receipts, and it requires logging into the system to check. For anything that needs a documented, reliable confirmation trail, recommend following up by email instead of relying on a text thread alone &mdash; at least until a broader global communications feature (mentioned as in development, not yet released) rolls out.</p>
+<blockquote class="script-line">Texting through Rentvine works fine for quick back-and-forth, but it doesn't have read receipts or date filtering, so don't rely on it alone for anything you need a paper trail on. Follow up important confirmations by email until the bigger communications update ships.</blockquote>
+</section>
+
+<section id="feature-requests">
+<h2>Submitting a Feature Request</h2>
+<p>When a customer asks for functionality Rentvine doesn't currently have, the process is to email support@rentvine.com with as much detail and context as possible &mdash; the more specific the request, the easier it is for the development team to evaluate and scope. Encourage customers to describe the actual workflow problem they're trying to solve, not just the feature name, so it's clear why it matters.</p>
+</section>
+
+<section id="mobile-roadmap">
+<h2>Maintenance on the Mobile App: Current State and Roadmap</h2>
+<p>Today, the Rentvine mobile app is built for property managers, not for vendors or internal technicians &mdash; internal technicians access their work orders through the vendor portal (in a browser) rather than a dedicated app. Maintenance and inspection functionality for the mobile app is currently in development, so this is a "not yet, but coming" answer rather than a hard no if a customer asks about a technician-facing mobile experience.</p>
+</section>
+
+<section id="property-alerts">
+<h2>Property-Level Alerts for Owner Restrictions</h2>
+<p>A property-level alert can be configured to pop up automatically whenever a work order is created for that property &mdash; useful for flagging things like an owner's pre-approval requirement or a repeat-issue restriction (for example, a tenant who has called in the same complaint multiple times). It's a lightweight way to make sure a restriction the office already knows about doesn't get missed by whoever happens to create the next work order.</p>
+<blockquote class="script-line">If an owner always wants a heads-up before any repair over a certain amount, don't rely on everyone remembering that &mdash; set a property-level alert so it pops up automatically the next time a work order gets created there.</blockquote>
+</section>
+
+<section id="price-book-example">
+<h2>Price Book Markups: A Concrete Example</h2>
+<p>A simple worked example is useful for explaining how the internal price book's purchase-price-vs-owner-price fields translate into a markup: a material like paper might have a $5 purchase price (what the company actually pays) and a $15 owner price (what gets billed to the owner) &mdash; the $10 difference is the markup the management company keeps. Use a concrete pair of numbers like this rather than describing the fields abstractly; it makes the markup concept click faster.</p>
+</section>
+
+<section id="third-party-tools">
+<h2>When a Customer Asks About a Third-Party Invoicing Tool</h2>
+<p>More than one customer has asked whether a third-party maintenance/invoicing tool they already use (Venderoo and Iron Ledger have both come up) integrates directly with Rentvine. Neither has a confirmed native integration today. The consistent, honest answer: Rentvine's API is open, so a direct integration is technically possible, but nothing prebuilt exists for these specific tools right now &mdash; encourage the customer to check with that vendor's support team about what they currently support, and note the request internally if it's a genuine feature gap.</p>
+<blockquote class="script-line">I'm not familiar with that specific tool's integration status, but Rentvine's API is open, so it's technically possible. I'd check with their support team on what they currently connect to, and if it's something you need, let's get it logged as a feature request too.</blockquote>
+</section>
+
+<section id="migration-wo">
+<h2>Confirming In-Progress Work Orders During Migration</h2>
+<p>Open work orders do migrate into Rentvine as part of a standard data migration. But for work orders that are mid-progress at the moment of cutover, don't assume every detail (scheduling state, partial estimates, vendor acceptance status) carries over cleanly &mdash; the customer should confirm the specifics of in-progress work order migration directly with their onboarding specialist rather than assuming full parity.</p>
+</section>
+
 <section id="closing">
 <h2>Closing</h2>
-<p>Most of what this call surfaced lives one layer above the day-to-day work order lifecycle RU already teaches: category-to-vendor filtering, internal maintenance settings that matter even for vendor-only shops, inspection defaults as global settings rather than a per-inspection task, work order projects for grouping turnover work, and the admin-side vendor invite step. None of it changes how the work order lifecycle itself works &mdash; it fills in the configuration layer a manager sets up once before that lifecycle runs smoothly.</p>
+<p>Most of what these calls surfaced lives one layer above the day-to-day work order lifecycle RU already teaches: category-to-vendor filtering, internal maintenance settings that matter even for vendor-only shops, inspection defaults as global settings, work order projects for grouping turnover work, the admin-side vendor invite step, AI-assisted invoice reading, note/file sharing defaults, messaging limitations, the feature-request process, the mobile app roadmap, property-level alerts, price-book markup mechanics, how to field third-party integration questions, and confirming in-progress work orders during migration. None of it changes how the work order lifecycle itself works &mdash; it fills in the configuration layer and the customer-facing judgment calls a manager or trainer needs before and around that lifecycle.</p>
 </section>
 
 
