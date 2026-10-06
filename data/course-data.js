@@ -2,8 +2,8 @@ window.RVU_COURSE = {
   "meta": {
     "title": "Rentvine University",
     "edition": "Beginner Enhanced Edition",
-    "version": "8.11-maintenance-ai-invoice-alerts",
-    "lastUpdated": "2026-09-28",
+    "version": "8.16-fixie-crew-multiunit-escalation-nacha",
+    "lastUpdated": "2026-10-06",
     "owner": "Rentvine University",
     "description": "Interactive 21-week Rentvine University learner program ordered by real property management processes for beginners, including a Financial Onboarding Specialist phase covering how new customers get migrated onto Rentvine's accounting system. Includes a Before You Begin orientation, role-path filters, phase process maps, a continuing practice company case file, downloadable job aids, scored knowledge checks with remediation links, required lab video submissions, guided walkthrough examples, match-the-term glossary practice, accessibility controls, and progress tracking.",
     "safety": "Complete all labs in a training or sandbox database. Do not use production data.",
@@ -772,7 +772,12 @@ window.RVU_COURSE = {
         "Trainers consistently warn against using Overdraft Override to push a portfolio negative &mdash; it can effectively borrow from another owner's trust funds. A real example set it to <strong>$1,000</strong> temporarily, then explicitly reset it to $0 once the balance recovered.",
         "Each portfolio is capped at a maximum of two bank accounts in Rentvine -- one for the rental trust, one for security deposits. When a situation calls for a separate account (a third-party vendor requirement, for example), the practical workaround trainers use is a manual fund transfer between the existing accounts rather than trying to add a third.",
         "A real onboarding call (Barron Management Group 2A, Sept 18 2026, reinforcing Edwards Property Management 1B, Sept 15 2026) confirmed that an owner wanting separate properties paid to separate bank accounts needs separate portfolios -- it cannot be done inside one portfolio. Owners with more than one portfolio switch between them from a 3-dot menu in the owner portal, and statements still show property-level income/expense/net breakdowns even though the underlying accounting is portfolio-based.",
-        "A real onboarding call (Welcome Home 1A, Sept 21 2026) clarified that portfolio maximum and minimum distribution amounts are notification alerts, not hard limits &mdash; they don't actually restrict or block an owner payout, they just flag it. One practical use: setting a flat maximum distribution to help an owner build up a reserve by capping what gets paid out each cycle."
+        "A real onboarding call (Welcome Home 1A, Sept 21 2026) clarified that portfolio maximum and minimum distribution amounts are notification alerts, not hard limits &mdash; they don't actually restrict or block an owner payout, they just flag it. One practical use: setting a flat maximum distribution to help an owner build up a reserve by capping what gets paid out each cycle.",
+        "A real onboarding call (Doug Shorter PM 1A, Oct 5 2026) demonstrated impersonation mode: staff can log in as an owner to view the owner portal and assist with navigation issues, helping troubleshoot portal experience problems without requiring the owner to grant access or change passwords.",
+        "The same Doug Shorter call clarified that alternative bank accounts for owner payouts can be configured securely using email verification codes — a practical option when an owner needs payouts routed to a different account than the primary portfolio account.",
+        "A real onboarding call (Doug Shorter PM 1A, Oct 5 2026) emphasized portfolio ledgers as a diagnostic tool: they display operating balances, prepayments, liabilities, escrow, and discrepancies at a glance, helping trainers spot issues like mismatched security deposits or unexpected prepayments during the setup phase.",
+        "The same Doug Shorter call showed that unsettled e-check funds in Rentvine automatically reconcile within 3 business days, but manually recorded receipts (like physical checks from tenants) require explicit deposit entries to ensure owner payouts remain accurate.",
+        "A real training call (Oct 6, 2026) revealed a critical constraint: the multi-unit property toggle must be enabled during initial property creation because it cannot be edited later. Always verify this setting during data migration to avoid configuration errors."
       ],
       "topics": "Portfolios, owners, reserves, overdraft, owner splits & statements",
       "objectives": [
@@ -1935,7 +1940,8 @@ window.RVU_COURSE = {
         "No criminal-background data bureau has complete U.S. coverage &mdash; real coverage runs roughly 83&ndash;85%, since state and county laws vary and many court records still aren't digitized.",
         "A real customer screening call (Rentvine Cru, Aug 21, 2026) showed what screening looks like before standardization: fully manual application review with no written approval criteria, landlord references tracked by phone and stored on paper, and applicants routinely bypassing Plaid income/identity verification by uploading alternative documents instead -- exactly the gap the Custom Scoring templates and mandatory-verification settings in this week's objectives are designed to close.",
         "That same call confirmed native pet screening now blocks the old workaround of skipping an external pet-screening link entirely -- it's mandatory inside the application flow -- and that verified service animals are auto-approved with no fee, which matters for fair housing handling.",
-        "Industry-wide compliance context: FCRA requires a compliant adverse action notice (naming the screening company, stating it didn't make the decision, and explaining the applicant's dispute rights) any time an application is denied based on a screening report -- and while a written screening policy isn't legally mandated, one is strongly recommended because it demonstrates consistent, good-faith criteria across every applicant."
+        "Industry-wide compliance context: FCRA requires a compliant adverse action notice (naming the screening company, stating it didn't make the decision, and explaining the applicant's dispute rights) any time an application is denied based on a screening report -- and while a written screening policy isn't legally mandated, one is strongly recommended because it demonstrates consistent, good-faith criteria across every applicant.",
+        "A real training call (Oct 6, 2026) demonstrated that leases support step-up rent escalation options for multi-year agreements. Customers can configure automatic rent increases at specified intervals during lease creation."
       ],
       "topics": "Applicant workflow, screening, guarantors, application templates",
       "objectives": [
@@ -2182,7 +2188,10 @@ window.RVU_COURSE = {
         "A RentSign document only inherits hot-field data (and stays linked to its record) when it's generated from inside the specific property, portfolio, or lease &mdash; never from the general RentSign section.",
         "If a lease has more than three signers, someone has to manually confirm enough signing &ldquo;parties&rdquo; are configured, or the document will not send correctly.",
         "A real customer call (Timberline RentSign, Sept 22 2026) surfaced RentSign mechanics worth flagging: it does not support conditional/branching logic in documents, and a template's background PDF can be swapped without rebuilding the whole template using the Replace Form feature (hot/fillable fields carry over, though positions may need a minor nudge if the new PDF's page size differs slightly).",
-        "That same call clarified tenant portal payment routing: 'Make a Payment' deposits to the rental trust account while 'Pay Deposit' routes straight to the security deposit/escrow account -- and if a payment still lands in the wrong account, reallocating the ledger entry does not move the actual cash, so a manual bank transfer is required, the same underlying mechanic as an escrow mismatch correction."
+        "That same call clarified tenant portal payment routing: 'Make a Payment' deposits to the rental trust account while 'Pay Deposit' routes straight to the security deposit/escrow account -- and if a payment still lands in the wrong account, reallocating the ledger entry does not move the actual cash, so a manual bank transfer is required, the same underlying mechanic as an escrow mismatch correction.",
+        "A real onboarding call (Timberline, Oct 1 2026) demonstrated the critical lease-overlap workaround: when a property has an active lease for an outgoing tenant and you need to create a new lease for an incoming tenant starting before the old lease closes, create the new lease as Pending and use a toggle to automatically activate it on the start date once the old lease closes. This prevents the 'two active leases' system constraint error.",
+        "That same Timberline call showed how default move-in charges work at the global level: configure default charges (like a $300 pet deposit) under Settings > Lease, and every new lease created afterward will pre-populate with those defaults, saving the step of re-adding them manually each time. These defaults can be adjusted or removed on individual leases as needed.",
+        "A real onboarding call (Timberline, Oct 1 2026) clarified the owner-lead funnel separation: leads from a PMW website integrate automatically into Rentvine, while outside leads require manual data entry. Importantly, owner leads operate in a separate portal distinct from applicant and tenant portals, so owners self-service in their own space. Brad Butler disabled automatic invite sending to manually review leads first, and created onboarding forms with conditional logic to streamline the prospective-owner intake process."
       ],
       "topics": "Financial leases, one-time charges, recurring charges, proration, RentSign templates, hot fields, signing order, move-in readiness",
       "objectives": [
@@ -2914,7 +2923,9 @@ window.RVU_COURSE = {
       "realWorldNotes": [
         "The two-tier notification system trips up nearly every real customer: Account (global) Notifications require someone to manually enter every recipient for every event type and then alert that person every time, everywhere, with no per-user filtering. Personal Notifications default to on for whoever is the record's assignee and can be filtered per user across four channels (system, email, text, Slack).",
         "An administrator must send the first text message before an owner or tenant can text back &mdash; two-way SMS only activates after the manager initiates contact.",
-        "A real onboarding call (Edwards Property Management 1B, Sept 15 2026) flagged a trial-account gotcha worth surfacing proactively: text messaging is disabled until an account is fully active, because trial accounts don't yet have an assigned Twilio number. New customers testing texting during a trial should be told this up front rather than left thinking texting is broken."
+        "A real onboarding call (Edwards Property Management 1B, Sept 15 2026) flagged a trial-account gotcha worth surfacing proactively: text messaging is disabled until an account is fully active, because trial accounts don't yet have an assigned Twilio number. New customers testing texting during a trial should be told this up front rather than left thinking texting is broken.",
+        "Fixie is an AI agent available within the resident portal that allows residents to submit photos, videos, or text to create work orders without manual ticket entry. It's active in the system and commonly demonstrated in training calls (Oct 2026).",
+        "Crew is a paid work order recommendation service ($150/month) that provides automated work order suggestions. It was mentioned during a real customer training call (Oct 6, 2026) as an optional enhancement for maintenance workflows."
       ],
       "topics": "Mass messaging, texting, email templates, communication history",
       "objectives": [
@@ -3511,7 +3522,8 @@ window.RVU_COURSE = {
         "Rejecting a vendor invoice is a hard delete: it removes the invoice entirely and notifies the vendor, with no way to recover it afterward.",
         "Use Other Receipt or Other Payment instead of a manual &ldquo;adjustment&rdquo; &mdash; repeated as a strong directive in nearly every accounting-heavy call reviewed.",
         "A real onboarding call (Edwards Property Management 1B, Sept 15 2026) surfaced a workflow that solves a common pain point: HOA dues can be paid directly from the trust account by creating the HOA as a contact/payee, generating a bill with the HOA as payee, and attaching the property -- avoiding the amenity/pool-key deactivation that follows landlord non-payment of HOA dues.",
-        "A real onboarding call (Edwards Property Management 2A, Sept 22 2026) surfaced an open gap: Rentvine's bill-payment screen only lists bank accounts as a payment source, with no “paid by credit card” checkbox the way some legacy systems (e.g. Buildium) offer for a company AMEX. As of that call this was unresolved and escalated internally; discussed workarounds were linking the card directly to the trust account or setting the management company itself up as the bill's payee. Treat this as a known open question — confirm current guidance with support before promising a customer a specific answer."
+        "A real onboarding call (Edwards Property Management 2A, Sept 22 2026) surfaced an open gap: Rentvine's bill-payment screen only lists bank accounts as a payment source, with no “paid by credit card” checkbox the way some legacy systems (e.g. Buildium) offer for a company AMEX. As of that call this was unresolved and escalated internally; discussed workarounds were linking the card directly to the trust account or setting the management company itself up as the bill's payee. Treat this as a known open question — confirm current guidance with support before promising a customer a specific answer.",
+        "Nacha payments enable bank-integrated automation where the system sends checks directly through the bank instead of requiring manual printing. A real customer call (Oct 5, 2026) showed this being implemented as a solution for remote-work teams avoiding physical check printing."
       ],
       "topics": "Bills, invoice OCR, Rapid Invoice, NACHA, vendor credits, bill approvals, payment batches, remote checks",
       "objectives": [
@@ -4404,7 +4416,10 @@ window.RVU_COURSE = {
         "That same CitySearch call (Sep 15 2026) also surfaced a migration-era gotcha worth flagging separately from the vacancy-fee issue above: their Pet Fee Income GL account (4250) had never been added to management fee settings after converting from their old software, so pet fees were not being suppressed and were showing up incorrectly on owner statements across multiple portfolios (Cover Art Leasing, Roto Holdings, and others). The fix was manual and repetitive -- add the GL account as a suppressed additional management fee on every affected property one at a time -- so when onboarding a customer coming from another platform, proactively check that every fee-income GL account they actually use (pet fees, application fees, etc.) is wired into management fee settings rather than waiting for it to surface on a statement.",
         "A real onboarding call (Edwards Property Management 1B, Sept 15 2026) surfaced a fee-timing gotcha: the management fee percentage that applies to a charge is locked in at the moment that charge is created. Updating the fee percentage in settings only affects future charges -- it is not retroactive. To apply a new percentage to an existing charge, void it and recreate it under the new setting.",
         "A real onboarding call (Southern Choice Property Management, Sep 18 2026) clarified a management-fee posting limitation worth flagging: the Post Management Fees screen only surfaces unbilled fees for the current month and the immediately preceding period. Fees missed further back than that will not surface there to catch up automatically — they need to be handled with a manual bill instead.",
-        "A real onboarding call (Welcome Home 1A, Sept 21 2026) confirmed owner statement generation flags three distinct warning types before publishing: balance mismatches, reserve discrepancies, and date gaps. Review and resolve whichever warning appears rather than publishing past it."
+        "A real onboarding call (Welcome Home 1A, Sept 21 2026) confirmed owner statement generation flags three distinct warning types before publishing: balance mismatches, reserve discrepancies, and date gaps. Review and resolve whichever warning appears rather than publishing past it.",
+        "A real financial-tracking call (Sept 28, 2026) with a multi-portfolio management company demonstrated the importance of report sequencing: running lease charges and payables reports early, posting management fees before owner payouts, reconciling diagnostics monthly, and consolidating owner statements to keep financial close clean and predictable.",
+        "A real onboarding call (Timberline, Oct 1 2026) clarified management fee posting for multi-period scenarios: when posting fees for a prior period (e.g., September after converting from another platform), the Post Management Fees screen shows both flat/base fees and renewal fees. If some fees were already collected in the legacy system, uncheck those properties so you only post the new/renewal fees. For the current period (e.g., October), post all applicable fees including minimum fees that trigger when rent remains uncollected.",
+        "That same call reinforced that properties with minimum fee rules (e.g., 8% rent with a $200 minimum) automatically apply the minimum charge when rent hasn't yet been collected in that period — the rule is evaluated at posting time, not retroactively."
       ],
       "topics": "Management fees, owner statements, distributions, statement settings, owner reporting packages, Manager Dashboard",
       "objectives": [
@@ -4517,6 +4532,14 @@ window.RVU_COURSE = {
           "type": "Facilitator Script",
           "url": "job-aids/fee-mechanics-reconciliation-gotchas-facilitator-script.html",
           "summary": "New companion script -- jump to the Management Fee % Is Locked at Charge Creation and Monthly Close Order sections for this week's topics.",
+          "videoCode": ""
+        },
+        {
+          "id": "owner-accounting-reporting-workflow-facilitator-script",
+          "title": "Facilitator Script: Owner Accounting, Reporting & Month-End Workflow",
+          "type": "Facilitator Script",
+          "url": "job-aids/owner-accounting-reporting-workflow-facilitator-script.html",
+          "summary": "Month-end accounting and reporting workflows: lease charges reports, payables reports, diagnostics cleanup, bank reconciliation, owner payout sequence, management fee posting, owner statements, and RentSign mechanics.",
           "videoCode": ""
         }
       ],
@@ -5596,7 +5619,9 @@ window.RVU_COURSE = {
       "realWorldNotes": [
         "The four-part Move-Out workflow (Move-Out Details, Tenant Information, Accounting/deposit calculation, Finalize) ends with printing the Move-Out Statement and processing the refund check &mdash; but the actual bank transfer still has to happen manually, or the escrow account falls out of sync with the security deposit ledger.",
         "Move-Out and Lease Renewal training is consistently the <em>last</em> module covered in a real customer's onboarding sequence &mdash; worth not shortchanging here just because live training often does.",
-        "A real onboarding call (Welcome Home 2A, Sept 22 2026) surfaced a compliance-relevant gotcha: a former tenant's portal login keeps access to that property's shared files after move-out unless portal access is explicitly disabled as part of the move-out flow. Don't assume moving a tenant out automatically cuts off file visibility — disabling portal access is a separate, deliberate step."
+        "A real onboarding call (Welcome Home 2A, Sept 22 2026) surfaced a compliance-relevant gotcha: a former tenant's portal login keeps access to that property's shared files after move-out unless portal access is explicitly disabled as part of the move-out flow. Don't assume moving a tenant out automatically cuts off file visibility — disabling portal access is a separate, deliberate step.",
+        "A real onboarding call (Timberline, Oct 1 2026) surfaced a powerful workaround for lease-overlap challenges during security deposit processing: create a custom lease status (e.g., 'pending security deposit return') and use it to remove the active status from the old lease while the 60-day security deposit processing window completes. This keeps the lease records intact for reconciliation without triggering the 'two active leases' constraint.",
+        "That same Timberline call demonstrated a new saved-search feature in the Lease section: users can now save search filters for specific statuses (e.g., 'pending security deposit return'), eliminating the need to create and export separate reports for daily status tracking. Build and save these searches once, then re-run them anytime to monitor leases in that status."
       ],
       "topics": "Move-out flow, forwarding information, final accounting, security deposit refund, deductions, tenant ledger closeout",
       "objectives": [
@@ -10849,6 +10874,24 @@ window.RVU_COURSE = {
       "title": "Facilitator Script: Maintenance Global Settings & Internal Operations",
       "url": "job-aids/maintenance-global-settings-facilitator-script.html",
       "summary": "Maintenance-settings mechanics from three real customer calls (Sept 23-25, 2026): maintenance categories filtering vendor selection, internal maintenance settings for vendor-only shops, global inspection defaults, work order projects, vendor portal invites, AI-assisted invoice reading (~70% auto-fill), note/file sharing defaults, messaging limitations, the feature-request process, the maintenance mobile app roadmap, property-level alerts, a price-book markup example, fielding third-party integration questions, and confirming in-progress work orders during migration."
+    },
+    {
+      "id": "owner-accounting-reporting-workflow-facilitator-script",
+      "title": "Facilitator Script: Owner Accounting, Reporting & Month-End Workflow",
+      "url": "job-aids/owner-accounting-reporting-workflow-facilitator-script.html",
+      "summary": "Complete month-end owner accounting and reporting workflow from a real customer call (Sept 28, 2026): running lease charges reports for unpaid rent, payables reports for vendor bills, saving and scheduling reports, understanding bulk action limitations, diagnostics cleanup (positive and negative fee mismatches), bank reconciliation frequency, the owner payout sequence, management fee posting timing, owner statement generation and consolidation settings, lease payment restrictions, manual portal payment setup, and RentSign template attachment mechanics."
+    },
+    {
+      "id": "applications-applicants-insurance-facilitator-script",
+      "title": "Facilitator Script: Applications, Applicant Management & Insurance Integration",
+      "url": "job-aids/applications-applicants-insurance-facilitator-script.html",
+      "summary": "Companion script covering application-level messaging, managing and merging duplicate applicants (with safe report ordering), custom application templates for identifying co-applicants, insurance provider configuration (Second Nature), resident benefit packages with recurring charges, document/portal file synchronization, portal invitations by tenant contact, and profile switching for shared email addresses -- from a real customer implementation call, September 30, 2026."
+    },
+    {
+      "id": "adverse-action-letters-facilitator-script",
+      "title": "Facilitator Script: Adverse Action Letters & Application Denials",
+      "url": "job-aids/adverse-action-letters-facilitator-script.html",
+      "summary": "Companion script covering the legal requirement for adverse action letters, the system limitation regarding credit score auto-fill, the customization workaround of creating separate templates by denial reason, setup in RentSign, manual field entry for specific scores/factors, compliance verification and legal review by state, common denial reasons with documentation requirements, the full denial workflow, and state-specific language variations -- from a real customer implementation call, September 29, 2026."
     }
   ],
   "realCaseExposure": {
