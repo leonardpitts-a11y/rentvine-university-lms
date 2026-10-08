@@ -2,8 +2,8 @@ window.RVU_COURSE = {
   "meta": {
     "title": "Rentvine University",
     "edition": "Beginner Enhanced Edition",
-    "version": "8.17-oct-field-notes",
-    "lastUpdated": "2026-10-07",
+    "version": "8.18-oct8-field-notes",
+    "lastUpdated": "2026-10-08",
     "owner": "Rentvine University",
     "description": "Interactive 21-week Rentvine University learner program ordered by real property management processes for beginners, including a Financial Onboarding Specialist phase covering how new customers get migrated onto Rentvine's accounting system. Includes a Before You Begin orientation, role-path filters, phase process maps, a continuing practice company case file, downloadable job aids, scored knowledge checks with remediation links, required lab video submissions, guided walkthrough examples, match-the-term glossary practice, accessibility controls, and progress tracking.",
     "safety": "Complete all labs in a training or sandbox database. Do not use production data.",
@@ -1943,7 +1943,8 @@ window.RVU_COURSE = {
         "Industry-wide compliance context: FCRA requires a compliant adverse action notice (naming the screening company, stating it didn't make the decision, and explaining the applicant's dispute rights) any time an application is denied based on a screening report -- and while a written screening policy isn't legally mandated, one is strongly recommended because it demonstrates consistent, good-faith criteria across every applicant.",
         "A real training call (Oct 6, 2026) demonstrated that leases support step-up rent escalation options for multi-year agreements. Customers can configure automatic rent increases at specified intervals during lease creation.",
         "A real onboarding call (Welcome Home, Oct 5 2026) confirmed two applicant-intake workarounds: an applicant with no Social Security number can be moved through by entering all nines in the SSN field (screening results will be limited, so the decision needs human review), and a passport is a valid identity document for the application file.",
-        "A real onboarding call (Edwards Property Management, Oct 6 2026) surfaced two applications-screen practices: a saved search filtered on 'has lease = no' keeps the chronological applications list down to applicants still in play, and since Rentvine has no built-in application-verification checklist, the workaround is pasting the company's standard checklist into the application's notes so every processor works the same list."
+        "A real onboarding call (Edwards Property Management, Oct 6 2026) surfaced two applications-screen practices: a saved search filtered on 'has lease = no' keeps the chronological applications list down to applicants still in play, and since Rentvine has no built-in application-verification checklist, the workaround is pasting the company's standard checklist into the application's notes so every processor works the same list.",
+        "An internal support training (Oct 8 2026) nailed down the Equifax credit-freeze rule: after an applicant unfreezes their credit, screening cannot be successfully rerun until a full 24 hours after the exact time of Equifax's confirmation email — unfrozen at 2 PM yesterday means rerun after 2 PM today, and persistent failures after that window go to Equifax, not Rentvine. The same session covered two application mechanics: rental verifications are re-sent by voiding the current address in the application's rental-history section and re-entering it (the system otherwise auto-resends landlord reminders every 3 days), and application templates are not retroactive — editing a template after sending means issuing the applicant a brand-new application."
       ],
       "topics": "Applicant workflow, screening, guarantors, application templates",
       "objectives": [
@@ -1976,6 +1977,14 @@ window.RVU_COURSE = {
           "type": "Official KB",
           "url": "https://help.rentvine.com/en/articles/16573980-introduction-to-application-and-screening",
           "summary": "Official beginner videos for application and screening setup.",
+          "videoCode": ""
+        },
+        {
+          "id": "w05-res-20",
+          "title": "Facilitator Script: October 8 Field Notes — Credit Freezes & Application Template Rules",
+          "type": "Facilitator Script",
+          "url": "job-aids/october-8-2026-field-notes-facilitator-script.html",
+          "summary": "Supporting: the Equifax 24-hour credit-freeze rule, resending rental verifications by voiding rental history, and why application templates are not retroactive — from the internal Morning Training, Oct 8, 2026.",
           "videoCode": ""
         }
       ],
@@ -2544,7 +2553,8 @@ window.RVU_COURSE = {
         "&ldquo;View Portal&rdquo; impersonation is the standard first troubleshooting step for any reported login issue &mdash; before assuming anything else is broken.",
         "Portal invitations are tracked under Global Settings &rarr; Portal Invitations, where a toggle filters out already-registered contacts so staff can isolate exactly who still needs an invite.",
         "A real onboarding call (Welcome Home 1A, Sept 21 2026) flagged a file-sharing default worth confirming with new customers: files uploaded into a folder that's shared with an owner automatically sync permissions to every sub-file in that folder and appear in the owner portal, unless someone manually stops that sync.",
-        "A real onboarding call (Edwards Property Management, Oct 6 2026) flagged a known portal defect to set expectations on: tenants can still save credit cards to their portal wallet even when card payments are disabled on the lease. The saved card cannot actually be used to pay, but its presence confuses tenants; the behavior was acknowledged on the call as something that should be restricted."
+        "A real onboarding call (Edwards Property Management, Oct 6 2026) flagged a known portal defect to set expectations on: tenants can still save credit cards to their portal wallet even when card payments are disabled on the lease. The saved card cannot actually be used to pay, but its presence confuses tenants; the behavior was acknowledged on the call as something that should be restricted.",
+        "A real training call (Lepi & Associates, Oct 8 2026) showed the classic duplicate-profile portal failure: a tenant logged in and 'saw nothing' because she had two profiles and the lease was linked to the other one; separately, tenants receive no email verification code until they've accepted their portal invitation. The disposal rule demonstrated: remove the invitation first, then delete the duplicate profile outright if it has no accounting transactions attached — otherwise deactivate it. The same rule was applied to removing a test internal-technician profile after unassigning it from active work orders."
       ],
       "topics": "Portal invitations, payments, insurance, maintenance requests",
       "objectives": [
@@ -3209,7 +3219,8 @@ window.RVU_COURSE = {
         "Global Settings can apply a fully automated late fee to overdue tenant balances (a commonly configured default is 5% starting on day 8) -- worth confirming with the owner what's actually configured rather than assuming a system default, since this runs without manual intervention once it's turned on.",
         "Two real onboarding calls (Southern Choice 1A, Sept 14 2026, and Southern Choice 2A, Sept 18 2026) confirmed that checks and \"other payment\" types can be voided and re-recorded, but electronic checks processed through Forte cannot be voided once submitted -- double-check the payee and amount before sending. Forte e-check payments also carry a $0.99/transaction fee that is auto-debited; NACHA files are the manual-download/upload alternative to the bank.",
         "A real onboarding call (Edwards Property Management 2A, Sept 22 2026) showed the “reapply” mechanic used specifically to fix a misallocated portion of an already-posted bulk/Section 8 tenant receipt: open the lease's transaction history, find the receipt line, and reapply it across the correct unpaid charges. This is a distinct use of Reapply from the bank-account-mismatch fix covered elsewhere — here nothing moved between bank accounts, only which charges the existing deposit satisfies.",
-        "A real Q/A call (Barron, Oct 6 2026) confirmed Zelle cannot be connected to or automated inside Rentvine — Zelle and Venmo arrivals are handled exactly like paper checks: manual receipt on the lease, then manual deposit dated the day the funds actually hit the bank. The same call demonstrated the bank-run pattern: when several checks go to the bank as one physical deposit, void any premature single-check deposit and record one consolidated deposit checking off all included receipts, with the date matching the real bank transaction (reinforced on CornerStone 2A, Oct 7 2026: date mismatches across months are a top cause of broken reconciliations)."
+        "A real Q/A call (Barron, Oct 6 2026) confirmed Zelle cannot be connected to or automated inside Rentvine — Zelle and Venmo arrivals are handled exactly like paper checks: manual receipt on the lease, then manual deposit dated the day the funds actually hit the bank. The same call demonstrated the bank-run pattern: when several checks go to the bank as one physical deposit, void any premature single-check deposit and record one consolidated deposit checking off all included receipts, with the date matching the real bank transaction (reinforced on CornerStone 2A, Oct 7 2026: date mismatches across months are a top cause of broken reconciliations).",
+        "A real Q/A call (Southern Choice, Oct 8 2026) reinforced e-check finality: once submitted through Forte there is no direct cancellation — a payee received $1,845 instead of $1,445, and the root cause was non-refundable inspection and pet fees miscategorized as other income instead of being suppressed, which inflated the portfolio balance the payout drew from. Same-day material from Lepi & Associates: historical owner contributions are entered via Money In → green actions → Record Owner Receipt (then checked off as a deposit), and a portal payment that bundles rent with a security deposit is split with a virtual bank transfer under Banking → green actions to the SD account — paired with a manual physical transfer between the real bank accounts, since the in-system transfer moves no actual money."
       ],
       "topics": "Tenant receipts, owner contributions, manual deposits, electronic settlements, bulk tenant receipts, bank deposit matching",
       "objectives": [
@@ -3290,6 +3301,14 @@ window.RVU_COURSE = {
           "type": "Facilitator Script",
           "url": "job-aids/october-2026-field-notes-facilitator-script.html",
           "summary": "Supporting: off-portal payment hygiene (Zelle/Venmo, bank-run consolidated deposits), the bank-adjustments warning, unprinted checks queue, and known money-in bugs — from real calls Oct 5–7, 2026.",
+          "videoCode": ""
+        },
+        {
+          "id": "w09-res-10",
+          "title": "Facilitator Script: October 8 Field Notes — E-Check Finality & Money-In Fixes",
+          "type": "Facilitator Script",
+          "url": "job-aids/october-8-2026-field-notes-facilitator-script.html",
+          "summary": "Supporting: e-check finality after submission, refund path limitations, Record Owner Receipt, virtual + physical bank transfers for portal-paid deposits, and duplicate-bill prevention — from real calls Oct 8, 2026.",
           "videoCode": ""
         }
       ],
@@ -3987,7 +4006,8 @@ window.RVU_COURSE = {
         "Open work orders and invoices consistently fail to migrate cleanly from PropertyWare and require manual re-entry &mdash; worth setting that expectation early with any customer coming from that platform.",
         "A real maintenance-settings call (Sept 23, 2026) with a vendor-only management company showed that maintenance categories assigned to vendor contacts filter which vendors surface on a new work order, that Internal Maintenance settings (labor descriptions, price book, no-markup toggle) still matter even for shops with no in-house techs, that default inspection areas/items/actions are configured once globally rather than per property, and that Work Order Projects group multiple tasks (with rolled-up cost/completion tracking) for turnovers.",
         "A Rentvine mock-call training review (Sept 22, 2026) confirmed a real product limitation worth flagging to new users: once an inspection is created it cannot be deleted — it uses a one-size-fits-all template, and a mistaken or unwanted inspection has to be recreated/reworked under Maintenance rather than removed outright.",
-        "Two additional real maintenance calls (Barron 1B, Sept 24 2026, and Customer Education Training Call 2B - The Alpine Group Inc, Sept 25 2026) added further detail to the Sept 23 Southern Choice call already referenced above: Rentvine's AI reads an uploaded vendor invoice and auto-fills roughly 70% of its data; work order notes and files are never auto-shared with owners/tenants and must be shared case by case; a property-level alert can be configured to flag owner restrictions automatically on future work orders; and more than one customer has asked whether third-party tools (Venderoo, Iron Ledger) integrate with Rentvine -- no native integration is confirmed for either, though the open API makes it technically possible."
+        "Two additional real maintenance calls (Barron 1B, Sept 24 2026, and Customer Education Training Call 2B - The Alpine Group Inc, Sept 25 2026) added further detail to the Sept 23 Southern Choice call already referenced above: Rentvine's AI reads an uploaded vendor invoice and auto-fills roughly 70% of its data; work order notes and files are never auto-shared with owners/tenants and must be shared case by case; a property-level alert can be configured to flag owner restrictions automatically on future work orders; and more than one customer has asked whether third-party tools (Venderoo, Iron Ledger) integrate with Rentvine -- no native integration is confirmed for either, though the open API makes it technically possible.",
+        "A real training call (Lepi & Associates, Oct 8 2026) clarified internal-maintenance mechanics: the Labor & Materials tab on a work order stays hidden until an internal technician is assigned; labor hours and material costs do not flow onto owner bills automatically and must be calculated manually; and the price book is strictly reference/history, not an automated billing engine. An exclusive third-party vendor can be configured to act as an internal maintenance company with checks routed to them, but the setup needs careful handling."
       ],
       "topics": "Estimates, approvals, projects, templates, vendor portals, scheduling, tenant portal requests, vendor invoices, settings automation",
       "objectives": [
@@ -4433,7 +4453,8 @@ window.RVU_COURSE = {
         "A real onboarding call (Welcome Home 1A, Sept 21 2026) confirmed owner statement generation flags three distinct warning types before publishing: balance mismatches, reserve discrepancies, and date gaps. Review and resolve whichever warning appears rather than publishing past it.",
         "A real financial-tracking call (Sept 28, 2026) with a multi-portfolio management company demonstrated the importance of report sequencing: running lease charges and payables reports early, posting management fees before owner payouts, reconciling diagnostics monthly, and consolidating owner statements to keep financial close clean and predictable.",
         "A real onboarding call (Timberline, Oct 1 2026) clarified management fee posting for multi-period scenarios: when posting fees for a prior period (e.g., September after converting from another platform), the Post Management Fees screen shows both flat/base fees and renewal fees. If some fees were already collected in the legacy system, uncheck those properties so you only post the new/renewal fees. For the current period (e.g., October), post all applicable fees including minimum fees that trigger when rent remains uncollected.",
-        "That same call reinforced that properties with minimum fee rules (e.g., 8% rent with a $200 minimum) automatically apply the minimum charge when rent hasn't yet been collected in that period — the rule is evaluated at posting time, not retroactively."
+        "That same call reinforced that properties with minimum fee rules (e.g., 8% rent with a $200 minimum) automatically apply the minimum charge when rent hasn't yet been collected in that period — the rule is evaluated at posting time, not retroactively.",
+        "A real training call (Lee Connor 1A, Oct 8 2026) plus the same day's internal Morning Training added payout specifics: NACHA batches can land same-day or next business day (vs. 2–3 days standard) but require generating a test file and manually uploading payout files in the bank's portal, and NACHA carries no transaction fee while e-checks cost roughly $1 each. Two override-reset disciplines from the Lee Connor call: zero out an overdraft override once funds are replenished, and revert a one-time payout bank-account override (three-dots menu + email authentication code) right after the exception run."
       ],
       "topics": "Management fees, owner statements, distributions, statement settings, owner reporting packages, Manager Dashboard",
       "objectives": [
@@ -5292,7 +5313,8 @@ window.RVU_COURSE = {
       "realWorldNotes": [
         "If a management company uses a single combined bank account for both rent and deposits, the Escrow Mismatch diagnostic will always show a mismatch &mdash; the correct move is toggling that diagnostic off rather than chasing a false positive every week.",
         "Reading the sign on a Suppressed Fee Balance Mismatch: positive means money is owed to the management company (bill and collect it); negative means money needs to be returned (a refund or credit). Pick exactly one remediation method &mdash; combining both re-breaks the balance.",
-        "A real support-style call (Edwards Property Management, Oct 6 2026) showed what a careless portfolio transfer costs: after moving 4–5 properties between portfolios, a $3,810 security deposit sat on the wrong lease (a yard-space lease instead of the unit), one portfolio ran a roughly -$540 operating balance, and escrow was misaligned by about $19,320. The fix was transferring the properties back and verifying the old portfolio zeroed out. Teaching point: a portfolio change migrates unpaid charges, prepayments, credits, deposits, bills, and work orders permanently in one confirmation — snapshot balances before, and verify the source zeroes out and deposits land on the correct leases after."
+        "A real support-style call (Edwards Property Management, Oct 6 2026) showed what a careless portfolio transfer costs: after moving 4–5 properties between portfolios, a $3,810 security deposit sat on the wrong lease (a yard-space lease instead of the unit), one portfolio ran a roughly -$540 operating balance, and escrow was misaligned by about $19,320. The fix was transferring the properties back and verifying the old portfolio zeroed out. Teaching point: a portfolio change migrates unpaid charges, prepayments, credits, deposits, bills, and work orders permanently in one confirmation — snapshot balances before, and verify the source zeroes out and deposits land on the correct leases after.",
+        "A real Q/A call (Southern Choice, Oct 8 2026) demonstrated the zero-point ledger trace: set the portfolio ledger report to all time, find the last date the account zeroed out, then click through every subsequent increase and decrease until the discrepancy appears. A real $175 discrepancy traced to a ceiling-fan repair bill paid in October but posted with its September creation date — fixed by selecting the decrease entry, green actions → edit, and correcting the post date. The same call's duplicate-prevention habit: before entering any vendor invoice, search existing bills by invoice/reference number or amount (Accounting → Money Out → Bills), or clear the posting-date filter on the portfolio's bills tab."
       ],
       "topics": "Accounting diagnostics, negative bank accounts, reserve not met, escrow mismatch, prepayment mismatch, stale reconciliations, vendor credits, cleanup workflow",
       "objectives": [
@@ -5637,7 +5659,8 @@ window.RVU_COURSE = {
         "Move-Out and Lease Renewal training is consistently the <em>last</em> module covered in a real customer's onboarding sequence &mdash; worth not shortchanging here just because live training often does.",
         "A real onboarding call (Welcome Home 2A, Sept 22 2026) surfaced a compliance-relevant gotcha: a former tenant's portal login keeps access to that property's shared files after move-out unless portal access is explicitly disabled as part of the move-out flow. Don't assume moving a tenant out automatically cuts off file visibility — disabling portal access is a separate, deliberate step.",
         "A real onboarding call (Timberline, Oct 1 2026) surfaced a powerful workaround for lease-overlap challenges during security deposit processing: create a custom lease status (e.g., 'pending security deposit return') and use it to remove the active status from the old lease while the 60-day security deposit processing window completes. This keeps the lease records intact for reconciliation without triggering the 'two active leases' constraint.",
-        "That same Timberline call demonstrated a new saved-search feature in the Lease section: users can now save search filters for specific statuses (e.g., 'pending security deposit return'), eliminating the need to create and export separate reports for daily status tracking. Build and save these searches once, then re-run them anytime to monitor leases in that status."
+        "That same Timberline call demonstrated a new saved-search feature in the Lease section: users can now save search filters for specific statuses (e.g., 'pending security deposit return'), eliminating the need to create and export separate reports for daily status tracking. Build and save these searches once, then re-run them anytime to monitor leases in that status.",
+        "A real live move-out (Southern Choice, Oct 8 2026) surfaced three details: the security deposit refund defaults to check in the move-out flow (the client mails a physical check from the SD bank account), final submission requires a multi-factor authentication text code, and tenant portal access should be disabled at completion. The same day's internal Morning Training drew the refund boundary: the move-out flow's step four is the only in-system ACH tenant refund path — direct card refunds don't exist, and a manual outside-system refund recorded as an 'other' payment can never display a card's last four digits."
       ],
       "topics": "Move-out flow, forwarding information, final accounting, security deposit refund, deductions, tenant ledger closeout",
       "objectives": [
@@ -5686,6 +5709,14 @@ window.RVU_COURSE = {
           "type": "Facilitator Script",
           "url": "job-aids/call-3b-facilitator-script.html",
           "summary": "Post-go-live QA2 script — jump to the Move-Out sections: starting the flow, security deposit calculation and refund, the move-out statement, and closing the loop with escrow.",
+          "videoCode": ""
+        },
+        {
+          "id": "w15-res-10",
+          "title": "Facilitator Script: October 8 Field Notes — Move-Out Mechanics & Refund Limits",
+          "type": "Facilitator Script",
+          "url": "job-aids/october-8-2026-field-notes-facilitator-script.html",
+          "summary": "Supporting: MFA verification at move-out submission, check-default security deposit refunds, portal access shutoff, and the ACH-or-manual-only tenant refund rule — from real calls Oct 8, 2026.",
           "videoCode": ""
         }
       ],
@@ -5900,7 +5931,8 @@ window.RVU_COURSE = {
         "The renewal fee pulls directly from the property's management-fee settings and is charged to the owner the moment the renewal is entered &mdash; one customer specifically praised this for eliminating a manual, paperwork-heavy process that used to create real accounting backlogs.",
         "A real, repeatable failure mode: if a renewal-fee bill gets created before the renewal itself is finalized, the renewal can show as &ldquo;signed&rdquo; while never actually completing. Fix: void the conflicting bill (or set it to $0), then finalize the renewal through the lease record.",
         "The system's automatic lease end-date fill defaults to the first day of a month rather than the last day of the previous month, which affects the &ldquo;next eligible increase date&rdquo; calculation downstream.",
-        "A real training call (CornerStone 2A, Oct 7 2026) flagged a known bug in bulk tenant receipts: the bulk amount currently does not auto-allocate to unpaid charges, so allocation needs manual verification after posting until the fix ships. The same call confirmed the manual late-fee pattern: set global autocharge late fees to 'no', then post late fees from the money in menu."
+        "A real training call (CornerStone 2A, Oct 7 2026) flagged a known bug in bulk tenant receipts: the bulk amount currently does not auto-allocate to unpaid charges, so allocation needs manual verification after posting until the fix ships. The same call confirmed the manual late-fee pattern: set global autocharge late fees to 'no', then post late fees from the money in menu.",
+        "A real training call (Lepi & Associates, Oct 8 2026) produced two recurring-item lessons: recurring charges only post on active leases — a 'missing' charge traced to a lease stuck in pending because a main house and rear apartment shared one property record — and a support rep's accidentally-added recurring credit (instead of a recurring charge) manufactured duplicate tenant credits, including an unexpected $1,500, until the erroneous recurring credit was deleted. Also seen: a tenant who set up autopay and paid manually the same day, producing a double payment — tenant-side misconfiguration worth warning clients about."
       ],
       "topics": "Renewal eligibility, renewal offers, tenant portal acceptance, RentSign renewal documents, recurring charge updates, bulk tenant receipts",
       "objectives": [
@@ -10916,6 +10948,12 @@ window.RVU_COURSE = {
       "title": "Facilitator Script: October 2026 Field Notes — Banking Hygiene, Lease Settings & Known Gotchas",
       "url": "job-aids/october-2026-field-notes-facilitator-script.html",
       "summary": "Supplement consolidating new material from seven real onboarding and Q/A calls (Oct 5–7, 2026: Welcome Home, Edwards, Barron, CornerStone 1B/2A, Evolve PMG, Doug Shorter 1B): Zelle/Venmo manual handling and the bank-run consolidated-deposit pattern, why bank adjustments are avoided in favor of other receipts/payments, the unprinted checks queue and editable starting check numbers, the month-to-month premium toggle, the all-nines SSN workaround and passport ID for applicants, the 'is empty' vs. 'equals zero' recurring-charge filter diagnostic, a saved unpaid-rent report recipe, a known-bugs expectation-setting list, and the Edwards portfolio-transfer real case."
+    },
+    {
+      "id": "october-8-2026-field-notes-facilitator-script",
+      "title": "Facilitator Script: October 8 Field Notes — E-Check Finality, Profile Fixes & Screening Rules",
+      "url": "job-aids/october-8-2026-field-notes-facilitator-script.html",
+      "summary": "Supplement consolidating new material from four real calls on Oct 8, 2026 (Southern Choice Q/A, Lee Connor 1A, Lepi & Associates QA 1, internal Morning Training): e-check finality after Forte submission and a real $1,845-vs-$1,445 overpayment rooted in non-refundable fees miscategorized as other income; the two supported tenant refund paths (ACH via move-out step 4, or manual outside-system) and why card refunds/last-4 don't exist; move-out MFA code, check-default deposit refund and portal shutoff; the zero-point ledger trace and post-date edit fix; duplicate tenant profile delete-vs-deactivate rule; recurring charges only posting on active leases and the erroneous recurring-credit case; the hidden Labor & Materials tab and reference-only price book; Record Owner Receipt and virtual-plus-physical bank transfers for portal-paid security deposits; NACHA same/next-day mechanics and two override reset rules; the Equifax 24-hour credit-freeze rule and non-retroactive application templates; and PRNC-code transaction tracing with notification-audit limits."
     }
   ],
   "realCaseExposure": {
