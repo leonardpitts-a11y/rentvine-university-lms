@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Leonard Pitts">
+<title>Facilitator Script: October 8 Field Notes — E-Check Finality, Profile Fixes &amp; Screening Rules</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;max-width:900px;margin:2rem auto;padding:0 1rem;color:#1f2933}
+  h1{color:#006b47}
+  h2{color:#006b47;border-top:1px solid #d9e3dd;padding-top:1.25rem;margin-top:2rem}
+  h3{color:#0a5c3f;margin-top:1.5rem}
+  .kicker{color:#5a6b63;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+  .box{border:1px solid #d9e3dd;border-radius:12px;padding:1rem 1.25rem;background:#f7faf8;margin-bottom:1rem}
+  blockquote.script-line{border-left:4px solid #00875a;background:#f0f7f3;margin:.75rem 0;padding:.6rem 1rem;font-style:italic}
+  blockquote.script-line::before{content:"Suggested trainer language: ";font-style:normal;font-weight:700;color:#006b47}
+  ul, ol{padding-left:1.4rem}
+  li{margin:.3rem 0}
+  a.toc-link{display:block;padding:.15rem 0}
+  .toc{columns:2;column-gap:2rem}
+  @media (max-width:700px){.toc{columns:1}}
+  button.print-btn{padding:.6rem .85rem;border-radius:8px;border:1px solid #d9e3dd;background:#00875a;color:white;font-weight:700;margin-bottom:1rem}
+  button.top-btn{padding:.4rem .7rem;border-radius:8px;border:1px solid #d9e3dd;background:#fff;color:#006b47;font-weight:700;font-size:.8rem}
+  @media print{button{display:none}}
+  table.qref{width:100%;border-collapse:collapse;margin-top:.5rem}
+  table.qref td,table.qref th{border:1px solid #d9e3dd;padding:.5rem;text-align:left;vertical-align:top}
+  table.qref th{background:#f0f5f2}
+</style>
+</head>
+<body id="top">
+
+<button class="print-btn" onclick="window.print()">Print this facilitator script</button>
+
+<div class="kicker">Rentvine University &middot; Facilitator Script</div>
+<h1>October 8 Field Notes — E-Check Finality, Profile Fixes &amp; Screening Rules</h1>
+<p class="box"><strong>Purpose:</strong> This supplement consolidates genuinely new material from four real calls on October 8, 2026: a Q/A call with Southern Choice (an overpayment incident, a live move-out, and portfolio-ledger troubleshooting), a training call with Lee Connor (portfolio and payout mechanics), a customer-education Q/A with Lepi &amp; Associates (portal profiles, internal maintenance, and recurring-charge errors), and an internal support Morning Training (refund limitations, screening rules, and transaction tracing). Trainer language is paraphrased and reconstructed from the session notes — it is not verbatim transcript. Use it alongside the Week 9, 11, 14 and 15 material and the earlier October 2026 Field Notes script.</p>
+
+<div class="box">
+<strong>Table of contents</strong>
+<div class="toc">
+<a class="toc-link" href="#intro">Introduction</a>
+<a class="toc-link" href="#echeck-finality">E-Check Finality: The $1,845 Overpayment</a>
+<a class="toc-link" href="#refund-limits">What Refunds Rentvine Can (and Can't) Do</a>
+<a class="toc-link" href="#moveout-mfa">Move-Out Mechanics: Defaults, MFA &amp; Portal Shutoff</a>
+<a class="toc-link" href="#ledger-toolkit">The Ledger Discrepancy Toolkit</a>
+<a class="toc-link" href="#dup-profiles">Duplicate Tenant Profiles &amp; Portal Logins</a>
+<a class="toc-link" href="#recurring">Recurring Charges, Recurring Credits &amp; Autopay Collisions</a>
+<a class="toc-link" href="#internal-maint">Internal Maintenance: The Labor &amp; Materials Tab</a>
+<a class="toc-link" href="#contributions">Owner Contributions &amp; Security Deposit Allocation</a>
+<a class="toc-link" href="#payout-discipline">Payout Hygiene: NACHA Speed &amp; Two Reset Rules</a>
+<a class="toc-link" href="#screening">Screening &amp; Applications: Credit Freezes and Template Rules</a>
+<a class="toc-link" href="#support-tracing">Support-Side Tracing: PRNC Codes &amp; Notification Limits</a>
+<a class="toc-link" href="#qref">Quick Reference Table</a>
+<a class="toc-link" href="#closing">Closing</a>
+</div>
+</div>
+
+<section id="intro">
+<h2>Introduction</h2>
+<p>Today's notes come from one busy day of calls — and the common thread is <em>finality and defaults</em>: which actions in Rentvine can't be undone (submitted e-checks, processed screenings during a credit freeze), which defaults new users miss (deposit refunds default to check, recurring charges only post on active leases), and which fixes are available when something lands wrong (post-date edits, profile deactivation, deleting an erroneous recurring credit).</p>
+</section>
+
+<section id="echeck-finality">
+<h2>E-Check Finality: The $1,845 Overpayment</h2>
+<p>On the Southern Choice Q/A call, a vendor payee received an e-check payout of $1,845 when the intended amount was $1,445. The client had already contacted support; the key teaching point is what the trainer said about the processor: once an e-check has been submitted through Forte, direct cancellation options are gone. From there it becomes a support/processor conversation, not a button in the UI.</p>
+<blockquote class="script-line">Treat every e-check submission like dropping an envelope in a mailbox. Before you post, that's your window to catch the amount — after you post, there is no cancel button, only a support conversation with the processor.</blockquote>
+<p>Just as important is the root cause the team found: a non-refundable inspection fee and a non-refundable pet fee had been miscategorized as <strong>other income</strong> instead of being suppressed. That misclassification inflated the portfolio's balance, which is why the payout came out oversized. The lesson pairs with the fee-mechanics material: non-refundable fee suppression isn't cosmetic — it directly protects the owner-payout math.</p>
+<blockquote class="script-line">When a payout is mysteriously too big, don't start at the payment — start at what fed the balance. Here, two non-refundable fees that should have been suppressed showed up as other income, and the distribution faithfully paid out money that was never the owner's to receive.</blockquote>
+</section>
+
+<section id="refund-limits">
+<h2>What Refunds Rentvine Can (and Can't) Do</h2>
+<p>From the internal Morning Training, a clean statement of the refund boundaries that trips up property managers:</p>
+<ul>
+<li>Rentvine supports exactly two tenant refund paths: <strong>ACH</strong>, or a <strong>manual refund processed outside the system</strong> recorded as an "other" payment type.</li>
+<li>There is <strong>no direct credit or debit card refund</strong>. Selecting "credit/debit card" on an other-payment refund is only a label describing what you did outside the system — it does not process a card refund.</li>
+<li>Because a manual refund happens outside the system, it <strong>cannot display the last four digits</strong> of any card — that data never passed through Rentvine.</li>
+<li>The in-system ACH tenant refund lives in the <strong>move-out flow (step four)</strong> — that's the only place it exists.</li>
+</ul>
+<blockquote class="script-line">If a client insists on refunding "back to the card," the honest answer is: the system can't do that. We can refund by ACH inside the move-out flow, or they can process the card refund with their own merchant tools outside the system and record it here as an other payment — which is also why no last-four will ever display on it.</blockquote>
+</section>
+
+<section id="moveout-mfa">
+<h2>Move-Out Mechanics: Defaults, MFA &amp; Portal Shutoff</h2>
+<p>The Southern Choice call included a full live move-out. Three details worth adding to the Week 15 walkthrough:</p>
+<ul>
+<li>The security deposit refund <strong>defaults to check</strong> during the move-out workflow; e-check is the alternative if selected. The client in this case writes and mails a physical check from the security deposit bank account — a perfectly supported pattern.</li>
+<li>Submitting the move-out requires a <strong>multi-factor authentication text code</strong> — warn trainees so the prompt doesn't surprise them mid-flow.</li>
+<li>Remember to <strong>disable the tenant's portal access</strong> as part of completion so the former tenant can't keep logging in.</li>
+</ul>
+<blockquote class="script-line">The move-out flow will stop you for a text verification code before it finalizes — that's expected, not an error. And before you call it done: forwarding address confirmed, refund method chosen, portal access switched off.</blockquote>
+</section>
+
+<section id="ledger-toolkit">
+<h2>The Ledger Discrepancy Toolkit</h2>
+<p>Two complementary diagnostic moves were demonstrated on the Southern Choice call, both worth teaching as standard practice:</p>
+<h3>1. The zero-point trace</h3>
+<p>For a portfolio balance that "looks wrong": open the portfolio ledger, set the report view to <strong>all time</strong>, find the <strong>last date the account zeroed out</strong>, then click through every increase and decrease after that date, opening the underlying receipt or payment for each until the discrepancy shows itself.</p>
+<blockquote class="script-line">Every balance mystery has a birthday. Find the last day the ledger sat at zero, and everything you need to explain is between that day and today — walk the increases and decreases one by one.</blockquote>
+<h3>2. The post-date edit</h3>
+<p>A real $175 discrepancy traced to a ceiling-fan repair bill: the payment was created September 12 but actually paid October 3, so the ledger showed a negative balance in the wrong period. The fix: open the portfolio ledger, select the decrease entry, <strong>green actions &rarr; edit</strong>, and correct the post date to when the payment really happened.</p>
+<h3>3. Find the bill before you re-enter it</h3>
+<p>To avoid duplicate bill entry, search existing bills first: Accounting &rarr; Money Out &rarr; Bills, then search by <strong>invoice/reference number or exact amount</strong> — or open the specific portfolio's bills tab and clear the posting-date filter to see everything tied to that portfolio.</p>
+<blockquote class="script-line">Before you key in any vendor invoice, spend ten seconds searching the invoice number or the amount. A duplicate bill takes seconds to create and a reconciliation cycle to unwind.</blockquote>
+<p>One more framing from the same call, useful when owners ask "where's my money?": a portfolio's held-back amounts are the sum of <strong>accounts payable</strong> (unpaid bills including lease, convenience and management fees), <strong>reserves</strong>, <strong>work order estimates</strong>, and <strong>unsettled or undeposited receipts</strong>. And bills and invoices never age out — they stay in the system indefinitely, even after being paid, unless voided.</p>
+</section>
+
+<section id="dup-profiles">
+<h2>Duplicate Tenant Profiles &amp; Portal Logins</h2>
+<p>From the Lepi &amp; Associates Q/A, two portal-login failure modes with clean fixes:</p>
+<ul>
+<li><strong>No verification code arriving:</strong> a tenant won't receive an email verification code if they haven't yet registered or accepted their portal invitation. Check invite status before troubleshooting email delivery.</li>
+<li><strong>Tenant logs in and "sees nothing":</strong> in the real case, the tenant had <em>two</em> profiles and only one was connected to the lease — she was logging into the other one. The fix: make sure the lease is on the profile that has portal access, then remove the duplicate.</li>
+</ul>
+<p>The disposal rule for a duplicate profile: <strong>remove the invitation first; then delete it outright if it has no accounting transactions attached — otherwise deactivate it</strong>. The same rule covered deleting a test internal-technician profile: unassign it from any active work orders, remove the invite, then delete or deactivate.</p>
+<blockquote class="script-line">"I can log in but there's nothing there" almost always means two profiles and the lease is on the other one. Fix the linkage first, then clean up: delete the duplicate if it's never touched accounting, deactivate it if it has.</blockquote>
+</section>
+
+<section id="recurring">
+<h2>Recurring Charges, Recurring Credits &amp; Autopay Collisions</h2>
+<p>Three ledger surprises from the same call, all involving recurring items:</p>
+<ul>
+<li><strong>Recurring charges only post on active leases.</strong> A "missing" recurring charge traced to a lease stuck in <em>pending</em> — caused by a property-setup issue where a main house and a rear apartment shared one property record. Label the units distinctly, fix the lease status, and the charges post.</li>
+<li><strong>A recurring credit is not a recurring charge.</strong> A support rep had accidentally added a recurring <em>credit</em> instead of a recurring charge, which generated duplicate credits on the tenant ledger (an unexpected $1,500 credit plus a duplicate prepayment). The fix was deleting the erroneous recurring credit. When a tenant ledger shows credits nobody intended, check the recurring items list first.</li>
+<li><strong>Autopay plus a manual payment equals a double payment.</strong> A tenant set up autopay for the 5th and also paid manually the same day. This is tenant-side misconfiguration, not a system bug — but it ends in a refund conversation, so teach clients to warn tenants when enabling autopay.</li>
+</ul>
+<blockquote class="script-line">When a charge didn't post, check the lease status before anything else — recurring charges wait politely for a lease to be active. And when a mystery credit appears, open the recurring items list: a recurring credit added by mistake will keep manufacturing new credits until someone deletes it.</blockquote>
+</section>
+
+<section id="internal-maint">
+<h2>Internal Maintenance: The Labor &amp; Materials Tab</h2>
+<p>The Lepi call surfaced several internal-maintenance mechanics that aren't obvious from the UI:</p>
+<ul>
+<li>The <strong>Labor &amp; Materials tab on a work order is hidden until an internal technician is assigned</strong> — if you can't find it, check the assignment first.</li>
+<li>Labor hours and material costs <strong>do not flow automatically onto owner bills</strong> — today they must be calculated manually when billing. The product may automate this later, but don't promise it.</li>
+<li>The <strong>price book is reference-only</strong>: it stores labor hours and material pricing for historical lookup, not for automated billing calculations.</li>
+<li>An exclusive third-party vendor can be configured to function like an internal maintenance company with checks routed to them — it works, but the configuration needs careful handling.</li>
+</ul>
+<blockquote class="script-line">The Labor &amp; Materials tab plays hide-and-seek: no internal technician assigned, no tab. And remember the price book is a notebook, not a calculator — it remembers your rates, but you still do the billing math yourself.</blockquote>
+</section>
+
+<section id="contributions">
+<h2>Owner Contributions &amp; Security Deposit Allocation</h2>
+<p>Two money-in patterns demonstrated on the Lepi call that belong in the Week 9 repertoire:</p>
+<h3>Historical owner contributions</h3>
+<p>To enter owner contributions manually (for example, historical funds that shouldn't ride in on a balance transfer): Accounting &rarr; Money In &rarr; green actions &rarr; <strong>Record Owner Receipt</strong> — choose the portfolio, enter amount, reference and posting date, then check it off as a deposit once the funds are actually moved.</p>
+<h3>Splitting a portal payment that included a security deposit</h3>
+<p>When a tenant pays first month's rent and security deposit together through the portal, everything lands in the property-management checking account. The demonstrated fix: a <strong>virtual bank transfer</strong> under Banking &rarr; green actions to move the deposit portion to the security deposit account, linked to the unit — no journal entry required. Crucially, the in-system transfer doesn't move real money: <strong>the matching physical transfer between actual bank accounts must be executed manually</strong>.</p>
+<blockquote class="script-line">The bank transfer inside Rentvine is bookkeeping, not banking. Record the transfer in the system so the ledgers are right, then go move the actual dollars between the actual accounts — both halves, every time.</blockquote>
+</section>
+
+<section id="payout-discipline">
+<h2>Payout Hygiene: NACHA Speed &amp; Two Reset Rules</h2>
+<p>From the Lee Connor training and the Morning Training, payout details that go beyond what's already in the Week 12 material:</p>
+<ul>
+<li><strong>NACHA timing:</strong> standard owner distribution processing runs two to three business days, but NACHA can land <strong>same-day or next-day</strong> — at the cost of extra steps: generate a test file first, then for each payout batch use actions &rarr; generate the NACHA file and manually upload it in the bank's own portal.</li>
+<li><strong>NACHA cost:</strong> NACHA files upload to the bank with <strong>no transaction fee</strong>, while e-checks cost roughly a dollar each — a real consideration at volume.</li>
+<li><strong>Reset rule #1 — overdraft override:</strong> after using an overdraft override to let a portfolio go temporarily negative for an emergency bill, <strong>zero it back out once funds are replenished</strong>. Left in place, it quietly permits future negative balances nobody intended.</li>
+<li><strong>Reset rule #2 — payout bank override:</strong> a one-time owner-payout bank-account override (three-dots menu, confirmed with an email authentication code) must be <strong>reverted to the default account after the exception run</strong> — otherwise every future payout follows the exception.</li>
+</ul>
+<blockquote class="script-line">Overrides are loans you make against your future attention — the overdraft override and the payout bank override both keep working until someone remembers to put them back. Make the reset part of the same task, not a someday task.</blockquote>
+</section>
+
+<section id="screening">
+<h2>Screening &amp; Applications: Credit Freezes and Template Rules</h2>
+<p>From the Morning Training, three application-side rules to teach:</p>
+<ul>
+<li><strong>The 24-hour credit-freeze rule:</strong> after an applicant unfreezes their Equifax credit, screening cannot be successfully rerun until a <strong>full 24 hours after the exact time of Equifax's acceptance/confirmation email</strong>. Unfrozen at 3:28 PM yesterday means rerun after 3:28 PM today — not this morning. If screening still fails after the full 24 hours, the applicant should contact Equifax directly.</li>
+<li><strong>Resending a rental verification:</strong> when landlord details need correcting, open the applicant's application, void the current address in the rental-history section, add a new rental history with the corrected details, and resend. (The system also auto-resends landlord verification reminders every three days — voiding is for when you can't wait.)</li>
+<li><strong>Templates are not retroactive:</strong> editing an application template after it's been sent does <strong>not</strong> update applications already issued — the applicant must be sent a brand-new application. The minimum rental-history requirement count stays as set; applicants can always submit more than the minimum.</li>
+</ul>
+<blockquote class="script-line">Credit unfreezes are on Equifax's clock, not ours: a full 24 hours from the confirmation email, to the minute, before rescreening. And if you change an application template, you haven't changed anyone's application — you've changed the next one you send.</blockquote>
+</section>
+
+<section id="support-tracing">
+<h2>Support-Side Tracing: PRNC Codes &amp; Notification Limits</h2>
+<p>For trainees headed into support roles, the Morning Training demonstrated the internal tracing workflow for payment questions ("why did Forte take $1,600 out of my account?"):</p>
+<ul>
+<li>Every individual transaction carries a <strong>PRNC_ code</strong> — paste it into Forte to see that exact transaction as it happened at the processor. The <strong>settlement reference</strong> (top-left of settlement details) identifies the whole settlement batch the same way. In the real case, a $1,600 bank withdrawal resolved cleanly into two returned payments shown side-by-side in the money-out view.</li>
+<li>When a settlement's money-in/money-out lines don't sum to the settlement total, the path is: pull the settlement in the processor, identify the missing transaction, and file a <strong>database escalation to tier 2</strong> — this is a dev-team fix, not something to adjust locally.</li>
+<li><strong>There is no audit trail for automated notifications</strong> — the system sends hundreds of thousands daily and doesn't store a per-notification log. Set expectations honestly: offer a tier-2 feature request, and for personal notifications teach the reliable pattern — <strong>be the primary assignee</strong> on anything you need to be notified about, since lease-assignee notifications can be prioritized to a different person.</li>
+<li><strong>"My invoice disappeared":</strong> invoices stay in Accounting &rarr; Money Out &rarr; Invoices until converted to a bill or rejected — they don't go anywhere else. A "lost" invoice was almost always converted to a bill that was then voided.</li>
+</ul>
+<blockquote class="script-line">A tenant's bank statement and Rentvine's ledger meet at the PRNC code — trace the code, and "why did money leave my account" turns into two specific returned payments you can screenshot. No guessing, no vibes, just the transaction trail.</blockquote>
+</section>
+
+<section id="qref">
+<h2>Quick Reference Table</h2>
+<table class="qref">
+<tr><th>Situation</th><th>Rule / Fix</th><th>Source call</th></tr>
+<tr><td>E-check sent for wrong amount</td><td>No cancellation after submission through Forte — contact support/processor; verify amounts before posting</td><td>Southern Choice, Oct 8</td></tr>
+<tr><td>Payout mysteriously too large</td><td>Check what fed the balance — e.g. non-refundable fees miscategorized as other income instead of suppressed</td><td>Southern Choice, Oct 8</td></tr>
+<tr><td>Tenant wants refund "back to card"</td><td>Not supported — ACH (move-out flow step 4) or manual outside-system "other" refund only; no card last-4 on manual refunds</td><td>Morning Training, Oct 8</td></tr>
+<tr><td>Move-out won't finalize</td><td>MFA text code required at submission; deposit refund defaults to check; disable portal access when done</td><td>Southern Choice, Oct 8</td></tr>
+<tr><td>Portfolio balance looks wrong</td><td>All-time ledger view &rarr; find last zero date &rarr; trace each increase/decrease forward</td><td>Southern Choice, Oct 8</td></tr>
+<tr><td>Ledger entry in wrong period</td><td>Select entry &rarr; green actions &rarr; edit &rarr; correct the post date</td><td>Southern Choice, Oct 8</td></tr>
+<tr><td>About to enter a vendor invoice</td><td>Search bills by invoice/reference number or amount first to avoid duplicates</td><td>Southern Choice, Oct 8</td></tr>
+<tr><td>Tenant portal shows nothing</td><td>Duplicate profiles — lease linked to the other one; delete duplicate if no accounting transactions, else deactivate</td><td>Lepi &amp; Associates, Oct 8</td></tr>
+<tr><td>Recurring charge didn't post</td><td>Recurring charges only post on active leases — check for pending/closed status</td><td>Lepi &amp; Associates, Oct 8</td></tr>
+<tr><td>Unexplained tenant credits</td><td>Check for an erroneous recurring credit (vs. recurring charge) and delete it</td><td>Lepi &amp; Associates, Oct 8</td></tr>
+<tr><td>Can't find Labor &amp; Materials tab</td><td>It only appears once an internal technician is assigned; labor/materials billed manually; price book is reference-only</td><td>Lepi &amp; Associates, Oct 8</td></tr>
+<tr><td>Portal payment included security deposit</td><td>Virtual bank transfer (Banking &rarr; green actions) to the SD account + manual physical bank transfer</td><td>Lepi &amp; Associates, Oct 8</td></tr>
+<tr><td>Historical owner contribution</td><td>Money In &rarr; green actions &rarr; Record Owner Receipt, then check off as deposit</td><td>Lepi &amp; Associates, Oct 8</td></tr>
+<tr><td>Owner needs funds by a deadline</td><td>NACHA = same/next business day (test file + manual bank upload required), no transaction fee; e-check ≈ $1 and 2–3 days</td><td>Lee Connor / Morning Training, Oct 8</td></tr>
+<tr><td>Used an overdraft or payout-bank override</td><td>Reset the override to zero / revert the bank account immediately after the exception</td><td>Lee Connor 1A, Oct 8</td></tr>
+<tr><td>Screening fails after credit unfreeze</td><td>Wait a full 24 hours from the Equifax confirmation email timestamp before rerunning</td><td>Morning Training, Oct 8</td></tr>
+<tr><td>Application template edited after sending</td><td>Not retroactive — issue a brand-new application</td><td>Morning Training, Oct 8</td></tr>
+<tr><td>"Why did Forte debit my account?"</td><td>Trace the PRNC_ transaction code in Forte; settlement reference = whole batch</td><td>Morning Training, Oct 8</td></tr>
+<tr><td>Client wants a notification audit log</td><td>Doesn't exist for automated notifications — tier-2 feature request; be primary assignee to reliably receive personal notifications</td><td>Morning Training, Oct 8</td></tr>
+<tr><td>"My invoice disappeared"</td><td>Invoices stay in Money Out until converted or rejected — likely converted to a bill that was voided</td><td>Morning Training, Oct 8</td></tr>
+</table>
+</section>
+
+<section id="closing">
+<h2>Closing</h2>
+<p>If one theme runs through October 8th, it's that Rentvine is honest about what it can't undo: submitted e-checks, processed screenings, sent applications. The craft is in front-loading the care — verify the amount, check the lease status, search for the bill, confirm the 24 hours have passed — and in knowing the small set of reversible fixes (post-date edits, profile deactivation, deleting a bad recurring credit) when something does land wrong. Teach the finality first and the fixes second, and trainees will develop exactly the right instincts.</p>
+<blockquote class="script-line">The system gives you one cheap moment to be careful — before you hit post. Everything after that costs more. Spend the cheap moment.</blockquote>
+</section>
+
+<p style="margin-top:2rem">
+<button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top</button>
+&nbsp;&nbsp;<a href="../index.html">&larr; Back to Rentvine University</a>
+</p>
+
+</body>
+</html>
