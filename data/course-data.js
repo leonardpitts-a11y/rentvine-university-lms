@@ -2,8 +2,8 @@ window.RVU_COURSE = {
   "meta": {
     "title": "Rentvine University",
     "edition": "Beginner Enhanced Edition",
-    "version": "8.18-oct8-field-notes",
-    "lastUpdated": "2026-10-08",
+    "version": "8.19-oct9-field-notes",
+    "lastUpdated": "2026-10-09",
     "owner": "Rentvine University",
     "description": "Interactive 21-week Rentvine University learner program ordered by real property management processes for beginners, including a Financial Onboarding Specialist phase covering how new customers get migrated onto Rentvine's accounting system. Includes a Before You Begin orientation, role-path filters, phase process maps, a continuing practice company case file, downloadable job aids, scored knowledge checks with remediation links, required lab video submissions, guided walkthrough examples, match-the-term glossary practice, accessibility controls, and progress tracking.",
     "safety": "Complete all labs in a training or sandbox database. Do not use production data.",
@@ -2939,7 +2939,8 @@ window.RVU_COURSE = {
         "An administrator must send the first text message before an owner or tenant can text back &mdash; two-way SMS only activates after the manager initiates contact.",
         "A real onboarding call (Edwards Property Management 1B, Sept 15 2026) flagged a trial-account gotcha worth surfacing proactively: text messaging is disabled until an account is fully active, because trial accounts don't yet have an assigned Twilio number. New customers testing texting during a trial should be told this up front rather than left thinking texting is broken.",
         "Fixie is an AI agent available within the resident portal that allows residents to submit photos, videos, or text to create work orders without manual ticket entry. It's active in the system and commonly demonstrated in training calls (Oct 2026).",
-        "Crew is a paid work order recommendation service ($150/month) that provides automated work order suggestions. It was mentioned during a real customer training call (Oct 6, 2026) as an optional enhancement for maintenance workflows."
+        "Crew is a paid work order recommendation service ($150/month) that provides automated work order suggestions. It was mentioned during a real customer training call (Oct 6, 2026) as an optional enhancement for maintenance workflows.",
+        "A real group Q&A (Welcome Home, Oct 9 2026) unraveled a 'broken' rent increase letter: Rentvine maps specific template TYPES to specific actions, so a rent-increase letter must be built as the dedicated rent-increase template type — lease-level letter templates won't appear in that workflow. The troubleshooting technique: refresh after every permission change and compare permission sets in duplicate browser tabs. A 1A call the same day (Home for Texans) added communication identity facts: texts come from an auto-assigned system number (request a local area code through the onboarder), and outgoing email shows the logged-in user's address."
       ],
       "topics": "Mass messaging, texting, email templates, communication history",
       "objectives": [
@@ -3004,6 +3005,14 @@ window.RVU_COURSE = {
           "type": "Facilitator Script",
           "url": "job-aids/call-4a-facilitator-script.html",
           "summary": "Post-go-live QA3 script — jump to the account-vs-personal notifications Q&A, mass messaging, the two-way texting rule, and dashboard widgets.",
+          "videoCode": ""
+        },
+        {
+          "id": "w08-res-oct9",
+          "title": "Facilitator Script: October 9 Field Notes — Template Types & Communication Identity",
+          "type": "Facilitator Script",
+          "url": "job-aids/october-9-2026-field-notes-facilitator-script.html",
+          "summary": "Typed templates (rent-increase template type vs lease-level letters), permission troubleshooting technique, and what tenants actually see on outgoing texts and emails.",
           "videoCode": ""
         }
       ],
@@ -3220,7 +3229,8 @@ window.RVU_COURSE = {
         "Two real onboarding calls (Southern Choice 1A, Sept 14 2026, and Southern Choice 2A, Sept 18 2026) confirmed that checks and \"other payment\" types can be voided and re-recorded, but electronic checks processed through Forte cannot be voided once submitted -- double-check the payee and amount before sending. Forte e-check payments also carry a $0.99/transaction fee that is auto-debited; NACHA files are the manual-download/upload alternative to the bank.",
         "A real onboarding call (Edwards Property Management 2A, Sept 22 2026) showed the “reapply” mechanic used specifically to fix a misallocated portion of an already-posted bulk/Section 8 tenant receipt: open the lease's transaction history, find the receipt line, and reapply it across the correct unpaid charges. This is a distinct use of Reapply from the bank-account-mismatch fix covered elsewhere — here nothing moved between bank accounts, only which charges the existing deposit satisfies.",
         "A real Q/A call (Barron, Oct 6 2026) confirmed Zelle cannot be connected to or automated inside Rentvine — Zelle and Venmo arrivals are handled exactly like paper checks: manual receipt on the lease, then manual deposit dated the day the funds actually hit the bank. The same call demonstrated the bank-run pattern: when several checks go to the bank as one physical deposit, void any premature single-check deposit and record one consolidated deposit checking off all included receipts, with the date matching the real bank transaction (reinforced on CornerStone 2A, Oct 7 2026: date mismatches across months are a top cause of broken reconciliations).",
-        "A real Q/A call (Southern Choice, Oct 8 2026) reinforced e-check finality: once submitted through Forte there is no direct cancellation — a payee received $1,845 instead of $1,445, and the root cause was non-refundable inspection and pet fees miscategorized as other income instead of being suppressed, which inflated the portfolio balance the payout drew from. Same-day material from Lepi & Associates: historical owner contributions are entered via Money In → green actions → Record Owner Receipt (then checked off as a deposit), and a portal payment that bundles rent with a security deposit is split with a virtual bank transfer under Banking → green actions to the SD account — paired with a manual physical transfer between the real bank accounts, since the in-system transfer moves no actual money."
+        "A real Q/A call (Southern Choice, Oct 8 2026) reinforced e-check finality: once submitted through Forte there is no direct cancellation — a payee received $1,845 instead of $1,445, and the root cause was non-refundable inspection and pet fees miscategorized as other income instead of being suppressed, which inflated the portfolio balance the payout drew from. Same-day material from Lepi & Associates: historical owner contributions are entered via Money In → green actions → Record Owner Receipt (then checked off as a deposit), and a portal payment that bundles rent with a security deposit is split with a virtual bank transfer under Banking → green actions to the SD account — paired with a manual physical transfer between the real bank accounts, since the in-system transfer moves no actual money.",
+        "A real support call (Edwards Property Management, Oct 9 2026) pinned down PayNearMe cash-payment facts: deposits go straight to the trust account but take 7–10 business days to settle, with limits of $1,500 per transaction, $2,900 daily, and $10,000 monthly. The same day's calls added that remote check sending requires two verified micro-deposits first, and automated bank sync is enabled by the onboarding team — it is not self-serve."
       ],
       "topics": "Tenant receipts, owner contributions, manual deposits, electronic settlements, bulk tenant receipts, bank deposit matching",
       "objectives": [
@@ -3309,6 +3319,14 @@ window.RVU_COURSE = {
           "type": "Facilitator Script",
           "url": "job-aids/october-8-2026-field-notes-facilitator-script.html",
           "summary": "Supporting: e-check finality after submission, refund path limitations, Record Owner Receipt, virtual + physical bank transfers for portal-paid deposits, and duplicate-bill prevention — from real calls Oct 8, 2026.",
+          "videoCode": ""
+        },
+        {
+          "id": "w09-res-11",
+          "title": "Facilitator Script: October 9 Field Notes — Payment Rails & Returned Payments",
+          "type": "Facilitator Script",
+          "url": "job-aids/october-9-2026-field-notes-facilitator-script.html",
+          "summary": "Payment-rail facts from Oct 9, 2026 calls: PayNearMe settlement lag and limits, remote-check micro-deposit verification, onboarding-gated bank sync, and company-wide returned-payment notifications.",
           "videoCode": ""
         }
       ],
@@ -3556,7 +3574,8 @@ window.RVU_COURSE = {
         "A real onboarding call (Edwards Property Management 1B, Sept 15 2026) surfaced a workflow that solves a common pain point: HOA dues can be paid directly from the trust account by creating the HOA as a contact/payee, generating a bill with the HOA as payee, and attaching the property -- avoiding the amenity/pool-key deactivation that follows landlord non-payment of HOA dues.",
         "A real onboarding call (Edwards Property Management 2A, Sept 22 2026) surfaced an open gap: Rentvine's bill-payment screen only lists bank accounts as a payment source, with no “paid by credit card” checkbox the way some legacy systems (e.g. Buildium) offer for a company AMEX. As of that call this was unresolved and escalated internally; discussed workarounds were linking the card directly to the trust account or setting the management company itself up as the bill's payee. Treat this as a known open question — confirm current guidance with support before promising a customer a specific answer.",
         "Nacha payments enable bank-integrated automation where the system sends checks directly through the bank instead of requiring manual printing. A real customer call (Oct 5, 2026) showed this being implemented as a solution for remote-work teams avoiding physical check printing.",
-        "Two real calls (Welcome Home, Oct 5 2026; CornerStone 2A, Oct 7 2026) covered unprinted-check hygiene: every payment recorded as a check increments the 'unprinted checks' counter on the banking tab. Companies printing from Rentvine should clear that queue each print run; companies paying any other way should record those payments as 'other' so phantom entries don't accumulate. Starting check numbers are editable in bank account settings for mid-checkbook migrations."
+        "Two real calls (Welcome Home, Oct 5 2026; CornerStone 2A, Oct 7 2026) covered unprinted-check hygiene: every payment recorded as a check increments the 'unprinted checks' counter on the banking tab. Companies printing from Rentvine should clear that queue each print run; companies paying any other way should record those payments as 'other' so phantom entries don't accumulate. Starting check numbers are editable in bank account settings for mid-checkbook migrations.",
+        "A real 1A onboarding call (Home for Texans, Oct 9 2026) covered the invoice intake address: every company gets companyname@invoices.rentvine.com, and vendor invoices emailed there appear in the system for one-click conversion into bills — still worth the ten-second duplicate search before converting."
       ],
       "topics": "Bills, invoice OCR, Rapid Invoice, NACHA, vendor credits, bill approvals, payment batches, remote checks",
       "objectives": [
@@ -4454,7 +4473,9 @@ window.RVU_COURSE = {
         "A real financial-tracking call (Sept 28, 2026) with a multi-portfolio management company demonstrated the importance of report sequencing: running lease charges and payables reports early, posting management fees before owner payouts, reconciling diagnostics monthly, and consolidating owner statements to keep financial close clean and predictable.",
         "A real onboarding call (Timberline, Oct 1 2026) clarified management fee posting for multi-period scenarios: when posting fees for a prior period (e.g., September after converting from another platform), the Post Management Fees screen shows both flat/base fees and renewal fees. If some fees were already collected in the legacy system, uncheck those properties so you only post the new/renewal fees. For the current period (e.g., October), post all applicable fees including minimum fees that trigger when rent remains uncollected.",
         "That same call reinforced that properties with minimum fee rules (e.g., 8% rent with a $200 minimum) automatically apply the minimum charge when rent hasn't yet been collected in that period — the rule is evaluated at posting time, not retroactively.",
-        "A real training call (Lee Connor 1A, Oct 8 2026) plus the same day's internal Morning Training added payout specifics: NACHA batches can land same-day or next business day (vs. 2–3 days standard) but require generating a test file and manually uploading payout files in the bank's portal, and NACHA carries no transaction fee while e-checks cost roughly $1 each. Two override-reset disciplines from the Lee Connor call: zero out an overdraft override once funds are replenished, and revert a one-time payout bank-account override (three-dots menu + email authentication code) right after the exception run."
+        "A real training call (Lee Connor 1A, Oct 8 2026) plus the same day's internal Morning Training added payout specifics: NACHA batches can land same-day or next business day (vs. 2–3 days standard) but require generating a test file and manually uploading payout files in the bank's portal, and NACHA carries no transaction fee while e-checks cost roughly $1 each. Two override-reset disciplines from the Lee Connor call: zero out an overdraft override once funds are replenished, and revert a one-time payout bank-account override (three-dots menu + email authentication code) right after the exception run.",
+        "A real month-end support call (Edwards Property Management, Oct 9 2026) stated the order of operations explicitly: post management fees, pay the fee bills, pay owners, then generate and publish statements. Two mechanics drive the order: posting fees creates a payables holdback that prevents overpaying owners, and negative portfolio balances block payouts but do NOT block fee posting. The same call showed credits on the fee-posting screen traced to returned tenant payments — the fix is to uncheck those properties, post the rest, and let the resubmitted payment clear the credit.",
+        "The dual-statement migration rule was given independently to two clients on Oct 9 2026 (Welcome Home, ex-AppFolio; Edwards, ex-Buildium): for the first statement cycle after migration, send statements from BOTH the legacy system and Rentvine, because Rentvine carries brought-over balances but not pre-migration transaction detail. Also demonstrated: keep the statement-batch autopublish toggle off to review before publishing, and read 'needs attention' as reserve mismatch, post-statement balance adjustment, or date gap."
       ],
       "topics": "Management fees, owner statements, distributions, statement settings, owner reporting packages, Manager Dashboard",
       "objectives": [
@@ -4575,6 +4596,14 @@ window.RVU_COURSE = {
           "type": "Facilitator Script",
           "url": "job-aids/owner-accounting-reporting-workflow-facilitator-script.html",
           "summary": "Month-end accounting and reporting workflows: lease charges reports, payables reports, diagnostics cleanup, bank reconciliation, owner payout sequence, management fee posting, owner statements, and RentSign mechanics.",
+          "videoCode": ""
+        },
+        {
+          "id": "w12-res-12",
+          "title": "Facilitator Script: October 9 Field Notes — Month-End Order & Statement Batches",
+          "type": "Facilitator Script",
+          "url": "job-aids/october-9-2026-field-notes-facilitator-script.html",
+          "summary": "New-material supplement from Oct 9, 2026 calls: the month-end order of operations, returned-payment credits at fee posting, the undeposited-funds payout override, autopublish discipline, and the dual-statement migration cycle.",
           "videoCode": ""
         }
       ],
@@ -5932,7 +5961,8 @@ window.RVU_COURSE = {
         "A real, repeatable failure mode: if a renewal-fee bill gets created before the renewal itself is finalized, the renewal can show as &ldquo;signed&rdquo; while never actually completing. Fix: void the conflicting bill (or set it to $0), then finalize the renewal through the lease record.",
         "The system's automatic lease end-date fill defaults to the first day of a month rather than the last day of the previous month, which affects the &ldquo;next eligible increase date&rdquo; calculation downstream.",
         "A real training call (CornerStone 2A, Oct 7 2026) flagged a known bug in bulk tenant receipts: the bulk amount currently does not auto-allocate to unpaid charges, so allocation needs manual verification after posting until the fix ships. The same call confirmed the manual late-fee pattern: set global autocharge late fees to 'no', then post late fees from the money in menu.",
-        "A real training call (Lepi & Associates, Oct 8 2026) produced two recurring-item lessons: recurring charges only post on active leases — a 'missing' charge traced to a lease stuck in pending because a main house and rear apartment shared one property record — and a support rep's accidentally-added recurring credit (instead of a recurring charge) manufactured duplicate tenant credits, including an unexpected $1,500, until the erroneous recurring credit was deleted. Also seen: a tenant who set up autopay and paid manually the same day, producing a double payment — tenant-side misconfiguration worth warning clients about."
+        "A real training call (Lepi & Associates, Oct 8 2026) produced two recurring-item lessons: recurring charges only post on active leases — a 'missing' charge traced to a lease stuck in pending because a main house and rear apartment shared one property record — and a support rep's accidentally-added recurring credit (instead of a recurring charge) manufactured duplicate tenant credits, including an unexpected $1,500, until the erroneous recurring credit was deleted. Also seen: a tenant who set up autopay and paid manually the same day, producing a double payment — tenant-side misconfiguration worth warning clients about.",
+        "A real group Q&A (Welcome Home, Oct 9 2026) confirmed renewals should run through leases → renewals even when the team secures agreement outside the portal: create the offer, approve it, manually mark it accepted, and generate documents — completing the workflow auto-updates the lease dates and recurring charges. Generating documents from the lease level uses lease-type templates instead of renewal templates and skips the auto-update."
       ],
       "topics": "Renewal eligibility, renewal offers, tenant portal acceptance, RentSign renewal documents, recurring charge updates, bulk tenant receipts",
       "objectives": [
@@ -5989,6 +6019,14 @@ window.RVU_COURSE = {
           "type": "Facilitator Script",
           "url": "job-aids/call-3b-facilitator-script.html",
           "summary": "Post-go-live QA2 script — jump to the Renewal sections: settings, the four-stage workflow, competing offers, renewal fees, and two important gotchas.",
+          "videoCode": ""
+        },
+        {
+          "id": "w16-res-oct9",
+          "title": "Facilitator Script: October 9 Field Notes — The Renewal Workflow Done Right",
+          "type": "Facilitator Script",
+          "url": "job-aids/october-9-2026-field-notes-facilitator-script.html",
+          "summary": "Why renewals must run through the renewals module even when tenants never click accept: manual mark-accepted, auto-updated lease dates and charges, and the lease-level template trap.",
           "videoCode": ""
         }
       ],
@@ -10954,6 +10992,12 @@ window.RVU_COURSE = {
       "title": "Facilitator Script: October 8 Field Notes — E-Check Finality, Profile Fixes & Screening Rules",
       "url": "job-aids/october-8-2026-field-notes-facilitator-script.html",
       "summary": "Supplement consolidating new material from four real calls on Oct 8, 2026 (Southern Choice Q/A, Lee Connor 1A, Lepi & Associates QA 1, internal Morning Training): e-check finality after Forte submission and a real $1,845-vs-$1,445 overpayment rooted in non-refundable fees miscategorized as other income; the two supported tenant refund paths (ACH via move-out step 4, or manual outside-system) and why card refunds/last-4 don't exist; move-out MFA code, check-default deposit refund and portal shutoff; the zero-point ledger trace and post-date edit fix; duplicate tenant profile delete-vs-deactivate rule; recurring charges only posting on active leases and the erroneous recurring-credit case; the hidden Labor & Materials tab and reference-only price book; Record Owner Receipt and virtual-plus-physical bank transfers for portal-paid security deposits; NACHA same/next-day mechanics and two override reset rules; the Equifax 24-hour credit-freeze rule and non-retroactive application templates; and PRNC-code transaction tracing with notification-audit limits."
+    },
+    {
+      "id": "october-9-2026-field-notes-facilitator-script",
+      "title": "Facilitator Script: October 9 Field Notes — Month-End Order, Template Types & Payment Rails",
+      "url": "job-aids/october-9-2026-field-notes-facilitator-script.html",
+      "summary": "Supplement consolidating new material from three real calls on Oct 9, 2026 (Edwards month-end support, Welcome Home group Q&A, Home for Texans 1A): the explicit month-end order of operations (post fees → pay fee bills → pay owners → statements) and why negative balances block payouts but not fee posting; returned-payment credits on the fee-posting screen and the uncheck-post-resubmit handling; the global 'electronic payment returned – tenant' account notification and scheduled unpaid-charges report; the undeposited-funds payout default and the per-portfolio override; statement batches with autopublish off, 'needs attention' meanings, and the dual-statement first cycle after migration; typed templates (rent-increase template type vs lease-level letters) with permission troubleshooting technique and a known RentSign optional-checkbox bug; the renewal workflow with manual mark-accepted and why lease-level doc generation skips the auto-update; PayNearMe settlement and limits, remote-check micro-deposit verification, onboarding-gated bank sync; the companyname@invoices.rentvine.com intake address, communication identity (system text number, logged-in-user email, shared-profile workaround); and closing out a ghosted lease by voiding charges."
     }
   ],
   "realCaseExposure": {
